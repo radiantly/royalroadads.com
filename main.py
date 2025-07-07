@@ -1,8 +1,8 @@
 import argparse
 import asyncio
 import json
+import time
 import uuid
-from dataclasses import dataclass
 from pathlib import Path
 
 from PIL import Image
@@ -12,13 +12,8 @@ from pydoll.commands import DomCommands
 from pydoll.elements.web_element import WebElement
 from pydoll.protocol.network.events import NetworkEvent
 
-from image_utils import calculate_rms, to_image
-
-
-@dataclass
-class Ad:
-    image: Image.Image
-    campaign: str
+from ad_entry_manager import AdEntry, AdEntryManager
+from image_utils import to_image
 
 
 def to_element_list(
@@ -38,45 +33,10 @@ def is_rectangle_ad(image: Image.Image) -> bool:
     return image.size == (300, 250)
 
 
-def matches_existing_image(
-    new_image: Image.Image, existing_images: list[Image.Image], threshold=10
-) -> bool:
-    for i, existing_image in enumerate(existing_images):
-        rms = calculate_rms(new_image, existing_image)
-        print(f"{i:4} rms", rms)
-        if rms < threshold:
-            return True
-    return False
-
-
-def add_entries(new_entries: dict[str, Image.Image]):
-    here = Path(__file__).parent
-    entries_file_path = here / "entries.json"
-    images_path = here / "300x250"
-    existing_images = []
-    try:
-        saved = json.loads(entries_file_path.read_text(encoding="utf-8"))
-        if "entries" not in saved:
-            saved["entries"] = []
-        existing_images = [
-            Image.open(images_path / f"{i}.webp") for i in range(len(saved["entries"]))
-        ]
-    except:
-        saved = {"entries": []}
-
-    for link_url, image in new_entries.items():
-
-        if matches_existing_image(image, existing_images):
-            image.save(here / "skipped" / f"{uuid.uuid4()}.webp")
-            continue
-
-        idx = len(saved["entries"])
-        image_path = images_path / f"{idx}.webp"
-        saved["entries"].append(link_url)
-        image.save(image_path, "webp")
-
-    with open(entries_file_path, "w") as f:
-        json.dump(saved, f)
+here = Path(__file__).parent
+entry_manager = AdEntryManager(
+    images_dir_path=here / "300x250", debug_dir_path=here / "debug"
+)
 
 
 async def get_parent(element: WebElement) -> WebElement | None:
@@ -160,21 +120,27 @@ async def retrieve_ads():
                     if (!a?.href) return obj;
                     const link = new URL(a.href).searchParams.get("url");
                     if (!link) return obj;
-                    obj[image.src] = link;       
+                    obj[image.src] = {link, alt: image.alt};       
                     return obj;
                 }, {}))"""
         )
 
         print(rectangle_ads)
-        links = json.loads(response["result"]["result"]["value"])
+        image_data = json.loads(response["result"]["result"]["value"])
 
-        entries = {
-            links[image_url]: image
-            for image_url, image in rectangle_ads.items()
-            if image_url in links
-        }
+        for image_url, image in rectangle_ads.items():
+            if image_url not in image_data:
+                continue
 
-        add_entries(entries)
+            entry = AdEntry(
+                uid=str(uuid.uuid4()),
+                alt=image_data[image_url]["alt"],
+                link=image_data[image_url]["link"],
+                timestamp=int(time.time()),
+                image=image,
+            )
+
+            entry_manager.save_entry(entry)
 
 
 def main():
