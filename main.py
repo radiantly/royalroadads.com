@@ -35,7 +35,7 @@ def is_rectangle_ad(image: Image.Image) -> bool:
 
 here = Path(__file__).parent
 entry_manager = AdEntryManager(
-    images_dir_path=here / "300x250", debug_dir_path=here / "debug"
+    images_dir_path=here / "public" / "300x250", debug_dir_path=here / "debug"
 )
 
 
@@ -62,6 +62,7 @@ async def get_parent(element: WebElement) -> WebElement | None:
 async def retrieve_ads():
     options = ChromiumOptions()
     options.add_argument("--window-size=1920,960")
+    # options.add_argument("--headless=new") # ads don't load, possibly because of the page visibility API
     async with Chrome(options=options) as browser:
         tab = await browser.start()
 

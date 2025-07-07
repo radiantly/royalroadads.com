@@ -36,20 +36,17 @@ class AdEntryManager:
         self.entries: list[AdEntry] = []
 
         # load content
-        try:
-            self.content = json.loads(self.json_file_path.read_text(encoding="utf-8"))
-            for uid, entry_dict in self.content.get("entries", {}):
-                image = Image.open(self.images_dir_path / f"{uid}.webp")
-                entry = AdEntry(
-                    uid=uid,
-                    alt=entry_dict["alt"],
-                    link=entry_dict["link"],
-                    timestamp=entry_dict["timestamp"],
-                    image=image,
-                )
-                self.entries.append(entry)
-        except:
-            pass
+        self.content = json.loads(self.json_file_path.read_text(encoding="utf-8"))
+        for uid, entry_dict in self.content.get("entries", {}).items():
+            image = Image.open(self.images_dir_path / f"{uid}.webp")
+            entry = AdEntry(
+                uid=uid,
+                alt=entry_dict["alt"],
+                link=entry_dict["link"],
+                timestamp=entry_dict["timestamp"],
+                image=image,
+            )
+            self.entries.append(entry)
 
     def save_entry(self, new_entry: AdEntry):
         # check if an existing matches this entry
