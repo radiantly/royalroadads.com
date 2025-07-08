@@ -68,9 +68,20 @@ async def retrieve_ads():
 
         rectangle_ads: dict[str, Image.Image] = {}
 
-        async def capture_api_responses(event):
+        response_map: dict = {}
+
+        async def handle_response_received(event):
             request_id = event["params"]["requestId"]
-            response = event["params"]["response"]
+            response_map[request_id] = event["params"]["response"]
+
+        async def handle_loading_finished(event):
+            request_id = event["params"]["requestId"]
+
+            if request_id not in response_map:
+                print("Could not find response for request", request_id)
+                return
+
+            response = response_map[request_id]
             url = response["url"]
 
             # Only capture API responses
@@ -79,16 +90,17 @@ async def retrieve_ads():
                     # Extract the response body
                     body = await tab.get_network_response_body(request_id)
                     image = to_image(body)
-                    print(
-                        f"Captured {'image' if image else 'unkwn'} response from: {url} {body[:50]}"
-                    )
+                    # print(
+                    #     f"Captured {'image' if image else 'unkwn'} response from: {url} {body[:50]}"
+                    # )
                     if image and is_rectangle_ad(image):
                         rectangle_ads[url] = image
                 except Exception as e:
                     print(f"Failed to capture response: {e}")
 
         await tab.enable_network_events()
-        await tab.on(NetworkEvent.RESPONSE_RECEIVED, capture_api_responses)
+        await tab.on(NetworkEvent.RESPONSE_RECEIVED, handle_response_received)
+        await tab.on(NetworkEvent.LOADING_FINISHED, handle_loading_finished)
         await tab.go_to("https://www.royalroad.com/home")
 
         await asyncio.sleep(2)

@@ -2,9 +2,7 @@ import io
 import math
 from base64 import b64decode
 
-from PIL import Image, ImageChops, ImageFile
-
-ImageFile.LOAD_TRUNCATED_IMAGES = True
+from PIL import Image, ImageChops
 
 
 def to_image(base64_image: str) -> Image.Image | None:

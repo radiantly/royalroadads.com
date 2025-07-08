@@ -1,6 +1,5 @@
 @echo off
-set LOGFILE=batch.log
-call :LOG > %LOGFILE%
+call :LOG >> rra.log
 exit /B
 
 :LOG

@@ -31,7 +31,9 @@ class AdEntryManager:
         self.images_dir_path = images_dir_path
         self.debug_dir_path = debug_dir_path
 
+        # create directories if they do not exist
         self.images_dir_path.mkdir(exist_ok=True, parents=True)
+        self.debug_dir_path.mkdir(exist_ok=True, parents=True)
 
         self.entries: list[AdEntry] = []
 
