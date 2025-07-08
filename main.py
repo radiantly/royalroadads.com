@@ -35,7 +35,7 @@ def is_rectangle_ad(image: Image.Image) -> bool:
 
 here = Path(__file__).parent
 entry_manager = AdEntryManager(
-    images_dir_path=here / "public" / "300x250", debug_dir_path=here / "debug"
+    images_dir_path=here / "docs" / "300x250", debug_dir_path=here / "debug"
 )
 
 
