@@ -63,7 +63,7 @@ class AdEntryManager:
                 self.entries.remove(entry)
 
         new_entry.image.save(self.images_dir_path / new_entry.file_name, "webp")
-        self.entries.append(new_entry)
+        self.entries.insert(0, new_entry)
 
         with open(self.json_file_path, "w") as fp:
             content = {
