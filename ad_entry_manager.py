@@ -36,7 +36,11 @@ class AdEntryManager:
         self.entries: list[AdEntry] = []
 
         # load content
-        self.content = json.loads(self.json_file_path.read_text(encoding="utf-8"))
+        self.content = (
+            json.loads(self.json_file_path.read_text(encoding="utf-8"))
+            if self.json_file_path.exists()
+            else {}
+        )
         for uid, entry_dict in self.content.get("entries", {}).items():
             image = Image.open(self.images_dir_path / f"{uid}.webp")
             entry = AdEntry(
