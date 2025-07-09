@@ -15,7 +15,13 @@ def to_image(base64_image: str) -> Image.Image | None:
 
 def calculate_rms(img1: Image.Image, img2: Image.Image) -> float:
     """Calculate the Root-Mean-Square Error between two images."""
-    diff = ImageChops.difference(img1.convert("RGBA"), img2.convert("RGBA"))
+
+    # if the images have different modes, eg, RGB and RGBA
+    # we can assume that they're basically different images
+    if img1.mode != img2.mode:
+        return float("inf")
+
+    diff = ImageChops.difference(img1, img2)
     h = diff.histogram()
 
     squares = (value * ((idx % 256) ** 2) for idx, value in enumerate(h))
