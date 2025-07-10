@@ -79,4 +79,4 @@ class AdEntryManager:
                 }
             }
 
-            json.dump(obj=content, fp=fp)
+            json.dump(obj=content, fp=fp, indent=2)

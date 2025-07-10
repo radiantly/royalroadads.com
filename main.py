@@ -145,10 +145,16 @@ async def retrieve_ads():
             if image_url not in image_data:
                 continue
 
+            link = image_data[image_url]["link"]
+
+            if link == "/premium":
+                print("Skipping /premium")
+                continue
+
             entry = AdEntry(
                 uid=str(uuid.uuid4()),
                 alt=image_data[image_url]["alt"],
-                link=image_data[image_url]["link"],
+                link=link,
                 timestamp=int(time.time()),
                 image=image,
             )
