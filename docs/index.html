@@ -24,6 +24,7 @@
         background-color: #0f0f0f;
         font-family: "Dot Matrix";
         overflow-x: hidden;
+        overflow-y: scroll;
       }
       .yellow {
         color: var(--yellow);
@@ -31,32 +32,51 @@
       .container {
         display: flex;
         flex-direction: column;
+        width: 100%;
       }
       nav {
         display: flex;
         padding: 24px 0;
         position: relative;
+        justify-content: center;
         z-index: 42;
       }
       nav .logo {
         font-size: 24px;
       }
-      .ad-grid {
+      .rra-grid {
         display: flex;
-        flex-direction: column;
+        flex-grow: 1;
         gap: var(--grid-padding);
+        min-height: 500vh;
+        position: relative;
+        align-self: stretch;
       }
-      .ad-row {
+      .rra-grid div.positioned {
+        position: absolute;
+        top: 0;
+        left: 0;
+
         display: flex;
-        gap: var(--grid-padding);
         justify-content: center;
-        min-width: 0;
+        z-index: 13;
       }
-      .ad-row a {
+
+      /* We don't want .backdrop to be above anything else */
+      .rra-grid div.positioned:hover {
+        z-index: 12;
+      }
+
+      .rra-grid div.positioned.expanded {
+        min-width: 560px;
+      }
+
+      .rra-grid div.positioned a {
         position: relative;
         display: flex;
       }
-      .ad-row a div.backdrop {
+
+      .rra-grid div.positioned a div.backdrop {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -66,10 +86,12 @@
         transition: opacity 0.5s ease;
         pointer-events: none;
       }
-      .ad-row a:hover div.backdrop {
+
+      .rra-grid div.positioned a:hover div.backdrop {
         opacity: 1;
       }
-      .ad-row a div.backdrop::before {
+
+      .rra-grid div.positioned a div.backdrop::before {
         content: "";
         position: absolute;
         top: -15%;
@@ -78,7 +100,7 @@
         right: -15%;
         backdrop-filter: blur(15px);
       }
-      .ad-row a img {
+      .rra-grid div.positioned a img {
         position: relative;
         z-index: 42;
       }
@@ -89,55 +111,197 @@
       <nav>
         <div class="logo">Royal Road <span class="yellow">Ads</span></div>
       </nav>
-      <div class="ad-grid"></div>
+      <div class="rra-grid"></div>
     </div>
     <script>
-      const padding = 10;
-      const width = 300;
-      let currentPerRow = null;
-      const handleData = ({ entries }) => {
-        window.addEventListener("resize", (e) => handleData({ entries }), {
-          once: true,
-        });
+      class RectangleAd {
+        static WIDTH = 340;
+        static HEIGHT = 290;
+        static WIDTH_EXPANDED = 560;
 
-        const perRow = Math.floor(
-          (window.innerWidth + padding) / (width + padding)
-        );
-        console.log(perRow);
+        #state;
+        constructor(uid, alt, link) {
+          this.#state = {
+            position: { x: 0, y: 0 },
+            requiredPosition: { x: 0, y: 0 },
+            src: `300x250/${uid}.webp`,
+            alt,
+            link,
+            expanded: false,
+            imgElem: null,
+          };
+        }
 
-        if (currentPerRow === perRow) return;
-        else currentPerRow = perRow;
+        get width() {
+          return this.#state.expanded
+            ? RectangleAd.WIDTH_EXPANDED
+            : RectangleAd.WIDTH;
+        }
 
-        console.log(entries);
+        get expanded() {
+          return this.#state.expanded;
+        }
 
-        const adRows = [];
-        for (const [uid, entry] of Object.entries(entries)) {
-          const isOdd = (adRows.length + 1) % 2;
-          if (
-            (adRows.at(-1)?.childElementCount ?? Infinity) >=
-            perRow - isOdd
-          ) {
-            const adRow = document.createElement("div");
-            adRow.classList.add("ad-row");
-            adRows.push(adRow);
+        get currentX() {
+          return this.#state.position.x;
+        }
+        get currentY() {
+          return this.#state.position.y;
+        }
+
+        get requiredX() {
+          return this.#state.requiredPosition.x;
+        }
+        get requiredY() {
+          return this.#state.requiredPosition.y;
+        }
+
+        get img() {
+          if (this.#state.imgElem === null) {
+            this.#state.imgElem = this.#createHTMLElement();
+
+            document
+              .querySelector(".rra-grid")
+              .appendChild(this.#state.imgElem);
           }
+          return this.#state.imgElem;
+        }
+
+        get needsPositionUpdate() {
+          return (
+            this.#state.imgElem === null ||
+            this.#state.position.x !== this.#state.requiredPosition.x ||
+            this.#state.position.y !== this.#state.requiredPosition.y
+          );
+        }
+
+        #createHTMLElement() {
+          const positioned = document.createElement("div");
+          positioned.classList.add("positioned");
+
+          if (this.#state.expanded) positioned.classList.add("expanded");
 
           const a = document.createElement("a");
-          a.href = entry.link;
+          a.href = this.#state.link;
           a.target = "_blank";
-          const img = document.createElement("img");
-          img.src = `300x250/${uid}.webp`;
-          img.alt = entry.alt;
-          img.title = entry.alt;
 
           const backdrop = document.createElement("div");
           backdrop.classList.add("backdrop");
-          backdrop.style.background = `url("${img.src}")`;
+          backdrop.style.background = `url("${this.#state.src}")`;
+
+          const img = document.createElement("img");
+          img.src = this.#state.src;
+          img.alt = this.#state.alt;
+          img.title = this.#state.alt;
+
           a.replaceChildren(backdrop, img);
-          adRows.at(-1).appendChild(a);
+
+          positioned.replaceChildren(a);
+
+          return positioned;
         }
 
-        document.querySelector(".ad-grid").replaceChildren(...adRows);
+        setRequiredPosition(x, y) {
+          this.#state.position.x = x;
+          this.#state.position.y = y;
+        }
+
+        updatePosition() {
+          if (!this.needsPositionUpdate) return;
+          const { x, y } = this.#state.position;
+          this.img.style.transform = `translate(${x}px, ${y}px)`;
+        }
+
+        isInViewport(viewportWidth, viewportHeight, scrollY) {}
+      }
+
+      class RenderMonkey {
+        #state;
+        constructor() {
+          this.#state = {
+            ads: [],
+            dirtyAfter: 0,
+          };
+        }
+
+        addAdEntries(entries) {
+          for (const [uid, entry] of Object.entries(entries))
+            this.#state.ads.push(new RectangleAd(uid, entry.alt, entry.link));
+        }
+
+        updatePosProps(vWidth, vHeight, scrollY) {
+          // Ads
+          const gap = 10;
+          const perRow = Math.max(
+            1,
+            Math.floor((vWidth + gap) / (RectangleAd.WIDTH + gap))
+          );
+
+          const n = this.#state.ads.length;
+
+          console.log(n);
+          let y = 0;
+          let lastPerRow = 0;
+          for (let i = 0; i < n; ) {
+            let thisPerRow =
+              lastPerRow === perRow ? Math.max(1, perRow - 1) : perRow;
+            lastPerRow = thisPerRow;
+            const startX = Math.floor(
+              (vWidth -
+                (RectangleAd.WIDTH * thisPerRow + gap * (thisPerRow - 1))) /
+                2
+            );
+            for (let j = 0; j < thisPerRow && i < n; j += 1) {
+              const vx = Math.floor(Math.random() * 40);
+              const vy = Math.floor(Math.random() * 40);
+              this.#state.ads[i].setRequiredPosition(
+                vx + startX + j * (RectangleAd.WIDTH + gap),
+                vy + y
+              );
+              i += 1;
+            }
+            y += RectangleAd.HEIGHT + gap;
+          }
+        }
+
+        updatePositions(vWidth, vHeight, scrollY) {
+          for (const ad of this.#state.ads) {
+            ad.updatePosition();
+            // console.log(ad);
+          }
+        }
+      }
+
+      let lastViewportWidth = null;
+      let lastViewportHeight = null;
+      let lastScrollY = null;
+      const renderMonkey = new RenderMonkey();
+      const loop = () => {
+        const viewportWidth = document.body.clientWidth;
+        const viewportHeight = window.innerHeight;
+        const scrollY = window.scrollY;
+
+        // requestAnimationFrame(loop);
+
+        if (
+          viewportWidth === lastViewportWidth &&
+          viewportHeight === lastViewportHeight &&
+          scrollY === lastScrollY
+        )
+          return;
+
+        lastViewportWidth = viewportWidth;
+        lastViewportHeight = viewportHeight;
+        lastScrollY = scrollY;
+        renderMonkey.updatePosProps(viewportWidth, viewportHeight, scrollY);
+        renderMonkey.updatePositions(viewportWidth, viewportHeight, scrollY);
+      };
+
+      const handleData = ({ entries }) => {
+        renderMonkey.addAdEntries(entries);
+        requestAnimationFrame(loop);
+
+        window.addEventListener("resize", loop);
       };
 
       fetch("300x250/entries.json")
