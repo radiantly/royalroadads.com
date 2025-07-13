@@ -261,7 +261,7 @@
       class RectangleAd {
         static WIDTH = 300;
         static HEIGHT = 250;
-        static WIDTH_EXPANDED = 600;
+        static MIN_WIDTH_EXPANDED = 600;
 
         #state;
         constructor(uid, alt, link) {
@@ -273,12 +273,13 @@
             link,
             expanded: false,
             imgElem: null,
+            expanded_width: RectangleAd.MIN_WIDTH_EXPANDED,
           };
         }
 
         get width() {
           return this.#state.expanded
-            ? RectangleAd.WIDTH_EXPANDED
+            ? this.#state.expanded_width
             : RectangleAd.WIDTH;
         }
         get height() {
@@ -322,6 +323,13 @@
           );
         }
 
+        setExpandedWidth(width) {
+          this.#state.expanded_width = Math.max(
+            RectangleAd.MIN_WIDTH_EXPANDED,
+            width
+          );
+        }
+
         #createHTMLElement() {
           const template = document.getElementById("ad-element");
           const fragment = template.content.cloneNode(true);
@@ -356,6 +364,7 @@
           if (!this.needsPositionUpdate) return;
           const { x, y } = this.#state.position;
           this.img.style.transform = `translate(${x}px, ${y}px)`;
+          this.img.style.width = this.width + "px";
         }
 
         isInViewport(viewportWidth, viewportHeight, scrollY) {}
@@ -395,6 +404,15 @@
           return variances;
         }
 
+        #calcMaxAdsForWidth(adWidth, gap, totWidth) {
+          // Let x be the number of ads that can be fit in totWidth
+          // adWidth * x + gap * (x - 1) = totWidth
+          // adWidth * x + gap * x - gap = totWidth
+          // x * (adWidth + gap) = totWidth + gap
+          // x = (totWidth + gap) / (adWidth + gap)
+          return Math.floor((totWidth + gap) / (adWidth + gap));
+        }
+
         updatePosProps(vWidth, vHeight, scrollY) {
           const gap = 10;
           const variance = 40; // TODO: make this dynamic based on vWidth or perRow
@@ -425,6 +443,22 @@
               console.log(it.index, "is expanded");
               const ad = this.#state.ads[it.index];
               if (side === null) {
+                // calculate the available width
+                const avWidth =
+                  vWidth - (RectangleAd.MIN_WIDTH_EXPANDED + variance + gap);
+
+                const adsInRow = this.#calcMaxAdsForWidth(
+                  adWidth,
+                  gap,
+                  avWidth
+                );
+                const extraSpace =
+                  avWidth - (adWidth * adsInRow + gap * (adsInRow - 1));
+
+                ad.setExpandedWidth(
+                  RectangleAd.MIN_WIDTH_EXPANDED + extraSpace
+                );
+
                 const { vx, vy } = variances[it.index];
                 side = {
                   position: last_side_position === "right" ? "left" : "right",
@@ -448,7 +482,7 @@
             }
 
             const avWidth = vWidth - (side?.width ?? 0); // available width
-            const adsInRow = Math.floor((avWidth + gap) / (adWidth + gap));
+            const adsInRow = this.#calcMaxAdsForWidth(adWidth, gap, avWidth);
             const adsInThisRow = Math.max(
               1,
               adsInRow - (adsInRow === adsInLastRow)
