@@ -1,5 +1,5 @@
 import json
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 from PIL import Image
@@ -54,7 +54,11 @@ class AdEntryManager:
             )
             self.entries.append(entry)
 
-    def save_entry(self, new_entry: AdEntry):
+    def save_entry(self, temp_entry: AdEntry):
+        image_path = self.images_dir_path / temp_entry.file_name
+        temp_entry.image.save(image_path, "webp")
+        new_entry = replace(temp_entry, image=Image.open(image_path))
+
         # check if an existing matches this entry
         for entry in self.entries:
             if entry.calculate_rms(new_entry.image) < self.rms_threshold:
@@ -64,7 +68,6 @@ class AdEntryManager:
                 )
                 self.entries.remove(entry)
 
-        new_entry.image.save(self.images_dir_path / new_entry.file_name, "webp")
         self.entries.insert(0, new_entry)
 
         with open(self.json_file_path, "w") as fp:
