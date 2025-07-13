@@ -8,9 +8,9 @@ from pathlib import Path
 from PIL import Image
 from pydoll.browser import Chrome
 from pydoll.browser.options import ChromiumOptions
-from pydoll.commands import DomCommands
 from pydoll.elements.web_element import WebElement
 from pydoll.protocol.network.events import NetworkEvent
+from pydoll.protocol.network.types import Response
 
 from ad_entry_manager import AdEntry, AdEntryManager
 from image_utils import to_image
@@ -33,33 +33,7 @@ def is_rectangle_ad(image: Image.Image) -> bool:
     return image.size == (300, 250)
 
 
-here = Path(__file__).parent
-entry_manager = AdEntryManager(
-    images_dir_path=here / "docs" / "300x250", debug_dir_path=here / "debug"
-)
-
-
-async def get_parent(element: WebElement) -> WebElement | None:
-    node_description = await element._describe_node(object_id=element._object_id)
-    parent_id = node_description.get("parentId")
-
-    command = DomCommands.resolve_node(node_id=parent_id)
-    response = await element._execute_command(command=command)
-    parent_object_id = response["result"]["object"]["objectId"]
-
-    parent_node_desc = await element._describe_node(object_id=parent_object_id)
-    attributes = parent_node_desc.get("attributes", [])
-    tag_name = parent_node_desc.get("nodeName", "").lower()
-    attributes.extend(["tag_name", tag_name])
-
-    return WebElement(
-        object_id=parent_object_id,
-        connection_handler=element._connection_handler,
-        attributes_list=attributes,
-    )
-
-
-async def retrieve_ads():
+async def retrieve_ads() -> list[AdEntry] | None:
     options = ChromiumOptions()
     options.add_argument("--window-size=1920,960")
     # options.add_argument("--headless=new") # ads don't load, possibly because of the page visibility API
@@ -68,13 +42,13 @@ async def retrieve_ads():
 
         rectangle_ads: dict[str, Image.Image] = {}
 
-        response_map: dict = {}
+        response_map: dict[str, Response] = {}
 
-        async def handle_response_received(event):
+        async def handle_response_received(event) -> None:
             request_id = event["params"]["requestId"]
             response_map[request_id] = event["params"]["response"]
 
-        async def handle_loading_finished(event):
+        async def handle_loading_finished(event) -> None:
             request_id = event["params"]["requestId"]
 
             if request_id not in response_map:
@@ -115,7 +89,7 @@ async def retrieve_ads():
             print(
                 "ERROR: Could not find portlet divs. Site design has possibly changed."
             )
-            return
+            return None
 
         for portlet in portlets:
             await portlet.scroll_into_view()
@@ -141,6 +115,7 @@ async def retrieve_ads():
         print(rectangle_ads)
         image_data = json.loads(response["result"]["result"]["value"])
 
+        entries: list[AdEntry] = []
         for image_url, image in rectangle_ads.items():
             if image_url not in image_data:
                 continue
@@ -159,13 +134,22 @@ async def retrieve_ads():
                 image=image,
             )
 
+            entries.append(entry)
+
+        return entries
+
+
+async def main() -> None:
+    parser = argparse.ArgumentParser(prog="RoyalRoadAds")
+    if ad_entries := await retrieve_ads():
+        here = Path(__file__).parent
+        entry_manager = AdEntryManager(
+            images_dir_path=here / "docs" / "300x250", debug_dir_path=here / "debug"
+        )
+
+        for entry in ad_entries:
             entry_manager.save_entry(entry)
 
 
-def main():
-    parser = argparse.ArgumentParser(prog="RoyalRoadAds")
-    asyncio.run(retrieve_ads())
-
-
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

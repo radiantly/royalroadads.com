@@ -11,6 +11,7 @@ def to_image(base64_image: str) -> Image.Image | None:
         return Image.open(io.BytesIO(image_data))
     except Exception as e:
         print(e)
+    return None
 
 
 def calculate_rms(img1: Image.Image, img2: Image.Image) -> float:
