@@ -74,6 +74,10 @@
         border-radius: 10px;
       }
 
+      .rra-grid div.backdrop-container img.expanded {
+        display: none;
+      }
+
       .rra-grid div.positioned {
         position: absolute;
         top: 0;
@@ -146,40 +150,9 @@
 
       .rra-grid div.positioned.expanded .ad-wrap img {
         width: 150px;
-        height: 100px;
+        height: 125px;
         border-radius: 0;
       }
-
-      /* .rra-grid div.positioned a div.backdrop {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        pointer-events: none;
-      } */
-
-      /* .rra-grid div.positioned a:hover div.backdrop {
-        opacity: 1;
-      }
-
-      .rra-grid div.positioned a div.backdrop::before {
-        content: "";
-        position: absolute;
-        top: -15%;
-        left: -15%;
-        bottom: -15%;
-        right: -15%;
-        backdrop-filter: blur(15px);
-      } */
-      /* .rra-grid div.positioned a img {
-        position: relative;
-        z-index: 42;
-        width: 300px;
-        height: 250px;
-      } */
     </style>
   </head>
   <body>
@@ -281,15 +254,9 @@
         #state;
         #current;
         #required;
-        constructor(uid, alt, link, clickHandler) {
+        constructor(uid, alt, link, requestLayoutCallback) {
           this.#state = {
-            src: `300x250/${uid}.webp`,
-            alt,
-            link,
-            expanded: false,
-            expanded_width: RectangleAd.MIN_WIDTH_EXPANDED,
-            fictionId: this.#extractFictionId(link),
-            clickHandler,
+            requestLayoutCallback,
 
             // elements
             elements: null,
@@ -302,19 +269,31 @@
           };
 
           this.#current = {
+            // layout
             x: null,
             y: null,
             width: null,
             height: null,
             expanded: false,
+
+            // content
+            uid: null,
+            alt: null,
+            link: null,
           };
 
           this.#required = {
+            // layout
             x: null,
             y: null,
             width: null,
             height: null,
             expanded: false,
+
+            // content
+            uid,
+            alt,
+            link,
           };
         }
 
@@ -324,6 +303,14 @@
         get height() {
           // return this.#state.expanded ? 730 : RectangleAd.HEIGHT;
           return this.#required.height;
+        }
+
+        get content() {
+          return {
+            uid: this.#required.uid,
+            alt: this.#required.alt,
+            link: this.#required.link,
+          };
         }
 
         get expanded() {
@@ -351,6 +338,14 @@
             this.#current.width !== this.#required.width ||
             this.#current.height !== this.#required.height ||
             this.#current.expanded !== this.#required.expanded
+          );
+        }
+
+        get needsContentUpdate() {
+          return (
+            this.#current.uid !== this.#required.uid ||
+            this.#current.alt !== this.#required.alt ||
+            this.#current.link !== this.#required.link
           );
         }
 
@@ -390,9 +385,15 @@
           return timeline;
         }
 
-        #extractFictionId(url) {
-          const match = url.match(/royalroad\.com\/fiction\/(\d+)/);
+        get fictionId() {
+          const match = this.#required.link.match(
+            /royalroad\.com\/fiction\/(\d+)/
+          );
           return match ? match[1] : null;
+        }
+
+        get adImgSrc() {
+          return `300x250/${this.#required.uid}.webp`;
         }
 
         #addElementHandlers(element, backdrop) {
@@ -410,6 +411,18 @@
           element.addEventListener("mouseenter", mouseenterHandler);
 
           element.addEventListener("mouseleave", mouseleaveHandler);
+
+          // element.addEventListener("click", (event) => {
+          //   event.preventDefault();
+          //   this.#required.expanded = !this.#required.expanded;
+          //   this.#state.requestLayoutCallback();
+          // });
+        }
+
+        #markSetContentSuccessful() {
+          this.#current.uid = this.#required.uid;
+          this.#current.alt = this.#required.alt;
+          this.#current.link = this.#required.link;
         }
 
         #createHTMLElements() {
@@ -420,25 +433,18 @@
           if (this.#state.fictionId === null)
             positioned.classList.add("external");
 
-          positioned.querySelector("a.ad-wrap").href = this.#state.link;
+          positioned.querySelector("a.ad-wrap").href = this.#required.link;
 
-          // const backdrop = document.createElement("div");
-          // backdrop.classList.add("backdrop");
-          // backdrop.style.background = `url("${this.#state.src}")`;
-
-          // const img = document.createElement("img");
           const img = positioned.querySelector("a.ad-wrap img");
-          img.src = this.#state.src;
-          img.alt = this.#state.alt;
-          img.title = this.#state.alt;
-
-          // a.replaceChildren(img);
-
-          // positioned.replaceChildren(a);
+          img.src = this.adImgSrc;
+          img.alt = this.#required.alt;
+          img.title = this.#required.alt;
 
           const backdrop = fragment.querySelector("img.backdrop");
-          backdrop.src = this.#state.src;
+          backdrop.src = this.adImgSrc;
           this.#addElementHandlers(positioned, backdrop);
+
+          this.#markSetContentSuccessful();
 
           return { positioned, backdrop };
         }
@@ -451,6 +457,18 @@
           this.#required.expanded = expanded ?? this.#required.expanded;
         }
 
+        setContent({ uid, alt, link }) {
+          this.#required.uid = uid ?? this.#required.uid;
+          this.#required.alt = alt ?? this.#required.alt;
+          this.#required.link = link ?? this.#required.link;
+        }
+
+        swapContent(rectangleAd) {
+          const tmp = rectangleAd.content;
+          rectangleAd.setContent(this.content);
+          this.setContent(tmp);
+        }
+
         updatePosition() {
           if (!this.needsLayoutUpdate) return;
           const { x, y, width, height, expanded } = this.#required;
@@ -458,7 +476,21 @@
           const { positioned, backdrop } = this.elements;
           gsap.set([positioned, backdrop], { x, y, width, height });
           positioned.classList.toggle("expanded", expanded);
+          backdrop.classList.toggle("expanded", expanded);
           this.#current = { x, y, width, height, expanded };
+        }
+
+        updateContent() {
+          if (!this.needsContentUpdate) return;
+
+          const { positioned } = this.elements;
+          positioned.querySelector("a.ad-wrap").href = this.#required.link;
+
+          const img = positioned.querySelector("a.ad-wrap img");
+          img.src = this.adImgSrc;
+          img.alt = this.#required.alt;
+          img.title = this.#required.alt;
+          this.#markSetContentSuccessful();
         }
       }
 
@@ -467,15 +499,25 @@
         constructor() {
           this.#state = {
             ads: [],
-            dirtyAfter: 0,
+            layoutComputedTill: 0,
 
             varianceCache: new Map(),
           };
         }
 
         addAdEntries(entries) {
+          const requestLayoutCallback = () => {
+            this.computeLayout(
+              document.querySelector(".rra-grid").clientWidth,
+              window.innerHeight,
+              window.scrollY
+            );
+            this.updatePositions();
+          };
           for (const [uid, entry] of Object.entries(entries))
-            this.#state.ads.push(new RectangleAd(uid, entry.alt, entry.link));
+            this.#state.ads.push(
+              new RectangleAd(uid, entry.alt, entry.link, requestLayoutCallback)
+            );
           // this.#state.ads[4].setLayoutProps({ expanded: true });
         }
 
@@ -524,8 +566,14 @@
           let side = null;
           let last_side_position = "right";
           while (it.index < n) {
+            let continueFlag = false;
+
             // if there was a side but is now over
             if (side && side.tillY < it.y) side = null;
+
+            // don't compute layout for things that are very far from the viewport
+            // TODO: fix for mobile
+            // if (side === null && it.y > scrollY + vHeight * 5) break;
 
             // if the ad is expanded, we want
             if (this.#state.ads[it.index].expanded) {
@@ -556,6 +604,7 @@
                   tillY: eadHeight + vy + gap + it.y,
                   it: Object.assign({}, it),
                 };
+                last_side_position = side.position;
                 const x =
                   side.position === "left"
                     ? vx
@@ -590,8 +639,23 @@
                   2
               ) + (side?.position === "left" ? side.width : 0);
             for (let j = 0; j < adsInThisRow && it.index < n; j += 1) {
+              const ad = this.#state.ads[it.index];
+              if (ad.expanded) {
+                if (side === null) {
+                  const startIndex = it.index - j;
+                  [this.#state.ads[startIndex], this.#state.ads[it.index]] = [
+                    ad,
+                    this.#state.ads[startIndex],
+                  ];
+                  it.index = startIndex;
+                  continueFlag = true;
+                  break;
+                } else {
+                  ad.swapContent(this.#state.ads[side.it.index]);
+                }
+              }
               const { vx, vy } = variances[it.index];
-              this.#state.ads[it.index].setLayoutProps({
+              ad.setLayoutProps({
                 x: vx + startX + j * (adWidth + gap),
                 y: vy + it.y,
                 width: 300,
@@ -600,14 +664,22 @@
               });
               it.index += 1;
             }
+            if (continueFlag) continue;
             it.y += adHeight + gap;
           }
+
+          this.layoutComputedTill = it.index;
         }
 
         updatePositions(vWidth, vHeight, scrollY) {
-          for (const ad of this.#state.ads) {
+          const till = Math.min(
+            this.layoutComputedTill,
+            this.#state.ads.length
+          );
+          for (let i = 0; i < till; i += 1) {
+            const ad = this.#state.ads[i];
             ad.updatePosition();
-            // console.log(ad);
+            ad.updateContent();
           }
         }
       }

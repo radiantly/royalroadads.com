@@ -69,7 +69,9 @@ class AdEntryManager:
                 self.entries.remove(entry)
 
         self.entries.insert(0, new_entry)
+        self.write_entries_to_file()
 
+    def write_entries_to_file(self) -> None:
         with open(self.json_file_path, "w") as fp:
             content = {
                 "entries": {
