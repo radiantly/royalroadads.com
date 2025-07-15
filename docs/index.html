@@ -35,12 +35,12 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
-        gap: 20px;
+        gap: 40px;
         width: 100%;
       }
       nav {
         display: flex;
-        padding: 24px 0;
+        padding: 20px 25px;
         position: relative;
         justify-content: center;
         z-index: 42;
@@ -48,11 +48,64 @@
         border: 1px solid #ebebeb;
         width: 90vw;
         align-self: center;
+        border-radius: 10px;
+        box-shadow: 0 50px 110px 0 rgba(0, 0, 0, 0.1),
+          0 201px 201px 0 rgba(0, 0, 0, 0.09),
+          0 452px 250px 0 rgba(0, 0, 0, 0.05),
+          0 803px 250px 0 rgba(0, 0, 0, 0.01);
+        align-items: center;
+        font-size: 1.1rem;
       }
       nav .logo {
         font-size: 24px;
       }
+
+      nav .logo .accent {
+        position: relative;
+        color: white;
+      }
+
+      nav .logo .accent::before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -7px;
+        width: calc(100% + 10px);
+        height: calc(100% + 7px);
+        border-radius: 5px;
+        background-color: #2a2a2a;
+        z-index: -1;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+      }
+
+      nav a::before {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #2a2a2a;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.2s ease;
+      }
+
+      nav a:hover::before {
+        transform: scale(1);
+      }
+
       .rra-grid {
+        --x: 0;
+        --y: 0;
+        --width: 300px;
+        --height: 250px;
+
         display: flex;
         flex-grow: 1;
         gap: var(--grid-padding);
@@ -72,6 +125,11 @@
         top: 0;
         left: 0;
         border-radius: 10px;
+        opacity: 0.7;
+
+        width: var(--width);
+        height: var(--height);
+        transform: translate(var(--x), var(--y));
       }
 
       .rra-grid div.backdrop-container img.expanded {
@@ -83,10 +141,19 @@
         top: 0;
         left: 0;
 
+        width: var(--width);
+        height: var(--height);
+        transform: translate(var(--x), var(--y));
+        transition: transform 0.2s ease;
+
         display: flex;
         gap: 20px;
         z-index: 13;
         border-radius: 10px;
+      }
+
+      .rra-grid div.positioned:not(.expanded):hover {
+        transform: translate(var(--x), calc(var(--y) - 5px));
       }
 
       .rra-grid div.positioned a {
@@ -139,8 +206,6 @@
       }
 
       .rra-grid div.positioned.expanded {
-        width: 600px;
-        min-height: 730px;
         box-shadow: 0 22px 48px 0 rgba(0, 0, 0, 0.1),
           0 87px 87px 0 rgba(0, 0, 0, 0.09), 0 196px 118px 0 rgba(0, 0, 0, 0.05),
           0 348px 139px 0 rgba(0, 0, 0, 0.01), 0 545px 152px 0 rgba(0, 0, 0, 0);
@@ -158,7 +223,15 @@
   <body>
     <div class="container">
       <nav>
-        <div class="logo">Royal Road <span class="yellow">Ads</span></div>
+        <div class="logo">Royal Road <span class="accent">Ads</span></div>
+        <div style="flex-grow: 1"></div>
+        <div class="github">
+          <a
+            href="https://github.com/radiantly/royalroadads.com"
+            target="_blank"
+            >GITHUB</a
+          >
+        </div>
       </nav>
       <div class="rra-grid">
         <div class="backdrop-container"></div>
@@ -362,17 +435,9 @@
           this.#state.hoverTween.cached?.kill();
           const timeline = gsap.timeline();
           timeline.to(
-            [positioned, backdrop],
+            positioned,
             {
               y: this.#current.y - 5,
-              duration: 0.2,
-            },
-            0
-          );
-          timeline.to(
-            backdrop,
-            {
-              opacity: 0.9,
               duration: 0.2,
             },
             0
@@ -397,21 +462,17 @@
         }
 
         #addElementHandlers(element, backdrop) {
-          const mouseenterHandler = () => {
-            console.log(this.#state.fictionId, "entered");
-            this.hoverTween.play();
-          };
-          const mouseleaveHandler = () => {
-            console.log(this.#state.fictionId, "left");
-            this.hoverTween.reverse();
-          };
-
-          gsap.set(backdrop, { opacity: 0.6 });
-
-          element.addEventListener("mouseenter", mouseenterHandler);
-
-          element.addEventListener("mouseleave", mouseleaveHandler);
-
+          // const mouseenterHandler = () => {
+          //   console.log(this.#state.fictionId, "entered");
+          //   this.hoverTween.play();
+          // };
+          // const mouseleaveHandler = () => {
+          //   console.log(this.#state.fictionId, "left");
+          //   this.hoverTween.reverse();
+          // };
+          // gsap.set(backdrop, { opacity: 0.6 });
+          // element.addEventListener("mouseenter", mouseenterHandler);
+          // element.addEventListener("mouseleave", mouseleaveHandler);
           // element.addEventListener("click", (event) => {
           //   event.preventDefault();
           //   this.#required.expanded = !this.#required.expanded;
@@ -474,9 +535,21 @@
           const { x, y, width, height, expanded } = this.#required;
 
           const { positioned, backdrop } = this.elements;
-          gsap.set([positioned, backdrop], { x, y, width, height });
-          positioned.classList.toggle("expanded", expanded);
-          backdrop.classList.toggle("expanded", expanded);
+          // gsap.set([positioned, backdrop], { x, y, width, height });
+          positioned.style.setProperty("--x", `${x}px`);
+          positioned.style.setProperty("--y", `${y}px`);
+          positioned.style.setProperty("--width", `${width}px`);
+          positioned.style.setProperty("--height", `${height}px`);
+
+          backdrop.style.setProperty("--x", `${x}px`);
+          backdrop.style.setProperty("--y", `${y}px`);
+
+          if (expanded !== this.#current.expanded) {
+            console.log(width, height);
+            positioned.classList.toggle("expanded", expanded);
+            backdrop.classList.toggle("expanded", expanded);
+          }
+
           this.#current = { x, y, width, height, expanded };
         }
 
