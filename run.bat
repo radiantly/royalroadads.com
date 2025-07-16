@@ -1,5 +1,5 @@
 @echo off
-call :LOG >> rra.log
+call :LOG 2>&1 >> rra.log
 exit /B
 
 :LOG
