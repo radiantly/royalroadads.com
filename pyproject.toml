@@ -1,0 +1,11 @@
+[project]
+name = "royalroadads"
+version = "0.1.0"
+description = "Royal Road Ads"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pillow>=11.3.0",
+    "pydoll-python>=2.3.1",
+    "requests>=2.32.4",
+]
