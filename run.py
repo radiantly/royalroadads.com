@@ -1,3 +1,4 @@
+import os
 import shlex
 import shutil
 import subprocess
@@ -21,7 +22,7 @@ def main():
     here = Path(__file__).parent
     with open(here / "rra.log", "a") as f:
         for command in commands:
-            args = shlex.split(command)
+            args = shlex.split(command, posix=os.name == "posix")
             args[0] = shutil.which(args[0])
             print(args)
             subprocess.run(args, stdout=f, stderr=f, check=True, text=True, cwd=here)
