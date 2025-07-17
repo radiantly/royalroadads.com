@@ -12,7 +12,7 @@ commands = [
     "git reset --hard origin/gh-pages",
     "git rebase origin/main",
     "uv run main.py",
-    "git add docs\\300x250 docs\\200x300 docs\\fiction.json",
+    "git add docs",
     'git commit -m "Automated: Add ads"',
     "git push --force-with-lease origin gh-pages",
 ]
