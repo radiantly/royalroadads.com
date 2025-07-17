@@ -166,22 +166,63 @@
         gap: 20px;
       }
 
+      .rra-grid div.positioned > .left .cover-wrap {
+        display: flex;
+        position: relative;
+        border-radius: 2px;
+        overflow: hidden;
+        box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.7);
+      }
+
+      .rra-grid div.positioned > .left .cover-wrap::before {
+        content: "";
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5) 2px,
+          rgba(255, 255, 255, 0.2) 3px,
+          rgba(255, 255, 255, 0.1) 5px,
+          transparent 6px,
+          transparent 7px,
+          rgba(255, 255, 255, 0.1) 8px,
+          transparent 12px
+        );
+        box-shadow: inset -1px 1px 2px rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
       .rra-grid div.positioned > .left .cover-wrap img {
         width: 150px;
         height: 225px;
       }
 
       .rra-grid div.positioned > .left .read-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
         border: none;
         background-color: #337ab7;
         height: 40px;
         color: white;
         font-size: 16px;
         font-weight: 600;
+        transition: background-color 0.2s ease;
+      }
+
+      .rra-grid div.positioned > .left .read-btn:hover {
+        background-color: #2a6ea8;
       }
 
       .rra-grid div.positioned > .left .ad-wrap img {
         border-radius: 10px;
+      }
+
+      .rra-grid div.positioned:not(.external) > .left .ad-wrap {
+        cursor: default;
       }
 
       .rra-grid div.positioned > .right {
@@ -192,7 +233,7 @@
 
       .rra-grid div.positioned > .right .title {
         font-family: "Dot Matrix";
-        font-size: 20px;
+        font-size: 22px;
       }
 
       .rra-grid div.positioned > .right .summary {
@@ -243,7 +284,7 @@
           <div class="cover-wrap">
             <img src="#" />
           </div>
-          <button class="read-btn">Read now</button>
+          <a href="#" class="read-btn">Read now</a>
           <a href="#" class="ad-wrap" target="_blank">
             <img src="#" />
           </a>
@@ -319,6 +360,29 @@
     </template>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script>
+      class FictionBuddy {
+        static #dataPromise;
+        static {
+          this.#dataPromise = fetch("fiction.json")
+            .then((response) => response.json())
+            .then((obj) => obj?.entries ?? {});
+        }
+
+        static getFictionDetails(fictionId) {
+          return this.#dataPromise.then((deets) => {
+            if (deets.hasOwnProperty(fictionId))
+              return { id: fictionId, ...deets[fictionId] };
+            return null;
+          });
+        }
+
+        static getFictionDetailsFromLink(link) {
+          const match = link.match(/royalroad\.com\/fiction\/(\d+)/);
+          if (!match) return new Promise((resolve) => resolve(null));
+          return FictionBuddy.getFictionDetails(match[1]);
+        }
+      }
+
       class RectangleAd {
         static WIDTH = 300;
         static HEIGHT = 250;
@@ -330,6 +394,8 @@
         constructor(uid, alt, link, requestLayoutCallback) {
           this.#state = {
             requestLayoutCallback,
+            expandable: true,
+            fiction: null,
 
             // elements
             elements: null,
@@ -368,6 +434,14 @@
             alt,
             link,
           };
+
+          FictionBuddy.getFictionDetailsFromLink(link).then((details) => {
+            if (details === null) {
+              this.#state.expandable = false;
+              return;
+            }
+            this.#state.fiction = details;
+          });
         }
 
         get width() {
@@ -461,6 +535,10 @@
           return `300x250/${this.#required.uid}.webp`;
         }
 
+        get coverImgSrc() {
+          return `200x300/${this.#state.fiction.id}.webp`;
+        }
+
         #addElementHandlers(element, backdrop) {
           // const mouseenterHandler = () => {
           //   console.log(this.#state.fictionId, "entered");
@@ -473,11 +551,12 @@
           // gsap.set(backdrop, { opacity: 0.6 });
           // element.addEventListener("mouseenter", mouseenterHandler);
           // element.addEventListener("mouseleave", mouseleaveHandler);
-          // element.addEventListener("click", (event) => {
-          //   event.preventDefault();
-          //   this.#required.expanded = !this.#required.expanded;
-          //   this.#state.requestLayoutCallback();
-          // });
+          element.addEventListener("click", (event) => {
+            if (this.#state.expandable === false) return;
+            event.preventDefault();
+            this.#required.expanded = !this.#required.expanded;
+            this.#state.requestLayoutCallback();
+          });
         }
 
         #markSetContentSuccessful() {
@@ -491,9 +570,10 @@
           const fragment = template.content.cloneNode(true);
           const positioned = fragment.querySelector("div.positioned");
           if (this.#state.expanded) positioned.classList.add("expanded");
-          if (this.#state.fictionId === null)
+          if (this.#state.expandable === false)
             positioned.classList.add("external");
 
+          positioned.querySelector("a.read-btn").href = this.#required.link;
           positioned.querySelector("a.ad-wrap").href = this.#required.link;
 
           const img = positioned.querySelector("a.ad-wrap img");
@@ -504,6 +584,18 @@
           const backdrop = fragment.querySelector("img.backdrop");
           backdrop.src = this.adImgSrc;
           this.#addElementHandlers(positioned, backdrop);
+
+          if (this.#state.fiction !== null) {
+            const { title, description } = this.#state.fiction;
+            const titleElem = positioned.querySelector(".title");
+            titleElem.textContent = title;
+
+            const summaryElem = positioned.querySelector(".summary");
+            summaryElem.innerHTML = description;
+
+            const coverImageElem = positioned.querySelector(".cover-wrap img");
+            coverImageElem.src = this.coverImgSrc;
+          }
 
           this.#markSetContentSuccessful();
 
