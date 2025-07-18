@@ -362,6 +362,7 @@
     <script>
       class FictionBuddy {
         static #dataPromise;
+        static #cache = {};
         static {
           this.#dataPromise = fetch("fiction.json")
             .then((response) => response.json())
@@ -369,11 +370,14 @@
         }
 
         static getFictionDetails(fictionId) {
-          return this.#dataPromise.then((deets) => {
+          if (this.#cache.hasOwnProperty(fictionId))
+            return this.#cache[fictionId];
+
+          return (this.#cache[fictionId] = this.#dataPromise.then((deets) => {
             if (deets.hasOwnProperty(fictionId))
               return { id: fictionId, ...deets[fictionId] };
             return null;
-          });
+          }));
         }
 
         static getFictionDetailsFromLink(link) {
@@ -395,7 +399,6 @@
           this.#state = {
             requestLayoutCallback,
             expandable: true,
-            fiction: null,
 
             // elements
             elements: null,
@@ -419,6 +422,7 @@
             uid: null,
             alt: null,
             link: null,
+            fiction: null,
           };
 
           this.#required = {
@@ -433,6 +437,7 @@
             uid,
             alt,
             link,
+            fiction: null,
           };
 
           FictionBuddy.getFictionDetailsFromLink(link).then((details) => {
@@ -440,7 +445,7 @@
               this.#state.expandable = false;
               return;
             }
-            this.#state.fiction = details;
+            this.#required.fiction = details;
           });
         }
 
@@ -457,6 +462,7 @@
             uid: this.#required.uid,
             alt: this.#required.alt,
             link: this.#required.link,
+            fiction: this.#required.fiction,
           };
         }
 
@@ -492,7 +498,8 @@
           return (
             this.#current.uid !== this.#required.uid ||
             this.#current.alt !== this.#required.alt ||
-            this.#current.link !== this.#required.link
+            this.#current.link !== this.#required.link ||
+            this.#current.fiction !== this.#required.fiction
           );
         }
 
@@ -536,7 +543,7 @@
         }
 
         get coverImgSrc() {
-          return `200x300/${this.#state.fiction.id}.webp`;
+          return `200x300/${this.#required.fiction.id}.webp`;
         }
 
         #addElementHandlers(element, backdrop) {
@@ -559,45 +566,29 @@
           });
         }
 
-        #markSetContentSuccessful() {
+        #markPositionUpdateSuccessful() {
+          this.#current.x = this.#required.x;
+          this.#current.y = this.#required.y;
+          this.#current.width = this.#required.width;
+          this.#current.height = this.#required.height;
+          this.#current.expanded = this.#required.expanded;
+        }
+
+        #markContentUpdateSuccessful() {
           this.#current.uid = this.#required.uid;
           this.#current.alt = this.#required.alt;
           this.#current.link = this.#required.link;
+          this.#current.fiction = this.#required.fiction;
         }
 
         #createHTMLElements() {
           const template = document.getElementById("ad-element");
           const fragment = template.content.cloneNode(true);
           const positioned = fragment.querySelector("div.positioned");
-          if (this.#state.expanded) positioned.classList.add("expanded");
-          if (this.#state.expandable === false)
-            positioned.classList.add("external");
-
-          positioned.querySelector("a.read-btn").href = this.#required.link;
-          positioned.querySelector("a.ad-wrap").href = this.#required.link;
-
-          const img = positioned.querySelector("a.ad-wrap img");
-          img.src = this.adImgSrc;
-          img.alt = this.#required.alt;
-          img.title = this.#required.alt;
 
           const backdrop = fragment.querySelector("img.backdrop");
-          backdrop.src = this.adImgSrc;
+
           this.#addElementHandlers(positioned, backdrop);
-
-          if (this.#state.fiction !== null) {
-            const { title, description } = this.#state.fiction;
-            const titleElem = positioned.querySelector(".title");
-            titleElem.textContent = title;
-
-            const summaryElem = positioned.querySelector(".summary");
-            summaryElem.innerHTML = description;
-
-            const coverImageElem = positioned.querySelector(".cover-wrap img");
-            coverImageElem.src = this.coverImgSrc;
-          }
-
-          this.#markSetContentSuccessful();
 
           return { positioned, backdrop };
         }
@@ -610,10 +601,11 @@
           this.#required.expanded = expanded ?? this.#required.expanded;
         }
 
-        setContent({ uid, alt, link }) {
+        setContent({ uid, alt, link, fiction }) {
           this.#required.uid = uid ?? this.#required.uid;
           this.#required.alt = alt ?? this.#required.alt;
           this.#required.link = link ?? this.#required.link;
+          this.#required.fiction = fiction ?? this.#required.fiction;
         }
 
         swapContent(rectangleAd) {
@@ -642,20 +634,38 @@
             backdrop.classList.toggle("expanded", expanded);
           }
 
-          this.#current = { x, y, width, height, expanded };
+          this.#markPositionUpdateSuccessful();
         }
 
         updateContent() {
           if (!this.needsContentUpdate) return;
 
-          const { positioned } = this.elements;
+          const { positioned, backdrop } = this.elements;
+          if (this.#state.expandable === false)
+            positioned.classList.add("external");
+
+          positioned.querySelector("a.read-btn").href = this.#required.link;
           positioned.querySelector("a.ad-wrap").href = this.#required.link;
 
           const img = positioned.querySelector("a.ad-wrap img");
           img.src = this.adImgSrc;
           img.alt = this.#required.alt;
           img.title = this.#required.alt;
-          this.#markSetContentSuccessful();
+
+          backdrop.src = this.adImgSrc;
+
+          if (this.#required.fiction !== null) {
+            const { title, description } = this.#required.fiction;
+            const titleElem = positioned.querySelector(".title");
+            titleElem.textContent = title;
+
+            const summaryElem = positioned.querySelector(".summary");
+            summaryElem.innerHTML = description;
+
+            const coverImageElem = positioned.querySelector(".cover-wrap img");
+            coverImageElem.src = this.coverImgSrc;
+          }
+          this.#markContentUpdateSuccessful();
         }
       }
 
