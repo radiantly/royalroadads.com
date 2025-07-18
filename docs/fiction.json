@@ -3494,10 +3494,10 @@
       "followers": 5190,
       "favorites": 1338,
       "ratings": 791,
-      "total_views": 1148755,
+      "total_views": 1149332,
       "word_count": 150857,
       "page_count": 548,
-      "timestamp": 1752865231
+      "timestamp": 1752868805
     },
     "119107": {
       "title": "Assassin Awakens: A LitRPG Progression Fantasy",
@@ -3557,6 +3557,31 @@
       "word_count": 155403,
       "page_count": 565,
       "timestamp": 1752867005
+    },
+    "122745": {
+      "title": "SpaceShip Crafting System",
+      "slug": "spaceship-crafting-system",
+      "description": "<p><strong>Tanya Furrow thought her biggest problem was going to be the boredom of working on her homeworld after graduating as one of the top students in her spaceship engineering class. Then a dimensional storm crashed her shuttle with no rescue in sight.</strong></p>\n<p><strong>Stranded and desperate, she discovers an ancient alien artifact that bonds with her. The Artifact is a system that adapts to her engineering expertise, transforming into something unprecedented: an intuitive shipbuilding interface that reveals lost alien technologies.</strong></p>\n<p><strong>Now Tanya must master her newfound abilities to craft vessels from scrap and salvage, unlock the secrets of the vanished civilisation, and build her way to glory. With each ship she constructs and every level she gains, she realises her crash landing might not have been an accident and returning home might not be her real destiny.</strong></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "female_lead",
+        "sci_fi",
+        "adventure",
+        "technologically_engineered",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.351955,
+      "author_id": 647039,
+      "author_name": "Zeebie",
+      "followers": 1492,
+      "favorites": 273,
+      "ratings": 179,
+      "total_views": 146615,
+      "word_count": 107958,
+      "page_count": 392,
+      "timestamp": 1752868805
     }
   }
 }
