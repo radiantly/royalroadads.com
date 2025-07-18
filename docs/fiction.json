@@ -19,16 +19,16 @@
         "magic",
         "high_fantasy"
       ],
-      "average_rating": 4.66899,
+      "average_rating": 4.67647,
       "author_id": 475602,
       "author_name": "AmberAtlas",
-      "followers": 3311,
-      "favorites": 534,
-      "ratings": 287,
-      "total_views": 295122,
-      "word_count": 128200,
-      "page_count": 466,
-      "timestamp": 1752687027
+      "followers": 3325,
+      "favorites": 540,
+      "ratings": 289,
+      "total_views": 303594,
+      "word_count": 133525,
+      "page_count": 485,
+      "timestamp": 1752863405
     },
     "112647": {
       "title": "The Legacy of the Moon and the Sun: Feelings That Change Even History",
@@ -3363,6 +3363,36 @@
       "word_count": 25129,
       "page_count": 91,
       "timestamp": 1752861605
+    },
+    "109430": {
+      "title": "Witches, Boys, and Other Monsters",
+      "slug": "witches-boys-and-other-monsters",
+      "description": "<div>\n<p><strong>Beware of Old Witch Scraggsies! </strong><br>A pact with the darkness left her twisted and deformed. Strange noises and flashes of light have been coming out of her basement at night, and her pet monster stalks children from the shadows.<br><br><strong>Lies. All lies.</strong><br>Eliza Scaggs (not Scraggsies, thank you very much) is tired of all the rumors about her. Sure, she\u2019s looking a bit haggard as of late, but she\u2019s been working herself to the bone on a secret government project to prove that she, the only woman in the wizard\u2019s guild, actually belongs there. So, maybe she\u2019s got some gray in her hair, but she\u2019s not old, not old-old\u2014 and the only thing she\u2019s made a pact with is her purveyor of rot brew tea.<br><br>Okay, the pet monster thing is true, but Throat Ripper hasn\u2019t caught anyone, not yet.<br><br>She\u2019s even taken on a new apprentice...<br>Mentoring a teen, that\u2019s not something a twisted hell spawn would do, right?<br>Still, there is something off about the boy, Oliver. He\u2019s a good kid, but he\u2019s quiet, too quiet, and she\u2019s worried that when he asks if she can \u201cfix\u201d people, he means himself...<br><br><span>&nbsp;\u2b25 </span><strong>New Chapters weekly, featuring human drawn art!</strong><br>&nbsp;<span>\u2b25</span><span> </span><strong>Magic is Science</strong>, driving the industrial revolution.<br><span>&nbsp;\u2b25 </span>An evolving <strong>Epic </strong>tale of <strong>Wars and Gods</strong>.<br><span>&nbsp;\u2b25 Character arcs of <strong>Redemption and Found Family.</strong></span><br><span>&nbsp;</span><span>\u2b25</span> <strong>LGBT: </strong>Trans, lesbian, and gay main characters.&nbsp;<br>&nbsp;<span>\u2b25</span> <strong>Straight </strong>main characters too!<br><span>&nbsp;\u2b25</span> Book one is 49 chapters around 450 pages<br><br></p>\n</div>",
+      "status": "Ongoing",
+      "tags": [
+        "urban_fantasy",
+        "psychological",
+        "steampunk",
+        "multiple_lead",
+        "drama",
+        "fantasy",
+        "historical",
+        "gender_bender",
+        "female_lead",
+        "magic",
+        "sensitive",
+        "high_fantasy"
+      ],
+      "average_rating": 4.852565,
+      "author_id": 383606,
+      "author_name": "blugail",
+      "followers": 570,
+      "favorites": 123,
+      "ratings": 78,
+      "total_views": 22841,
+      "word_count": 52865,
+      "page_count": 192,
+      "timestamp": 1752863405
     }
   }
 }
