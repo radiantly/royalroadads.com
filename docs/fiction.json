@@ -771,13 +771,13 @@
       "average_rating": 4.145455,
       "author_id": 514338,
       "author_name": "Miko Melina",
-      "followers": 983,
-      "favorites": 180,
+      "followers": 985,
+      "favorites": 182,
       "ratings": 55,
-      "total_views": 74381,
+      "total_views": 74994,
       "word_count": 158108,
       "page_count": 574,
-      "timestamp": 1752793205
+      "timestamp": 1752832805
     },
     "118810": {
       "title": "The Demon King's Fate: A Kingdom Building LitRPG",
@@ -2518,6 +2518,35 @@
       "word_count": 18441,
       "page_count": 67,
       "timestamp": 1752831005
+    },
+    "90224": {
+      "title": "Orphan [LitRPG Adventure] - Book One Complete!",
+      "slug": "orphan-litrpg-adventure-book-one-complete",
+      "description": "<p><strong>Potential is everything within the Vitrian Empire. Until a provincial orphan boy has the honor of surpassing them.</strong></p>\n<p>An orphan with tremendous potential is found in the ruins of the Old City. Aware of the myriad risks and rewards that could come from harboring such a talent, the Assessor Elena bends the rule of law to adopt him into the House of Hunger.</p>\n<p>To earn his place Alarion will need to scrape and struggle. He must learn the ways of his new House, power through a grueling training regime and battle deadly fiends. All to obtain some semblance of strength before those who hate what he represents finally close in.</p>\n<p>After all, potential unrealized is no power at all.</p>\n<p>----</p>\n<p>What to expect:</p>\n<p>- A unique and crunchy LitRPG system</p>\n<p>- Weak to strong to OP. Eventually.</p>\n<p>- A MC who is stubborn, quite literally to a fault. But not stupid.</p>\n<p>- Swords and sorcery of numerous varieties. Emphasis on swords. Big Swords.</p>\n<p>- My bad attempts at dry humor!</p>\n<p>- No harems!</p>\n<p>- Detailed worldbuilding on a planet divergent from the Tolkien norm (Sorry no elves here!)</p>\n<p>----</p>\n<p>Book 1 complete!</p>\n<p>Chapter every other day until the start of August, then daily after that point.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "martial_arts",
+        "male_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "sci_fi",
+        "strong_lead",
+        "profanity",
+        "gamelit"
+      ],
+      "average_rating": 4.63973,
+      "author_id": 233381,
+      "author_name": "Guy Incognito",
+      "followers": 4195,
+      "favorites": 997,
+      "ratings": 891,
+      "total_views": 1265442,
+      "word_count": 257521,
+      "page_count": 936,
+      "timestamp": 1752832805
     }
   }
 }
