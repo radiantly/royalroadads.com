@@ -1453,16 +1453,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.707445,
+      "average_rating": 4.706715,
       "author_id": 625911,
       "author_name": "NB.Dravenlord",
-      "followers": 2810,
-      "favorites": 554,
-      "ratings": 282,
-      "total_views": 185071,
-      "word_count": 97637,
+      "followers": 2813,
+      "favorites": 555,
+      "ratings": 283,
+      "total_views": 185533,
+      "word_count": 97635,
       "page_count": 355,
-      "timestamp": 1752823805
+      "timestamp": 1752829205
     },
     "100599": {
       "title": "These Reincarnators Are Sus! Sleuthing in Another World",
@@ -2360,6 +2360,64 @@
       "word_count": 27413,
       "page_count": 99,
       "timestamp": 1752827406
+    },
+    "104265": {
+      "title": "A week in the life of",
+      "slug": "a-week-in-the-life-of",
+      "description": "<p>A scientist wakes up in a modified fMRI scanner. They feel strange. Has the experiment worked?</p>",
+      "status": "Completed",
+      "tags": [
+        "loop",
+        "sci_fi",
+        "hard_sci-fi",
+        "one_shot",
+        "time_travel"
+      ],
+      "average_rating": 4.80822,
+      "author_id": 636779,
+      "author_name": "ptmesis",
+      "followers": 54,
+      "favorites": 84,
+      "ratings": 73,
+      "total_views": 4667,
+      "word_count": 5835,
+      "page_count": 21,
+      "timestamp": 1752829205
+    },
+    "118891": {
+      "title": "New Life As A Max Level Archmage",
+      "slug": "new-life-as-a-max-level-archmage",
+      "description": "<p>Vivienne has poured so many hours into the massively popular VRMMO The Seven Cataclysms that she has more of a life inside the game than out. It's a fitting irony, then, when one day she wakes in the body of her maxed-out demon-mage 'Vivisari'\u2014and finds that now, the game really is her life.</p>\n<p>But the world of Seven Cataclysms isn't what she remembers. A hundred years have passed since the game's concluding events, and Vivisari is a hero of myth thought long dead. As she meets old faces and new in this familiar-yet-not world\u2014casting spells of mass destruction and slowly reforming the scattered-to-the-wind remnants of her Guild\u2014she starts to wonder if she was sent here with a purpose.&nbsp;</p>\n<p>Rumors of a sequel had been circulating just before her unbelievable reincarnation. Did she, perhaps, need to fear an impending Eighth Cataclysm?</p>\n<p>If so, it's a good thing she has firepower in spades.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "progression",
+        "comedy",
+        "adventure",
+        "drama",
+        "fantasy",
+        "reincarnation",
+        "slice_of_life",
+        "supernatural",
+        "female_lead",
+        "strong_lead",
+        "secret_identity",
+        "magic",
+        "graphic_violence",
+        "gamelit",
+        "high_fantasy"
+      ],
+      "average_rating": 4.814905,
+      "author_id": 729989,
+      "author_name": "ArcaneCadence",
+      "followers": 11796,
+      "favorites": 2572,
+      "ratings": 1899,
+      "total_views": 783799,
+      "word_count": 69199,
+      "page_count": 251,
+      "timestamp": 1752829205
     }
   }
 }
