@@ -3049,16 +3049,16 @@
         "hard_sci-fi",
         "dystopia"
       ],
-      "average_rating": 4.57595,
+      "average_rating": 4.525,
       "author_id": 707702,
       "author_name": "ReignyDaze",
-      "followers": 505,
-      "favorites": 148,
-      "ratings": 79,
-      "total_views": 61925,
+      "followers": 510,
+      "favorites": 149,
+      "ratings": 80,
+      "total_views": 62169,
       "word_count": 357168,
       "page_count": 1298,
-      "timestamp": 1752850805
+      "timestamp": 1752870605
     },
     "123595": {
       "title": "The 13th Room",
@@ -3582,6 +3582,37 @@
       "word_count": 107958,
       "page_count": 392,
       "timestamp": 1752868805
+    },
+    "118706": {
+      "title": "I'm a Fake Genius in a Cultivation Sect",
+      "slug": "im-a-fake-genius-in-a-cultivation-sect",
+      "description": "<p>A young man from Earth dies and his soul is placed in a nameless body in a Cultivation World. Handsome, intelligent and blessed by the heavens, Jun De seems fated to dominate the world.&nbsp;</p>\n<p>But all he wants to do is to live his life to the fullest, enjoying everything that can be enjoyed and starting a Harem of Jade-like beauties!&nbsp;</p>\n<p>Join Jun De as he begins his cultivation journey!&nbsp;</p>",
+      "status": "Ongoing",
+      "tags": [
+        "reincarnation",
+        "xianxia",
+        "comedy",
+        "male_lead",
+        "action",
+        "fantasy",
+        "romance",
+        "martial_arts",
+        "harem",
+        "slice_of_life",
+        "strong_lead",
+        "magic",
+        "attractive_lead"
+      ],
+      "average_rating": 4.458335,
+      "author_id": 277265,
+      "author_name": "TG Parsons",
+      "followers": 137,
+      "favorites": 24,
+      "ratings": 12,
+      "total_views": 19043,
+      "word_count": 65956,
+      "page_count": 239,
+      "timestamp": 1752870605
     }
   }
 }
