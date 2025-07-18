@@ -536,13 +536,13 @@
       "average_rating": 4.2,
       "author_id": 89051,
       "author_name": "Timothy Baril",
-      "followers": 278,
-      "favorites": 59,
+      "followers": 279,
+      "favorites": 60,
       "ratings": 15,
-      "total_views": 31694,
+      "total_views": 32068,
       "word_count": 157236,
       "page_count": 571,
-      "timestamp": 1752820205
+      "timestamp": 1752874205
     },
     "121186": {
       "title": "The Apocalypse Grinder (LitRPG Apocalypse, Timeloop)",
@@ -1688,13 +1688,13 @@
       "average_rating": 4.442305,
       "author_id": 413099,
       "author_name": "SlaughterBot",
-      "followers": 3685,
-      "favorites": 943,
+      "followers": 3690,
+      "favorites": 947,
       "ratings": 442,
-      "total_views": 1390393,
-      "word_count": 704204,
-      "page_count": 2560,
-      "timestamp": 1752804005
+      "total_views": 1394267,
+      "word_count": 707051,
+      "page_count": 2571,
+      "timestamp": 1752874205
     },
     "119783": {
       "title": "FFF-Class 'Unlucky Antagonist' [Villain's Origin Story, LitRPG, Massive Fantasy Worldbuilding]",
@@ -3688,6 +3688,34 @@
       "word_count": 53852,
       "page_count": 195,
       "timestamp": 1752872405
+    },
+    "92129": {
+      "title": "Reflections on the Warpath - [An Isekai Progression Fantasy]",
+      "slug": "reflections-on-the-warpath-an-isekai-progression",
+      "description": "<p><strong>Dreams don\u2019t mean shit when you\u2019re dead.</strong></p>\n<p>Jay <em>Lightning</em> Leonard was one fight away from becoming the Heavyweight champion of the world. His brother\u2019s dream before him, and their father\u2019s dream before that.</p>\n<p>But the path to the top is paved with shattered ambitions. After Jay kisses the canvas one final time, he wakes up in a black void. Endless, other than the golden screen of text in front of him.</p>\n<p><strong>Do you wish to enter the Second Chance Coliseum?</strong></p>\n<p>There are no rules in the Second Chance Coliseum, no referees or regulations. Gladiators harmonise with fragments of truth, bending worldly essences beneath their will.</p>\n<p>When Jay\u2019s first opponent enters the fight with a greatsword, and all he has is his boxing gear. Jay realises he needs to reconsider everything he knows about fighting.&nbsp;</p>\n<p>Forget the belt.</p>\n<p>Forget the glory.</p>\n<p>Jay\u2019s fighting just to live another week.</p>\n<hr>\n<p><strong>What to expect:</strong></p>\n<p>- An introspective, cultivation-like magic system.</p>\n<p>- A mix of teamwork and solo progression.</p>\n<p>- Preparation. A lot of preparation.</p>\n<p>- Tactical 1v1 Fights.</p>\n<p>- Chapters posted Tuesday and Friday at 10:00 GMT.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "progression",
+        "strategy",
+        "action",
+        "adventure",
+        "fantasy",
+        "martial_arts",
+        "profanity",
+        "graphic_violence"
+      ],
+      "average_rating": 4.546155,
+      "author_id": 465916,
+      "author_name": "One 2wo Hook",
+      "followers": 1289,
+      "favorites": 301,
+      "ratings": 130,
+      "total_views": 286350,
+      "word_count": 256801,
+      "page_count": 933,
+      "timestamp": 1752874205
     }
   }
 }
