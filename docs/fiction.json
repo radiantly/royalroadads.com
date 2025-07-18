@@ -2141,13 +2141,13 @@
       "average_rating": 4.71111,
       "author_id": 418562,
       "author_name": "Rowdha Al Sol",
-      "followers": 469,
+      "followers": 470,
       "favorites": 112,
       "ratings": 45,
-      "total_views": 36475,
+      "total_views": 36498,
       "word_count": 218794,
       "page_count": 795,
-      "timestamp": 1752820205
+      "timestamp": 1752847205
     },
     "117944": {
       "title": "The Jade Shadows Must Die [Cultivation LitRPG]",
@@ -2882,6 +2882,37 @@
       "word_count": 53803,
       "page_count": 195,
       "timestamp": 1752845405
+    },
+    "114817": {
+      "title": "Atop the Trees, Beneath the Mountains",
+      "slug": "atop-the-trees-beneath-the-mountains",
+      "description": "<p>The Elf empire is dying. The Dwarves have fallen to anarchy.</p>\n<p>When he's called to a distant tower, Esor an Amen believes he's taking an ordinary teaching job. Instead, he finds a dangerous family with ancient secrets...<em>and a dark lord obsessed with him.</em></p>\n<p>Lord Corvin stalks Esor through shadow and controls his every movement. Though Lord Corvin is set to marry a lady, he makes it clear there is only one prize he desires:<span>&nbsp;</span><em>Esor bound in his bed forever.</em></p>\n<p>The Dwarven Warlord approaches the port city. No army can stop him. He seeks a hostage as revenge, and he will not settle for less than Lord Corvin's lover. But there is more to this pursuit than Lord Corvin will reveal.</p>\n<p><strong>Whoever controls his heart controls the world.</strong></p>",
+      "status": "Ongoing",
+      "tags": [
+        "ruling_class",
+        "grimdark",
+        "multiple_lead",
+        "drama",
+        "adventure",
+        "fantasy",
+        "romance",
+        "gender_bender",
+        "male_lead",
+        "non-human_lead",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy"
+      ],
+      "average_rating": 3.375,
+      "author_id": 646639,
+      "author_name": "smreine",
+      "followers": 17,
+      "favorites": 8,
+      "ratings": 4,
+      "total_views": 5804,
+      "word_count": 101461,
+      "page_count": 368,
+      "timestamp": 1752847205
     }
   }
 }
