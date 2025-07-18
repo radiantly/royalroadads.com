@@ -593,6 +593,28 @@
           return { positioned, backdrop };
         }
 
+        computeHeight({ width }) {
+          if (!this.#required.expanded) return RectangleAd.HEIGHT;
+          // if (!this.#/) TODO: cache
+
+          const { positioned } = this.elements;
+
+          // set required properties
+          positioned.classList.add("expanded");
+          positioned.style.setProperty("--width", `${width}px`);
+          positioned.style.setProperty("--height", `auto`);
+
+          // calculate height
+          const { height } = positioned.getBoundingClientRect();
+
+          // reset properties
+          positioned.style.setProperty("--width", `${this.#current.width}px`);
+          positioned.style.setProperty("--height", `${this.#current.height}px`);
+          positioned.classList.toggle("expanded", this.#current.expanded);
+
+          return Math.ceil(height);
+        }
+
         setLayoutProps({ x, y, width, height, expanded }) {
           this.#required.x = x ?? this.#required.x;
           this.#required.y = y ?? this.#required.y;
@@ -739,7 +761,7 @@
           console.log(n, variances);
           let adsInLastRow = 0;
           let side = null;
-          let last_side_position = "right";
+          let lastSideOnRight = true;
           while (it.index < n) {
             let continueFlag = false;
 
@@ -769,21 +791,18 @@
 
                 // ead = expanded ad
                 const eadWidth = RectangleAd.MIN_WIDTH_EXPANDED + extraSpace;
-                const eadHeight = 730;
+                const eadHeight = ad.computeHeight({ width: eadWidth });
 
                 const { vx, vy } = variances[it.index];
                 side = {
-                  position: last_side_position === "right" ? "left" : "right",
+                  onRight: !lastSideOnRight,
                   width: eadWidth + variance + gap,
                   height: eadHeight + variance + gap,
                   tillY: eadHeight + vy + gap + it.y,
                   it: Object.assign({}, it),
                 };
-                last_side_position = side.position;
-                const x =
-                  side.position === "left"
-                    ? vx
-                    : vWidth - side.width + gap + vx;
+                lastSideOnRight = side.onRight;
+                const x = side.onRight ? vWidth - side.width + gap + vx : vx;
                 const y = vy + it.y;
                 this.#state.ads[it.index].setLayoutProps({
                   x,
@@ -812,7 +831,7 @@
                 (avWidth -
                   (adWidth * adsInThisRow + gap * (adsInThisRow - 1))) /
                   2
-              ) + (side?.position === "left" ? side.width : 0);
+              ) + (side?.onRight === false ? side.width : 0);
             for (let j = 0; j < adsInThisRow && it.index < n; j += 1) {
               const ad = this.#state.ads[it.index];
               if (ad.expanded) {
@@ -823,11 +842,16 @@
                     this.#state.ads[startIndex],
                   ];
                   it.index = startIndex;
-                  continueFlag = true;
-                  break;
                 } else {
-                  ad.swapContent(this.#state.ads[side.it.index]);
+                  this.#state.ads[side.it.index].setLayoutProps({
+                    expanded: false,
+                  });
+                  [it.y, it.index] = [side.it.y, side.it.index];
+                  lastSideOnRight = !lastSideOnRight;
+                  side = null;
                 }
+                continueFlag = true;
+                break;
               }
               const { vx, vy } = variances[it.index];
               ad.setLayoutProps({
