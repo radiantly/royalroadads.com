@@ -2070,16 +2070,16 @@
         "graphic_violence",
         "ruling_class"
       ],
-      "average_rating": 4.14978,
+      "average_rating": 4.15,
       "author_id": 341692,
       "author_name": "Kuzunalis",
-      "followers": 8220,
-      "favorites": 1891,
-      "ratings": 1579,
-      "total_views": 3539377,
+      "followers": 8230,
+      "favorites": 1894,
+      "ratings": 1580,
+      "total_views": 3547008,
       "word_count": 464440,
       "page_count": 1688,
-      "timestamp": 1752858005
+      "timestamp": 1752906606
     },
     "116872": {
       "title": "We Lease The Kraken! - A LitRPG Pet Shop System Story.",
@@ -4394,6 +4394,66 @@
       "word_count": 560429,
       "page_count": 2037,
       "timestamp": 1752904805
+    },
+    "123393": {
+      "title": "The Thirteenth Trumpet: Valkyrie",
+      "slug": "the-thirteenth-trumpet-valkyrie",
+      "description": "<p>When a fog rolled in over the British Isles, it didn\u2019t just blot out the sun\u2014it ended the world.</p>\n<p>Val, a Combat Medical Technician stationed in London, wakes to find her city drowned in a pale, choking mist. The power is out. The streets are silent. Her roommate, once human, is now a ravenous shell with dead eyes and savage teeth.</p>\n<p>As the United Kingdom is cut off from the world and swallowed by a veil of supernatural fog, Val must navigate the ruins of a fallen society where the dead walk. Survival isn\u2019t just about strength; it\u2019s about sacrifice, impossible choices, and uncovering the dark forces behind a plague born of science, sorcery\u2026 or something far worse?</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "post_apocalyptic",
+        "female_lead",
+        "action",
+        "fantasy",
+        "horror",
+        "mystery",
+        "graphic_violence",
+        "ai_assisted"
+      ],
+      "average_rating": 3.5,
+      "author_id": 764000,
+      "author_name": "D. M. Bird",
+      "followers": 19,
+      "favorites": 3,
+      "ratings": 3,
+      "total_views": 1458,
+      "word_count": 22239,
+      "page_count": 80,
+      "timestamp": 1752906606
+    },
+    "78931": {
+      "title": "Modern Monster",
+      "slug": "modern-monster",
+      "description": "<p><em>\"Everyone's a monster. Some just show it less than others.\"</em></p>\n<p>A small meteor struck the earth close to central Europe in the late 1800s. No one knows how or why it happened, but shortly after, monsters started appearing in the populace, ravaging and eating humans alive.</p>\n<p>&nbsp;Along with the phenomenon, humans started to change, causing their senses to heighten. From then on, humans began cultivating their new-found powers, but counterintuitively, the dangers of monsters kept increasing along with the phenomenon.</p>\n<p>Far into the future, the story follows Sen, a 16-year-old boy. He was smart, acting on critical thinking rather than emotions. However, not everything came naturally to him, like his genius brain. He was deprived of a necessary power the rest of the world wielded...&nbsp;</p>\n<p>Regardless of his <em>disability,</em> he was determined to find someone, someone who had been taken from him all too soon.&nbsp;<span style=\"text-decoration: line-through\"><br><br></span></p>\n<hr>\n<p><br><strong>What to expect\u2013<br><br></strong>The setting is a cyberpunk dystopian world, trashy and ridden with danger. Humans are forced to live in condensed cities to avoid monsters~&nbsp; &nbsp;<br><br>Heavy foreshadowing~&nbsp; (The story is planned out from start to finish)<br><br>Major Plot twists~&nbsp;<br><br>Character development~<br><br>Multiple POV's~<br><br>Thriller, murder mystery and drama~<br><br>OP MC / AntiHero~</p>\n<p>Psychological~ (Delves into the human condition)<br><br>Philosophical~ (Proposes moral dilemmas)</p>",
+      "status": "Ongoing",
+      "tags": [
+        "anti-hero_lead",
+        "war_and_military",
+        "psychological",
+        "multiple_lead",
+        "action",
+        "mystery",
+        "tragedy",
+        "cyberpunk",
+        "male_lead",
+        "secret_identity",
+        "strategy",
+        "graphic_violence",
+        "sensitive",
+        "dystopia",
+        "attractive_lead"
+      ],
+      "average_rating": 4.333335,
+      "author_id": 391360,
+      "author_name": "SenTheSenseless",
+      "followers": 395,
+      "favorites": 108,
+      "ratings": 45,
+      "total_views": 73041,
+      "word_count": 232748,
+      "page_count": 846,
+      "timestamp": 1752906606
     }
   }
 }
