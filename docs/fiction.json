@@ -2935,16 +2935,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.455885,
+      "average_rating": 4.46377,
       "author_id": 148536,
       "author_name": "NunuXD",
-      "followers": 961,
-      "favorites": 204,
-      "ratings": 68,
-      "total_views": 26606,
+      "followers": 962,
+      "favorites": 206,
+      "ratings": 69,
+      "total_views": 26771,
       "word_count": 22815,
       "page_count": 82,
-      "timestamp": 1752912005
+      "timestamp": 1752921005
     },
     "114710": {
       "title": "Engineering, Magic, and Kitsune",
@@ -3936,10 +3936,10 @@
       "followers": 940,
       "favorites": 255,
       "ratings": 150,
-      "total_views": 124794,
+      "total_views": 124882,
       "word_count": 188775,
       "page_count": 686,
-      "timestamp": 1752881405
+      "timestamp": 1752921005
     },
     "121435": {
       "title": "These Shattered Swords",
@@ -4674,6 +4674,36 @@
       "word_count": 122502,
       "page_count": 445,
       "timestamp": 1752919206
+    },
+    "93261": {
+      "title": "The Hero Business",
+      "slug": "the-hero-business",
+      "description": "<p><a href=\"https://www.amazon.com/gp/product/B0DNNPYQDR\" rel=\"noopener ugc nofollow\">All formats available on Amazon!</a></p>\n<p><a href=\"https://www.audible.com/pd/The-Hero-Business-Audiobook/B0FFPZRDNS?source_code=AUDFPWS0223189MWT-BK-ACX0-455874&amp;ref=acx_bty_BK_ACX0_455874_rh_us&amp;fbclid=IwY2xjawLLxl9leHRuA2FlbQIxMQBicmlkETFRUjB6S1VwbE1FMThTODhNAR5PZSF6r--_YVyKa7Cu4E8aUsoIaZ6eNlu5lgioOEOl7tEysOX2iJwGPGl3PA_aem_SaPE7oOqAl68vskeayubfw\" rel=\"noopener ugc nofollow\">Audiobook now available on Audible!</a></p>\n<p>\"<span>A very fun magical super hero story, that feels a bit like it\u2019s bringing a silver aged super hero into a modern anti-hero comic book...\" - <em>Coldforge, Royal Road</em></span></p>\n<p><strong>Hell was just the beginning</strong></p>\n<p>Tim Kovak was supposed to be a bad guy, the latest in a line of evil wizards bound by a demon contract, supervised by a six-hundred-year-old succubus named Lydia.</p>\n<p>With a little magic and a lot of luck, Tim broke the contract and set them both free. Now he\u2019s trying to be a superhero, learning the hard way that you can\u2019t save everybody, and some problems are too big to punch.</p>\n<p>Tim's trying to be a hero in a world that doesn't believe in heroes anymore, a world where even the good guys have been turned into cynical corporate slaves.</p>\n<p>He thought he had managed to flip the script and beat Hell at its own game, but demons are patient, and all debts eventually come due.</p>\n<hr>\n<p><span>\"The author skillfully blends lighter moments with more serious turns... The ending is superb (despite tragic losses) and teases the next installment.\" -&nbsp;</span><em>Kirkus Review</em><span><br><br></span><span>\"Duff continues to use humor to dissect real-world issues, making this story more than just a fun ride.\" -&nbsp;</span><em>FLhunter, Royal Road</em><span><br><br>\"Good mixture of humor and serious moments. Very neat world building.\" -&nbsp;</span><em>Arcane_Pozhar, Royal Road</em></p>\n<hr>\n<p>This is the second book in my series and this time I really am using Royal Road for its intended purpose, getting feedback from readers.</p>\n<p>I would encourage any new people to read the first book, and please make comments if you have feedback for this one.</p>\n<p>If something makes you laugh, if something makes you cringe, if you read something that makes you go WTF just happened, please let me know.</p>\n<p>First book is <a href=\"https://www.royalroad.com/author-dashboard/dashboard/86705\" rel=\"noopener ugc nofollow\">still here on Royal Road</a>, or you can <a href=\"https://www.amazon.com/dp/B0CVDSCB9S/\" rel=\"noopener ugc nofollow\">help me out and buy it here .</a></p>",
+      "status": "Completed",
+      "tags": [
+        "urban_fantasy",
+        "super_heroes",
+        "comedy",
+        "male_lead",
+        "action",
+        "fantasy",
+        "sci_fi",
+        "cyberpunk",
+        "supernatural",
+        "magic",
+        "profanity",
+        "sensitive"
+      ],
+      "average_rating": 4.6,
+      "author_id": 481226,
+      "author_name": "michaelbduff",
+      "followers": 178,
+      "favorites": 63,
+      "ratings": 35,
+      "total_views": 68769,
+      "word_count": 185277,
+      "page_count": 673,
+      "timestamp": 1752921005
     }
   }
 }
