@@ -144,7 +144,10 @@
         width: var(--width);
         height: var(--height);
         transform: translate(var(--x), var(--y));
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 2s ease 0.2s,
+          border 0.2s ease 0.2s;
+
+        border: 1px solid transparent;
 
         display: flex;
         gap: 20px;
@@ -233,6 +236,8 @@
 
       .rra-grid div.positioned > .right .title-row {
         display: flex;
+        opacity: 0;
+        animation: fade-in 0.2s ease 0.3s forwards;
       }
 
       .rra-grid div.positioned > .right .title {
@@ -266,6 +271,14 @@
 
       .rra-grid div.positioned > .right .summary {
         font-size: 0.9em;
+        opacity: 0;
+        animation: fade-in 0.3s ease 0.4s forwards;
+      }
+
+      .rra-grid div.positioned > .right hr {
+        border: none;
+        background-color: #ddd;
+        height: 2px;
       }
 
       .rra-grid div.positioned:not(.expanded) .left .cover-wrap,
@@ -286,6 +299,14 @@
         width: 150px;
         height: 125px;
         border-radius: 0;
+      }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </head>
@@ -428,6 +449,11 @@
               return;
             }
             this.#required.fiction = details;
+            // TODO: request layout here
+            // if we naively request layout here, a lot of ads will request layout at the same time once the fiction is loaded
+            // we need to
+            // 1. figure out if layout even needs to be computed (only needed for expanded ads)
+            // 2. throttle layout computations and skip if already updated
           });
         }
 
@@ -437,15 +463,6 @@
         get height() {
           // return this.#state.expanded ? 730 : RectangleAd.HEIGHT;
           return this.#required.height;
-        }
-
-        get content() {
-          return {
-            uid: this.#required.uid,
-            alt: this.#required.alt,
-            link: this.#required.link,
-            fiction: this.#required.fiction,
-          };
         }
 
         get expanded() {
@@ -513,11 +530,8 @@
           return timeline;
         }
 
-        get fictionId() {
-          const match = this.#required.link.match(
-            /royalroad\.com\/fiction\/(\d+)/
-          );
-          return match ? match[1] : null;
+        get expandable() {
+          return this.#state.expandable;
         }
 
         get adImgSrc() {
@@ -530,11 +544,9 @@
 
         #addElementHandlers(element, backdrop) {
           // const mouseenterHandler = () => {
-          //   console.log(this.#state.fictionId, "entered");
           //   this.hoverTween.play();
           // };
           // const mouseleaveHandler = () => {
-          //   console.log(this.#state.fictionId, "left");
           //   this.hoverTween.reverse();
           // };
           // gsap.set(backdrop, { opacity: 0.6 });
@@ -549,7 +561,7 @@
               this.#required.expanded = true;
 
             if (this.#current.expanded !== this.#required.expanded)
-              this.#state.requestLayoutCallback();
+              this.#state.requestLayoutCallback(this);
           });
         }
 
@@ -608,19 +620,6 @@
           this.#required.width = width ?? this.#required.width;
           this.#required.height = height ?? this.#required.height;
           this.#required.expanded = expanded ?? this.#required.expanded;
-        }
-
-        setContent({ uid, alt, link, fiction }) {
-          this.#required.uid = uid ?? this.#required.uid;
-          this.#required.alt = alt ?? this.#required.alt;
-          this.#required.link = link ?? this.#required.link;
-          this.#required.fiction = fiction ?? this.#required.fiction;
-        }
-
-        swapContent(rectangleAd) {
-          const tmp = rectangleAd.content;
-          rectangleAd.setContent(this.content);
-          this.setContent(tmp);
         }
 
         updatePosition() {
@@ -690,11 +689,12 @@
         }
 
         addAdEntries(entries) {
-          const requestLayoutCallback = () => {
+          const requestLayoutCallback = (ad) => {
             this.computeLayout(
               document.querySelector(".rra-grid").clientWidth,
               window.innerHeight,
-              window.scrollY
+              window.scrollY,
+              ad
             );
             this.updatePositions();
           };
@@ -702,7 +702,6 @@
             this.#state.ads.push(
               new RectangleAd(uid, entry.alt, entry.link, requestLayoutCallback)
             );
-          // this.#state.ads[4].setLayoutProps({ expanded: true });
         }
 
         #getVariances(count, variance) {
@@ -728,7 +727,7 @@
           return Math.floor((totWidth + gap) / (adWidth + gap));
         }
 
-        computeLayout(vWidth, vHeight, scrollY) {
+        computeLayout(vWidth, vHeight, scrollY, activeAd = null) {
           const gap = 10;
           const variance = 40; // TODO: make this dynamic based on vWidth or perRow
           const adWidth = RectangleAd.WIDTH + variance;
@@ -800,9 +799,6 @@
                 });
                 console.log("side", side);
                 it.index += 1;
-              } else {
-                // if side already exists but this is also expanded
-                // handle this
               }
             }
 
@@ -829,16 +825,23 @@
                     this.#state.ads[startIndex],
                   ];
                   it.index = startIndex;
+                  continueFlag = true;
+                  break;
                 } else {
-                  this.#state.ads[side.it.index].setLayoutProps({
-                    expanded: false,
-                  });
-                  [it.y, it.index] = [side.it.y, side.it.index];
-                  lastSideOnRight = !lastSideOnRight;
-                  side = null;
+                  const sideAd = this.#state.ads[side.it.index];
+                  // confirm that the ad that's already on the side is not the active ad.
+                  // active ad == ad that triggered this layout (eg, by click)
+                  if (sideAd !== activeAd) {
+                    sideAd.setLayoutProps({
+                      expanded: false,
+                    });
+                    [it.y, it.index] = [side.it.y, side.it.index];
+                    lastSideOnRight = !lastSideOnRight;
+                    side = null;
+                    continueFlag = true;
+                    break;
+                  }
                 }
-                continueFlag = true;
-                break;
               }
               const { vx, vy } = variances[it.index];
               ad.setLayoutProps({
@@ -851,6 +854,18 @@
               it.index += 1;
             }
             if (continueFlag) continue;
+
+            // expand random stories
+            // TODO: layout request needed when fiction is loaded. See note above
+            // if (
+            //   side === null &&
+            //   it.index < n &&
+            //   this.#state.ads[it.index].expandable
+            // )
+            //   this.#state.ads[it.index].setLayoutProps({
+            //     expanded: true,
+            //   });
+
             it.y += adHeight + gap;
           }
 
