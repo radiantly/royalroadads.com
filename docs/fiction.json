@@ -1810,16 +1810,16 @@
         "gamelit",
         "low_fantasy"
       ],
-      "average_rating": 4.451455,
+      "average_rating": 4.453225,
       "author_id": 543459,
       "author_name": "Soderberg",
       "followers": 3221,
       "favorites": 585,
-      "ratings": 309,
-      "total_views": 296833,
-      "word_count": 73878,
-      "page_count": 268,
-      "timestamp": 1752811206
+      "ratings": 310,
+      "total_views": 299837,
+      "word_count": 75438,
+      "page_count": 274,
+      "timestamp": 1752883205
     },
     "123292": {
       "title": "The Last [Mage] King - [Progression Fantasy X Epic Fantasy]",
@@ -3940,6 +3940,38 @@
       "word_count": 188775,
       "page_count": 686,
       "timestamp": 1752881405
+    },
+    "121435": {
+      "title": "These Shattered Swords",
+      "slug": "these-shattered-swords",
+      "description": "<p>They called him the Red Gale.</p>\n<p>The gods offered Danarre LeMott a second chance after his brutal death on the battlefield. They never said it would be easy.</p>\n<p>Reincarnated as a child of the realm's most feared sword clan, Danarre must navigate a childhood where weakness means death and siblings become enemies before they become adults. With the mind of a seasoned mercenary trapped in a child's body, he walks a dangerous line, showing enough talent to avoid being culled, but not enough to threaten the legitimate heirs.</p>\n<p>As ancient powers stir and enemies gather at the gates, this reborn warrior will forge his aura, sharpen his blade, and rise from despised bastard to something this world has never seen before.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "gamelit",
+        "reincarnation",
+        "progression",
+        "anti-hero_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "martial_arts",
+        "male_lead",
+        "strong_lead",
+        "magic",
+        "high_fantasy",
+        "war_and_military",
+        "ruling_class"
+      ],
+      "average_rating": 4.375,
+      "author_id": 235269,
+      "author_name": "drewkelly",
+      "followers": 60,
+      "favorites": 16,
+      "ratings": 4,
+      "total_views": 4338,
+      "word_count": 43436,
+      "page_count": 157,
+      "timestamp": 1752883205
     }
   }
 }
