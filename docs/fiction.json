@@ -405,16 +405,16 @@
         "mythos",
         "progression"
       ],
-      "average_rating": 4.47537,
+      "average_rating": 4.47805,
       "author_id": 208908,
       "author_name": "Astralium",
-      "followers": 2071,
-      "favorites": 400,
-      "ratings": 203,
-      "total_views": 144867,
-      "word_count": 76935,
+      "followers": 2079,
+      "favorites": 401,
+      "ratings": 205,
+      "total_views": 146719,
+      "word_count": 76933,
       "page_count": 279,
-      "timestamp": 1752892206
+      "timestamp": 1752931806
     },
     "111984": {
       "title": "Equilibrium: Bringing God's Light To This Pagan World",
@@ -1454,16 +1454,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.714285,
+      "average_rating": 4.71528,
       "author_id": 625911,
       "author_name": "NB.Dravenlord",
-      "followers": 2848,
-      "favorites": 564,
-      "ratings": 287,
-      "total_views": 190573,
+      "followers": 2862,
+      "favorites": 569,
+      "ratings": 288,
+      "total_views": 192519,
       "word_count": 97635,
       "page_count": 355,
-      "timestamp": 1752897605
+      "timestamp": 1752931806
     },
     "100599": {
       "title": "These Reincarnators Are Sus! Sleuthing in Another World",
@@ -4870,6 +4870,45 @@
       "word_count": 111726,
       "page_count": 406,
       "timestamp": 1752930005
+    },
+    "121243": {
+      "title": "The QuestWright: A LitRPG Quest Management Saga",
+      "slug": "the-questwright-a-litrpg-quest-management-saga",
+      "description": "<p>In a world reshaped by the System, Cassio Vale was passed over three separate times. On his final chance, the System finally responds with a rarely seen Calling: <strong>QuestWright</strong>.</p>\n<p>Tasked with drafting and assigning Quests in a world where survival is dependent on structure as much as strength, Cass must build his reputation from nothing, gain experience through smart delegation, and navigate a society held together by more than just blades.</p>\n<p>He doesn't wield a weapon. He doesn't cast spells. But with each successful task, each connection made, and each system mastered, he'll make the world just a little bit safer.</p>\n<p>One Quest at a time.</p>\n<hr>\n<p></p>\n<p><strong>Slow-building System Mastery.</strong></p>\n<p><strong>Logistics Puzzles.</strong></p>\n<p><strong>Progressive Impact.</strong></p>\n<p><strong>City-level Strategy.</strong></p>\n<hr>\n<p></p>\n<p><strong>QuestWright&nbsp;</strong>is a grounded LitRPG with slice-of-life elements and realistic progression. Cassio Vale isn't a fighter; he's a QuestWright, building a better future through logistics, leadership, and lived-in service. The story and his role will evolve as things continue.</p>\n<p>Experience comes from completion, while Reputation comes from results.</p>\n<p>Release schedule: Chapters are released on Mondays and Fridays, and most chapters will range in length from 2,000 to 3,000 words. Some will be longer, while others will be shorter, depending on the chapter's value. The series currently has six planned books, although that number may increase as the project progresses.</p>\n<p>Author's note: This, like all my stories, is a work in progress. That means it's a rough draft, with the finalized, eventual product being extensively edited and tightened. I truly hope you enjoy it, as I love the story dearly.</p>\n<p><span>Discord information:&nbsp;</span><a href=\"https://discord.gg/dsut8cwCMh\" rel=\"noopener ugc nofollow\">Link</a></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "urban_fantasy",
+        "dungeon",
+        "post_apocalyptic",
+        "adventure",
+        "comedy",
+        "fantasy",
+        "contemporary",
+        "slice_of_life",
+        "school_life",
+        "male_lead",
+        "strong_lead",
+        "magic",
+        "strategy",
+        "gamelit",
+        "low_fantasy",
+        "war_and_military",
+        "ruling_class",
+        "soft_sci-fi",
+        "dystopia",
+        "progression"
+      ],
+      "average_rating": 4.939025,
+      "author_id": 190479,
+      "author_name": "J.D. Mullenary Sr.",
+      "followers": 347,
+      "favorites": 71,
+      "ratings": 41,
+      "total_views": 10013,
+      "word_count": 43601,
+      "page_count": 158,
+      "timestamp": 1752931806
     }
   }
 }
