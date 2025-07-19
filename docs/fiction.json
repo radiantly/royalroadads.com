@@ -405,16 +405,16 @@
         "mythos",
         "progression"
       ],
-      "average_rating": 4.465,
+      "average_rating": 4.47537,
       "author_id": 208908,
       "author_name": "Astralium",
-      "followers": 2048,
-      "favorites": 396,
-      "ratings": 200,
-      "total_views": 141798,
-      "word_count": 74877,
-      "page_count": 272,
-      "timestamp": 1752843630
+      "followers": 2071,
+      "favorites": 400,
+      "ratings": 203,
+      "total_views": 144867,
+      "word_count": 76935,
+      "page_count": 279,
+      "timestamp": 1752892206
     },
     "111984": {
       "title": "Equilibrium: Bringing God's Light To This Pagan World",
@@ -1688,13 +1688,13 @@
       "average_rating": 4.442305,
       "author_id": 413099,
       "author_name": "SlaughterBot",
-      "followers": 3690,
-      "favorites": 947,
+      "followers": 3692,
+      "favorites": 948,
       "ratings": 442,
-      "total_views": 1394267,
+      "total_views": 1395351,
       "word_count": 707051,
       "page_count": 2571,
-      "timestamp": 1752874205
+      "timestamp": 1752892206
     },
     "119783": {
       "title": "FFF-Class 'Unlucky Antagonist' [Villain's Origin Story, LitRPG, Massive Fantasy Worldbuilding]",
@@ -4048,6 +4048,39 @@
       "word_count": 97649,
       "page_count": 355,
       "timestamp": 1752888605
+    },
+    "84772": {
+      "title": "The Genesis Saga",
+      "slug": "the-genesis-saga",
+      "description": "<p><strong>Adrian was supposed to die in that lab \u2014 broken, nameless, and forgotten.</strong></p>\n<p>But when an alien scouting team finds him barely alive, everything changes. For Adrian. For Reya. And for the galaxy.</p>\n<p>Reya\u2019s mission was meant to be simple. Instead, she\u2019s captured, experimented on, and left with a single truth: there\u2019s someone else in the facility. A human.</p>\n<p>When her team uncovers Adrian, they don\u2019t just find a survivor \u2014 they find a man who shouldn\u2019t exist. His presence threatens everything they believe about their war, their people, and themselves.</p>\n<p><em>The Genesis Saga</em> is a deeply emotional sci-fi drama about trauma, survival, and rediscovery. Follow Adrian as he learns to live again \u2014 and reshape a world that was never meant for him.</p>\n<p><span>Chapter releases are 5 pm EDT (GMT-5) on Tuesdays and Fridays.</span></p>\n<p><strong>What to expect:</strong></p>\n<p>* Rich, evolving character arcs</p>\n<p>* Emotionally immersive storytelling</p>\n<p>* Exploration of trauma, identity, and healing</p>\n<p>* Grounded sci-fi with political and moral complexity</p>\n<p>* Slow-burn romance and found family dynamics</p>\n<p>* A longform mystery that unfolds over time</p>\n<p><strong>What not to expect:</strong></p>\n<p>* Fast pacing or constant action \u2014 this story takes its time on purpose</p>\n<p>* Harem dynamics or power fantasies</p>\n<p>* Simple answers or light-hearted tone</p>",
+      "status": "Ongoing",
+      "tags": [
+        "space_opera",
+        "psychological",
+        "multiple_lead",
+        "sci_fi",
+        "drama",
+        "mystery",
+        "male_lead",
+        "female_lead",
+        "non-human_lead",
+        "graphic_violence",
+        "sensitive",
+        "genetically_engineered",
+        "first_contact",
+        "soft_sci-fi",
+        "attractive_lead"
+      ],
+      "average_rating": 3.67114,
+      "author_id": 466078,
+      "author_name": "Nicholas Dufresne",
+      "followers": 1158,
+      "favorites": 286,
+      "ratings": 149,
+      "total_views": 416131,
+      "word_count": 390842,
+      "page_count": 1421,
+      "timestamp": 1752892206
     }
   }
 }
