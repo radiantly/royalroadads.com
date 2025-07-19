@@ -808,16 +808,16 @@
         "progression",
         "attractive_lead"
       ],
-      "average_rating": 4.375,
+      "average_rating": 4.40476,
       "author_id": 732779,
       "author_name": "Zerix02",
-      "followers": 400,
-      "favorites": 79,
-      "ratings": 20,
-      "total_views": 32879,
-      "word_count": 104412,
-      "page_count": 379,
-      "timestamp": 1752777005
+      "followers": 420,
+      "favorites": 82,
+      "ratings": 21,
+      "total_views": 35032,
+      "word_count": 106455,
+      "page_count": 387,
+      "timestamp": 1752937205
     },
     "112473": {
       "title": "The Dungeon Master: It's a Magical World",
@@ -4934,6 +4934,40 @@
       "word_count": 280694,
       "page_count": 1020,
       "timestamp": 1752933605
+    },
+    "123515": {
+      "title": "Dreams of Joel",
+      "slug": "dreams-of-joel",
+      "description": "<p>In a solar system made up of four worlds, blood and magic are the source of all power. Four empires in conflict since time immemorial seek hegemony over the system, while cults of all kinds try to fight injustice or destroy everything, through the use of portals and mythical magicians capable of traveling between dimensions.</p>\n<p>It follows the story of Joel, an orphan in one of the empires, with the blood of a magician, but without the ability to use magic. What he does have, however, is the strange power to dream of a strange, unknown world in the minds of very peculiar individuals. A world without magic, but full of interesting people capable of reaching the clouds and flying in strange metal artifacts, as well as being able to destroy each other in such brutal ways that sometimes seem to surpass the power of the strongest magicians in the system.</p>\n<p>What will Joel do with this power?<br>Will he uncover the great mysteries of the system and the four empires?&nbsp;<br>Will he be able to handle so much information and the memories of so many people?</p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "anti-hero_lead",
+        "war_and_military",
+        "male_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "mystery",
+        "strong_lead",
+        "magic",
+        "strategy",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy",
+        "ai_assisted"
+      ],
+      "average_rating": 0,
+      "author_id": 768647,
+      "author_name": "Blackmercury",
+      "followers": 5,
+      "favorites": 2,
+      "ratings": 0,
+      "total_views": 934,
+      "word_count": 37943,
+      "page_count": 137,
+      "timestamp": 1752937205
     }
   }
 }
