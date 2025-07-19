@@ -668,16 +668,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.47059,
+      "average_rating": 4.5,
       "author_id": 553727,
       "author_name": "Night Prince",
-      "followers": 704,
-      "favorites": 142,
-      "ratings": 34,
-      "total_views": 22259,
-      "word_count": 37902,
+      "followers": 722,
+      "favorites": 148,
+      "ratings": 36,
+      "total_views": 23429,
+      "word_count": 37901,
       "page_count": 137,
-      "timestamp": 1752908405
+      "timestamp": 1752948005
     },
     "95818": {
       "title": "Tales of the Endless Empire [LitRPG Apocalypse]",
@@ -5183,6 +5183,39 @@
       "word_count": 165790,
       "page_count": 602,
       "timestamp": 1752946205
+    },
+    "118792": {
+      "title": "Shattered Pantheon",
+      "slug": "shattered-pantheon",
+      "description": "<p>What if you were given a second chance?</p>\n<p>What if you saw what awaits beyond the veil?</p>\n<p>Would you live life to its fullest, accepting the final embrace of the void?</p>\n<p>Or would you flee from death through the pursuit of immortality?</p>\n<p>I choose neither. All men are due a final rest, and I will be the one to deliver it.</p>\n<p>But I need not act alone.</p>\n<p>My fear of death pales in comparison to the rage of the primordial creatures of this land, and it is that rage that will push me forward.&nbsp;</p>\n<p>I am Rex Jaeger. I am a Druid. By my hand, the natural order will be restored\u2014even if gods must be pulled from their thrones.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "progression",
+        "anti-hero_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "reincarnation",
+        "school_life",
+        "supernatural",
+        "male_lead",
+        "magic",
+        "graphic_violence",
+        "high_fantasy",
+        "war_and_military"
+      ],
+      "average_rating": 4.5625,
+      "author_id": 744683,
+      "author_name": "Mischief Meowker",
+      "followers": 95,
+      "favorites": 23,
+      "ratings": 8,
+      "total_views": 9324,
+      "word_count": 98257,
+      "page_count": 357,
+      "timestamp": 1752948005
     }
   }
 }
