@@ -668,16 +668,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.46875,
+      "average_rating": 4.47059,
       "author_id": 553727,
       "author_name": "Night Prince",
-      "followers": 696,
-      "favorites": 137,
-      "ratings": 32,
-      "total_views": 21977,
+      "followers": 704,
+      "favorites": 142,
+      "ratings": 34,
+      "total_views": 22259,
       "word_count": 37902,
       "page_count": 137,
-      "timestamp": 1752890405
+      "timestamp": 1752908405
     },
     "95818": {
       "title": "Tales of the Endless Empire [LitRPG Apocalypse]",
@@ -4454,6 +4454,38 @@
       "word_count": 232748,
       "page_count": 846,
       "timestamp": 1752906606
+    },
+    "97647": {
+      "title": "Amongst the Stars of Cygnus [Hard Sci-fi Survival]",
+      "slug": "amongst-the-stars-of-cygnus-hard-sci-fi-survival",
+      "description": "<p>Stranded in space and time, the few survivors of the colony ship Dolya struggle to build a home amongst the stars.</p>\n<p>---</p>\n<p>Awakening in a derelict space craft that overshot their intended destination by 70,000 years, third engineer Elisa Woodward is thrust into command of a rag-tag band of space colonists and their ship AI ARI. After surviving the initial rough landing on a harsh desert planet, the crew must rely on their ingenuity and determination to survive and ultimately thrive. Faced with a harsh environment and mysterious alien ecosystem, the colonists set out to explore an unforgiving environment that offers both opportunities and threats. Meanwhile, tension brews under the surface, as some seek to restore the corpocratic rule of the old order, while others will use any means necessary to defend their newfound freedom.</p>\n<p>---</p>\n<p><strong>Inspirations:</strong></p>\n<p>Classic sci-fi from Isaac Azimov, Larry Niven and Arthur C Clarke, but tempered by hard sci-fi such as The Expanse and Blade Runner and including big complex plot arcs as seen in God Emperor of Dune and Three Body Problem and including advanced key technologies as seen in Neuromancer and the Culture novels, while remaining grounded in realism.</p>\n<p><strong>What to expect:</strong></p>\n<p>- Slow-burn colony building and development</p>\n<p>- Survival and exploration on a harsh and unforgiving alien desert planet</p>\n<p>- Progression from low-tech to god-tech</p>\n<p>- Multiple main characters with their own desires, story arcs and motivations</p>\n<p>- Rational decision-making and a deep but logical plot</p>\n<p>- Ethical dilemmas and philosophical issues</p>\n<p>- Factions, clashes, drama and power struggles</p>\n<p>- Alien encounters</p>\n<p>- Chapter illustration, some original from professional sci-fi concept artists, others AI generated and painted over</p>",
+      "status": "Ongoing",
+      "tags": [
+        "space_opera",
+        "ruling_class",
+        "multiple_lead",
+        "sci_fi",
+        "female_lead",
+        "strategy",
+        "profanity",
+        "sensitive",
+        "genetically_engineered",
+        "technologically_engineered",
+        "first_contact",
+        "hard_sci-fi",
+        "soft_sci-fi",
+        "artificial_intelligence"
+      ],
+      "average_rating": 4.363205,
+      "author_id": 356536,
+      "author_name": "Provider",
+      "followers": 1696,
+      "favorites": 308,
+      "ratings": 106,
+      "total_views": 1274838,
+      "word_count": 176532,
+      "page_count": 641,
+      "timestamp": 1752908405
     }
   }
 }
