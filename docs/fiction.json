@@ -3148,16 +3148,16 @@
         "ruling_class",
         "progression"
       ],
-      "average_rating": 4.867345,
+      "average_rating": 4.85156,
       "author_id": 376005,
       "author_name": "R.C. Joshua",
-      "followers": 689,
-      "favorites": 97,
-      "ratings": 49,
-      "total_views": 11071,
-      "word_count": 28553,
-      "page_count": 103,
-      "timestamp": 1752856205
+      "followers": 901,
+      "favorites": 132,
+      "ratings": 64,
+      "total_views": 16762,
+      "word_count": 30704,
+      "page_count": 111,
+      "timestamp": 1752930005
     },
     "105968": {
       "title": "Loopshard",
@@ -4838,6 +4838,38 @@
       "word_count": 105424,
       "page_count": 383,
       "timestamp": 1752926406
+    },
+    "115391": {
+      "title": "Blood Bond",
+      "slug": "blood-bond",
+      "description": "<p><strong>Two bodies, two worlds, one mind joined by blood.</strong></p>\n<p>A dying boy from Earth and a marked princess from a fantasy kingdom must survive parallel crises linked by blood.</p>\n<p>On Earth, Leo can't wait to start high school, even while juggling typical freshman worries, family responsibilities, and pushing aside a strange pain he doesn't understand \u2013 unaware a devastating diagnosis looms. Elsewhere, in the magical realm of Aetheria, Princess Elara lives in a gilded cage, dismissed by her powerful family and unprepared for a Soul Seeding ritual that will forever shape her destiny.</p>\n<p><span style=\"font-weight: 400\">When Leo\u2019s sudden collapse on Earth coincides with a horrifying occurrence at Elara's ritual, their consciousnesses fuse, forcing the two disparate souls to navigate one existence and fight for survival across both their worlds.</span></p>\n<p><span style=\"font-weight: 400\"></span></p>\n<hr>\n<p><strong>What to expect:&nbsp;&nbsp;</strong></p>\n<p>- Isekai with Two Active Worlds</p>\n<p>- A Detailed Magic System &amp; an MC who Progresses Outside the Rules</p>\n<p>- High Stakes &amp; Political Intrigue</p>\n<p>- Emotional Character-Driven Story</p>\n<p>- Action &amp; Survival</p>\n<p><strong>New Releases: </strong>Every Monday, Wednesday and Friday</p>\n<p>&nbsp;</p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "progression",
+        "grimdark",
+        "female_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "tragedy",
+        "gender_bender",
+        "male_lead",
+        "magic",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy"
+      ],
+      "average_rating": 4.792685,
+      "author_id": 718698,
+      "author_name": "OnceWritten",
+      "followers": 372,
+      "favorites": 68,
+      "ratings": 41,
+      "total_views": 36929,
+      "word_count": 111726,
+      "page_count": 406,
+      "timestamp": 1752930005
     }
   }
 }
