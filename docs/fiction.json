@@ -1019,16 +1019,16 @@
         "high_fantasy",
         "mythos"
       ],
-      "average_rating": 4.71481,
+      "average_rating": 4.71119,
       "author_id": 293473,
       "author_name": "OstensibleMammal",
-      "followers": 5570,
-      "favorites": 1208,
-      "ratings": 817,
-      "total_views": 790852,
-      "word_count": 243268,
-      "page_count": 884,
-      "timestamp": 1752942606
+      "followers": 5618,
+      "favorites": 1224,
+      "ratings": 831,
+      "total_views": 806630,
+      "word_count": 252828,
+      "page_count": 919,
+      "timestamp": 1752962405
     },
     "121463": {
       "title": "Reiteration: Witch of Futures",
@@ -4389,13 +4389,13 @@
       "average_rating": 4.384615,
       "author_id": 422856,
       "author_name": "Lazie",
-      "followers": 1780,
-      "favorites": 439,
+      "followers": 1779,
+      "favorites": 440,
       "ratings": 104,
-      "total_views": 417699,
+      "total_views": 418120,
       "word_count": 560429,
       "page_count": 2037,
-      "timestamp": 1752904805
+      "timestamp": 1752962405
     },
     "123393": {
       "title": "The Thirteenth Trumpet: Valkyrie",
@@ -4833,13 +4833,13 @@
       "average_rating": 4.75,
       "author_id": 625367,
       "author_name": "Khetienn",
-      "followers": 185,
+      "followers": 188,
       "favorites": 48,
       "ratings": 18,
-      "total_views": 8432,
+      "total_views": 8512,
       "word_count": 105424,
       "page_count": 383,
-      "timestamp": 1752926406
+      "timestamp": 1752962405
     },
     "115391": {
       "title": "Blood Bond",
