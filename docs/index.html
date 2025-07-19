@@ -169,9 +169,9 @@
       .rra-grid div.positioned > .left .cover-wrap {
         display: flex;
         position: relative;
-        border-radius: 2px;
         overflow: hidden;
-        box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 20px -10px;
+        border-radius: 3px 2px 2px 3px;
       }
 
       .rra-grid div.positioned > .left .cover-wrap::before {
@@ -231,9 +231,37 @@
         min-width: 0;
       }
 
+      .rra-grid div.positioned > .right .title-row {
+        display: flex;
+      }
+
       .rra-grid div.positioned > .right .title {
         font-family: "Dot Matrix";
         font-size: 22px;
+      }
+
+      .rra-grid div.positioned > .right .close {
+        cursor: pointer;
+        position: relative;
+      }
+
+      .rra-grid div.positioned > .right .close::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        opacity: 0.2;
+      }
+
+      .rra-grid div.positioned > .right .close svg {
+        fill: #ddd;
+        transition: fill 0.2s ease;
+      }
+
+      .rra-grid div.positioned > .right .close:hover svg {
+        fill: #aaa;
       }
 
       .rra-grid div.positioned > .right .summary {
@@ -291,69 +319,23 @@
         </div>
         <div class="right">
           <div class="title-row">
-            <div class="title">
-              The Phoenix [Cultivation, Reincarnation, Tower Climber]
+            <div class="title"></div>
+            <div style="flex-grow: 1"></div>
+            <div class="close">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.6904 0.0498047C11.0503 0.0498316 11.3431 0.16568 11.5732 0.394531C11.8249 0.646282 11.9502 0.943156 11.9502 1.28809C11.9502 1.5899 11.8547 1.84645 11.6631 2.05957L11.5732 2.14941L7.75781 5.93164L7.72266 5.96777L7.75781 6.00293L11.5732 9.80762C11.802 10.0378 11.917 10.3306 11.917 10.6904C11.917 11.0055 11.8289 11.2691 11.6533 11.4844L11.5732 11.5732C11.3215 11.825 11.0246 11.9501 10.6797 11.9502C10.3348 11.9502 10.0488 11.8255 9.81934 11.5752L9.81836 11.5732L6.03516 7.75781L6 7.72266L5.96484 7.75781L2.16016 11.5732C1.93001 11.8021 1.63711 11.9169 1.27734 11.917C0.917444 11.917 0.623764 11.8021 0.393555 11.5732H0.394531C0.165694 11.3444 0.0498047 11.053 0.0498047 10.6953C0.0498776 10.3378 0.165766 10.0471 0.394531 9.81836L4.20898 6.00293L4.24512 5.9668L4.20898 5.93164L0.393555 2.16016H0.394531C0.165706 1.92998 0.0498595 1.63713 0.0498047 1.27734C0.0498047 0.917476 0.165723 0.624724 0.394531 0.394531C0.623314 0.165748 0.913942 0.0498594 1.27148 0.0498047C1.62914 0.0498047 1.92058 0.165694 2.14941 0.394531L5.96484 4.20898L6 4.24512L6.03516 4.20898L9.80762 0.394531C10.0378 0.165678 10.3306 0.0498047 10.6904 0.0498047Z"
+                />
+              </svg>
             </div>
-            <div class="close"></div>
           </div>
-          <div class="summary">
-            <p>
-              <strong
-                ><span
-                  >She entered the Tower seeking death. Instead, she keeps
-                  finding reasons to live.</span
-                ></strong
-              ><span> </span>
-            </p>
-            <p>
-              <span
-                >In this life, she's Bella, a jaded med student trying to catch
-                up on centuries of medical innovation. Or at least, she was
-                before the Tower appeared. With the promise that she would find
-                whatever she sought if she reached the top, she entered, hoping
-                to find a way to end her curse.
-              </span>
-            </p>
-            <p>
-              <span
-                >However, even with hundreds of lives of experience to fall back
-                on, reaching the top is no easy task. The Tower is filled with
-                wonders she could only dream of, and w</span
-              ><span
-                >hat she once believed was the peak of power was only the first
-                rung of a much larger climb. Her foundations are unshakable, but
-                the Tower is deeper, deadlier, and more </span
-              ><em><span>exhilarating</span></em
-              ><span> than anything she’s ever faced.</span>
-            </p>
-            <p>
-              <span
-                >And when she finally reaches the top? She’ll decide whether to
-                end it all… or maybe not.</span
-              >
-            </p>
-            <p>
-              <span style="text-decoration: underline"
-                ><strong>Inspired by:</strong></span
-              >
-            </p>
-            <p>
-              - Tower of God<br />- Hunter X Hunter<br />- Hell Difficulty
-              Tutorial<br />- Various Murim and Xianxia stories
-            </p>
-            <p>
-              <span style="text-decoration: underline"
-                ><strong>What to expect</strong></span
-              >
-            </p>
-            <p>
-              <span style="text-decoration: underline"></span>- Strong to
-              Stronger<br />- Magic system is Hunter X Hunter + cultivation<br />-
-              A Tower of massive scale with many different places and races<br />-
-              No romance<br />- Tournament Arc!<br />- Long-term character
-              development<br />- A cat (?)
-            </p>
-          </div>
+          <div class="summary"></div>
         </div>
       </div>
       <img class="backdrop" src="#" aria-hidden="true" />
@@ -561,8 +543,13 @@
           element.addEventListener("click", (event) => {
             if (this.#state.expandable === false) return;
             event.preventDefault();
-            this.#required.expanded = !this.#required.expanded;
-            this.#state.requestLayoutCallback();
+            if (event.target.closest(".close")) this.#required.expanded = false;
+
+            if (event.target.closest(".ad-wrap"))
+              this.#required.expanded = true;
+
+            if (this.#current.expanded !== this.#required.expanded)
+              this.#state.requestLayoutCallback();
           });
         }
 
