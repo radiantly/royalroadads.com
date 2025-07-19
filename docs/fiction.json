@@ -2202,13 +2202,13 @@
       "average_rating": 4.72,
       "author_id": 621168,
       "author_name": "Roman Stone",
-      "followers": 217,
-      "favorites": 48,
+      "followers": 219,
+      "favorites": 49,
       "ratings": 25,
-      "total_views": 6034,
+      "total_views": 6112,
       "word_count": 74170,
       "page_count": 269,
-      "timestamp": 1752928206
+      "timestamp": 1752944405
     },
     "122836": {
       "title": "Way of the Wayfarer [Apocalypse, LitRPG]",
@@ -5086,7 +5086,40 @@
       "total_views": 17140,
       "word_count": 130520,
       "page_count": 474,
-      "timestamp": 1752942606
+      "timestamp": 1752944405
+    },
+    "57598": {
+      "title": "The Partisan Chronicles",
+      "slug": "the-partisan-chronicles",
+      "description": "<p><strong>One\u2019s a fire hazard. The other brings the accelerant.</strong><br><strong>Together, they might burn the world down...</strong><br><strong>or save it.</strong></p>\n<p>Andrei Strauss, a reluctant priest with volatile elemental powers, has spent years training himself not to feel\u2014because when he does, things catch fire. Literally. Exiled to a remote village to keep his head down and stay out of trouble, he\u2019s barely settled in before people start disappearing. When he finally calls for help, he gets <em>her.</em></p>\n<p>Rhian Sinclair: an Enforcer with a sharp tongue, quicker feet, and more write-ups than anyone else in her unit. After months in disciplinary limbo, she\u2019s finally cleared for active duty. Now, under the guise of an investigation neither of them is expected to survive, Rhian and Andrei are thrown back together\u2014forced to confront their past and the sparks that never really died.</p>\n<p>Disappearances. Silent gods. Supernatural anomalies that defy protocol. If they want to make it out alive, they\u2019ll need help from other misfits who were never built to follow the rules.</p>\n<p>Along the way, lifelong friends are reunited, ancient secrets are revealed, and\u2014at some point\u2014an assassin and a telepath walk into a bar. Separately.</p>\n<p><strong>From legend to life, truth to lie, fiction to fact...</strong><br><strong>it all begins with them.</strong></p>",
+      "status": "Ongoing",
+      "tags": [
+        "anti-hero_lead",
+        "psychological",
+        "multiple_lead",
+        "strong_lead",
+        "fantasy",
+        "romance",
+        "mystery",
+        "supernatural",
+        "male_lead",
+        "female_lead",
+        "magic",
+        "profanity",
+        "sensitive",
+        "high_fantasy",
+        "dystopia"
+      ],
+      "average_rating": 4.694445,
+      "author_id": 303168,
+      "author_name": "Classy@Swordpoint",
+      "followers": 243,
+      "favorites": 61,
+      "ratings": 36,
+      "total_views": 66590,
+      "word_count": 161662,
+      "page_count": 587,
+      "timestamp": 1752944405
     }
   }
 }
