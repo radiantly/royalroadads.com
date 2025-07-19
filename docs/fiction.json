@@ -2005,13 +2005,13 @@
       "average_rating": 4.541665,
       "author_id": 614259,
       "author_name": "Tabellar",
-      "followers": 184,
+      "followers": 188,
       "favorites": 43,
       "ratings": 12,
-      "total_views": 5879,
+      "total_views": 6160,
       "word_count": 62313,
       "page_count": 226,
-      "timestamp": 1752854405
+      "timestamp": 1752915606
     },
     "58180": {
       "title": "Death After Death (Roguelike Isekai)",
@@ -4513,6 +4513,70 @@
       "word_count": 52983,
       "page_count": 192,
       "timestamp": 1752913806
+    },
+    "117389": {
+      "title": "John and Whittaker",
+      "slug": "john-and-whittaker",
+      "description": "<p><strong>She\u2019s a sword-wielding, tea-obsessed professor with a God complex.</strong><br><strong>He\u2019s a trauma-riddled teenage genius with abandonment issues.</strong></p>\n<p>Together, they bicker, bond, and barrel headfirst into impossible mysteries\u2014through steam-choked cities, cursed ruins, and collapsing realities.</p>\n<p><em>John and Whittaker</em> is a steampunk science-fantasy series about dysfunctional mentorship, reluctant heroism, and the emotional wreckage of brilliance.</p>\n<p>If you like sharp dialogue, complicated characters, and stories that stab you in the feelings (but apologize after), this is for you.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "anti-hero_lead",
+        "steampunk",
+        "multiple_lead",
+        "sci_fi",
+        "action",
+        "adventure",
+        "school_life",
+        "supernatural",
+        "male_lead",
+        "female_lead",
+        "graphic_violence",
+        "sensitive",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.666665,
+      "author_id": 701650,
+      "author_name": "Tiberius21",
+      "followers": 46,
+      "favorites": 10,
+      "ratings": 12,
+      "total_views": 6563,
+      "word_count": 71963,
+      "page_count": 261,
+      "timestamp": 1752915606
+    },
+    "120081": {
+      "title": "EMPIRE OF DIRT",
+      "slug": "empire-of-dirt",
+      "description": "<p><strong>FEED THE HUNGER. LEVEL UP. FORGET WHO YOU ONCE WERE.</strong></p>\n<p>After a mission gone wrong and a betrayal he can\u2019t remember, ex-soldier Callum Quinn wakes to find the only person he ever cared about is dead and he\u2019s become what he hates the most: a vampire, bound by blood rites and a debt he never agreed to pay.</p>\n<p>The city is bleeding under the heel of the Tenebralis: a decadent vampire elite who feed on human misery and bankroll their empire with blood cults, cursed drugs, and glamorized death\u2014and their leader, Guillaume, is responsible for what happened to Callum. A rival bloodline\u2019s elder offers to help him take down the Tenebralis, but her motives are as murky as his memories, and the more he learns, the more he suspects he\u2019s a mere pawn in something much bigger. And bloodier.</p>\n<p>With only a knife, a bad attitude, and a handful of half-truths, Callum must carve a path through back-alley nightclubs, underground reliquaries, and blood-soaked palaces to find the truth\u2014and maybe a reason to keep going. But as old enemies resurface and new monsters rise, one thing becomes clear:</p>\n<p>He was made to burn down the world, but he might be the only one who can save it.</p>\n<p><strong>WELCOME TO THE EMPIRE OF DIRT.</strong></p>\n<p><strong></strong>WHAT TO EXPECT:</p>\n<p>-Slow-burn progression (with corrupted stats + system glitches)</p>\n<p>-Horror elements and violent themes</p>\n<p>-Occasional comic relief (mostly from one very tired, very loud vampire)</p>\n<p>-Vampire court politics, bloodline rivalries, and backroom power plays</p>\n<p>-Missions that get personal\u2014and deadly\u2014for the MC</p>\n<p>-Light stat tracking (more character-driven than crunch-heavy)</p>\n<p>-Structured progression with defined arcs&nbsp;</p>\n<p>-No endless grind. No filler arcs. Just a cursed path from vengeance to something like redemption.</p>\n<p>WORK IN PROGRESS, will be updated Tue-Thu-Sat.&nbsp;</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "urban_fantasy",
+        "progression",
+        "anti-hero_lead",
+        "adventure",
+        "fantasy",
+        "horror",
+        "supernatural",
+        "male_lead",
+        "strong_lead",
+        "grimdark",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "low_fantasy"
+      ],
+      "average_rating": 4.5,
+      "author_id": 680530,
+      "author_name": "Noctambule",
+      "followers": 67,
+      "favorites": 11,
+      "ratings": 4,
+      "total_views": 2858,
+      "word_count": 53217,
+      "page_count": 193,
+      "timestamp": 1752915606
     }
   }
 }
