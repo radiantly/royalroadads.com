@@ -1019,16 +1019,16 @@
         "high_fantasy",
         "mythos"
       ],
-      "average_rating": 4.731085,
+      "average_rating": 4.71481,
       "author_id": 293473,
       "author_name": "OstensibleMammal",
-      "followers": 5124,
-      "favorites": 1089,
-      "ratings": 727,
-      "total_views": 679908,
-      "word_count": 230743,
-      "page_count": 839,
-      "timestamp": 1752780605
+      "followers": 5570,
+      "favorites": 1208,
+      "ratings": 817,
+      "total_views": 790852,
+      "word_count": 243268,
+      "page_count": 884,
+      "timestamp": 1752942606
     },
     "121463": {
       "title": "Reiteration: Witch of Futures",
@@ -5029,6 +5029,64 @@
       "word_count": 50201,
       "page_count": 182,
       "timestamp": 1752940806
+    },
+    "98247": {
+      "title": "The Dark Lord's Guide to Hostile Corporate Takeover (A reverse Isekai)",
+      "slug": "the-dark-lords-guide-to-hostile-corporate-takeover",
+      "description": "<p><strong>From ruling the underworld to battling co-pays and deductibles\u2014evil has met its match.</strong></p>\n<p><span style=\"font-weight: 400\">Dark Lord Morthisal Ebonwrath, Master of the Abyss, is moments away from losing his dark fortress and head to a hero's assault. He uses his last bit of magic to escape death\u2014only to end up trapped in the mundane body of Vince Logan, an ordinary guy from modern-day Seattle. Stripped of his powers, Morthisal wakes up disoriented in a world full of strange contraptions, surrounded by people in white coats who think his cries for dominion over death are just signs of a \"mental episode.\"</span></p>\n<p><span style=\"font-weight: 400\">With no dark magic, Morthisal must navigate the bewildering modern world of insurance co-pays, office cubicles, and frustratingly useless minions (otherwise known as co-workers). Between run-ins with technology and misunderstandings of modern customs, he realizes that he may be able to access some of his former powers, but at a very painful price.</span></p>\n<p><span style=\"font-weight: 400\">Dark fantasy meets corporate satire, in a story where office politics and dark sorcery clash\u2014one baffling day at a time.</span></p>\n<p><span style=\"font-weight: 400\"><strong>This is the companion novel to the <a href=\"https://www.royalroad.com/fiction/90660/dark-lords-last-call-cozy-adjacent-isekai\" rel=\"noopener ugc nofollow\">Dark Lord's Last Call </a>series - It can be read with no knowledge of the other books</strong></span></p>\n<p><span style=\"font-weight: 400\"><em>This book would suck without the help of my editor<span>&nbsp;</span><a href=\"https://cheryldyson.com/editing-services/\" rel=\"noopener ugc nofollow\">Cheryl (Churl) Dyson</a>. &lt;--Check out her editing services.</em></span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "urban_fantasy",
+        "villainous_lead",
+        "comedy",
+        "romance",
+        "contemporary",
+        "male_lead",
+        "secret_identity",
+        "satire"
+      ],
+      "average_rating": 4.776315,
+      "author_id": 108914,
+      "author_name": "TimWLong50",
+      "followers": 663,
+      "favorites": 139,
+      "ratings": 76,
+      "total_views": 80831,
+      "word_count": 124735,
+      "page_count": 453,
+      "timestamp": 1752942606
+    },
+    "91271": {
+      "title": "Rebirth: Crawler",
+      "slug": "rebirth-crawler",
+      "description": "<p><span>Ayn dreams of one thing\u2014to become a renowned Crawler, just like her parents. Well, that's not the only thing, but it's a start, and to achieve her dream she needs a good party of balanced classes and meshing personalities. What she ends up with is a ragtag group with almost more issues than secrets. Can she get them to pull together before catastrophe hits? She has no idea, but she's not about to let the chance slip by.</span></p>\n<p><span>Updates on Friday</span></p>\n<p>Additional tag: Yuri</p>\n<p><span>Cover by GetCovers</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "virtual_reality",
+        "summoned_hero",
+        "dungeon",
+        "female_lead",
+        "action",
+        "adventure",
+        "drama",
+        "fantasy",
+        "litrpg",
+        "reincarnation",
+        "magic",
+        "graphic_violence",
+        "gamelit"
+      ],
+      "average_rating": 4.785715,
+      "author_id": 336217,
+      "author_name": "Razziel",
+      "followers": 124,
+      "favorites": 33,
+      "ratings": 7,
+      "total_views": 17140,
+      "word_count": 130520,
+      "page_count": 474,
+      "timestamp": 1752942606
     }
   }
 }
