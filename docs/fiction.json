@@ -273,8 +273,8 @@
       "timestamp": 1752714005
     },
     "123819": {
-      "title": "Kill Me If You Can [Underpowered LitRPG, with a Slice of Sarcasm]",
-      "slug": "kill-me-if-you-can-underpowered-litrpg-with-a",
+      "title": "Kill Me If You Can [Underpowered Realistic LitRPG, with a Slice of Sarcasm]",
+      "slug": "kill-me-if-you-can-underpowered-realistic-litrpg",
       "description": "<p>Charming. Witty. Unfiltered.<br>That\u2019s me.<br>The AI voice in his head keeping him alive.<br>Why?<br>Good question. He spawned into this world with the worst race possible, limited access to spells, and no real skills to speak of.<br>He\u2019s not exactly worth saving. Constantly diving into danger, ignoring my advice, and then acting surprised when it all goes sideways.<br>But sure, the story\u2019s <em>technically </em>about him. Some guy with a sword, no skills, and a chronic habit of ignoring my perfectly reasonable advice.<br>If you like LitRPG fantasy with realistic progression, brutal fights, and one delightfully snarky, all-knowing AI, then congratulations. You\u2019ve found your next read.<br>Go on. Click the first chapter. I dare you.</p>",
       "status": "Ongoing",
       "tags": [
@@ -287,16 +287,16 @@
         "sensitive",
         "ai_assisted"
       ],
-      "average_rating": 4.75,
+      "average_rating": 4.636365,
       "author_id": 763274,
       "author_name": "cody.bray",
-      "followers": 207,
-      "favorites": 40,
-      "ratings": 8,
-      "total_views": 3677,
-      "word_count": 35167,
-      "page_count": 127,
-      "timestamp": 1752809405
+      "followers": 231,
+      "favorites": 43,
+      "ratings": 11,
+      "total_views": 4696,
+      "word_count": 39443,
+      "page_count": 143,
+      "timestamp": 1752922805
     },
     "104561": {
       "title": "For the Glory of Rome: Chronicles of an Isekai'd Legion",
@@ -2142,12 +2142,12 @@
       "author_id": 418562,
       "author_name": "Rowdha Al Sol",
       "followers": 470,
-      "favorites": 112,
+      "favorites": 113,
       "ratings": 45,
-      "total_views": 36498,
-      "word_count": 218794,
+      "total_views": 36652,
+      "word_count": 218772,
       "page_count": 795,
-      "timestamp": 1752847205
+      "timestamp": 1752922805
     },
     "117944": {
       "title": "The Jade Shadows Must Die [Cultivation LitRPG]",
@@ -4704,6 +4704,31 @@
       "word_count": 185277,
       "page_count": 673,
       "timestamp": 1752921005
+    },
+    "120293": {
+      "title": "Crown of Someone Else",
+      "slug": "crown-of-someone-else",
+      "description": "<p>Simon was just starting to get his life together. With a stable career, a budding love life, and a found family he truly cared about, things were finally falling into place.</p>\n<p>Life was finally settling into something good.</p>\n<p>Then he woke up in another world, trapped in the body of a disgraced prince.</p>\n<p><span>Weak, spoiled, and politically toxic, the prince was more of a cautionary tale than a ruler. Now Simon has inherited a crumbling reputation, a body too young to command respect, and a royal engagement that could upend the balance of the realm. </span></p>\n<p><span>He has no allies, no combat training, and no idea how to wield the magic he\u2019s expected to control. With his siblings thriving in the spotlight and his enemies sharpening their smiles, Simon must fake competence long enough to survive\u2014and figure out who\u2019s already decided he won\u2019t.</span></p>\n<p>Words alone won\u2019t save him. Neither will force.</p>\n<p>To survive, he\u2019ll need both.</p>\n<p>And if he wants to do more than survive, he\u2019ll have to rise above the petty squabbles of men and stand among the gods who rule them.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "reincarnation",
+        "progression",
+        "ruling_class",
+        "slice_of_life",
+        "action",
+        "fantasy",
+        "graphic_violence"
+      ],
+      "average_rating": 4.166665,
+      "author_id": 750927,
+      "author_name": "stipmorn",
+      "followers": 745,
+      "favorites": 133,
+      "ratings": 93,
+      "total_views": 65783,
+      "word_count": 72076,
+      "page_count": 262,
+      "timestamp": 1752922805
     }
   }
 }
