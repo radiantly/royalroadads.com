@@ -144,13 +144,13 @@
       "average_rating": 4.5,
       "author_id": 686890,
       "author_name": "Serana the Emperor",
-      "followers": 205,
-      "favorites": 35,
+      "followers": 216,
+      "favorites": 37,
       "ratings": 7,
-      "total_views": 9929,
-      "word_count": 96829,
-      "page_count": 352,
-      "timestamp": 1752840005
+      "total_views": 8760,
+      "word_count": 94359,
+      "page_count": 343,
+      "timestamp": 1752940806
     },
     "108745": {
       "title": "Moonfire & Midnight",
@@ -1865,10 +1865,12 @@
         "litrpg",
         "urban_fantasy",
         "progression",
-        "martial_arts",
+        "anti-hero_lead",
         "action",
         "adventure",
         "contemporary",
+        "cyberpunk",
+        "martial_arts",
         "slice_of_life",
         "male_lead",
         "female_lead",
@@ -1882,16 +1884,16 @@
         "artificial_intelligence",
         "attractive_lead"
       ],
-      "average_rating": 4.8,
+      "average_rating": 4.81818,
       "author_id": 545209,
       "author_name": "tvhead25",
-      "followers": 145,
-      "favorites": 27,
-      "ratings": 10,
-      "total_views": 4517,
-      "word_count": 81087,
-      "page_count": 294,
-      "timestamp": 1752813005
+      "followers": 149,
+      "favorites": 29,
+      "ratings": 11,
+      "total_views": 5205,
+      "word_count": 84800,
+      "page_count": 308,
+      "timestamp": 1752940806
     },
     "124740": {
       "title": "Rickleford [DnD LitRPG]",
@@ -4999,6 +5001,34 @@
       "word_count": 33337,
       "page_count": 121,
       "timestamp": 1752939006
+    },
+    "123427": {
+      "title": "Chronicles of the Lightning Immortal",
+      "slug": "chronicles-of-the-lightning-immortal",
+      "description": "<p><strong><span style=\"font-style: normal; text-align: left\">Lin Zhe was never going to become a great cultivator. </span></strong></p>\n<p><span style=\"font-weight: 400; font-style: normal; text-align: left\">With four wasted Spirit Roots, his cultivation path was destined to be arduous. That was okay. He was happy to spend his days sparring with friends and snacking on meat buns.</span></p>\n<p><span style=\"font-weight: 400; font-style: normal; text-align: left\">Unfortunately, the world had other plans. Lin Zhe's peace is broken when his sect is betrayed, attacked, and broken.&nbsp;</span></p>\n<p><span style=\"font-weight: 400; font-style: normal; text-align: left\">For the first time since he set foot on the cultivation path, Lin Zhe wants to get stronger. He needs to. If he stays weak, the trials he now finds himself in might just kill him.&nbsp;</span><span style=\"font-weight: 400; font-style: normal; text-align: left\">But, if he were to persevere\u2026 he might awaken something<span>&nbsp;</span></span><i>more.</i></p>\n<p><i>--</i></p>\n<p><strong>Expect:<br></strong>+ Daily 2k+ chapters<br>+ Strategic MC who doesn't use brute force to win every time<br>+ Huge and complex Xianxia world</p>\n<p><strong>What <span style=\"text-decoration: underline\">NOT</span> to Expect:<br></strong>- Harem, Cheating, etc.<br>- Lone Wolf MC<br>- Cardboard Characters</p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "strategy",
+        "xianxia",
+        "male_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "martial_arts",
+        "graphic_violence",
+        "high_fantasy"
+      ],
+      "average_rating": 4.757145,
+      "author_id": 453146,
+      "author_name": "TQ Zhang",
+      "followers": 544,
+      "favorites": 92,
+      "ratings": 35,
+      "total_views": 30755,
+      "word_count": 50201,
+      "page_count": 182,
+      "timestamp": 1752940806
     }
   }
 }
