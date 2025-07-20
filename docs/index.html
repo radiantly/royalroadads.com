@@ -215,12 +215,18 @@
         background-color: #2a6ea8;
       }
 
-      .rra-grid div.positioned > .left .ad-wrap img {
+      .rra-grid div.positioned > .left .ad-wrap {
         border-radius: 10px;
+        background-color: #eee;
+        display: flex;
       }
 
       .rra-grid div.positioned:not(.external) > .left .ad-wrap {
         cursor: default;
+      }
+
+      .rra-grid div.positioned > .left .ad-wrap img {
+        border-radius: 10px;
       }
 
       .rra-grid div.positioned > .right {
@@ -333,6 +339,11 @@
         display: none;
       }
 
+      .rra-grid div.positioned:not(.expanded) .left,
+      .rra-grid div.positioned:not(.expanded) .left .ad-wrap {
+        flex-grow: 1;
+      }
+
       .rra-grid div.positioned.expanded {
         box-shadow: 0 22px 48px 0 rgba(0, 0, 0, 0.1),
           0 87px 87px 0 rgba(0, 0, 0, 0.09), 0 196px 118px 0 rgba(0, 0, 0, 0.05),
@@ -423,9 +434,11 @@
         static #dataPromise;
         static #cache = {};
         static {
-          this.#dataPromise = fetch("fiction.json")
-            .then((response) => response.json())
-            .then((obj) => obj?.entries ?? {});
+          setTimeout(() => {
+            this.#dataPromise = fetch("fiction.json")
+              .then((response) => response.json())
+              .then((obj) => obj?.entries ?? {});
+          }, 0);
         }
 
         static #fixupFictionResponse(id, fiction) {
@@ -462,10 +475,10 @@
         #state;
         #current;
         #required;
-        constructor(uid, alt, link, requestLayoutCallback) {
+        constructor(requestLayoutCallback) {
           this.#state = {
             requestLayoutCallback,
-            expandable: true,
+            expandable: false,
 
             // elements
             elements: null,
@@ -486,20 +499,16 @@
             fiction: null,
           };
 
-          this.#required = {
-            // layout
-            x: null,
-            y: null,
-            width: null,
-            height: null,
-            expanded: false,
+          this.#required = Object.assign({}, this.#current);
+        }
 
-            // content
-            uid,
-            alt,
-            link,
-            fiction: null,
-          };
+        setContent({ uid, alt, link }) {
+          /* Assumption: this function is called only once */
+
+          this.#required.uid = uid;
+          this.#required.alt = alt;
+          this.#required.link = link;
+          this.#state.expandable = true;
 
           FictionBuddy.getFictionDetailsFromLink(link).then((details) => {
             if (details === null) {
@@ -710,9 +719,11 @@
         constructor() {
           this.#state = {
             ads: [],
-            layoutComputedTill: 0,
+            layoutComputedTill: { y: 0, index: 0 },
 
             varianceCache: new Map(),
+
+            placeholderEntriesCount: 0,
 
             layoutPending: false,
             activeAd: null,
@@ -721,14 +732,31 @@
             vHeight: null,
             scrollY: null,
           };
+
+          this.requestRender = this.requestRender.bind(this);
+        }
+
+        addPlaceholderEntries(count) {
+          this.#state.placeholderEntriesCount += count;
+          for (let i = 0; i < count; i += 1) {
+            const ad = new RectangleAd(this.requestRender);
+            this.#state.ads.push(ad);
+          }
         }
 
         addAdEntries(entries) {
-          const requestLayoutCallback = (ad) => this.requestRender(ad);
-          for (const [uid, entry] of Object.entries(entries))
-            this.#state.ads.push(
-              new RectangleAd(uid, entry.alt, entry.link, requestLayoutCallback)
-            );
+          for (const [uid, entry] of Object.entries(entries)) {
+            if (this.#state.placeholderEntriesCount) {
+              const index =
+                this.#state.ads.length - this.#state.placeholderEntriesCount;
+              this.#state.placeholderEntriesCount -= 1;
+              this.#state.ads[index].setContent({ uid, ...entry });
+            } else {
+              const ad = new RectangleAd(this.requestRender);
+              ad.setContent({ uid, ...entry });
+              this.#state.ads.push(ad);
+            }
+          }
         }
 
         #getVariances(count, variance) {
@@ -784,7 +812,7 @@
 
             // don't compute layout for things that are very far from the viewport
             // TODO: fix for mobile
-            // if (side === null && it.y > scrollY + vHeight * 5) break;
+            if (side === null && it.y > scrollY + vHeight * 5) break;
 
             // if the ad is expanded, we want
             if (this.#state.ads[it.index].expanded) {
@@ -897,12 +925,12 @@
             it.y += adHeight + gap;
           }
 
-          this.layoutComputedTill = it.index;
+          this.#state.layoutComputedTill = it;
         }
 
         updatePositions() {
           const till = Math.min(
-            this.layoutComputedTill,
+            this.#state.layoutComputedTill.index,
             this.#state.ads.length
           );
           for (let i = 0; i < till; i += 1) {
@@ -921,6 +949,8 @@
           this.computeLayout();
           this.updatePositions();
 
+          console.log(this.#state.layoutComputedTill);
+
           this.#state.layoutPending = false;
           this.#state.activeAd = null;
         }
@@ -931,15 +961,35 @@
           this.#state.layoutPending = true;
           requestAnimationFrame(() => this.render());
         }
+
+        requestRenderOnScroll() {
+          if (
+            this.#state.layoutComputedTill.y >
+            window.scrollY + this.#state.vHeight * 3
+          )
+            return;
+          if (this.#state.layoutComputedTill.index === this.#state.ads.length)
+            return;
+          this.requestRender();
+        }
       }
 
       const renderMonkey = new RenderMonkey();
+      renderMonkey.addPlaceholderEntries(13);
+      renderMonkey.requestRender();
 
       const handleData = ({ entries }) => {
         renderMonkey.addAdEntries(entries);
         renderMonkey.requestRender();
 
-        window.addEventListener("resize", () => renderMonkey.requestRender());
+        window.addEventListener("resize", () => renderMonkey.requestRender(), {
+          passive: true,
+        });
+        window.addEventListener(
+          "scroll",
+          () => renderMonkey.requestRenderOnScroll(),
+          { passive: true }
+        );
       };
 
       fetch("300x250/entries.json")
