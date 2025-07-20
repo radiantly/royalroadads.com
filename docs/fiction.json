@@ -1727,13 +1727,13 @@
       "average_rating": 4.1875,
       "author_id": 748892,
       "author_name": "Kino-Man",
-      "followers": 59,
+      "followers": 63,
       "favorites": 17,
       "ratings": 8,
-      "total_views": 4611,
-      "word_count": 107153,
+      "total_views": 4868,
+      "word_count": 107156,
       "page_count": 389,
-      "timestamp": 1752980405
+      "timestamp": 1753054205
     },
     "122902": {
       "title": "One-to-One",
@@ -5585,13 +5585,13 @@
       "average_rating": 4.307695,
       "author_id": 80274,
       "author_name": "Elliot Moors",
-      "followers": 675,
-      "favorites": 153,
+      "followers": 677,
+      "favorites": 154,
       "ratings": 52,
-      "total_views": 158884,
+      "total_views": 159985,
       "word_count": 335774,
       "page_count": 1220,
-      "timestamp": 1752978605
+      "timestamp": 1753054205
     },
     "95038": {
       "title": "Empire Rewritten \u2013 Isekai \u2022 Kingdom Building [Book One Complete]",
@@ -6684,6 +6684,40 @@
       "word_count": 127820,
       "page_count": 464,
       "timestamp": 1753048805
+    },
+    "86184": {
+      "title": "Rise of The Living Enchantment [LITRPG REGRESSION]",
+      "slug": "rise-of-the-living-enchantment-litrpg-regression",
+      "description": "<p>What do you do when you and a group of people are summoned to another world to stop the Demon King and your brother becomes the Demon King?</p>\n<p>The answer to that is quite diverse, but Aiden had one.</p>\n<p>In an attempt to save his brother, Aiden is caught in a clash of spells between the Demon King and a mythical opponent, suffers 'recommended' termination at the hands of the very system that had been a part of his life since being summoned, and wakes up back in the beginning, on the day of their summoning.</p>\n<p>With past experiences and knowledge, he's got a second go at it, and Aiden Lacheart has no intentions of allowing his brother become the Demon King once more. The only problem is... he doesn't think he's the only one who's come back in time.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "time_travel",
+        "progression",
+        "action",
+        "adventure",
+        "fantasy",
+        "mystery",
+        "reincarnation",
+        "male_lead",
+        "strong_lead",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy"
+      ],
+      "average_rating": 4.539795,
+      "author_id": 265819,
+      "author_name": "The First Observer",
+      "followers": 4140,
+      "favorites": 989,
+      "ratings": 578,
+      "total_views": 1223559,
+      "word_count": 624581,
+      "page_count": 2271,
+      "timestamp": 1753054205
     }
   }
 }
