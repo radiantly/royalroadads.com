@@ -704,18 +704,19 @@
         "xianxia",
         "gamelit",
         "high_fantasy",
-        "ruling_class"
+        "ruling_class",
+        "attractive_lead"
       ],
-      "average_rating": 4.11998,
+      "average_rating": 4.11941,
       "author_id": 561701,
       "author_name": "The Curator",
-      "followers": 6809,
-      "favorites": 1823,
-      "ratings": 1046,
-      "total_views": 2854707,
-      "word_count": 509860,
-      "page_count": 1854,
-      "timestamp": 1752796805
+      "followers": 6825,
+      "favorites": 1829,
+      "ratings": 1051,
+      "total_views": 2880740,
+      "word_count": 511788,
+      "page_count": 1861,
+      "timestamp": 1752989407
     },
     "121319": {
       "title": "Andy in the Apocalypse [LitRPG System Apocalypse]",
@@ -1019,16 +1020,16 @@
         "high_fantasy",
         "mythos"
       ],
-      "average_rating": 4.71119,
+      "average_rating": 4.704735,
       "author_id": 293473,
       "author_name": "OstensibleMammal",
-      "followers": 5618,
-      "favorites": 1224,
-      "ratings": 831,
-      "total_views": 806630,
-      "word_count": 252828,
+      "followers": 5672,
+      "favorites": 1247,
+      "ratings": 845,
+      "total_views": 825254,
+      "word_count": 252832,
       "page_count": 919,
-      "timestamp": 1752962405
+      "timestamp": 1752989407
     },
     "121463": {
       "title": "Reiteration: Witch of Futures",
