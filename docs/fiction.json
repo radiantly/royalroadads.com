@@ -1922,13 +1922,13 @@
       "average_rating": 5,
       "author_id": 419627,
       "author_name": "Jesse_Gerlach",
-      "followers": 14,
-      "favorites": 8,
+      "followers": 27,
+      "favorites": 9,
       "ratings": 4,
-      "total_views": 666,
-      "word_count": 43489,
-      "page_count": 158,
-      "timestamp": 1752814805
+      "total_views": 1043,
+      "word_count": 48960,
+      "page_count": 178,
+      "timestamp": 1753038005
     },
     "109259": {
       "title": "Daydreamer",
@@ -4390,13 +4390,13 @@
       "average_rating": 4.384615,
       "author_id": 422856,
       "author_name": "Lazie",
-      "followers": 1779,
-      "favorites": 440,
+      "followers": 1781,
+      "favorites": 441,
       "ratings": 104,
-      "total_views": 418250,
+      "total_views": 419916,
       "word_count": 560427,
       "page_count": 2037,
-      "timestamp": 1752967805
+      "timestamp": 1753038005
     },
     "123393": {
       "title": "The Thirteenth Trumpet: Valkyrie",
@@ -6439,6 +6439,40 @@
       "word_count": 93906,
       "page_count": 341,
       "timestamp": 1753036241
+    },
+    "125437": {
+      "title": "Corrupted Lands",
+      "slug": "corrupted-lands",
+      "description": "<p><span style=\"font-weight: 400\">Murder. Greed. Corruption.<br><br></span><span style=\"font-weight: 400\">A stagnant Kingdom teeming with nobles and commoners alike, all grasping for power and influence, willing to do whatever it takes to reach a higher status. Power determines their place in society, and Iris is below the bottom.<br><br></span><span style=\"font-weight: 400\">As a Blank, Iris has no talent for the magical energy that permeates their world of Eldra. An unassuming day of diving through trash finds Iris thrust into the pit of a secret that spans across Elyria. On the run and with little help, she\u2019s a mouse in a maze, searching for the exit she can only hope exists.<br><br></span><span style=\"font-weight: 400\">Iris must grow to survive...she\u2019ll just have to figure out how to do that first. Perhaps the secret she stole in her escape will fix her status as a Blank.<br><br></span><span style=\"font-weight: 400\">Only one thing is certain.<br><br></span><span style=\"font-weight: 400\">The monarchy will stop at nothing to retrieve what she ran off with. If they can\u2019t, Iris might just bring everything they know to ruin.&nbsp;<br><br></span><span style=\"font-weight: 400\">\u2014\u2014\u2014\u2014\u2014\u2014<br><br></span><span style=\"font-weight: 400\">Don\u2019t expect the story to go from zero to one hundred. After all, a slow burn makes the world churn. Rest assured, once you understand the tightrope on which Iris walks, things start to fly\u2026&nbsp;<br><br></span><span style=\"font-weight: 400\">I release about 3-5 chapters a week, possibly more if the words are really flowing. Chapters will range between 2,000 to 3,000 words, but I definitely have some nearing 5,000. With this being my first book, I\u2019m looking forward to comments, critiques and feedback!!! That said, it shouldn\u2019t be that bad, as my best bud goes through my stuff before I post it, plus he\u2019s got an English Degree, so I sure hope he hasn\u2019t been steering me wrong.</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "progression",
+        "ruling_class",
+        "female_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "mystery",
+        "supernatural",
+        "strong_lead",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy",
+        "mythos"
+      ],
+      "average_rating": 5,
+      "author_id": 337263,
+      "author_name": "Christopher Vincent",
+      "followers": 6,
+      "favorites": 3,
+      "ratings": 1,
+      "total_views": 576,
+      "word_count": 46497,
+      "page_count": 169,
+      "timestamp": 1753038005
     }
   }
 }
