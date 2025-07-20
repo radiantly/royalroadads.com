@@ -2488,10 +2488,10 @@
       "followers": 1790,
       "favorites": 351,
       "ratings": 175,
-      "total_views": 205157,
+      "total_views": 205239,
       "word_count": 71170,
       "page_count": 258,
-      "timestamp": 1753029005
+      "timestamp": 1753036241
     },
     "125076": {
       "title": "Trapped in Time",
@@ -2975,16 +2975,16 @@
         "mythos",
         "technologically_engineered"
       ],
-      "average_rating": 4.74887,
+      "average_rating": 4.74662,
       "author_id": 334414,
       "author_name": "SteelTrim",
-      "followers": 3473,
-      "favorites": 713,
-      "ratings": 442,
-      "total_views": 264808,
+      "followers": 3501,
+      "favorites": 720,
+      "ratings": 444,
+      "total_views": 269172,
       "word_count": 126646,
       "page_count": 460,
-      "timestamp": 1752849005
+      "timestamp": 1753036241
     },
     "56539": {
       "title": "This is not an Apocalypse",
@@ -6399,6 +6399,46 @@
       "word_count": 173661,
       "page_count": 631,
       "timestamp": 1753032605
+    },
+    "103985": {
+      "title": "Sterkhander - Fight Against The Hordes [WarHammer Inspired/ Litrpg/ Kingdom Building/ Medieval Tactics/ War]",
+      "slug": "sterkhander-fight-against-the-hordes-warhammer",
+      "description": "<p>Warhammer Inspired. Kingdom Building - Politics - War and Military - Orc Slaying!</p>\n<hr>\n<p><strong><span>Adrian decapitated the first thing he met</span><span>. An orc</span><span>.</span></strong><span> Then was a vital part in the cleaving of a second</span><span>. The rest were either slaughtered</span><span>, most brutally</span><span>, or cut down during retreat</span><span>. All under his command</span><span>. He knew instinctively that murdering anything remotely green was not right</span><span>. But it felt holy in some odd dystopian way</span><span>. </span></p>\n<p><span> Plus</span><span>, there were endless numbers of them</span><span>. So a few thousand that went missing wouldn</span><span>'t be a problem</span><span>. Right</span><span>?</span><span> </span></p>\n<p><span>Stuck as a noble son within the frontiers of a distant colony of the motherland</span><span>. Faced with endless hordes</span><span>, political scheming</span><span>, and an angry neighborly baron who was dead set on conquering them</span><span>. Knights answer his call for war</span><span>. The powers that be above them stay lackadaisical and unwilling to help</span><span>. Famine</span><span>. Disease</span><span>. </span></p>\n<p><span> Did he mention ancient abominations planning world domination</span><span>? Yeah</span><span>. That too</span><span>.</span><span> </span></p>\n<hr>\n<p>What to expect -<span></span></p>\n<p>* Tue/Fri Schedule (Sometimes Sunday)<span></span></p>\n<p>* Litrpg Numbers (Light)<span></span></p>\n<p>* Kingdom Building/Politics/Military<span></span></p>\n<p>* Character Interaction<span></span></p>\n<p>* Tons of fighting<span></span></p>\n<p>&nbsp; &nbsp; &nbsp; * Blood splattering!</p>\n<p>&nbsp; &nbsp; &nbsp; * Brain matter showering!</p>\n<p>&nbsp; &nbsp; &nbsp; * Viscera explosions!</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "progression",
+        "war_and_military",
+        "action",
+        "adventure",
+        "fantasy",
+        "tragedy",
+        "reincarnation",
+        "martial_arts",
+        "supernatural",
+        "male_lead",
+        "strong_lead",
+        "magic",
+        "strategy",
+        "grimdark",
+        "graphic_violence",
+        "gamelit",
+        "high_fantasy",
+        "ruling_class",
+        "genetically_engineered",
+        "attractive_lead"
+      ],
+      "average_rating": 4.268705,
+      "author_id": 624862,
+      "author_name": "Zer0n1gh7s",
+      "followers": 1486,
+      "favorites": 310,
+      "ratings": 147,
+      "total_views": 218760,
+      "word_count": 93906,
+      "page_count": 341,
+      "timestamp": 1753036241
     }
   }
 }
