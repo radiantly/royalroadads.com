@@ -1458,13 +1458,13 @@
       "average_rating": 4.71724,
       "author_id": 625911,
       "author_name": "NB.Dravenlord",
-      "followers": 2905,
-      "favorites": 580,
+      "followers": 2917,
+      "favorites": 584,
       "ratings": 290,
-      "total_views": 198361,
+      "total_views": 199856,
       "word_count": 97635,
       "page_count": 355,
-      "timestamp": 1753027205
+      "timestamp": 1753048805
     },
     "100599": {
       "title": "These Reincarnators Are Sus! Sleuthing in Another World",
@@ -6653,6 +6653,37 @@
       "word_count": 48048,
       "page_count": 174,
       "timestamp": 1753047005
+    },
+    "96650": {
+      "title": "The Blighted Treasure [Historical Fantasy/Adventure]",
+      "slug": "the-blighted-treasure-historical-fantasyadventure",
+      "description": "<p><strong>A <em>Scions of the Tuatha D\u00e9</em> novel</strong></p>\n<p><strong>Volume 1: The Blighted Treasure (Complete)</strong></p>\n<p><span style=\"font-weight: 400\">A group of divine descendants just conscripted two recluse brothers from a failing farm in order to save 15th-Century Ireland.</span></p>\n<p><span style=\"font-weight: 400\">Donal MacLaughlin struggles with a tormented mind\u2013but it wasn't always so. His older brother, Finn, set aside his own ambitions to raise Donal after their parents died. When Finn is kidnapped by a creature known only through folk tales, Donal receives help from unlikely sources\u2013an old family friend and their landlord\u2019s daughter\u2013to save him.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">They introduce the brothers to a new truth: their mythical heroes, the Tuatha D\u00e9, were real and the young men are among their descendants. The descendants of ancient villains, the Fomori, walk their world as well, threatening to unleash a supernatural blight upon the entire land.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">What do we owe our family? Our neighbors? Ourselves? Donal and his found family must answer these questions as they travel and train between battles with demons, spirits and evil sorcerers.<br></span></p>\n<p><strong>Readers can expect:</strong></p>\n<p><span style=\"font-weight: 400\">- Irish historical fantasy set in the 1480's<br></span><span style=\"font-weight: 400\">- Traveling band of characters that act like found family<br></span><span style=\"font-weight: 400\">- Magic based in Irish mythology<br></span><span style=\"font-weight: 400\">- Both magical and martial combat<br>- Perspectives from both the neurodiverse MC and the family and friends that support him</span><span style=\"font-weight: 400\"></span></p>\n<hr>\n<p><strong>Volume 2: Tales From Tyrconnell - </strong><strong>Reforging a blacksmith (Complete) - </strong>Siobhan MacSweeney comes to the aid of an acquaintance whose group was killed in a mysterious and savage attack. [<em>9K words on helping someone tackle their grief and trauma, a bit of investigation.]</em></p>\n<p><strong>Volume 3: Tales From Tyrconnell - Wolf Hunt (Complete) - </strong>A pack of wolves menaces the countryside. Maeve O'Connor must to track them down and learn the secret behind their unusual behavior. <em>[20K+ words of investigating, hunting, and combat.]</em>&nbsp;</p>",
+      "status": "Ongoing",
+      "tags": [
+        "urban_fantasy",
+        "multiple_lead",
+        "slice_of_life",
+        "drama",
+        "adventure",
+        "fantasy",
+        "historical",
+        "supernatural",
+        "male_lead",
+        "magic",
+        "sensitive",
+        "low_fantasy",
+        "mythos"
+      ],
+      "average_rating": 4.88,
+      "author_id": 530104,
+      "author_name": "M_Gorman",
+      "followers": 170,
+      "favorites": 54,
+      "ratings": 25,
+      "total_views": 21549,
+      "word_count": 127820,
+      "page_count": 464,
+      "timestamp": 1753048805
     }
   }
 }
