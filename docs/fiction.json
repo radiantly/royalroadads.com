@@ -533,16 +533,16 @@
         "romance",
         "high_fantasy"
       ],
-      "average_rating": 4.25,
+      "average_rating": 4.294115,
       "author_id": 89051,
       "author_name": "Timothy Baril",
-      "followers": 283,
-      "favorites": 61,
-      "ratings": 16,
-      "total_views": 32306,
+      "followers": 292,
+      "favorites": 65,
+      "ratings": 17,
+      "total_views": 33178,
       "word_count": 157236,
       "page_count": 571,
-      "timestamp": 1752924605
+      "timestamp": 1753016405
     },
     "121186": {
       "title": "The Apocalypse Grinder (LitRPG Apocalypse, Timeloop)",
@@ -1486,16 +1486,16 @@
         "sensitive",
         "high_fantasy"
       ],
-      "average_rating": 4.6903,
+      "average_rating": 4.69145,
       "author_id": 580701,
       "author_name": "AceGreen",
-      "followers": 2008,
-      "favorites": 492,
-      "ratings": 268,
-      "total_views": 430909,
-      "word_count": 318913,
-      "page_count": 1159,
-      "timestamp": 1752813005
+      "followers": 2017,
+      "favorites": 494,
+      "ratings": 269,
+      "total_views": 435932,
+      "word_count": 321211,
+      "page_count": 1168,
+      "timestamp": 1753016405
     },
     "114089": {
       "title": "SANCTUARY [Nobledark | Progression | Apocalypse]",
@@ -6179,6 +6179,45 @@
       "word_count": 363057,
       "page_count": 1320,
       "timestamp": 1753014605
+    },
+    "110252": {
+      "title": "Shaper of Metal Post-Apoc LitRPG | Slice of Life | Worldbuilding | Immersion",
+      "slug": "shaper-of-metal-post-apoc-litrpg-slice-of-life",
+      "description": "<p><strong>Given the chance to unlock System powers a decade after being dismissed as an ordinary human being, how could Jack refuse?</strong></p>\n<p>But nothing comes without a price, and as Jack is about to discover, miracles are sky-high.</p>\n<p>A former military pilot, Jack Laker has faced the horrifying monsters that took over most of planet Earth. Against all odds, he survived one of their endless raids into humanity's territory and even saved a life or two in the chaos. When he acquires metal manipulation abilities, though, all the power to meet the bastards tit for tat is suddenly within reach.</p>\n<p>He just had to build and [level] it up, bit by bit, from scratch.</p>\n<hr>\n<p><strong>Meta pitch:</strong></p>\n<p>Intimate, slow-burn evolution of an average Joe into a badass, in a world where monsters plaguing the Earth need to die. Put on the jacket and get to work for humanity, son \u2014 we're behind schedule.</p>\n<p><strong>Expect:</strong></p>\n<p>\u2014 Powers choices/tinkering/training, step by step<br>\u2014 Slice of life, deep characterization<br>\u2014 Unique setting of a surviving, functional, Post-Apoc civilization&nbsp;<br>\u2014 System as an enhancer++ to reality, not a replacement, not omnipotent<br>\u2014 <strong>Octogirl</strong></p>\n<hr>\n<p>Inspired by such works as Super Supportive, Worm, Industrial Strength Magic, and old Marvel Comics such as The Uncanny X-Men (favorite: Magneto). Not campy or forcing in tropes. You don't need to know any of these to enjoy it. Focused on progression and powerhouse team-fighting in the long term. Won't ignore living life and getting to know people. No smut or 'harem' stylings, but attractive people exist and sexuality isn't neutered.</p>\n<p>The first four chapters are oversized 5k+ on average, and beyond this, they'll be 3k+, aiming for 3200 - 3500 with some exceptions. Posting on <strong>Mondays</strong> and <strong>Thursdays</strong>.</p>\n<p>Bonus chapter will be added upon 2750 Followers.</p>\n<p><a href=\"https://discord.gg/VMUyDbNE8f\" rel=\"noopener ugc nofollow\">Discord Link</a></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "urban_fantasy",
+        "progression",
+        "post_apocalyptic",
+        "action",
+        "adventure",
+        "fantasy",
+        "psychological",
+        "slice_of_life",
+        "supernatural",
+        "male_lead",
+        "strong_lead",
+        "strategy",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "low_fantasy",
+        "super_heroes",
+        "war_and_military",
+        "first_contact",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.549835,
+      "author_id": 335598,
+      "author_name": "RainHarlow",
+      "followers": 2693,
+      "favorites": 514,
+      "ratings": 301,
+      "total_views": 246722,
+      "word_count": 190762,
+      "page_count": 693,
+      "timestamp": 1753016405
     }
   }
 }
