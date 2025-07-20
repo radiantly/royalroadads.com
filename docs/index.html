@@ -159,10 +159,6 @@
         transform: translate(var(--x), calc(var(--y) - 5px));
       }
 
-      .rra-grid div.positioned a {
-        display: flex;
-      }
-
       .rra-grid div.positioned > .left {
         display: flex;
         flex-direction: column;
@@ -184,8 +180,7 @@
           rgba(0, 0, 0, 0.5) 2px,
           rgba(255, 255, 255, 0.2) 3px,
           rgba(255, 255, 255, 0.1) 5px,
-          transparent 6px,
-          transparent 7px,
+          transparent 6px 7px,
           rgba(255, 255, 255, 0.1) 8px,
           transparent 12px
         );
@@ -232,6 +227,7 @@
         display: flex;
         flex-direction: column;
         min-width: 0;
+        gap: 10px;
       }
 
       .rra-grid div.positioned > .right .title-row {
@@ -269,10 +265,60 @@
         fill: #aaa;
       }
 
+      .rra-grid div.positioned > .right .tags-wrap {
+        --tag-height: 20px;
+        position: relative;
+        height: var(--tag-height);
+        z-index: 13;
+      }
+
+      .rra-grid div.positioned > .right .tags {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        font-size: 13px;
+        text-transform: capitalize;
+        color: #666;
+        clip-path: polygon(
+          0 0,
+          100% 0,
+          100% var(--tag-height),
+          0 var(--tag-height)
+        );
+        transition: clip-path 0.4s ease;
+        padding-bottom: 30px;
+      }
+      .rra-grid div.positioned > .right .tags-wrap:hover > .tags {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .rra-grid div.positioned > .right .tags > div {
+        flex-shrink: 0;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 0 3px;
+        height: var(--tag-height);
+        display: flex;
+        align-items: center;
+      }
+
       .rra-grid div.positioned > .right .summary {
         font-size: 0.9em;
         opacity: 0;
         animation: fade-in 0.3s ease 0.4s forwards;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        clip-path: inset(0 0 0 0);
+        transition: clip-path 0.5s ease;
+      }
+
+      .rra-grid div.positioned > .right .tags-wrap:hover + .summary {
+        clip-path: inset(100% 0 0 0);
+      }
+
+      .rra-grid div.positioned > .right .summary > p {
+        margin: 0;
       }
 
       .rra-grid div.positioned > .right hr {
@@ -333,7 +379,7 @@
           <div class="cover-wrap">
             <img src="#" />
           </div>
-          <a href="#" class="read-btn">Read now</a>
+          <a href="#" class="read-btn" target="_blank">Read now</a>
           <a href="#" class="ad-wrap" target="_blank">
             <img src="#" />
           </a>
@@ -356,6 +402,9 @@
               </svg>
             </div>
           </div>
+          <div class="tags-wrap">
+            <div class="tags"></div>
+          </div>
           <div class="summary"></div>
         </div>
       </div>
@@ -364,6 +413,13 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script>
       class FictionBuddy {
+        static #tagMap = {
+          gamelit: "GameLit",
+          litrpg: "LitRPG",
+          multiple_lead: "Multiple Lead Characters",
+          summoned_hero: "Portal Fantasy / Isekai",
+        };
+
         static #dataPromise;
         static #cache = {};
         static {
@@ -372,13 +428,21 @@
             .then((obj) => obj?.entries ?? {});
         }
 
+        static #fixupFictionResponse(id, fiction) {
+          fiction.id = id;
+          fiction.tags = fiction.tags.map(
+            (tag) => this.#tagMap[tag] ?? tag.replace(/_/g, " ")
+          );
+          return fiction;
+        }
+
         static getFictionDetails(fictionId) {
           if (this.#cache.hasOwnProperty(fictionId))
             return this.#cache[fictionId];
 
-          return (this.#cache[fictionId] = this.#dataPromise.then((deets) => {
-            if (deets.hasOwnProperty(fictionId))
-              return { id: fictionId, ...deets[fictionId] };
+          return (this.#cache[fictionId] = this.#dataPromise.then((details) => {
+            if (details.hasOwnProperty(fictionId))
+              return this.#fixupFictionResponse(fictionId, details[fictionId]);
             return null;
           }));
         }
@@ -554,11 +618,12 @@
           // element.addEventListener("mouseleave", mouseleaveHandler);
           element.addEventListener("click", (event) => {
             if (this.#state.expandable === false) return;
-            event.preventDefault();
             if (event.target.closest(".close")) this.#required.expanded = false;
 
-            if (event.target.closest(".ad-wrap"))
+            if (event.target.closest(".ad-wrap")) {
+              event.preventDefault();
               this.#required.expanded = true;
+            }
 
             if (this.#current.expanded !== this.#required.expanded)
               this.#state.requestLayoutCallback(this);
@@ -663,9 +728,17 @@
           backdrop.src = this.adImgSrc;
 
           if (this.#required.fiction !== null) {
-            const { title, description } = this.#required.fiction;
+            const { title, description, tags } = this.#required.fiction;
             const titleElem = positioned.querySelector(".title");
             titleElem.textContent = title;
+
+            const tagsElem = positioned.querySelector(".tags");
+            const tagsElems = tags.map((tag) => {
+              const div = document.createElement("div");
+              div.textContent = tag;
+              return div;
+            });
+            tagsElem.replaceChildren(...tagsElems);
 
             const summaryElem = positioned.querySelector(".summary");
             summaryElem.innerHTML = description;
@@ -805,7 +878,7 @@
             const avWidth = vWidth - (side?.width ?? 0); // available width
             const adsInRow = this.#calcMaxAdsForWidth(adWidth, gap, avWidth);
             const adsInThisRow = Math.max(
-              1,
+              side == null,
               adsInRow - (adsInRow === adsInLastRow)
             );
             adsInLastRow = adsInThisRow;
