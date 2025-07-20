@@ -144,13 +144,13 @@
       "average_rating": 4.5,
       "author_id": 686890,
       "author_name": "Serana the Emperor",
-      "followers": 217,
-      "favorites": 37,
+      "followers": 219,
+      "favorites": 38,
       "ratings": 7,
-      "total_views": 8819,
+      "total_views": 8986,
       "word_count": 94359,
       "page_count": 343,
-      "timestamp": 1752964206
+      "timestamp": 1753023605
     },
     "108745": {
       "title": "Moonfire & Midnight",
@@ -2485,13 +2485,13 @@
       "average_rating": 3.97143,
       "author_id": 622526,
       "author_name": "siborg",
-      "followers": 1789,
+      "followers": 1792,
       "favorites": 351,
       "ratings": 175,
-      "total_views": 204715,
+      "total_views": 205068,
       "word_count": 71170,
       "page_count": 258,
-      "timestamp": 1752996605
+      "timestamp": 1753023605
     },
     "125076": {
       "title": "Trapped in Time",
@@ -6290,6 +6290,31 @@
       "word_count": 147891,
       "page_count": 537,
       "timestamp": 1753020040
+    },
+    "124377": {
+      "title": "Basic Thaumaturgy for the Emotionally Incompetent (The System Seas For Top 5 RS!)",
+      "slug": "basic-thaumaturgy-for-the-emotionally-incompetent",
+      "description": "<p><strong>[200,000 WORDS ALREADY WRITTEN AND POSTED ON <a href=\"https://www.patreon.com/c/danielnewwyn\" rel=\"noopener ugc nofollow\">PATREON</a>]</strong></p>\n<p><span style=\"font-weight: 400\">He can\u2019t conjure grief, can barely levitate a pebble, and once submitted a stanza instead of a spell schematic. Meet Fabrisse Kestovar: aspiring <span style=\"text-decoration: line-through\">thaumaturge</span> rock collector, confirmed pastry enthusiast, and perhaps the least emotionally competent student in the Order\u2019s seven-hundred-year history.</span></p>\n<p><span style=\"font-weight: 400\">Which makes it all the more confusing when an ancient magical relic suddenly wakes up after forty-seven years of silence, launches itself across a holy sanctum, and crashes into his face.</span></p>\n<p><span style=\"font-weight: 400\">Now bonded to a forgotten epochal calibration system buried beneath layers of ritual and myth, Fabrisse gains access to the PRAXIS NODE, a long-dormant, possibly AI-driven interface that delivers cryptic quests, sarcastic prompts, and calibration objectives measured in light-years. He has a Legacy Token, no combat thresholds, and a growing collection of useless rocks the system insists are \u2018historically significant.\u2019</span></p>\n<p><span style=\"font-weight: 400\">He\u2019s also the only one who can see any of it.</span></p>\n<hr>\n<p><b>Features:</b></p>\n<p><span style=\"font-weight: 400\">Weak to less weak to (maybe) strong MC</span></p>\n<p><span style=\"font-weight: 400\">A magic system based on emotional resonance</span></p>\n<p><span style=\"font-weight: 400\">A cosmic tutorial disguised as a sacred rite</span></p>\n<p><span style=\"font-weight: 400\">System messages with a personality disorder</span></p>\n<p><span style=\"font-weight: 400\">Balance between crunchy numbers and intuitive magic learning</span></p>\n<p><span style=\"font-weight: 400\">Slow-burn romance (possibly, not sure yet)</span></p>\n<p><span style=\"font-weight: 400\">Spell mnemonics that rhyme on purpose</span></p>\n<p><span style=\"font-weight: 400\">A chosen one who really, </span><i><span style=\"font-weight: 400\">really</span></i><span style=\"font-weight: 400\"> shouldn\u2019t be</span></p>\n<p><span style=\"font-weight: 400\">And the ugliest magic rocks you\u2019ve ever seen</span></p>\n<p><span style=\"font-weight: 400\">Find me on my <a href=\"https://discord.gg/6aWjVbF8kc\" rel=\"noopener ugc nofollow\">Discord server</a> (a shared server with other fics I write)!</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "comedy",
+        "magic",
+        "adventure",
+        "fantasy",
+        "high_fantasy"
+      ],
+      "average_rating": 4.82143,
+      "author_id": 159072,
+      "author_name": "Daniel Newwyn",
+      "followers": 475,
+      "favorites": 116,
+      "ratings": 56,
+      "total_views": 22400,
+      "word_count": 52359,
+      "page_count": 190,
+      "timestamp": 1753023605
     }
   }
 }
