@@ -707,16 +707,16 @@
         "ruling_class",
         "attractive_lead"
       ],
-      "average_rating": 4.11941,
+      "average_rating": 4.11966,
       "author_id": 561701,
       "author_name": "The Curator",
-      "followers": 6826,
-      "favorites": 1829,
-      "ratings": 1051,
-      "total_views": 2881348,
+      "followers": 6830,
+      "favorites": 1832,
+      "ratings": 1053,
+      "total_views": 2886390,
       "word_count": 511788,
       "page_count": 1861,
-      "timestamp": 1752996605
+      "timestamp": 1753041606
     },
     "121319": {
       "title": "Andy in the Apocalypse [LitRPG System Apocalypse]",
@@ -6534,6 +6534,31 @@
       "word_count": 56313,
       "page_count": 204,
       "timestamp": 1753039805
+    },
+    "117840": {
+      "title": "Tech Scavengers [Humorous, Action-Packed Space Opera] ",
+      "slug": "tech-scavengers-humorous-action-packed-space-opera",
+      "description": "<p>Jeridan Cook and Negasi Gao are two of the best tech scavengers in the Orion Arm, at least they think so. Actually, they spend most of their time getting drunk, getting arrested, or having their ship confiscated.</p>\n<p>Their job is to search remote star systems for old installations from the Galactic Imperium, a highly advanced empire that once ruled the Milky Way. Tech scavengers make good money searching for Imperium artifacts and selling the tech to the highest bidder. It\u2019s a dangerous job. Because old technology is the new currency, and people will kill for it.</p>\n<p>When Jeridan and Negasi join forces with a strange family searching for the Imperium\u2019s greatest secret, they realize they have a chance of a lifetime, and the biggest risk they\u2019ve ever faced.</p>\n<p></p>\n<p>What to expect: humor, starship battles, alien worlds, archaeology in space, and an oddball mix of people slowly coming together to make a team. Someone described it as \"Firefly meets Mad Max.\" Not sure if that's totally accurate but it sounds cool.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "space_opera",
+        "comedy",
+        "multiple_lead",
+        "sci_fi",
+        "action",
+        "adventure",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.67857,
+      "author_id": 392551,
+      "author_name": "Rootless Explorer",
+      "followers": 203,
+      "favorites": 37,
+      "ratings": 28,
+      "total_views": 36652,
+      "word_count": 138008,
+      "page_count": 501,
+      "timestamp": 1753041606
     }
   }
 }
