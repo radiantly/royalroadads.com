@@ -2485,13 +2485,13 @@
       "average_rating": 3.97143,
       "author_id": 622526,
       "author_name": "siborg",
-      "followers": 1792,
+      "followers": 1790,
       "favorites": 351,
       "ratings": 175,
-      "total_views": 205068,
+      "total_views": 205157,
       "word_count": 71170,
       "page_count": 258,
-      "timestamp": 1753023605
+      "timestamp": 1753029005
     },
     "125076": {
       "title": "Trapped in Time",
@@ -6315,6 +6315,63 @@
       "word_count": 52359,
       "page_count": 190,
       "timestamp": 1753023605
+    },
+    "115664": {
+      "title": "Whim Manor and the Boy Who Wasn't",
+      "slug": "whim-manor-and-the-boy-who-wasnt",
+      "description": "<p>When <strong>Harper Wattson</strong>, a boy who gets bullied at school for looking like a girl, unwittingly ends up at an all-girls cosplay summer camp, he becomes sidekick to Wilhelmina <strong>\u201cWhim\u201d Manor</strong>, girl detective extraordinaire.</p>\n<p>Together, using the power of logic, makeovers, and ignoring adult authority figures, they'll battle evil witches, eviler corporations, and an army of... *spoilers!*</p>\n<p>[Sensitivity tag because this deals with mental illness and controversial social issues]</p>",
+      "status": "Ongoing",
+      "tags": [
+        "comedy",
+        "female_lead",
+        "contemporary",
+        "slice_of_life",
+        "drama",
+        "mystery",
+        "gender_bender",
+        "school_life",
+        "secret_identity",
+        "sensitive"
+      ],
+      "average_rating": 4.935485,
+      "author_id": 383606,
+      "author_name": "blugail",
+      "followers": 185,
+      "favorites": 46,
+      "ratings": 31,
+      "total_views": 6592,
+      "word_count": 35035,
+      "page_count": 127,
+      "timestamp": 1753029005
+    },
+    "114696": {
+      "title": "The Myth Seekers [A litrpg fantasy adventure]",
+      "slug": "the-myth-seekers-a-litrpg-fantasy-adventure",
+      "description": "<p><em><strong>Sever the strings of gods and kings.</strong></em></p>\n<p><span style=\"font-weight: 400\">In Tethia, where classes are braided like threads into the soul, Raith has spent his life dreaming of forging his own path as an adventurer.</span></p>\n<p><span style=\"font-weight: 400\">After months of seeking the rare pattern that will unlock the class he\u2019s been chasing, he discovers the secret has already been claimed by the Order of the Loom who have no interest in sharing their knowledge.</span></p>\n<p><span style=\"font-weight: 400\">Determined, Raith enlists the help of his best friend to infiltrate the Order\u2019s library while juggling skirmisher matches, planning, and an impatient streak that drives him straight to the Thieves Guild.</span></p>\n<p><span style=\"font-weight: 400\">But no favors come free, and the more he fights for freedom, the tighter the tangle of fate becomes.</span></p>\n<p><span style=\"font-weight: 400\">Finally, after forming a team to take on Janek\u2019s Tower, the adventurers set off with high hopes.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">But before even reaching their destination, the team finds they are no longer chasing adventure.</span></p>\n<p><em><span style=\"font-weight: 400\">They are living it.</span></em></p>\n<p><em><span style=\"font-weight: 400\"></span></em></p>\n<hr>\n<p></p>\n<p>New chapters every Sunday and Wednesday.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "male_lead",
+        "strong_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "high_fantasy"
+      ],
+      "average_rating": 4.77907,
+      "author_id": 462730,
+      "author_name": "Luminous Zephyr",
+      "followers": 464,
+      "favorites": 110,
+      "ratings": 43,
+      "total_views": 32234,
+      "word_count": 103704,
+      "page_count": 377,
+      "timestamp": 1753029005
     }
   }
 }
