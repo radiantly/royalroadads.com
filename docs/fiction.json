@@ -4447,16 +4447,16 @@
         "dystopia",
         "attractive_lead"
       ],
-      "average_rating": 4.333335,
+      "average_rating": 4.30435,
       "author_id": 391360,
       "author_name": "SenTheSenseless",
-      "followers": 395,
+      "followers": 398,
       "favorites": 108,
-      "ratings": 45,
-      "total_views": 73041,
-      "word_count": 232748,
-      "page_count": 846,
-      "timestamp": 1752906606
+      "ratings": 46,
+      "total_views": 73315,
+      "word_count": 232172,
+      "page_count": 844,
+      "timestamp": 1753039805
     },
     "97647": {
       "title": "Amongst the Stars of Cygnus [Hard Sci-fi Survival]",
@@ -6473,6 +6473,67 @@
       "word_count": 46497,
       "page_count": 169,
       "timestamp": 1753038005
+    },
+    "76959": {
+      "title": "Aether Nexus: Curse of Love & Hatred",
+      "slug": "aether-nexus-curse-of-love-hatred",
+      "description": "<p><strong>Welcome to the first chapter of the Aether Nexus Series, where one's soul can be their greatest weapon...</strong></p>\n<p>Happy, content, and carefree with his two stuffed animal companions, thirteen-year-old Dama Jinbia soon finds his life turned upside down after finding an unconscious girl, who calls herself Giona, with scars and a mysterious mark on her collarbone beside a river bank one day.</p>\n<p>Outside of Enohay Valley, an enigmatic witch is on a mission to unmask the corruption of the Soul Divination Council, who were not pleased with losing their prized test subject. Along the way, he meets many unique individuals, some of which follow in his goal, others who are destined for greatness, and even the prophesied \"Sin Incarnations\", all while unraveling the many mysteries within Eranovum.</p>\n<p>These factors together will ultimately set the stage for a war the likes of the Holy Catalyst War eight centuries ago\u2014<strong>one that will prove that Love &amp; Hatred are merely two sides of the same coin...</strong></p>\n<hr>\n<p><span style=\"font-weight: 400\">What to expect:</span></p>\n<p><span style=\"font-weight: 400\">- Current Schedule: Every Tuesday and Friday at 12PM CST / 1PM EST!</span></p>\n<p><span style=\"font-weight: 400\">- An immersive world with a cast of diverse characters who will reoccur in the work in one way or another!</span></p>\n<p><span style=\"font-weight: 400\">- Two Main Perspectives that happen concurrently, with other smaller POVs that later merge into the former, giving a great view into the world of Aether Nexus through numerous eyes!</span></p>\n<p><span style=\"font-weight: 400\">- A well structured and expansive soul-based power system, enabling unique abilities to flourish!</span></p>\n<p><span style=\"font-weight: 400\">- Weak MC with Strong Ability! (1st Perspective) / Strong MC with Weak Ability! (2nd Perspective)</span><span style=\"font-weight: 400\"></span></p>\n<p><span style=\"font-weight: 400\">- Slow Burn Story that will leave you with this question: \"How far would <span style=\"text-decoration: underline\"><em><strong>you</strong></em></span> go for the ones you love</span>\u2014or to hurt the ones you hate?\"</p>\n<hr>\n<p>*This is my original story, so copying and posting it somewhere else will violate my copyright!</p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "multiple_lead",
+        "magic",
+        "high_fantasy",
+        "action",
+        "adventure",
+        "fantasy",
+        "romance",
+        "sensitive"
+      ],
+      "average_rating": 4.8,
+      "author_id": 410223,
+      "author_name": "Inlajin",
+      "followers": 135,
+      "favorites": 39,
+      "ratings": 15,
+      "total_views": 35194,
+      "word_count": 223387,
+      "page_count": 812,
+      "timestamp": 1753039805
+    },
+    "115509": {
+      "title": "Asher's Rise ",
+      "slug": "ashers-rise",
+      "description": "<p>**Chapters published&nbsp; Tuesdays and Thursdays 11:33pm AEST.**</p>\n<p>*AKA Tuesdays and Thursdays 9:33 am Eastern time*</p>\n<p>Advance chapters available on Patreon if you're REALLY feeling it, or if you want to help me feed my kid<b>&nbsp;</b></p>\n<hr>\n<p><span style=\"font-weight: 400\">Follow Asher and his allies as they dedicate their lives to exploring the mysteries of the Tower, and by extension, the universe.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">What starts as a simple rescue mission quickly escalates into a much grander journey. Full of colourful allies and powerful enemies.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">Can this teenage farmer from a world without magic survive in the perilous worlds of the Tower?&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">Follow Asher's Rise to find out!</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "dungeon",
+        "martial_arts",
+        "multiple_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "mystery",
+        "supernatural",
+        "male_lead",
+        "strong_lead",
+        "magic",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy",
+        "progression"
+      ],
+      "average_rating": 4.464285,
+      "author_id": 716141,
+      "author_name": "Conway",
+      "followers": 107,
+      "favorites": 24,
+      "ratings": 14,
+      "total_views": 8141,
+      "word_count": 56313,
+      "page_count": 204,
+      "timestamp": 1753039805
     }
   }
 }
