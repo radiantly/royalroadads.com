@@ -4080,10 +4080,10 @@
       "followers": 1159,
       "favorites": 287,
       "ratings": 149,
-      "total_views": 418112,
+      "total_views": 418546,
       "word_count": 390842,
       "page_count": 1421,
-      "timestamp": 1752985807
+      "timestamp": 1753032605
     },
     "120083": {
       "title": "The Theogenesis Theorem [LitRPG - Progression - High Fantasy]",
@@ -5644,16 +5644,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.61905,
+      "average_rating": 4.618305,
       "author_id": 559659,
       "author_name": "Wizardly Dude",
-      "followers": 5291,
-      "favorites": 1078,
+      "followers": 5314,
+      "favorites": 1081,
       "ratings": 672,
-      "total_views": 495066,
+      "total_views": 497960,
       "word_count": 129510,
       "page_count": 470,
-      "timestamp": 1752980405
+      "timestamp": 1753032605
     },
     "118422": {
       "title": "The Great Realm Portal [A LitRPG Progression - Isekai - Fantasy]",
@@ -6372,6 +6372,33 @@
       "word_count": 103704,
       "page_count": 377,
       "timestamp": 1753029005
+    },
+    "111564": {
+      "title": "The Horlock Chronicles",
+      "slug": "the-horlock-chronicles",
+      "description": "<p><strong>After a fight gone wrong, Brandon Horlock falls through a portal to another world.</strong><br><strong>Listen in as he tells us how he got here. How he persevered through a life of crime, betrayal, and torture. How he went from street rat to a prisoner with magic. How he lost contact with everyone he ever loved.</strong></p>\n<p></p>\n<p><strong>Expect:</strong></p>\n<p>A gritty, morally ambiguous fantasy</p>\n<p>Criminal intrigue and shadowy deals</p>\n<p>Violence and betrayal</p>\n<p>A slow-burning journey of transformation and rebellion</p>\n<p></p>\n<p>New chapters Saturdays and Wednesdays! 3+ books planned so far.</p>\n<p>The goal is to keep delivering, and keep improving.</p>\n<p></p>\n<p>The prologue is in third person but the next chapters are in first. Why? <strong>Because I'm an idiot</strong>. I'll eventually do something about it but take this as a warning.</p>\n<p></p>\n<div>Cover art by: Anze Ban Virant - ABV atelier design</div>\n<div></div>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "male_lead",
+        "drama",
+        "magic",
+        "adventure",
+        "fantasy",
+        "profanity",
+        "graphic_violence",
+        "sensitive"
+      ],
+      "average_rating": 4.65,
+      "author_id": 595989,
+      "author_name": "Basic Rent",
+      "followers": 109,
+      "favorites": 28,
+      "ratings": 10,
+      "total_views": 15868,
+      "word_count": 173661,
+      "page_count": 631,
+      "timestamp": 1753032605
     }
   }
 }
