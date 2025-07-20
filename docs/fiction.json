@@ -1846,16 +1846,16 @@
         "ruling_class",
         "attractive_lead"
       ],
-      "average_rating": 4.67073,
+      "average_rating": 4.68182,
       "author_id": 221414,
       "author_name": "Of Rantings and Ramblings",
-      "followers": 434,
-      "favorites": 70,
-      "ratings": 41,
-      "total_views": 16638,
+      "followers": 443,
+      "favorites": 71,
+      "ratings": 44,
+      "total_views": 17276,
       "word_count": 66648,
       "page_count": 242,
-      "timestamp": 1752976805
+      "timestamp": 1753003805
     },
     "121992": {
       "title": "You Only Kiss Twice - Spy LitRPG",
@@ -5020,16 +5020,16 @@
         "graphic_violence",
         "high_fantasy"
       ],
-      "average_rating": 4.757145,
+      "average_rating": 4.76389,
       "author_id": 453146,
       "author_name": "TQ Zhang",
-      "followers": 544,
-      "favorites": 92,
-      "ratings": 35,
-      "total_views": 30755,
-      "word_count": 50201,
-      "page_count": 182,
-      "timestamp": 1752940806
+      "followers": 582,
+      "favorites": 99,
+      "ratings": 36,
+      "total_views": 33422,
+      "word_count": 52035,
+      "page_count": 189,
+      "timestamp": 1753003805
     },
     "98247": {
       "title": "The Dark Lord's Guide to Hostile Corporate Takeover (A reverse Isekai)",
@@ -5938,6 +5938,35 @@
       "word_count": 18033,
       "page_count": 65,
       "timestamp": 1753000206
+    },
+    "105984": {
+      "title": "Humanity's #1 Fan",
+      "slug": "humanitys-1-fan",
+      "description": "<p><b>When the day of the apocalypse comes, Ashtoreth betrays Hell to fight for humanity.</b></p>\n<p><span style=\"font-weight: 400\">After all, she never fit in with the other archfiends. She was always too optimistic, too energetic, too... </span><i><span style=\"font-weight: 400\">nice</span></i><span style=\"font-weight: 400\">.</span></p>\n<p><span style=\"font-weight: 400\">She was supposed to study humanity to help her learn to destroy it. Instead, she fell in love with it. She knows that Earth is where she really belongs.</span></p>\n<p><span style=\"font-weight: 400\">But as she tears her way through the tutorial, recruiting allies to her cause, she quickly realizes something strange: the humans don\u2019t trust her.</span></p>\n<p><span style=\"font-weight: 400\">Sure, her main ability is </span><b>[Consume Heart]</b><span style=\"font-weight: 400\">. But that doesn\u2019t make her evil\u2014it just means that every enemy drops an extra health potion!</span></p>\n<p><span style=\"font-weight: 400\">Yes, her </span><b>[Vampiric Archfiend]</b><span style=\"font-weight: 400\"> race and </span><b>[Bloodfire Annihilator]</b><span style=\"font-weight: 400\"> class </span><i><span style=\"font-weight: 400\">sound</span></i><span style=\"font-weight: 400\"> a little intimidating, but surely even the purehearted can agree that <em>some</em> things should be purged by fire!</span></p>\n<p><span style=\"font-weight: 400\">And </span><b>[Demonic Summoning]</b><span style=\"font-weight: 400\"> can\u2019t be all that evil if the ancient demonic entity that you summon takes the form of a cute, sassy cat!</span></p>\n<p><span style=\"font-weight: 400\">It may take her a little work, but Ashtoreth is optimistic: eventually, the humans will see that she\u2019s here to help. After all, she has an important secret to tell them:</span></p>\n<p><b>Hell is afraid of humanity.</b></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "comedy",
+        "female_lead",
+        "strong_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "magic",
+        "graphic_violence",
+        "gamelit",
+        "high_fantasy"
+      ],
+      "average_rating": 4.665805,
+      "author_id": 575372,
+      "author_name": "Illiriel",
+      "followers": 3188,
+      "favorites": 716,
+      "ratings": 386,
+      "total_views": 753750,
+      "word_count": 257338,
+      "page_count": 935,
+      "timestamp": 1753003805
     }
   }
 }
