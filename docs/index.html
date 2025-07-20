@@ -267,9 +267,9 @@
 
       .rra-grid div.positioned > .right .tags-wrap {
         --tag-height: 20px;
-        position: relative;
         height: var(--tag-height);
-        z-index: 13;
+        opacity: 0;
+        animation: fade-in 0.2s ease 0.4s forwards;
       }
 
       .rra-grid div.positioned > .right .tags {
@@ -305,7 +305,7 @@
       .rra-grid div.positioned > .right .summary {
         font-size: 0.9em;
         opacity: 0;
-        animation: fade-in 0.3s ease 0.4s forwards;
+        animation: fade-in 0.3s ease 0.5s forwards;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -469,12 +469,6 @@
 
             // elements
             elements: null,
-
-            // animations
-            hoverTween: {
-              cached: null,
-              position: null,
-            },
           };
 
           this.#current = {
@@ -513,11 +507,7 @@
               return;
             }
             this.#required.fiction = details;
-            // TODO: request layout here
-            // if we naively request layout here, a lot of ads will request layout at the same time once the fiction is loaded
-            // we need to
-            // 1. figure out if layout even needs to be computed (only needed for expanded ads)
-            // 2. throttle layout computations and skip if already updated
+            if (this.needsContentUpdate) requestLayoutCallback(this);
           });
         }
 
@@ -525,7 +515,6 @@
           return this.#required.width;
         }
         get height() {
-          // return this.#state.expanded ? 730 : RectangleAd.HEIGHT;
           return this.#required.height;
         }
 
@@ -562,36 +551,9 @@
             this.#current.uid !== this.#required.uid ||
             this.#current.alt !== this.#required.alt ||
             this.#current.link !== this.#required.link ||
-            this.#current.fiction !== this.#required.fiction
+            (this.#required.expanded &&
+              this.#current.fiction !== this.#required.fiction)
           );
-        }
-
-        get hoverTween() {
-          if (
-            this.#state.hoverTween.position?.x === this.#current.x &&
-            this.#state.hoverTween.position?.y === this.#current.y
-          ) {
-            return this.#state.hoverTween.cached;
-          }
-
-          const { positioned, backdrop } = this.#state.elements;
-
-          this.#state.hoverTween.cached?.kill();
-          const timeline = gsap.timeline();
-          timeline.to(
-            positioned,
-            {
-              y: this.#current.y - 5,
-              duration: 0.2,
-            },
-            0
-          );
-
-          this.#state.hoverTween = {
-            cached: timeline,
-            position: { x: this.#current.x, y: this.#current.y },
-          };
-          return timeline;
         }
 
         get expandable() {
@@ -607,15 +569,6 @@
         }
 
         #addElementHandlers(element, backdrop) {
-          // const mouseenterHandler = () => {
-          //   this.hoverTween.play();
-          // };
-          // const mouseleaveHandler = () => {
-          //   this.hoverTween.reverse();
-          // };
-          // gsap.set(backdrop, { opacity: 0.6 });
-          // element.addEventListener("mouseenter", mouseenterHandler);
-          // element.addEventListener("mouseleave", mouseleaveHandler);
           element.addEventListener("click", (event) => {
             if (this.#state.expandable === false) return;
             if (event.target.closest(".close")) this.#required.expanded = false;
@@ -667,6 +620,8 @@
           positioned.classList.add("expanded");
           positioned.style.setProperty("--width", `${width}px`);
           positioned.style.setProperty("--height", `auto`);
+
+          this.updateContent();
 
           // calculate height
           const { height } = positioned.getBoundingClientRect();
@@ -758,19 +713,18 @@
             layoutComputedTill: 0,
 
             varianceCache: new Map(),
+
+            layoutPending: false,
+            activeAd: null,
+
+            vWidth: null,
+            vHeight: null,
+            scrollY: null,
           };
         }
 
         addAdEntries(entries) {
-          const requestLayoutCallback = (ad) => {
-            this.computeLayout(
-              document.querySelector(".rra-grid").clientWidth,
-              window.innerHeight,
-              window.scrollY,
-              ad
-            );
-            this.updatePositions();
-          };
+          const requestLayoutCallback = (ad) => this.requestRender(ad);
           for (const [uid, entry] of Object.entries(entries))
             this.#state.ads.push(
               new RectangleAd(uid, entry.alt, entry.link, requestLayoutCallback)
@@ -800,7 +754,8 @@
           return Math.floor((totWidth + gap) / (adWidth + gap));
         }
 
-        computeLayout(vWidth, vHeight, scrollY, activeAd = null) {
+        computeLayout() {
+          const { vWidth, vHeight, scrollY, activeAd } = this.#state;
           const gap = 10;
           const variance = 40; // TODO: make this dynamic based on vWidth or perRow
           const adWidth = RectangleAd.WIDTH + variance;
@@ -945,7 +900,7 @@
           this.layoutComputedTill = it.index;
         }
 
-        updatePositions(vWidth, vHeight, scrollY) {
+        updatePositions() {
           const till = Math.min(
             this.layoutComputedTill,
             this.#state.ads.length
@@ -956,38 +911,35 @@
             ad.updateContent();
           }
         }
+
+        render() {
+          this.#state.vWidth = document.querySelector(".rra-grid").clientWidth;
+          this.#state.vHeight = window.innerHeight;
+          this.#state.scrollY = window.scrollY;
+          console.info("COMPUTING LAYOUT");
+
+          this.computeLayout();
+          this.updatePositions();
+
+          this.#state.layoutPending = false;
+          this.#state.activeAd = null;
+        }
+
+        requestRender(requestingAd = null) {
+          if (requestingAd) this.#state.activeAd = requestingAd;
+          if (this.#state.layoutPending) return;
+          this.#state.layoutPending = true;
+          requestAnimationFrame(() => this.render());
+        }
       }
 
-      let lastViewportWidth = null;
-      let lastViewportHeight = null;
-      let lastScrollY = null;
       const renderMonkey = new RenderMonkey();
-      const loop = () => {
-        const viewportWidth = document.querySelector(".rra-grid").clientWidth;
-        const viewportHeight = window.innerHeight;
-        const scrollY = window.scrollY;
-
-        // requestAnimationFrame(loop);
-
-        if (
-          viewportWidth === lastViewportWidth &&
-          viewportHeight === lastViewportHeight &&
-          scrollY === lastScrollY
-        )
-          return;
-
-        lastViewportWidth = viewportWidth;
-        lastViewportHeight = viewportHeight;
-        lastScrollY = scrollY;
-        renderMonkey.computeLayout(viewportWidth, viewportHeight, scrollY);
-        renderMonkey.updatePositions(viewportWidth, viewportHeight, scrollY);
-      };
 
       const handleData = ({ entries }) => {
         renderMonkey.addAdEntries(entries);
-        requestAnimationFrame(loop);
+        renderMonkey.requestRender();
 
-        window.addEventListener("resize", loop);
+        window.addEventListener("resize", () => renderMonkey.requestRender());
       };
 
       fetch("300x250/entries.json")
