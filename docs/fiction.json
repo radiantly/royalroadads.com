@@ -2354,16 +2354,16 @@
         "graphic_violence",
         "sensitive"
       ],
-      "average_rating": 4.875,
+      "average_rating": 4.833335,
       "author_id": 571189,
       "author_name": "Inkk001",
-      "followers": 22,
-      "favorites": 11,
-      "ratings": 4,
-      "total_views": 1488,
-      "word_count": 27413,
-      "page_count": 99,
-      "timestamp": 1752827406
+      "followers": 24,
+      "favorites": 13,
+      "ratings": 6,
+      "total_views": 1791,
+      "word_count": 28473,
+      "page_count": 103,
+      "timestamp": 1752991205
     },
     "104265": {
       "title": "A week in the life of",
@@ -5745,6 +5745,61 @@
       "word_count": 58908,
       "page_count": 214,
       "timestamp": 1752984005
+    },
+    "121046": {
+      "title": "What Lurks Within",
+      "slug": "what-lurks-within",
+      "description": "<p>In a city pulsing with aether and secrets, survival isn\u2019t guaranteed.</p>\n<p>It\u2019s earned.</p>\n<p>Zen Kuro was just another student in District 2, coasting through academy life, until a visit to his uncle pulled him into a forgotten piece of his family\u2019s past and a job only he wanted.</p>\n<p>Now, armed with a rundown facility, a single containment unit, and a revolver that barely fits his hand, Zen steps into the world of anomaly containment. Creatures twisted by raw aether, wretches that stalk the dead zones, and relics that should never have existed, it\u2019s all real, and it's all his problem now.</p>\n<p>With each mission, he earns scraps of experience, pieces of power, and more questions than answers. The deeper he goes, the more the system changes his body, mind, and soul.</p>\n<p>But something stirs beneath the surface.</p>\n<p>Watching and waiting.</p>\n<p>What lurks within... might just be him.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "steampunk",
+        "male_lead",
+        "action",
+        "adventure",
+        "fantasy"
+      ],
+      "average_rating": 4.555555,
+      "author_id": 732781,
+      "author_name": "Dark Diamond",
+      "followers": 50,
+      "favorites": 17,
+      "ratings": 9,
+      "total_views": 3090,
+      "word_count": 62619,
+      "page_count": 227,
+      "timestamp": 1752991205
+    },
+    "120927": {
+      "title": "Faith is Earned [LitRPG, Progression Fantasy, Divine Advancement]",
+      "slug": "faith-is-earned-litrpg-progression-fantasy-divine",
+      "description": "<p><strong>Your entire world sucks and the <em>Gods</em> are the reason for it. Do you kneel down humbly and pray?</strong><br><strong>No, you make your own <em>Faith</em>!</strong></p>\n<p>In a world where most of what one could hope for was to become a Faithful, even [Kings] have to bow their heads before the true forces of the world. Our main man (name not given for a reason) gives his best, honest take on bettering himself, only for the world to chew him and spit him out.<br>May the Gods forgive him for raging against the <strong>Filth</strong> of <strong>Faith</strong>, for he's not going to forgive <em>them</em>.</p>\n<p>After having his last hope crushed, our MC is given a helping hand by the least likely source. Thrusted against the established Faiths of the world, he makes unlikely alliances, pacts with broken Gods and taken on the camarilla of Creation's foundation.<br>It's not an easy thing to grow an anti-God Faith. Good thing so many people are <em>pissed</em>.</p>\n<p><span style=\"text-decoration: underline\">What to expect:</span><strong><br></strong>\u2b50A LitRPG, where the System designates Classes, Levels and more, based on individual actions.&nbsp;<br>\u2b50A weak to strong MC, filled with both fights and intrigue.<br>\u2b50Tower-Climbing Mechanic is present, as the world contains Hills/Mountains/Towers to conquer and claim. The system directly rewards this.<br>\u2b50Progression Fantasy, where the main lead gradually increased in power, the scope of power gradually growing more defined.<br>\u2b50Gray morality, as the MC finds that his ideal world may not be so clear cut.</p>\n<p><strong><span>\ud83d\udcd8 </span>Posting Schedule</strong>: <strong>1 Chapter</strong> every day, <strong>Monday</strong> to <strong>Friday</strong>.</p>\n<p>The <strong>Discord Server</strong> can be accessed through this <a href=\"https://discord.gg/TvNAKPZAKe\" rel=\"noopener ugc nofollow\">Channel</a>.</p>\n<p><strong>Patreon</strong> has have up to <strong>30 Chapters</strong> ahead, with 2 Tiers of <strong>10</strong> and <strong>30</strong> Chapters ahead.<br>It can be <a href=\"https://www.patreon.com/c/nemoblanc\" rel=\"noopener ugc nofollow\"><strong>accessed here</strong></a>.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "male_lead",
+        "supernatural",
+        "action",
+        "adventure",
+        "fantasy",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "gamelit",
+        "high_fantasy"
+      ],
+      "average_rating": 4.61207,
+      "author_id": 753579,
+      "author_name": "Nemo Blanc",
+      "followers": 674,
+      "favorites": 150,
+      "ratings": 174,
+      "total_views": 86026,
+      "word_count": 177787,
+      "page_count": 646,
+      "timestamp": 1752991205
     }
   }
 }
