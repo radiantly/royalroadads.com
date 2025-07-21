@@ -405,16 +405,16 @@
         "mythos",
         "progression"
       ],
-      "average_rating": 4.48372,
+      "average_rating": 4.48611,
       "author_id": 208908,
       "author_name": "Astralium",
-      "followers": 2140,
-      "favorites": 404,
-      "ratings": 215,
-      "total_views": 153157,
+      "followers": 2146,
+      "favorites": 405,
+      "ratings": 216,
+      "total_views": 154077,
       "word_count": 76933,
       "page_count": 279,
-      "timestamp": 1753075805
+      "timestamp": 1753095606
     },
     "111984": {
       "title": "Equilibrium: Bringing God's Light To This Pagan World",
@@ -4390,13 +4390,13 @@
       "average_rating": 4.384615,
       "author_id": 422856,
       "author_name": "Lazie",
-      "followers": 1781,
+      "followers": 1782,
       "favorites": 441,
       "ratings": 104,
-      "total_views": 419916,
-      "word_count": 560427,
-      "page_count": 2037,
-      "timestamp": 1753038005
+      "total_views": 420939,
+      "word_count": 562443,
+      "page_count": 2045,
+      "timestamp": 1753095606
     },
     "123393": {
       "title": "The Thirteenth Trumpet: Valkyrie",
@@ -7236,6 +7236,35 @@
       "word_count": 229899,
       "page_count": 835,
       "timestamp": 1753092006
+    },
+    "116555": {
+      "title": "Dimensions",
+      "slug": "dimensions",
+      "description": "<p>Jan has never played a game in his life\u2014he only cared for books.</p>\n<p>So when he finds himself in a world built like a game, full of stats, skills, and monsters, he\u2019s completely unprepared.<br>And to make matters worse, he skipped the tutorial!</p>\n<p>His only way home? Conquer a hundred deadly tower floors.</p>\n<p>With death all too real and the world\u2019s secrets still untouched by the heroes who came before him, will Jan break under the pressure\u2014or is a hero with a book exactly what this world has been waiting for?&nbsp;</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "progression",
+        "comedy",
+        "action",
+        "adventure",
+        "fantasy",
+        "slice_of_life",
+        "male_lead",
+        "magic",
+        "gamelit"
+      ],
+      "average_rating": 4.09524,
+      "author_id": 175708,
+      "author_name": "Wyman",
+      "followers": 263,
+      "favorites": 59,
+      "ratings": 21,
+      "total_views": 22746,
+      "word_count": 69071,
+      "page_count": 251,
+      "timestamp": 1753095606
     }
   }
 }
