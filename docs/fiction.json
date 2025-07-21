@@ -290,13 +290,13 @@
       "average_rating": 4.636365,
       "author_id": 763274,
       "author_name": "cody.bray",
-      "followers": 280,
-      "favorites": 47,
+      "followers": 286,
+      "favorites": 48,
       "ratings": 11,
-      "total_views": 6398,
+      "total_views": 6470,
       "word_count": 39422,
       "page_count": 143,
-      "timestamp": 1753074005
+      "timestamp": 1753086606
     },
     "104561": {
       "title": "For the Glory of Rome: Chronicles of an Isekai'd Legion",
@@ -7136,6 +7136,42 @@
       "word_count": 68270,
       "page_count": 248,
       "timestamp": 1753083006
+    },
+    "91052": {
+      "title": "Elderpyre: Exiled to Another World [STUBBING BOOK 1 ON AUG 15]",
+      "slug": "elderpyre-exiled-to-another-world-stubbing-book",
+      "description": "<p><strong>A \u201cguilty\u201d verdict. A shot at freedom. A brave new world to explore.</strong></p>\n<p>Hunter is a twenty-something college dropout who's not going anywhere too fast - but not for lack of smarts.</p>\n<p>When he faces jailtime for using a stolen credit card number to buy some pizza, he's given a seedy but interesting alternative:</p>\n<p>Delve into the virtual reality world of Elderpyre and provide the developers with anonymous playtest data.</p>\n<p>Things, however, are never that simple - are they?</p>\n<p>Someone slips him a mysterious note that says \u201cthis is not a game\u201d, and the lines between fantasy and reality start getting more blurred than ever.</p>\n<p>Sometimes painfully, nigh-lethally so.</p>\n<p>&nbsp;</p>\n<p><strong>About the series:</strong></p>\n<p>Experience an intriguing dive into the otherworldly realm of Elderpyre as Hunter finds out the hard way that choices have consequences and the stakes are painfully real.</p>\n<p>See him fight tooth and nail to forge his own path, do right by his companions, and become stronger through a unique progression system combining cultivation and traditional LitRPG elements.</p>\n<p>A weak-to-strong dark fantasy story perfect for readers who enjoy rich characters, deep world-building, and thought-provoking themes.</p>\n<p>Oh, and Skills, Abilities, monster fighting, and an MC that just\u2026 won\u2019t\u2026 give\u2026 up!</p>\n<p>&nbsp;</p>\n<p><strong>What to expect:</strong></p>\n<p>- VR-to-Isekai story.</p>\n<p>- Down-to-earth but smart male MC.</p>\n<p>- Stats, Skills, Abilities, progression.</p>\n<p>- Rich and varied characters.</p>\n<p>- Deep worldbuilding.</p>\n<p>- Deceptively serious stakes.</p>\n<p>- Thought-provoking themes.</p>\n<p><strong><br>What NOT to expect:</strong></p>\n<p>- OP MC.</p>\n<p>- Harem / reverse harem.</p>\n<p>&nbsp;</p>\n<p><strong>Schedule: 2 chapters per week on Wednesday, Sunday</strong></p>\n<p>&nbsp;</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "dungeon",
+        "strategy",
+        "adventure",
+        "drama",
+        "fantasy",
+        "psychological",
+        "male_lead",
+        "magic",
+        "grimdark",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "gamelit",
+        "high_fantasy",
+        "progression",
+        "artificial_intelligence"
+      ],
+      "average_rating": 4.388,
+      "author_id": 214400,
+      "author_name": "cwilkins",
+      "followers": 982,
+      "favorites": 233,
+      "ratings": 125,
+      "total_views": 326159,
+      "word_count": 286832,
+      "page_count": 1043,
+      "timestamp": 1753086606
     }
   }
 }
