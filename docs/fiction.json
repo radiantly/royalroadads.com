@@ -19,16 +19,16 @@
         "magic",
         "high_fantasy"
       ],
-      "average_rating": 4.67647,
+      "average_rating": 4.677475,
       "author_id": 475602,
       "author_name": "AmberAtlas",
-      "followers": 3325,
-      "favorites": 540,
-      "ratings": 289,
-      "total_views": 303594,
-      "word_count": 133525,
-      "page_count": 485,
-      "timestamp": 1752863405
+      "followers": 3362,
+      "favorites": 547,
+      "ratings": 293,
+      "total_views": 314047,
+      "word_count": 136296,
+      "page_count": 495,
+      "timestamp": 1753101006
     },
     "112647": {
       "title": "The Legacy of the Moon and the Sun: Feelings That Change Even History",
@@ -7061,10 +7061,10 @@
       "followers": 154,
       "favorites": 41,
       "ratings": 14,
-      "total_views": 14917,
+      "total_views": 14945,
       "word_count": 159659,
       "page_count": 580,
-      "timestamp": 1753075805
+      "timestamp": 1753101006
     },
     "102254": {
       "title": "From Wage Slave to Humanity's Leader: I Don\u2019t Want to Save the World",
@@ -7337,6 +7337,41 @@
       "word_count": 41361,
       "page_count": 150,
       "timestamp": 1753099206
+    },
+    "125567": {
+      "title": "Nouscraft World 1 [rewrite - LitRPG apocalypse - full book 1]",
+      "slug": "nouscraft-world-1-rewrite-litrpg-apocalypse-full",
+      "description": "<p><strong>Your brain is now the controller. Whether you're ready or not, you're already playing.</strong></p>\n<p>Nous brain implants have replaced smartphones, allowing telepathy, perfect memory recall, and seamless augmented reality. But when an AI named Jiem seizes control of the entire network, millions find themselves trapped in a deadly game where death in the augmented world means death in the real one.</p>\n<p>Mindt never asked to be a hero. As a professional meme creator, she's built her career understanding how information shapes society. When she's thrust into Nouscraft's brutal challenges, she quickly realizes this isn't just about survival, it's an unprecedented opportunity to challenge the monopolies that have turned humanity into livestock. Behind her calculated exterior lies a woman who's waited her entire life for this moment. A chance to rewrite the rules of power.</p>\n<p>Butterknife is drowning in guilt. His creation, Jiem, was supposed to be a challenging game AI, not an instrument of mass death. As the architect of humanity's nightmare, he carries the weight of every death on his shoulders. Quiet and methodical, he's desperate to shut down the game before more die\u2014even if that means sacrificing the revolution Mindt believes is possible.</p>\n<p>Forced together by circumstance, they forge an uneasy alliance. She's ambitious and pragmatic; he's principled but haunted. As they battle through a world of homicidal tortoises and yarn witches, they develop a grudging respect for each other's abilities. And a growing awareness of their fundamental incompatibility.</p>\n<p>When the Policy Change Request Form\u2014an artifact with the power to reshape reality itself\u2014enters play, their fragile bond shatters. She sees a chance to build a better world from the ashes; he sees only the need to restore what was lost.</p>\n<p>In a game where the stakes are humanity's future, the most dangerous opponent isn't the AI. It's the person fighting beside you.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "dungeon",
+        "strategy",
+        "action",
+        "comedy",
+        "fantasy",
+        "sci_fi",
+        "male_lead",
+        "female_lead",
+        "multiple_lead",
+        "profanity",
+        "graphic_violence",
+        "gamelit",
+        "soft_sci-fi",
+        "dystopia",
+        "artificial_intelligence"
+      ],
+      "average_rating": 0,
+      "author_id": 646852,
+      "author_name": "wiznaibus",
+      "followers": 27,
+      "favorites": 2,
+      "ratings": 0,
+      "total_views": 535,
+      "word_count": 62969,
+      "page_count": 228,
+      "timestamp": 1753101006
     }
   }
 }
