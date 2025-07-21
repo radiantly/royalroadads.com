@@ -1489,13 +1489,13 @@
       "average_rating": 4.69145,
       "author_id": 580701,
       "author_name": "AceGreen",
-      "followers": 2017,
-      "favorites": 494,
+      "followers": 2020,
+      "favorites": 495,
       "ratings": 269,
-      "total_views": 435932,
-      "word_count": 321211,
-      "page_count": 1168,
-      "timestamp": 1753016405
+      "total_views": 438239,
+      "word_count": 323701,
+      "page_count": 1177,
+      "timestamp": 1753102806
     },
     "114089": {
       "title": "SANCTUARY [Nobledark | Progression | Apocalypse]",
@@ -7372,6 +7372,40 @@
       "word_count": 62969,
       "page_count": 228,
       "timestamp": 1753101006
+    },
+    "103295": {
+      "title": "Ugly Merchant - [Fantasy, Progression, LitRPG ]",
+      "slug": "ugly-merchant-fantasy-progression-litrpg",
+      "description": "<p>Disfigured since infancy by a lethal poison, Jasper is the young master of the wealthiest merchant in the kingdom. However, he lost everything to the scheming environment. With revenge in mind, he will strive to be as strong as possible and as wealthy as his late father. Eventually, he will try his best to build his kingdom.</p>\n<p>Along with his game-like system, he will discover a world he didn\u2019t know existed.</p>\n<p><strong>What to Expect:</strong></p>\n<p><strong>Weak to Strong MC</strong>: He\u2019ll take the merchant path before truly beginning his martial art journey.</p>\n<p><strong>RPG System:</strong><span>&nbsp;</span>The system is considered ad AI in an armbrace which provides a game-like interface that guides and aids his progression. The system will be humorous in early chapters but will become serious around Chapter 30.</p>\n<p><strong>Business &amp; Schemes</strong>: Expect clever plots and economic maneuvering.</p>\n<p><strong>Low-Key Start \u2192 High-Key Rise</strong>: The protagonist begins slightly discreet but eventually becomes a major force.</p>\n<p><strong>Strong Subordinates</strong>: Allies matter\u2014the world doesn\u2019t revolve solely around the MC. However, betreyal is something to be wary of.</p>\n<p><strong>Dangerous Villains</strong>: Intelligent, cunning antagonists who challenge the MC.</p>\n<p><strong>Building kingdom</strong>: MC will build his own kingdom later on.</p>\n<p><strong>World of Chaos</strong>: Monsters, dungeons, martial arts, and shifting power dynamics\u2014kingdoms fall, sects rise, and the world evolves with each major event.</p>\n<p><strong>Romance</strong>: No harem, probably (Still not certain but that's what I'm planing for the moment.)</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "dungeon",
+        "ruling_class",
+        "sci_fi",
+        "action",
+        "adventure",
+        "fantasy",
+        "slice_of_life",
+        "strategy",
+        "graphic_violence",
+        "sensitive",
+        "low_fantasy",
+        "soft_sci-fi",
+        "dystopia",
+        "progression",
+        "artificial_intelligence"
+      ],
+      "average_rating": 4.35,
+      "author_id": 526627,
+      "author_name": "Nakr",
+      "followers": 53,
+      "favorites": 15,
+      "ratings": 10,
+      "total_views": 10591,
+      "word_count": 129368,
+      "page_count": 470,
+      "timestamp": 1753102806
     }
   }
 }
