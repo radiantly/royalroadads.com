@@ -3644,16 +3644,16 @@
         "mythos",
         "first_contact"
       ],
-      "average_rating": 4.526075,
+      "average_rating": 4.525845,
       "author_id": 494135,
       "author_name": "PathOfPen",
-      "followers": 13815,
-      "favorites": 3447,
-      "ratings": 2282,
-      "total_views": 7955012,
+      "followers": 13817,
+      "favorites": 3448,
+      "ratings": 2283,
+      "total_views": 7956410,
       "word_count": 563435,
       "page_count": 2048,
-      "timestamp": 1753128005
+      "timestamp": 1753129807
     },
     "105863": {
       "title": "Nouscraft: World 1 The Zombie Apocalypse (stubbing July 17)",
@@ -4961,16 +4961,16 @@
         "high_fantasy",
         "ai_assisted"
       ],
-      "average_rating": 0,
+      "average_rating": 5,
       "author_id": 768647,
       "author_name": "Blackmercury",
-      "followers": 4,
-      "favorites": 2,
-      "ratings": 0,
-      "total_views": 1127,
+      "followers": 5,
+      "favorites": 3,
+      "ratings": 1,
+      "total_views": 1137,
       "word_count": 43994,
       "page_count": 159,
-      "timestamp": 1753090205
+      "timestamp": 1753129807
     },
     "116514": {
       "title": "MOD MAGE protect and serve",
@@ -7830,6 +7830,36 @@
       "word_count": 97375,
       "page_count": 354,
       "timestamp": 1753128005
+    },
+    "80208": {
+      "title": "SHADE: The Passing",
+      "slug": "shade-the-passing",
+      "description": "<p>For centuries, King Isaac fought to protect the homeworlds from an evil that ravaged the galaxies. But now that he is dead, all eyes are searching for the one who inherited the King's gift--The Passing. The question is... who will find him first?&nbsp;</p>\n<p></p>",
+      "status": "Hiatus",
+      "tags": [
+        "progression",
+        "space_opera",
+        "martial_arts",
+        "multiple_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "sci_fi",
+        "male_lead",
+        "secret_identity",
+        "high_fantasy",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.8,
+      "author_id": 277843,
+      "author_name": "JBGregory",
+      "followers": 153,
+      "favorites": 43,
+      "ratings": 5,
+      "total_views": 7051,
+      "word_count": 38352,
+      "page_count": 139,
+      "timestamp": 1753129807
     }
   }
 }
