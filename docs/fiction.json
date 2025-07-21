@@ -1114,16 +1114,16 @@
         "high_fantasy",
         "progression"
       ],
-      "average_rating": 4.714875,
+      "average_rating": 4.71233,
       "author_id": 269599,
       "author_name": "No_Creative_Name",
-      "followers": 3110,
-      "favorites": 518,
-      "ratings": 363,
-      "total_views": 282461,
+      "followers": 3124,
+      "favorites": 521,
+      "ratings": 365,
+      "total_views": 284841,
       "word_count": 152015,
       "page_count": 552,
-      "timestamp": 1753000206
+      "timestamp": 1753066805
     },
     "101992": {
       "title": "Hello World (Silly Sci-Fi, Zombies Included)",
@@ -6942,6 +6942,36 @@
       "word_count": 333969,
       "page_count": 1214,
       "timestamp": 1753065005
+    },
+    "78518": {
+      "title": "The Hybrid: Chasing Destiny",
+      "slug": "the-hybrid-chasing-destiny",
+      "description": "<p>Since mortals first walked Archaicron, they have wrought chaos and destruction to change the threads of their fate. Foiled only by the very gods and spirits they sought to reach eons ago.</p>\n<p>Abandoned at birth and raised by an untouchable, Ava was never destined to become anything more than an outcast among outcasts; to fight and die in the half-frozen muck of Spectermere. While Caeden, raised in the shadow of the Empire\u2019s throne, was always destined to serve, but never to touch it. Even as a royal, his life would be forgotten to the pages of time.</p>\n<p>But the gods and spirits do not care for the trifles of mortals, for the Ancients have returned, corrupted and cursed. If Caeden and Ava must fight or die, it will be for their cause and at their command. Destiny has always been theirs to stitch, and both must now chase its threads or become ensnared in the tattered tangles of its weave.</p>\n<p><em></em></p>\n<p><em>(While not the main focus, this fiction does have a Romance subplot).</em></p>",
+      "status": "Ongoing",
+      "tags": [
+        "ruling_class",
+        "grimdark",
+        "multiple_lead",
+        "drama",
+        "adventure",
+        "fantasy",
+        "mystery",
+        "magic",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy",
+        "mythos"
+      ],
+      "average_rating": 5,
+      "author_id": 423239,
+      "author_name": "Haelionthyne",
+      "followers": 67,
+      "favorites": 20,
+      "ratings": 5,
+      "total_views": 19430,
+      "word_count": 128183,
+      "page_count": 466,
+      "timestamp": 1753066805
     }
   }
 }
