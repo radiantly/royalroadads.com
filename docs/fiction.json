@@ -325,16 +325,16 @@
         "ruling_class",
         "attractive_lead"
       ],
-      "average_rating": 4.734205,
+      "average_rating": 4.7318,
       "author_id": 285838,
       "author_name": "zaifyr",
-      "followers": 9013,
-      "favorites": 2148,
-      "ratings": 1298,
-      "total_views": 1474898,
-      "word_count": 213995,
-      "page_count": 778,
-      "timestamp": 1752912005
+      "followers": 9026,
+      "favorites": 2149,
+      "ratings": 1305,
+      "total_views": 1491627,
+      "word_count": 216250,
+      "page_count": 786,
+      "timestamp": 1753097406
     },
     "119316": {
       "title": "Reincarnated into a Villainous Count [System Apocalypse]",
@@ -4150,16 +4150,16 @@
         "artificial_intelligence",
         "attractive_lead"
       ],
-      "average_rating": 4.266665,
+      "average_rating": 4.25397,
       "author_id": 389689,
       "author_name": "R. W. McRae",
-      "followers": 843,
-      "favorites": 187,
-      "ratings": 60,
-      "total_views": 120777,
-      "word_count": 177970,
-      "page_count": 647,
-      "timestamp": 1752895805
+      "followers": 848,
+      "favorites": 190,
+      "ratings": 63,
+      "total_views": 122394,
+      "word_count": 179556,
+      "page_count": 652,
+      "timestamp": 1753097406
     },
     "103523": {
       "title": "A Savage Symphony Book 1 - Rhythm of Revolution",
@@ -7265,6 +7265,45 @@
       "word_count": 69071,
       "page_count": 251,
       "timestamp": 1753095606
+    },
+    "108155": {
+      "title": "The Storm Through The Tide",
+      "slug": "the-storm-through-the-tide",
+      "description": "<p>Long Fei\u2014the Dragon of Air\u2014is brutally betrayed by his only brother, and the Phoenix Empress pushes him off the Celestial Realm.</p>\n<p>He plummets into the Ocean Realm, where Shui Yi, an impulsive mermaid princess, sacrifices her sacred pearl to heal him\u2014unknowingly binding their fates in a bond that ripples across the realms. Together, they\u2019re exiled to the Mortal Realm, hunted by the Empress\u2019s relentless claws.</p>\n<p>Haunted by fragmented memories and bound by a twisted fate, Long Fei must reclaim his power and survive a world of ancient trials, ruthless enemies, and cosmic consequences.</p>\n<p><em>A sweeping high fantasy of survival, destiny, and bonds beyond cultivation. A rich blend of Eastern and Western mythology.</em></p>",
+      "status": "Ongoing",
+      "tags": [
+        "reincarnation",
+        "progression",
+        "xianxia",
+        "psychological",
+        "fantasy",
+        "romance",
+        "tragedy",
+        "martial_arts",
+        "supernatural",
+        "male_lead",
+        "female_lead",
+        "strong_lead",
+        "multiple_lead",
+        "non-human_lead",
+        "magic",
+        "wuxia",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy",
+        "mythos",
+        "attractive_lead"
+      ],
+      "average_rating": 4.71154,
+      "author_id": 667892,
+      "author_name": "Eva_Everquill",
+      "followers": 134,
+      "favorites": 34,
+      "ratings": 26,
+      "total_views": 22250,
+      "word_count": 81398,
+      "page_count": 295,
+      "timestamp": 1753097406
     }
   }
 }
