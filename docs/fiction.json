@@ -5311,13 +5311,13 @@
       "average_rating": 4.458565,
       "author_id": 251991,
       "author_name": "Aster Loka",
-      "followers": 2315,
+      "followers": 2317,
       "favorites": 536,
       "ratings": 362,
-      "total_views": 625717,
+      "total_views": 626174,
       "word_count": 342172,
       "page_count": 1244,
-      "timestamp": 1752957005
+      "timestamp": 1753065005
     },
     "122870": {
       "title": "Water Ascendant ",
@@ -6915,6 +6915,33 @@
       "word_count": 302070,
       "page_count": 1098,
       "timestamp": 1753063205
+    },
+    "84869": {
+      "title": "Nobina and Her Strange Journey Through Another World",
+      "slug": "nobina-and-her-strange-journey-through-another",
+      "description": "<p>\u201cWhat would you do if your destiny wasn't in your hands, but in the hands of observers who you know exist but can't interact with?\u201d<br>This is the question Nobina asked herself as she prepared to go through a journey where either she lives a peaceful life trying to continue her writing career or is swept up in the events of the world. After dying in her previous world, she found herself given a second chance. With a special bag given to her by a god and a mysterious gaze on her, she would answer the question.</p>\n<hr>\n<p>The plan is to release 2-4 chapters a week.<br>Planned Release Days: Saturday and Monday PST<br>Additional Release Days: Wedsnesday and Friday PST<br>The chapter release schedule is very dependant on stream days and whether I can get out at least 2 chapters on those days.</p>\n<hr>\n<p>Any news will be posted below this line.<br>Getting back in the swing of things.</p>\n<hr>\n<p>Additional Content:<br>An intro to Nobina's story.<br>https://www.youtube.com/watch?v=LCrcPmC6UZk</p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "progression",
+        "female_lead",
+        "slice_of_life",
+        "adventure",
+        "fantasy",
+        "mystery",
+        "reader_interactive",
+        "magic"
+      ],
+      "average_rating": 3.923075,
+      "author_id": 324733,
+      "author_name": "nonomo4",
+      "followers": 425,
+      "favorites": 80,
+      "ratings": 13,
+      "total_views": 76869,
+      "word_count": 333969,
+      "page_count": 1214,
+      "timestamp": 1753065005
     }
   }
 }
