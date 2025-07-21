@@ -405,16 +405,16 @@
         "mythos",
         "progression"
       ],
-      "average_rating": 4.47805,
+      "average_rating": 4.48372,
       "author_id": 208908,
       "author_name": "Astralium",
-      "followers": 2079,
-      "favorites": 401,
-      "ratings": 205,
-      "total_views": 146719,
+      "followers": 2135,
+      "favorites": 404,
+      "ratings": 215,
+      "total_views": 152362,
       "word_count": 76933,
       "page_count": 279,
-      "timestamp": 1752931806
+      "timestamp": 1753059606
     },
     "111984": {
       "title": "Equilibrium: Bringing God's Light To This Pagan World",
@@ -6844,6 +6844,43 @@
       "word_count": 57311,
       "page_count": 208,
       "timestamp": 1753057805
+    },
+    "118621": {
+      "title": "NANITE",
+      "slug": "nanite",
+      "description": "<p><span style=\"font-weight: 400\">In the fractured sprawl of Virelia Prime\u2014a city of rusted steel, synthetic dreams, and brutal survival\u2014</span><b>Ray</b><span style=\"font-weight: 400\"> is just another forgotten face scraping by. A streetwise courier with a sick mother to care for, Ray navigates the shadows of a cyberpunk world ruled by credits, crime syndicates, and corrupt corporations.</span></p>\n<p><span style=\"font-weight: 400\">But everything changes after his death.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">Ray discovers he can absorb and interface with machines\u2014consuming them and extracting their knowledge down to the molecular level. What starts with a toothbrush soon escalates into something far more dangerous.</span></p>\n<p><span style=\"font-weight: 400\">As he uncovers the truth behind his transformation and the hidden forces moving within the city, Ray is forced to confront the question: </span><b>What does it mean to remain human in a world that rewards cold calculating machines?</b></p>\n<p><span style=\"font-weight: 400\">Haunted by guilt, hunted by those who want to control or destroy him, and slowly losing the line between man and machine, Ray must choose: stay in the shadows, or rise and reshape his fate.</span></p>\n<p></p>\n<p><b>A cyberpunk tragedy of survival, transformation, and the cost of holding on to humanity.</b></p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "anti-hero_lead",
+        "grimdark",
+        "psychological",
+        "drama",
+        "sci_fi",
+        "tragedy",
+        "cyberpunk",
+        "male_lead",
+        "strong_lead",
+        "profanity",
+        "sexuality",
+        "graphic_violence",
+        "sensitive",
+        "technologically_engineered",
+        "hard_sci-fi",
+        "dystopia",
+        "artificial_intelligence",
+        "ai_assisted"
+      ],
+      "average_rating": 4.414285,
+      "author_id": 405303,
+      "author_name": "Lord Turtle the first",
+      "followers": 1359,
+      "favorites": 294,
+      "ratings": 140,
+      "total_views": 115842,
+      "word_count": 135855,
+      "page_count": 494,
+      "timestamp": 1753059606
     }
   }
 }
