@@ -3861,16 +3861,16 @@
         "graphic_violence",
         "high_fantasy"
       ],
-      "average_rating": 4.27911,
+      "average_rating": 4.27826,
       "author_id": 326485,
       "author_name": "Magnus Grey",
-      "followers": 5819,
-      "favorites": 1610,
-      "ratings": 919,
-      "total_views": 3313086,
-      "word_count": 454706,
+      "followers": 5821,
+      "favorites": 1609,
+      "ratings": 920,
+      "total_views": 3318143,
+      "word_count": 454821,
       "page_count": 1653,
-      "timestamp": 1752985807
+      "timestamp": 1753063205
     },
     "101214": {
       "title": "Hail Thy Gods (Books 1 & 2 Complete)",
@@ -6881,6 +6881,40 @@
       "word_count": 135855,
       "page_count": 494,
       "timestamp": 1753059606
+    },
+    "97691": {
+      "title": "Throne of Gods",
+      "slug": "throne-of-gods",
+      "description": "<p><em>Jacob Brown spent his old life chasing success, only to be crushed by failure at every turn. Now, reborn as 14-year-old Leo Mantine in a <strong>steampunk world where magic fuels invention and danger lurks behind progress</strong>, he\u2019s given a second chance to carve out a future worth fighting for.</em></p>\n<p><em>But survival won\u2019t come easy. From shadowy factions pulling the strings of society to secrets buried in ancient ruins, Leo must navigate a world where power is everything\u2014and the weak are left behind. Armed with newfound abilities and the lessons of his past life, he\u2019ll have to <strong>outthink, outmaneuver, and outlast</strong> those who would see him fail again.</em></p>\n<p><em>In a world of machinery, sorcery, and ambition, will he finally rise above his failures\u2014or will history repeat itself?</em></p>\n<p></p>\n<hr><hr>\n<p></p>\n<p><strong>What to Expect</strong></p>\n<p>\ud83d\udd39 Weak to Strong \u2013 No shortcuts, no freebies\u2014He earns his power.<br>\ud83d\udd39 <strong>Long-Term Story</strong> \u2013 A deep, ongoing journey with layered progression.<br>\ud83d\udd39 Mystery &amp; Discovery \u2013 Hidden truths, strange marks, and unfolding secrets.<br>\ud83d\udd39 Steampunk &amp; Magic \u2013 A world driven by steampunk invention, mystery, and arcane power.<br>\ud83d\udd39 Harsh &amp; Realistic World \u2013 No plot armor. Survival isn\u2019t guaranteed.<br>\ud83d\udd39 Extensive Worldbuilding \u2013 Cultures, factions, and a living, breathing world.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "progression",
+        "strategy",
+        "steampunk",
+        "fantasy",
+        "horror",
+        "romance",
+        "mystery",
+        "supernatural",
+        "male_lead",
+        "secret_identity",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "high_fantasy",
+        "mythos"
+      ],
+      "average_rating": 4.537735,
+      "author_id": 544412,
+      "author_name": "Nerokazama",
+      "followers": 465,
+      "favorites": 157,
+      "ratings": 106,
+      "total_views": 90005,
+      "word_count": 302070,
+      "page_count": 1098,
+      "timestamp": 1753063205
     }
   }
 }
