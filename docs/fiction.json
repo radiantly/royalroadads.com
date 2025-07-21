@@ -2073,16 +2073,16 @@
         "graphic_violence",
         "ruling_class"
       ],
-      "average_rating": 4.14877,
+      "average_rating": 4.14214,
       "author_id": 341692,
       "author_name": "Kuzunalis",
-      "followers": 8242,
-      "favorites": 1897,
-      "ratings": 1583,
-      "total_views": 3561218,
-      "word_count": 464440,
-      "page_count": 1688,
-      "timestamp": 1753011039
+      "followers": 8258,
+      "favorites": 1902,
+      "ratings": 1590,
+      "total_views": 3573513,
+      "word_count": 466260,
+      "page_count": 1695,
+      "timestamp": 1753110006
     },
     "116872": {
       "title": "We Lease The Kraken! - A LitRPG Pet Shop System Story.",
@@ -7433,6 +7433,43 @@
       "word_count": 457075,
       "page_count": 1662,
       "timestamp": 1753106406
+    },
+    "94099": {
+      "title": "Courts [A Progression Power Fantasy]",
+      "slug": "courts-a-progression-power-fantasy",
+      "description": "<p><strong>Don\u2019t you hate it when death gods invade your planet and turn it into their personal game of Risk?</strong></p>\n<p>Peter Kroon does\u2014or at least, he would if he weren\u2019t too busy surviving. Enslaved by a cursed ring that drained his life to fuel an undead army, Peter spent years as a hollow shell of himself. But everything changed in the Stalpia city sewers when a dying resistance captain severed the ring, restored Peter\u2019s sentience, and handed him a mysterious armband\u2014the last hope for humanity, with powers no one fully understands.</p>\n<p>Now Peter must navigate a broken world, his teenage mind trapped in an eighty-year-old body, as an immortal nine-fingered survivor. With death gods waging war, armies of ghouls marching, and secrets of the armband slowly unraveling, Peter is humanity\u2019s most unlikely weapon.</p>\n<p>But can one boy defy the gods and save a world already lost?</p>\n<p><strong>Progression, Gothic Gaslight, Power Fantasy, Slayer.</strong></p>",
+      "status": "Hiatus",
+      "tags": [
+        "progression",
+        "post_apocalyptic",
+        "war_and_military",
+        "martial_arts",
+        "action",
+        "fantasy",
+        "horror",
+        "sci_fi",
+        "supernatural",
+        "male_lead",
+        "magic",
+        "strategy",
+        "grimdark",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy",
+        "mythos",
+        "first_contact",
+        "soft_sci-fi"
+      ],
+      "average_rating": 3.642855,
+      "author_id": 533246,
+      "author_name": "Silas_Tine",
+      "followers": 376,
+      "favorites": 90,
+      "ratings": 21,
+      "total_views": 28866,
+      "word_count": 107654,
+      "page_count": 391,
+      "timestamp": 1753110006
     }
   }
 }
