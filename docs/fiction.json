@@ -2812,13 +2812,13 @@
       "average_rating": 4.704545,
       "author_id": 252753,
       "author_name": "O.C. Saar",
-      "followers": 635,
+      "followers": 636,
       "favorites": 117,
       "ratings": 44,
-      "total_views": 16901,
+      "total_views": 16920,
       "word_count": 66485,
       "page_count": 241,
-      "timestamp": 1753104643
+      "timestamp": 1753106406
     },
     "94966": {
       "title": "(Second Book Complete!) Runeblade: A Delving & Skill Merging LitRPG ",
@@ -7406,6 +7406,33 @@
       "word_count": 129368,
       "page_count": 470,
       "timestamp": 1753102806
+    },
+    "56104": {
+      "title": "Super Soldier in Another World",
+      "slug": "super-soldier-in-another-world",
+      "description": "<p>Hoplite Thirty-Seven had thought he was going to die, that his long career of serving Terna and the Eighth Arm had come to an end after the antimatter bomb had detonated... Yet that had not been the case. Instead, he had ended up on a back-water world where nothing made sense.</p>\n<p>Magic wasn't supposed to be real, neither were elves or other fantasy creatures... yet here on Ahkoolis, that was reality.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "sci_fi",
+        "strong_lead",
+        "high_fantasy",
+        "action",
+        "fantasy",
+        "horror",
+        "graphic_violence",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.447935,
+      "author_id": 233510,
+      "author_name": "Nivilack Werdrite",
+      "followers": 3324,
+      "favorites": 1144,
+      "ratings": 653,
+      "total_views": 1053427,
+      "word_count": 457075,
+      "page_count": 1662,
+      "timestamp": 1753106406
     }
   }
 }
