@@ -2235,16 +2235,16 @@
         "first_contact",
         "progression"
       ],
-      "average_rating": 4.895835,
+      "average_rating": 4.907405,
       "author_id": 560600,
       "author_name": "Amoeban",
-      "followers": 200,
-      "favorites": 52,
-      "ratings": 24,
-      "total_views": 11109,
-      "word_count": 60568,
-      "page_count": 220,
-      "timestamp": 1752913806
+      "followers": 280,
+      "favorites": 62,
+      "ratings": 27,
+      "total_views": 16701,
+      "word_count": 64672,
+      "page_count": 235,
+      "timestamp": 1753099206
     },
     "100349": {
       "title": "The Gem Star ",
@@ -5207,16 +5207,16 @@
         "high_fantasy",
         "war_and_military"
       ],
-      "average_rating": 4.5625,
+      "average_rating": 4.38889,
       "author_id": 744683,
       "author_name": "Mischief Meowker",
-      "followers": 95,
-      "favorites": 23,
-      "ratings": 8,
-      "total_views": 9324,
-      "word_count": 98257,
-      "page_count": 357,
-      "timestamp": 1752948005
+      "followers": 98,
+      "favorites": 25,
+      "ratings": 9,
+      "total_views": 10264,
+      "word_count": 103480,
+      "page_count": 376,
+      "timestamp": 1753099206
     },
     "116097": {
       "title": "Path of the Immortal",
@@ -7304,6 +7304,39 @@
       "word_count": 81398,
       "page_count": 295,
       "timestamp": 1753097406
+    },
+    "123277": {
+      "title": "Shapeshifter (A Non-Human LitRPG)",
+      "slug": "shapeshifter-a-non-human-litrpg",
+      "description": "<p><strong><span>Xen isn't your typical Hunter. In fact, he isn't human at all.</span></strong></p>\n<p><span>A newbie dungeon raid gone wrong results in a one-in-a-million event\u2014Xen, a Mind Slime, absorbs a fallen Hunter's memories, granting him not only knowledge a monster should never possess but also access to the human's class system. </span></p>\n<p><span>The very system designed to help humans fight </span><em><span>his</span></em><span> kind. </span></p>\n<p><span>Granted a unique </span><strong><span>[Shapeshifter]</span></strong><span> class, he can take on the forms of any living being he eats and also learn their skills. In a world where most Hunters are limited to a few skills, he alone can possess a seemingly unlimited number. Using this advantage, he will not only conquer the World Dungeon that spans between continents but also make use of his shapeshifting to infiltrate human society. </span></p>\n<p><span>Despite being the enemy of both humans and monsters, nothing will stop Xen's rise to power. After all, the most dangerous of foes is the one that wears many faces\u2014plays both sides\u2014and reaps all the benefits.&nbsp;&nbsp;</span></p>\n<hr>\n<p><strong>What to expect:</strong></p>\n<p>Solo Leveling style world building: modern day, portals, and guilds.</p>\n<p>An MC that starts as a dungeon slime who can shapeshift and devour the abilities of others.</p>\n<p>Fast-paced progression.&nbsp;</p>\n<p>Uploads on Tuesday and Thursday!</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "dungeon",
+        "post_apocalyptic",
+        "anti-hero_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "male_lead",
+        "strong_lead",
+        "non-human_lead",
+        "secret_identity",
+        "magic",
+        "graphic_violence",
+        "sensitive",
+        "progression"
+      ],
+      "average_rating": 4.519335,
+      "author_id": 208505,
+      "author_name": "XKARNATION",
+      "followers": 2783,
+      "favorites": 410,
+      "ratings": 181,
+      "total_views": 124621,
+      "word_count": 41361,
+      "page_count": 150,
+      "timestamp": 1753099206
     }
   }
 }
