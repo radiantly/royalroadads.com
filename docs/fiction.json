@@ -290,13 +290,13 @@
       "average_rating": 4.636365,
       "author_id": 763274,
       "author_name": "cody.bray",
-      "followers": 231,
-      "favorites": 43,
+      "followers": 280,
+      "favorites": 47,
       "ratings": 11,
-      "total_views": 4696,
-      "word_count": 39443,
+      "total_views": 6398,
+      "word_count": 39422,
       "page_count": 143,
-      "timestamp": 1752922805
+      "timestamp": 1753074005
     },
     "104561": {
       "title": "For the Glory of Rome: Chronicles of an Isekai'd Legion",
@@ -4573,13 +4573,13 @@
       "average_rating": 4.5,
       "author_id": 680530,
       "author_name": "Noctambule",
-      "followers": 67,
+      "followers": 70,
       "favorites": 11,
       "ratings": 4,
-      "total_views": 2858,
+      "total_views": 2889,
       "word_count": 53217,
       "page_count": 193,
-      "timestamp": 1752915606
+      "timestamp": 1753074005
     },
     "97091": {
       "title": "Applied Cultivation (Previously Data-Driven Daoist) [Xianxia LitRPG Progression]",
@@ -6972,6 +6972,31 @@
       "word_count": 128183,
       "page_count": 466,
       "timestamp": 1753066805
+    },
+    "63391": {
+      "title": "Bleeding Aegis Series",
+      "slug": "bleeding-aegis-series",
+      "description": "<p>How far would you go to learn the truth about yourself? Iver found his answers at the end of a road that resulted in the worst war the world of Anogwin has ever seen. Iver is tired and ready to tell his story to the world. It is the story of a boy who only wanted answers to questions he had his whole life.</p>\n<p>His first questions were obvious. Who were his biological parents? Why did they drop him at the doorstep of a grouchy alcoholic Elf? Which of his parents was the demon?</p>\n<p>But after his adopted father is murdered in front of his eyes, Iver is thrown into a journey where he finds the answers he wants and more questions that raise concerns. Where did his strange blood magic come from? Why do his magic affinity scores have impossible numbers? But what might be the most important and disturbing question: what is happening to his body?</p>\n<p>Follow Iver on his crucible of a journey from a timid boy with no friends to a threat that emperors and gods can't afford to ignore. Along the way, he finds friends, love, betrayal, soft lies, and bitter truths. His first trial is that he must not only survive but graduate from a secret academy where murder between students is commonplace. As Iver treads this path of blood, he will match wits with a cyber phantom playing games with the lives of murderers, handle a virus that drives living souls in mechanical bodies insane, win a televised death game, foil the plots of an organization bent on ruling the world, and much more.</p>\n<p>Along the way, Iver will pick up labels like traitor, hero, and terrorist. He might also lose a few limbs along the way.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "cyberpunk",
+        "action",
+        "adventure",
+        "fantasy",
+        "profanity",
+        "graphic_violence",
+        "sensitive"
+      ],
+      "average_rating": 3.766665,
+      "author_id": 335993,
+      "author_name": "Valravn W.",
+      "followers": 377,
+      "favorites": 110,
+      "ratings": 15,
+      "total_views": 53046,
+      "word_count": 448651,
+      "page_count": 1631,
+      "timestamp": 1753074005
     }
   }
 }
