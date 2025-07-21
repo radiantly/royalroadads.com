@@ -3356,16 +3356,16 @@
         "sensitive",
         "xianxia"
       ],
-      "average_rating": 4.7,
+      "average_rating": 4.666665,
       "author_id": 771621,
       "author_name": "SeanS3r3s",
-      "followers": 139,
-      "favorites": 29,
-      "ratings": 10,
-      "total_views": 5295,
-      "word_count": 26505,
-      "page_count": 96,
-      "timestamp": 1752964206
+      "followers": 193,
+      "favorites": 40,
+      "ratings": 15,
+      "total_views": 7602,
+      "word_count": 29190,
+      "page_count": 106,
+      "timestamp": 1753137005
     },
     "109430": {
       "title": "Witches, Boys, and Other Monsters",
@@ -7928,6 +7928,47 @@
       "word_count": 283042,
       "page_count": 1029,
       "timestamp": 1753133406
+    },
+    "121547": {
+      "title": "Nightmares Paradise [LITRPG System Integration]",
+      "slug": "nightmares-paradise-litrpg-system-integration",
+      "description": "<p><strong>Jon thought that his life could not get any worse, being kicked out the day after his highschool graduation.</strong></p>\n<p>Jon had always planned for his life to take a certain course, not once expecting to be pulled into something much larger than himself.&nbsp;An anomalous existence known as the System selecting Jon as one of the participants for an event known as the System Introduction.&nbsp;</p>\n<p>The opportunity to become something more than just an ordinary university graduate stood before Jon. The chance to shed the restraints of his own Mortality, and walk a Path that most could only ever dream of having.&nbsp;</p>\n<p>\"<strong><em>Greatness stands before you. What shall become of you?\"</em></strong></p>\n<hr>\n<p></p>\n<p>Schedule: Mon - Sun (7 chapters per week)&nbsp;</p>\n<p>The book cover is a placeholder until I can find the money to hire someone to draw something for me. If you have any recommendations please feel free to comment.&nbsp;</p>\n<p></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "dungeon",
+        "xianxia",
+        "action",
+        "adventure",
+        "fantasy",
+        "sci_fi",
+        "cyberpunk",
+        "male_lead",
+        "female_lead",
+        "strong_lead",
+        "multiple_lead",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "gamelit",
+        "mythos",
+        "first_contact",
+        "soft_sci-fi",
+        "progression",
+        "attractive_lead"
+      ],
+      "average_rating": 4.59091,
+      "author_id": 36971,
+      "author_name": "Senseless",
+      "followers": 392,
+      "favorites": 81,
+      "ratings": 55,
+      "total_views": 43644,
+      "word_count": 94155,
+      "page_count": 342,
+      "timestamp": 1753137005
     }
   }
 }
