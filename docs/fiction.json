@@ -2881,10 +2881,10 @@
       "followers": 398,
       "favorites": 76,
       "ratings": 35,
-      "total_views": 21698,
+      "total_views": 21706,
       "word_count": 54996,
       "page_count": 199,
-      "timestamp": 1753198206
+      "timestamp": 1753201806
     },
     "114817": {
       "title": "Atop the Trees, Beneath the Mountains",
@@ -8507,6 +8507,33 @@
       "word_count": 51277,
       "page_count": 186,
       "timestamp": 1753200050
+    },
+    "78737": {
+      "title": "Ad Astra",
+      "slug": "ad-astra",
+      "description": "<p>Astra was born without any talent in cultivation and, being orphaned from a young age, didn't have many other prospects for thriving on the mining colony she called home. After naively buying a mysterious map from a sketchy old man, and being chased by a deranged cultivator for said map, she stumbles upon an opportunity that will change her life, and her fate. Now given the opportunity to grow her cultivation, Astra must find a way to thrive in this brand new world that has opened up to her.&nbsp;</p>\n<p>Join Astra as she begins her cultivation journey, gathers allies and friends, fights against demonic beasts and cultivators alike, and steadily makes her way, to the stars.</p>\n<p></p>\n<p>This story is going to end up long by my estimations not unlike the chinese cultivation novels this story is <em>very</em> much a love letter to in premise and substance. I'd consider it somewhat of a slow burn, especially in Astra's character development due to its length so keep that in mind.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "xianxia",
+        "female_lead",
+        "sci_fi",
+        "adventure",
+        "fantasy",
+        "graphic_violence",
+        "high_fantasy",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.09036,
+      "author_id": 321094,
+      "author_name": "DaBellerz",
+      "followers": 902,
+      "favorites": 188,
+      "ratings": 83,
+      "total_views": 152494,
+      "word_count": 209057,
+      "page_count": 760,
+      "timestamp": 1753201806
     }
   }
 }
