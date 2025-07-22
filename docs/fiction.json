@@ -2709,16 +2709,16 @@
         "high_fantasy",
         "mythos"
       ],
-      "average_rating": 4.69188,
+      "average_rating": 4.68909,
       "author_id": 396828,
       "author_name": "shallren",
-      "followers": 2814,
-      "favorites": 475,
-      "ratings": 271,
-      "total_views": 208352,
-      "word_count": 124237,
-      "page_count": 451,
-      "timestamp": 1752841805
+      "followers": 2863,
+      "favorites": 498,
+      "ratings": 275,
+      "total_views": 220665,
+      "word_count": 128230,
+      "page_count": 466,
+      "timestamp": 1753212606
     },
     "123313": {
       "title": "The Endless Dream [Horror LitRPG]",
@@ -3575,16 +3575,16 @@
         "technologically_engineered",
         "soft_sci-fi"
       ],
-      "average_rating": 4.395455,
+      "average_rating": 4.395925,
       "author_id": 647039,
       "author_name": "Zeebie",
-      "followers": 1909,
-      "favorites": 355,
-      "ratings": 220,
-      "total_views": 203373,
+      "followers": 1918,
+      "favorites": 354,
+      "ratings": 221,
+      "total_views": 204994,
       "word_count": 119733,
       "page_count": 435,
-      "timestamp": 1753203606
+      "timestamp": 1753212606
     },
     "118706": {
       "title": "I'm a Fake Genius in a Cultivation Sect",
@@ -8627,6 +8627,36 @@
       "word_count": 2681,
       "page_count": 9,
       "timestamp": 1753210806
+    },
+    "112496": {
+      "title": "Immortality Starts With Face",
+      "slug": "immortality-starts-with-face",
+      "description": "<p><span style=\"text-decoration: underline\">2025 Writathon Winner!</span></p>\n<p>A third-rate (ahem, professional!) actor from Earth transmigrates into a pampered cultivator's body with a System that grants him power, wealth, skills, and anything else he desires... based on which, and how many, people <i>believe</i> he actually possesses said things. To survive and thrive, he must become the ultimate Actor, bluffing his way up the cultivation ladder one performance at a time.</p>\n<p>______________________________________________________________</p>\n<p><span style=\"text-decoration: underline\"><strong>Lengthy Author's Note:</strong></span> Just like all of my other stories, this story will make use of advanced vocabulary and grammar. You can expect to read PLENTY of descriptions in order to increase immersion: in other words, my goal is for the reader to experience the world first-hand, including what the characters are thinking, feeling, seeing, smelling, tasting... etc.</p>\n<p>Some people may call that style of storytelling \"wordy.\"</p>\n<p>I call it \"high quality writing.\"&nbsp;</p>\n<p>If you don\u2019t like reading high quality writing with beautiful, descriptive language \u2014 then do yourself a favor: put this story down and go watch a Netflix show or something. This story (and maybe reading in general) isn\u2019t something you\u2019ll enjoy.&nbsp;</p>\n<p>To borrow a quote from the great Tite Kubo, which feels quite instructive to the criticism I often receive:&nbsp;</p>\n<p>\". . .The thing is, if you have the talent to draw a story that's more interesting than Bleach, then please become a mangaka soon. If it's good, then it'll definitely be more popular than Bleach. If you say that you can't draw, then do your best and become an editor so you can give advice to mangaka. If you really have the ability, then you'll have good reception anywhere you go. If you don't have the talent, nor have the effort, and yet you want to tell me that pathetic little complaint, you're just some guy who's trying to hinder a person who's actually working hard, so close your eyes and hide in your corner, open your mouth only to eat rain and dust and maybe you'll actually live somehow.\"&nbsp;</p>\n<p>And so, if you decide you have a complaint about my writing, please review the above and know that my own response will be something similar. :)</p>\n<p>On a different note: this story has a lot of rare \"bonus features,\" including things like character theme music, which you can find on my Patreon. (Patreon also updates faster!)</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "xianxia",
+        "male_lead",
+        "adventure",
+        "fantasy",
+        "supernatural",
+        "magic",
+        "profanity",
+        "sexuality",
+        "graphic_violence",
+        "sensitive"
+      ],
+      "average_rating": 4.4822,
+      "author_id": 243943,
+      "author_name": "Superstes",
+      "followers": 1356,
+      "favorites": 321,
+      "ratings": 309,
+      "total_views": 135016,
+      "word_count": 174674,
+      "page_count": 635,
+      "timestamp": 1753212606
     }
   }
 }
