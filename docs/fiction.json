@@ -2295,16 +2295,16 @@
         "strong_lead",
         "high_fantasy"
       ],
-      "average_rating": 4.57447,
+      "average_rating": 4.57143,
       "author_id": 338581,
       "author_name": "Zanafar",
-      "followers": 687,
-      "favorites": 131,
-      "ratings": 47,
-      "total_views": 67129,
-      "word_count": 181968,
-      "page_count": 661,
-      "timestamp": 1752827406
+      "followers": 714,
+      "favorites": 135,
+      "ratings": 49,
+      "total_views": 71548,
+      "word_count": 187109,
+      "page_count": 680,
+      "timestamp": 1753203606
     },
     "66568": {
       "title": "Legend of the Runeforger: A Dwarven Progression Fantasy",
@@ -3575,16 +3575,16 @@
         "technologically_engineered",
         "soft_sci-fi"
       ],
-      "average_rating": 4.351955,
+      "average_rating": 4.395455,
       "author_id": 647039,
       "author_name": "Zeebie",
-      "followers": 1492,
-      "favorites": 273,
-      "ratings": 179,
-      "total_views": 146615,
-      "word_count": 107958,
-      "page_count": 392,
-      "timestamp": 1752868805
+      "followers": 1909,
+      "favorites": 355,
+      "ratings": 220,
+      "total_views": 203373,
+      "word_count": 119733,
+      "page_count": 435,
+      "timestamp": 1753203606
     },
     "118706": {
       "title": "I'm a Fake Genius in a Cultivation Sect",
@@ -8503,10 +8503,10 @@
       "followers": 142,
       "favorites": 34,
       "ratings": 12,
-      "total_views": 7682,
+      "total_views": 7685,
       "word_count": 51277,
       "page_count": 186,
-      "timestamp": 1753200050
+      "timestamp": 1753203606
     },
     "78737": {
       "title": "Ad Astra",
