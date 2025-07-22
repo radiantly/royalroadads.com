@@ -2975,16 +2975,16 @@
         "mythos",
         "technologically_engineered"
       ],
-      "average_rating": 4.74662,
+      "average_rating": 4.74776,
       "author_id": 334414,
       "author_name": "SteelTrim",
-      "followers": 3501,
-      "favorites": 720,
-      "ratings": 444,
-      "total_views": 269172,
+      "followers": 3515,
+      "favorites": 727,
+      "ratings": 446,
+      "total_views": 272129,
       "word_count": 126646,
       "page_count": 460,
-      "timestamp": 1753036241
+      "timestamp": 1753162206
     },
     "56539": {
       "title": "This is not an Apocalypse",
@@ -6208,16 +6208,16 @@
         "first_contact",
         "soft_sci-fi"
       ],
-      "average_rating": 4.549835,
+      "average_rating": 4.544555,
       "author_id": 335598,
       "author_name": "RainHarlow",
-      "followers": 2693,
-      "favorites": 514,
-      "ratings": 301,
-      "total_views": 246722,
-      "word_count": 190762,
-      "page_count": 693,
-      "timestamp": 1753016405
+      "followers": 2695,
+      "favorites": 516,
+      "ratings": 303,
+      "total_views": 249033,
+      "word_count": 194152,
+      "page_count": 706,
+      "timestamp": 1753162206
     },
     "75790": {
       "title": "My Magus Academy is Run by Players?! [Western Cultivation LitRPG] [Stub in 1 Month]",
@@ -8307,6 +8307,36 @@
       "word_count": 80433,
       "page_count": 292,
       "timestamp": 1753160405
+    },
+    "100758": {
+      "title": "AWAKENING - the adventure",
+      "slug": "awakening-the-adventure",
+      "description": "<p>Henry Dreherg is a young boy who leaves his mother\u2019s house to pursue what every young boy dreams of, an adventure.</p>\n<p></p>\n<p><span>AWAKENING \u2013 THE ADVENTURE: ACT I \u2013 THE AWAKENING BEGINS</span></p>\n<p><span></span></p>\n<p><span>In a fractured world of empires, awakenings, and beasts, a boy\u2019s quiet life ends the moment fate knocks on his door.</span></p>\n<p><span></span></p>\n<p><span>Henry Dreherg never asked to become a target. But when a stolen relic of unimaginable power falls into the hands of his friend, the shadows of Transylvanien stir\u2014and a deadly vampire baron named Adelin Dravencourt begins the hunt.</span></p>\n<p><span>Forced to flee, Henry forms a reluctant alliance with his freshly gained friends. Together, they must survive assassins, uncover buried truths, and face monsters both human and inhuman.</span></p>\n<p>But the evil Adelin is always one step ahead\u2014and he has no intention of letting them reach the dawn.<br><span></span></p>\n<p><span></span></p>\n<p><span>Old legends awaken. Bonds are forged. Blood is spilled.</span></p>\n<p><span>The first act of destiny has begun.</span></p>\n<p>AWAKENING \u2013 THE ADVENTURE: ACT II \u2013 RISE OF SHADOWS</p>\n<p>The world is no longer what it once seemed.</p>\n<p>After the storm of Transylvanien, Henry Dreherg and his companions find themselves hunted, wounded, and changed. But as one darkness fades, a far deeper one begins to rise.</p>\n<p>From the ruins of the Shadow Society, the elusive Schatten Syndicate emerges. Deadlier. Smarter. And they want blood\u2014especially Emilia\u2019s.<br>Meanwhile, the infamous Soul Reapers\u2014ten legendary warriors who answer to no one\u2014begin to move from the shadows.</p>\n<p>While training under the silent Master Kensei, Henry must unlock the secrets of his Heavenly Awakening, while Jack faces the wrath of the Stormdragon within. Friendships deepen. Secrets surface. And enemies watch from just beyond the light.</p>\n<p>In a world where power means survival, the question remains:</p>\n<p>Who will rise\u2026 and who will vanish in the shadows?</p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "male_lead",
+        "drama",
+        "supernatural",
+        "action",
+        "adventure",
+        "fantasy",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy"
+      ],
+      "average_rating": 4.944445,
+      "author_id": 606400,
+      "author_name": "PrinceMW",
+      "followers": 70,
+      "favorites": 29,
+      "ratings": 9,
+      "total_views": 7842,
+      "word_count": 77778,
+      "page_count": 282,
+      "timestamp": 1753162206
     }
   }
 }
