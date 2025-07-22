@@ -3291,16 +3291,16 @@
         "sensitive",
         "attractive_lead"
       ],
-      "average_rating": 3.972725,
+      "average_rating": 3.982145,
       "author_id": 229951,
       "author_name": "Weavervale",
-      "followers": 400,
-      "favorites": 91,
-      "ratings": 55,
-      "total_views": 31427,
-      "word_count": 89797,
-      "page_count": 326,
-      "timestamp": 1753072206
+      "followers": 407,
+      "favorites": 94,
+      "ratings": 56,
+      "total_views": 33228,
+      "word_count": 91664,
+      "page_count": 333,
+      "timestamp": 1753176606
     },
     "33433": {
       "title": "Local Heroes: The Glory Road [Epic Progression Fantasy]",
@@ -8377,6 +8377,42 @@
       "word_count": 1026323,
       "page_count": 3732,
       "timestamp": 1753171206
+    },
+    "79156": {
+      "title": "Tallah [Book 3 Complete]",
+      "slug": "tallah-book-3-complete",
+      "description": "<p><span style=\"font-weight: 400; font-style: normal; text-align: left\"><strong>Tallah means to end an eternal empire and take the head of an empress</strong>. Her enemy is nigh immortal and wields power only few really understand. To take her down, Tallah's going to need power of her own. Lots of it. But time is not a friend, not when a mistake has brought the empire's attack hounds onto her scent.<br></span></p>\n<p><span style=\"font-weight: 400; font-style: normal; text-align: left\">Sil is stuck between a past she can't think on, and a future that will likely have her swinging on the end of a short rope... if lucky. Having escaped the empire's dungeons once, she has no other choice but to follow her friend on the warpath in the vain hope for a calm life beyond the mission.<br></span></p>\n<p><span style=\"font-weight: 400; font-style: normal; text-align: left\">Vergil should be dead. Twice even! Given a second lease on life on an alien world, he finds himself in thrall to an obviously insane sorceress and her equally terrifying partner, with the ghost of a dwarven hero sharing his headspace with a nearly useless AI companion. His rescue by the terrible duo may not be the stroke of luck he was hoping for. Dragged along by forces he can't conceive, he can only hope to find a clue as to why he's been brought to a place as horrible as Edana.</span><span style=\"font-weight: 400; font-style: normal; text-align: left\"></span><span style=\"font-weight: 400; font-style: normal; text-align: left\"></span></p>\n<p>--------------------------------------</p>\n<p>What to expect:</p>\n<p>- Competent, highly-motivated MCs pursuing their own agendas on both sides;</p>\n<p>- A mysterious world that may not be what it seems on first glance;</p>\n<p>- Gods and their games, bloody battles and body horror;</p>\n<p>- More magic than you can shake a wand at;</p>\n<p>- Strategic soul theft.</p>\n<p>--------------------------------------</p>\n<p>Release schedule: Monday, Friday, 15:30 GMT</p>\n<p>Average chapter length: 2000 - 3000 words</p>\n<p>Feel free to reach me on<em> <a href=\"https://discord.gg/7RqjKHKm72\" rel=\"noopener ugc nofollow\">Discord</a></em> for any questions or just to say hi.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "progression",
+        "anti-hero_lead",
+        "grimdark",
+        "fantasy",
+        "horror",
+        "sci_fi",
+        "mystery",
+        "female_lead",
+        "strong_lead",
+        "multiple_lead",
+        "secret_identity",
+        "magic",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy",
+        "soft_sci-fi",
+        "artificial_intelligence"
+      ],
+      "average_rating": 4.655965,
+      "author_id": 273298,
+      "author_name": "C. M. ANTAL",
+      "followers": 1553,
+      "favorites": 335,
+      "ratings": 109,
+      "total_views": 400853,
+      "word_count": 519972,
+      "page_count": 1890,
+      "timestamp": 1753176606
     }
   }
 }
