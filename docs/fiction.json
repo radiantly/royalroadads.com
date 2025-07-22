@@ -1247,13 +1247,13 @@
       "average_rating": 5,
       "author_id": 660939,
       "author_name": "karsonhibbert",
-      "followers": 138,
-      "favorites": 29,
+      "followers": 152,
+      "favorites": 30,
       "ratings": 4,
-      "total_views": 8335,
-      "word_count": 88583,
-      "page_count": 322,
-      "timestamp": 1752787805
+      "total_views": 9096,
+      "word_count": 88988,
+      "page_count": 323,
+      "timestamp": 1753151406
     },
     "70999": {
       "title": "Cries of the Disillusioned",
@@ -7649,16 +7649,16 @@
         "high_fantasy",
         "attractive_lead"
       ],
-      "average_rating": 4.301885,
+      "average_rating": 4.314815,
       "author_id": 229525,
       "author_name": "hearthshope",
       "followers": 490,
-      "favorites": 78,
-      "ratings": 53,
-      "total_views": 32805,
+      "favorites": 79,
+      "ratings": 54,
+      "total_views": 32941,
       "word_count": 126104,
       "page_count": 458,
-      "timestamp": 1753122605
+      "timestamp": 1753151406
     },
     "119781": {
       "title": "Power of 6: bloodline wars",
@@ -8056,6 +8056,30 @@
       "word_count": 185953,
       "page_count": 676,
       "timestamp": 1753144205
+    },
+    "123226": {
+      "title": "Runes of Might",
+      "slug": "runes-of-might",
+      "description": "<p><b>One curse. One raven. One collapsing world.</b><br><i>All balanced on the soul of a boy who should have died.</i></p>\n<p>Eirik Styrkarsson wasn\u2019t born a hero. He was the runt who hid while a horror butchered his kin\u2014and awoke cursed.<br><b>Amber runes</b> mark his swelling strength.<br><b>Azure runes</b> track his fracturing mind.<br>Both double at midnight, dragging him toward godhood with every setting sun.</p>\n<p><b>But power is a prison.<br>Love is a death sentence.</b></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "grimdark",
+        "tragedy",
+        "fantasy",
+        "romance"
+      ],
+      "average_rating": 5,
+      "author_id": 13392,
+      "author_name": "baronblackwell",
+      "followers": 34,
+      "favorites": 10,
+      "ratings": 2,
+      "total_views": 3778,
+      "word_count": 58420,
+      "page_count": 212,
+      "timestamp": 1753151406
     }
   }
 }
