@@ -1849,13 +1849,13 @@
       "average_rating": 4.67778,
       "author_id": 221414,
       "author_name": "Of Rantings and Ramblings",
-      "followers": 469,
-      "favorites": 77,
+      "followers": 475,
+      "favorites": 78,
       "ratings": 45,
-      "total_views": 19033,
+      "total_views": 19518,
       "word_count": 66648,
       "page_count": 242,
-      "timestamp": 1753111806
+      "timestamp": 1753142406
     },
     "121992": {
       "title": "You Only Kiss Twice - Spy LitRPG",
@@ -7969,6 +7969,35 @@
       "word_count": 94155,
       "page_count": 342,
       "timestamp": 1753137005
+    },
+    "119724": {
+      "title": "Build. Fight. Survive. [A Crafting/Factory builder Litrpg]",
+      "slug": "build-fight-survive-a-craftingfactory-builder",
+      "description": "<p><em><strong>CelestOS: Thank you for choosing Celestitech, where your survival is our third highest priority!</strong></em></p>\n<p>Ethan Cross wasn't supposed to be on this mission. He snuck aboard the doomed vessel, desperate to find his fianc\u00e9e, Maria, only to crash-land on an uncharted alien world. Now he's got nothing but a basic omni-tool, a shredded suit, and the sarcastic company AI, CelestOS 4.2, whispering performance evaluations in his ear.</p>\n<p>The official mission was simple: find the Veslayan research team, the one Maria was on, and recover valuable data. But the environment is hostile, the wildlife is worse, and the remnants of something ancient, and dangerous, ripple beneath the surface.</p>\n<p>To survive, Ethan must rebuild from scrap, fight evolving alien threats, and uncover the truth behind the mission that was never meant to succeed. With every base he constructs and every battle he wins, he inches closer to finding Maria\u2014 the only reason he risked everything, and the only thing that still matters now.</p>\n<p>Time is running out. Resources are scarce. And something &nbsp;is watching.</p>\n<p>Build. Fight. Survive.</p>\n<p>-Inspired&nbsp;by&nbsp;Factorio,&nbsp;Deadspace,&nbsp;Mass&nbsp;Effect</p>\n<p>-Litrpg (Skills, and tech-tree based)</p>\n<p>-Progression Sci-fi</p>\n<p>-Crafting</p>\n<p>-Factory&nbsp;building</p>\n<p>-Tower&nbsp;defense</p>\n<p>updates m-f starting June 11th.<br><br><br>Read 11+ chapters ahead on Patreon (updates six times a week)</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "male_lead",
+        "sci_fi",
+        "action",
+        "adventure",
+        "horror",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.06422,
+      "author_id": 360477,
+      "author_name": "Fiddlesoup",
+      "followers": 1631,
+      "favorites": 289,
+      "ratings": 109,
+      "total_views": 80154,
+      "word_count": 60566,
+      "page_count": 220,
+      "timestamp": 1753142406
     }
   }
 }
