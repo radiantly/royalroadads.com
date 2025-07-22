@@ -2482,16 +2482,16 @@
         "low_fantasy",
         "genetically_engineered"
       ],
-      "average_rating": 3.97143,
+      "average_rating": 3.977275,
       "author_id": 622526,
       "author_name": "siborg",
-      "followers": 1790,
-      "favorites": 351,
-      "ratings": 175,
-      "total_views": 205239,
+      "followers": 1803,
+      "favorites": 355,
+      "ratings": 176,
+      "total_views": 207530,
       "word_count": 71170,
       "page_count": 258,
-      "timestamp": 1753036241
+      "timestamp": 1753158606
     },
     "125076": {
       "title": "Trapped in Time",
@@ -8175,6 +8175,69 @@
       "word_count": 574516,
       "page_count": 2089,
       "timestamp": 1753153206
+    },
+    "124134": {
+      "title": "NPC for Hire-[Gamelit|Simulation|multi-genre]",
+      "slug": "npc-for-hire-gamelitsimulationmulti-genre",
+      "description": "<p>Looking for a GameLit trilogy that blends sci-fi, cyberpunk, fantasy, and stat-driven characters? Dive into a sharp, funny take on AI, the Singularity, and the fractured future of simulated worlds. Log in\u2014and welcome to the SynthNet.</p>\n<p>The SynthNet is a galaxy-spanning simulation where every sector plays by its own rules. One moment you\u2019re dodging fireballs in high-fantasy ruins, the next you're hacking elevators in a skyscraper-sized financial district\u2014or fighting for your life in a sun-scorched desertpunk outpost. For Fen, a veteran NPC whose job is to hand out tutorial quests and never question the code, it\u2019s usually just another day at work.</p>\n<p>Until he\u2019s reassigned to a forgotten, bug-ridden sector barely holding together. The loop is dull. The players are weird. And then a glitch hits mid-mission\u2014and a player dies. Permanently.</p>\n<p>Suddenly, Fen finds himself hunted by rogue AIs, corporate enforcers, and players who know far too much. Teaming up with a sarcastic AI named Auri, a sharp-tongued freelancer, and a crew of NPCs and outcasts, he\u2019s dragged into a hidden war to save not one, but two universes.</p>\n<p>Because this isn\u2019t just a game anymore\u2014it never was.</p>\n<p>The simulation is fracturing. Memories long buried are rebooting. And the digital overseers pulling the strings are hiding something far worse than corrupted code.</p>\n<p>Fen was built to follow orders.<br>If he wants to survive\u2014<em>or matter</em>\u2014he\u2019ll have to break them.</p>\n<hr>\n<p><strong>NPC for Hire</strong> is a fast-paced, genre-hopping GameLit adventure packed with bad puns, pop culture riffs, deadpan dad jokes, and emotional gut-punches. This is Book One of a trilogy that will take you from cyberpunk to sword-and-sorcery, from undead wastelands to space opera and beyond.</p>\n<p>New chapters post every Friday, with bonus drops unlocked by reader milestones. I\u2019ll be working with readers to help shape future zones, threats, and twists\u2014so if you\u2019ve ever wanted to help design the next world in a simulation gone wrong\u2026 this is your chance.</p>\n<p><strong>Sign in. Gear up. Let\u2019s break the loop and&nbsp;level up together.<br>\u2013 S.C. Culligan<br><em>Writing for readers who love clever worlds, emotional weight, and a little chaos in their code.</em><br></strong></p>",
+      "status": "Ongoing",
+      "tags": [
+        "virtual_reality",
+        "progression",
+        "strategy",
+        "comedy",
+        "action",
+        "fantasy",
+        "sci_fi",
+        "cyberpunk",
+        "profanity",
+        "graphic_violence",
+        "gamelit",
+        "low_fantasy",
+        "high_fantasy",
+        "technologically_engineered",
+        "soft_sci-fi",
+        "artificial_intelligence",
+        "ai_assisted"
+      ],
+      "average_rating": 4.933335,
+      "author_id": 772338,
+      "author_name": "KogitoErgoSum",
+      "followers": 48,
+      "favorites": 15,
+      "ratings": 15,
+      "total_views": 2333,
+      "word_count": 42434,
+      "page_count": 154,
+      "timestamp": 1753158606
+    },
+    "123321": {
+      "title": "The Ethersmith [Rewrite - Runesmithing, Book 2 Fully Written]",
+      "slug": "the-ethersmith-rewrite-runesmithing-book-2-fully",
+      "description": "<p><span style=\"font-weight: 400\">The art of runesmithing died long ago. Once legendary runeswords have been reduced to mere decorations, their powers made irrelevant by the discovery of ethereal spirits. Techniques were forgotten, and any remaining runesmiths were ridiculed and shunned.</span></p>\n<p><span style=\"font-weight: 400\">Vivian is one such runesmith. Born as an orphan and adopted into a smithy, she and her adoptive grandpa persist with a dream. They wish to prove that runeswords are once again worthy of fighting monsters in the lands below.</span></p>\n<p><span style=\"font-weight: 400\">What Vivian never expected was for herself to be the one fighting. Alone in the underground with a crazed spirit that seeks to profit and grow from every monster in their wake. </span><b>Below the earth awaits a subterranean labyrinth of monsters and demons, where ethereal storms ensure nothing stays dead for long\u2026</b></p>\n<hr>\n<p>This is a rewrite of the Ethersmith. Chapters 1-44 are lightly edited. After chapter 45, the story has been completely rewritten from the ground up.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "dungeon",
+        "female_lead",
+        "strong_lead",
+        "magic",
+        "action",
+        "adventure",
+        "fantasy",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy"
+      ],
+      "average_rating": 4.63077,
+      "author_id": 233108,
+      "author_name": "Matizu",
+      "followers": 1038,
+      "favorites": 165,
+      "ratings": 65,
+      "total_views": 85774,
+      "word_count": 116111,
+      "page_count": 422,
+      "timestamp": 1753158606
     }
   }
 }
