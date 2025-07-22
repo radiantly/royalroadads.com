@@ -287,16 +287,16 @@
         "sensitive",
         "ai_assisted"
       ],
-      "average_rating": 4.625,
+      "average_rating": 4.46154,
       "author_id": 763274,
       "author_name": "cody.bray",
       "followers": 323,
       "favorites": 51,
-      "ratings": 12,
-      "total_views": 8037,
-      "word_count": 46464,
+      "ratings": 13,
+      "total_views": 8107,
+      "word_count": 46463,
       "page_count": 168,
-      "timestamp": 1753207206
+      "timestamp": 1753210806
     },
     "104561": {
       "title": "For the Glory of Rome: Chronicles of an Isekai'd Legion",
@@ -2235,16 +2235,16 @@
         "first_contact",
         "progression"
       ],
-      "average_rating": 4.907405,
+      "average_rating": 4.80645,
       "author_id": 560600,
       "author_name": "Amoeban",
-      "followers": 280,
-      "favorites": 62,
-      "ratings": 27,
-      "total_views": 16701,
-      "word_count": 64672,
-      "page_count": 235,
-      "timestamp": 1753099206
+      "followers": 325,
+      "favorites": 67,
+      "ratings": 31,
+      "total_views": 20668,
+      "word_count": 66820,
+      "page_count": 242,
+      "timestamp": 1753210806
     },
     "100349": {
       "title": "The Gem Star ",
@@ -8600,6 +8600,33 @@
       "word_count": 131416,
       "page_count": 477,
       "timestamp": 1753205406
+    },
+    "120643": {
+      "title": "Luna",
+      "slug": "luna",
+      "description": "<p>Luna is a Class-D bounty hunter with 200 credits to her name and a ship held together by prayer. When a 75,000 credit emergency bounty appears - <span style=\"font-weight: 400\">Recover First Fleet Historical Data Archive</span>&nbsp; at an abandoned Eden Colony\u2014she knows it's suicide. Forty-seven dead hunters prove it.</p>\n<p>But with her ship <em>Lucky</em> falling apart and nowhere else to turn, Luna and her sarcastic droid companion Chip accept the contract.&nbsp;</p>\n<p>In the lawless frontier of Distance 7, Luna must face dimensional anomalies, alien mysteries, and a predator that's already killed everyone who's tried to claim this bounty.</p>\n<p>The real question isn't whether she'll survive.</p>\n<hr>\n<p><em><strong>&nbsp;Join the <a href=\"https://www.patreon.com/Rouzard\" rel=\"noopener ugc nofollow\">Patreon</a> and get early chapters, exclusive updates, and help support more content.&nbsp;</strong></em></p>\n<p><em><strong>Our<span>&nbsp;</span><a href=\"https://discord.gg/PTj9udN2wD\" rel=\"noopener ugc nofollow\">Discord</a><span>&nbsp;</span>community! Chat with me directly, get sneak peeks and connect with fellow readers</strong></em></p>\n<p><em>(This book is exclusively on RoyalRoad and Rouzard.com. If you find it anywhere else, it's stolen)</em></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "space_opera",
+        "female_lead",
+        "sci_fi",
+        "one_shot",
+        "graphic_violence",
+        "sensitive",
+        "soft_sci-fi",
+        "ai_assisted"
+      ],
+      "average_rating": 4.1,
+      "author_id": 634737,
+      "author_name": "rouzard",
+      "followers": 206,
+      "favorites": 33,
+      "ratings": 5,
+      "total_views": 1424,
+      "word_count": 2681,
+      "page_count": 9,
+      "timestamp": 1753210806
     }
   }
 }
