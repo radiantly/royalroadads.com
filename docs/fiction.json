@@ -408,13 +408,13 @@
       "average_rating": 4.47964,
       "author_id": 208908,
       "author_name": "Astralium",
-      "followers": 2165,
-      "favorites": 410,
+      "followers": 2175,
+      "favorites": 412,
       "ratings": 221,
-      "total_views": 157420,
-      "word_count": 78968,
+      "total_views": 158469,
+      "word_count": 78971,
       "page_count": 287,
-      "timestamp": 1753156806
+      "timestamp": 1753187405
     },
     "111984": {
       "title": "Equilibrium: Bringing God's Light To This Pagan World",
@@ -8448,6 +8448,33 @@
       "word_count": 742428,
       "page_count": 2699,
       "timestamp": 1753182006
+    },
+    "101318": {
+      "title": "WARGAMES! (Action, LitRPG, Dark Comedy)",
+      "slug": "wargames-action-litrpg-dark-comedy",
+      "description": "<p><strong></strong></p>\n<p><strong>World peace was mankind's biggest mistake.</strong></p>\n<p>United under one banner, humanity erased war, hunger, and disease. A utopia of peace, compassion, and cooperation.</p>\n<p>Then the stars took notice.</p>\n<p>The Intersol called us forward, claiming we\u2019d earned a place amongst them. But their judgment was swift\u2014our kindness was weakness, our mercy a joke. Too soft. Too fragile. Too naive to stand among real civilizations.</p>\n<p>Earth was declared a game reserve, a zoo where we could live out our little fantasy of peace. The price of safety? Biomass harvesting\u2014our people taken as food for the cosmos.</p>\n<p>But there is an escape clause. Wargames. A brutal bloodsport where species prove their worth\u2014or are eradicated. A hundred thousand humans thrown into a meat grinder against billions. A species that abandoned war, fighting civilizations that never stopped.</p>\n<p>The aliens think they\u2019ve already won.</p>\n<p>But they never studied our history.</p>\n<p>They don\u2019t know about our fallen blood-soaked empires, the instinct for cruelty, the hunger for dominance lurking beneath our progress.</p>\n<p>Humanity hasn\u2019t forgotten war.</p>\n<p>We\u2019ve just been waiting for an excuse.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "male_lead",
+        "sci_fi",
+        "artificial_intelligence",
+        "action",
+        "fantasy",
+        "graphic_violence",
+        "sensitive",
+        "satire"
+      ],
+      "average_rating": 4.833335,
+      "author_id": 612084,
+      "author_name": "Paul Fortunato",
+      "followers": 157,
+      "favorites": 48,
+      "ratings": 18,
+      "total_views": 22322,
+      "word_count": 59493,
+      "page_count": 216,
+      "timestamp": 1753187405
     }
   }
 }
