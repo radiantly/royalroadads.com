@@ -7,7 +7,6 @@
     <style>
       :root {
         --grid-padding: 10px;
-        --yellow: #fff54b;
         --rr-blue: #337ab7;
       }
       * {
@@ -29,9 +28,39 @@
         overflow-x: hidden;
         overflow-y: scroll;
       }
-      .yellow {
-        color: var(--yellow);
+
+      .text {
+        font-size: 14px;
+        line-height: 1.4;
       }
+      .text a {
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .text a:hover {
+        color: var(--rr-blue);
+      }
+
+      .text a::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--rr-blue);
+        pointer-events: none;
+        transition: all 0.2s ease;
+        z-index: -1;
+        transform-origin: right center;
+      }
+
+      .text a:hover::after {
+        transform: scaleX(0);
+      }
+
       .container {
         display: flex;
         flex-direction: column;
@@ -218,7 +247,6 @@
 
       .rra-grid div.positioned > .left .ad-wrap {
         border-radius: 10px;
-        background-color: #eee;
         display: flex;
         position: relative;
       }
@@ -300,11 +328,24 @@
         fill: #aaa;
       }
 
-      .rra-grid div.positioned > .right .tags-wrap {
+      .rra-grid div.positioned > .right .info {
         --tag-height: 20px;
         height: var(--tag-height);
         opacity: 0;
         animation: fade-in 0.2s ease 0.4s forwards;
+      }
+
+      .rra-grid div.positioned > .right .info > .info-children {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        clip-path: polygon(
+          0 0,
+          100% 0,
+          100% var(--tag-height),
+          0 var(--tag-height)
+        );
+        transition: clip-path 0.4s ease;
       }
 
       .rra-grid div.positioned > .right .tags {
@@ -314,16 +355,8 @@
         font-size: 13px;
         text-transform: capitalize;
         color: #666;
-        clip-path: polygon(
-          0 0,
-          100% 0,
-          100% var(--tag-height),
-          0 var(--tag-height)
-        );
-        transition: clip-path 0.4s ease;
-        padding-bottom: 30px;
       }
-      .rra-grid div.positioned > .right .tags-wrap:hover > .tags {
+      .rra-grid div.positioned > .right .info:hover > .info-children {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
 
@@ -337,8 +370,11 @@
         align-items: center;
       }
 
+      .rra-grid div.positioned > .right .byline {
+        font-style: italic;
+      }
+
       .rra-grid div.positioned > .right .summary {
-        font-size: 0.9em;
         opacity: 0;
         animation: fade-in 0.3s ease 0.5s forwards;
         display: flex;
@@ -348,40 +384,12 @@
         transition: clip-path 0.5s ease;
       }
 
-      .rra-grid div.positioned > .right .tags-wrap:hover + .summary {
+      .rra-grid div.positioned > .right .info:hover + .summary {
         clip-path: inset(100% 0 0 0);
       }
 
       .rra-grid div.positioned > .right .summary > p {
         margin: 0;
-      }
-
-      .rra-grid div.positioned > .right .summary a {
-        color: inherit;
-        text-decoration: none;
-        position: relative;
-      }
-
-      .rra-grid div.positioned > .right .summary a:hover {
-        color: var(--rr-blue);
-      }
-
-      .rra-grid div.positioned > .right .summary a::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: var(--rr-blue);
-        pointer-events: none;
-        transition: all 0.2s ease;
-        z-index: -1;
-        transform-origin: right center;
-      }
-
-      .rra-grid div.positioned > .right .summary a:hover::after {
-        transform: scaleX(0);
       }
 
       .rra-grid div.positioned > .right hr {
@@ -449,7 +457,9 @@
           </div>
           <a href="#" class="read-btn" target="_blank">Read now</a>
           <a href="#" class="ad-wrap" target="_blank">
-            <img src="#" />
+            <img
+              src="data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQEwCdASosAfoAPpFIoU0lpCMiICgAsBIJaW7hd2EbQAnsA99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHrAAA/v/SegAAAAAAAAAAAAA="
+            />
             <div class="open-in-new-icon-wrap">
               <svg
                 width="18"
@@ -482,10 +492,17 @@
               </svg>
             </div>
           </div>
-          <div class="tags-wrap">
-            <div class="tags"></div>
+          <div class="info">
+            <div class="info-children">
+              <div class="tags"></div>
+              <div class="byline text">
+                <span class="status"></span>&nbsp;<span class="type"></span
+                >&nbsp;by&nbsp;<a href="#" class="author" target="_blank"></a>.
+              </div>
+              <div class="retrieved-on text"></div>
+            </div>
           </div>
-          <div class="summary"></div>
+          <div class="summary text"></div>
         </div>
       </div>
       <img class="backdrop" src="#" aria-hidden="true" />
@@ -493,12 +510,13 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script>
       class FictionBuddy {
-        static #tagMap = {
+        static TAGS = Object.freeze({
+          fanfic: "Fan Fiction",
           gamelit: "GameLit",
           litrpg: "LitRPG",
           multiple_lead: "Multiple Lead Characters",
           summoned_hero: "Portal Fantasy / Isekai",
-        };
+        });
 
         static #dataPromise;
         static #cache = {};
@@ -513,7 +531,7 @@
         static #fixupFictionResponse(id, fiction) {
           fiction.id = id;
           fiction.tags = fiction.tags.map(
-            (tag) => this.#tagMap[tag] ?? tag.replace(/_/g, " ")
+            (tag) => this.TAGS[tag] ?? tag.replace(/_/g, " ")
           );
           return fiction;
         }
@@ -564,18 +582,20 @@
             uid: null,
             alt: null,
             link: null,
+            timestamp: null,
             fiction: null,
           };
 
           this.#required = Object.assign({}, this.#current);
         }
 
-        setContent({ uid, alt, link }) {
+        setContent({ uid, alt, link, timestamp }) {
           /* Assumption: this function is called only once */
 
           this.#required.uid = uid;
           this.#required.alt = alt;
           this.#required.link = link;
+          this.#required.timestamp = timestamp;
 
           FictionBuddy.getFictionDetailsFromLink(link).then((details) => {
             if (details === null) return;
@@ -639,6 +659,45 @@
 
         get coverImgSrc() {
           return `200x300/${this.#required.fiction.id}.webp`;
+        }
+
+        get authorHref() {
+          return `https://www.royalroad.com/profile/${
+            this.#required.fiction.author_id
+          }`;
+        }
+
+        get fictionStatus() {
+          const status = this.#required.fiction.status.toLowerCase();
+          if (status === "ongoing") return "An ongoing";
+          if (status === "hiatus") return "A paused";
+          if (status === "inactive") return "An inactive";
+          if (status === "dropped") return "An abandoned";
+          if (status === "stub") return "A stubbed";
+          if (status === "completed") return "A completed";
+          console.log("UNKNOWN STATUS, PLEASE CONTACT DEVELOPER", status);
+          return "A";
+        }
+
+        get fictionType() {
+          return this.#required.fiction.tags.includes(FictionBuddy.TAGS.fanfic)
+            ? "fan fiction"
+            : "web novel";
+        }
+
+        get retrievedOn() {
+          const format = {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          };
+          const lastUpdated = new Date(
+            this.#required.fiction.timestamp * 1000
+          ).toLocaleDateString(undefined, format);
+          const adFetchDate = new Date(
+            this.#required.timestamp * 1000
+          ).toLocaleDateString(undefined, format);
+          return `Last updated on ${lastUpdated}. Ad retrieved on ${adFetchDate}.`;
         }
 
         #addElementHandlers(element, backdrop) {
@@ -757,7 +816,8 @@
           backdrop.src = this.adImgSrc;
 
           if (this.#required.fiction !== null) {
-            const { title, description, tags } = this.#required.fiction;
+            const { title, description, tags, author_name } =
+              this.#required.fiction;
             const titleElem = positioned.querySelector(".title");
             titleElem.textContent = title;
 
@@ -768,6 +828,19 @@
               return div;
             });
             tagsElem.replaceChildren(...tagsElems);
+
+            const statusElem = positioned.querySelector("span.status");
+            statusElem.textContent = this.fictionStatus;
+
+            const typeElem = positioned.querySelector("span.type");
+            typeElem.textContent = this.fictionType;
+
+            const authorElem = positioned.querySelector("a.author");
+            authorElem.textContent = author_name;
+            authorElem.href = this.authorHref;
+
+            const retrievedElem = positioned.querySelector("div.retrieved-on");
+            retrievedElem.textContent = this.retrievedOn;
 
             const summaryElem = positioned.querySelector(".summary");
             summaryElem.innerHTML = description;
