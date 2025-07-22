@@ -3647,13 +3647,13 @@
       "average_rating": 4.525845,
       "author_id": 494135,
       "author_name": "PathOfPen",
-      "followers": 13817,
+      "followers": 13823,
       "favorites": 3448,
       "ratings": 2283,
-      "total_views": 7956410,
+      "total_views": 7964628,
       "word_count": 563435,
       "page_count": 2048,
-      "timestamp": 1753129807
+      "timestamp": 1753144205
     },
     "105863": {
       "title": "Nouscraft: World 1 The Zombie Apocalypse (stubbing July 17)",
@@ -7998,6 +7998,64 @@
       "word_count": 60566,
       "page_count": 220,
       "timestamp": 1753142406
+    },
+    "58522": {
+      "title": "Olimpia",
+      "slug": "olimpia",
+      "description": "<p><span>I am a scout.</span></p>\n<p><span>An elven scout of the 15th Legion of the Republic. Not the most notable legion these days, but its history and service are unquestionable, and I serve it with pride and dedication. I venture into the uncharted northern lands, often alone, and find the threats before they can damage the realm.</span></p>\n<p><span>An uncommon rank for an elf to reach after their compulsory service, but it is the same position my father earned. And his father before him. My mother was no slouch either, as she proved herself by joining the archer cohort.</span></p>\n<p><span>And now I'm heading out into the Northern Forest in search of the expected beastkin hoard entering our lands. The latest occurrence of an endless struggle. It is dangerous, but somebody has to do it, and I am proud to fulfill my duty. All for the sake of the Republic.</span></p>\n<p><span>A Republic that hates me. Throw a stone, and it will land next to a human willing to ridicule me and my family for existing, no matter how often we prove ourselves. </span><em><span>Why do I serve them with such loyalty? Why...</span></em></p>\n<p><span>I am a scout of the Republic. I perform my duty with honor and dedication. I will stand until I am relieved.</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "war_and_military",
+        "male_lead",
+        "supernatural",
+        "magic",
+        "action",
+        "adventure",
+        "fantasy",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "high_fantasy"
+      ],
+      "average_rating": 4.5,
+      "author_id": 242933,
+      "author_name": "Kronos179",
+      "followers": 67,
+      "favorites": 16,
+      "ratings": 17,
+      "total_views": 84566,
+      "word_count": 506963,
+      "page_count": 1843,
+      "timestamp": 1753144205
+    },
+    "104261": {
+      "title": "Bookbound Bunny",
+      "slug": "bookbound-bunny",
+      "description": "<p><b>\"</b><b>Books contain countless wonders.</b><b>\"</b></p>\n<p><span style=\"font-weight: 400\">Arakil, once a god of magic, found himself at odds with other deities. Imprisoned within his grimoire, he had to wait until the perfect person came along.</span></p>\n<p><span style=\"font-weight: 400\">That person was a bunny girl named Lily. An orphan with a frail body that ruined her chances of being an adventurer. But, she had a talent for penmanship and a thirst for knowledge - the perfect foundation for a mage apprentice.</span></p>\n<p><span style=\"font-weight: 400\">Seeing the opportunity to train a new pupil eager to improve their life, and sensing a chance to work towards his own freedom, Arakil teams up with Lily to foster her magical abilities.</span></p>\n<hr>\n<p><strong>Updates</strong><span>: Tuesday, Thursday, Saturday. 08:15 GMT+2</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "strategy",
+        "non-human_lead",
+        "slice_of_life",
+        "adventure",
+        "fantasy",
+        "school_life",
+        "female_lead",
+        "strong_lead",
+        "magic",
+        "high_fantasy"
+      ],
+      "average_rating": 4.783525,
+      "author_id": 412962,
+      "author_name": "Lunadea",
+      "followers": 6504,
+      "favorites": 1377,
+      "ratings": 880,
+      "total_views": 1067427,
+      "word_count": 185953,
+      "page_count": 676,
+      "timestamp": 1753144205
     }
   }
 }
