@@ -1489,13 +1489,13 @@
       "average_rating": 4.68148,
       "author_id": 580701,
       "author_name": "AceGreen",
-      "followers": 2027,
-      "favorites": 497,
+      "followers": 2028,
+      "favorites": 498,
       "ratings": 270,
-      "total_views": 442541,
-      "word_count": 323701,
-      "page_count": 1177,
-      "timestamp": 1753261207
+      "total_views": 443048,
+      "word_count": 326356,
+      "page_count": 1186,
+      "timestamp": 1753286405
     },
     "114089": {
       "title": "SANCTUARY [Nobledark | Progression | Apocalypse]",
@@ -3491,16 +3491,16 @@
         "high_fantasy",
         "dystopia"
       ],
-      "average_rating": 4.48676,
+      "average_rating": 4.4894,
       "author_id": 102324,
       "author_name": "WolfShine",
-      "followers": 5193,
-      "favorites": 1342,
-      "ratings": 793,
-      "total_views": 1155452,
-      "word_count": 150857,
+      "followers": 5230,
+      "favorites": 1359,
+      "ratings": 802,
+      "total_views": 1184516,
+      "word_count": 150932,
       "page_count": 548,
-      "timestamp": 1752933605
+      "timestamp": 1753286405
     },
     "119107": {
       "title": "Assassin Awakens: A LitRPG Progression Fantasy",
@@ -8966,6 +8966,39 @@
       "word_count": 28839,
       "page_count": 104,
       "timestamp": 1753279253
+    },
+    "93885": {
+      "title": "FOR ALL IT REVOLVES AROUND",
+      "slug": "for-all-it-revolves-around",
+      "description": "<p><strong>THE PROMISE OF A MESSIAH&nbsp;</strong></p>\n<p>It is said that an Isekai's world revolves around them... Well, not in this world, at least not yet, since a prophecy, especially in this one, will always cast a shadow over someone from another world. The realm where legends, myths, and folklore come to life, transforming into a eulogy for the royals, the self-proclaimed \"Saviours of these worlds.\" However, there are numerous royal families rather than simply one and what do they all have in common? The lies that they tell to the masses.&nbsp;</p>\n<p>I'm one of them.&nbsp;</p>\n<hr>\n<p><strong>What to expect:</strong></p>\n<p><span>\u2022&nbsp;</span>A slow world building filled with fantasy .</p>\n<p><span>\u2022&nbsp;</span>The MC is the \"strongest\"&nbsp;</p>\n<p><span>\u2022&nbsp;</span>World Power System</p>\n<p><span>\u2022&nbsp;</span>Chapters - 2-4k Words Average&nbsp;</p>\n<p><span>\u2022 Doing my best for 4 chapters a month!</span></p>\n<p></p>",
+      "status": "Ongoing",
+      "tags": [
+        "summoned_hero",
+        "urban_fantasy",
+        "war_and_military",
+        "martial_arts",
+        "action",
+        "adventure",
+        "comedy",
+        "romance",
+        "reincarnation",
+        "male_lead",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "high_fantasy",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.0625,
+      "author_id": 477398,
+      "author_name": "lagerz",
+      "followers": 37,
+      "favorites": 13,
+      "ratings": 8,
+      "total_views": 5227,
+      "word_count": 120370,
+      "page_count": 437,
+      "timestamp": 1753286405
     }
   }
 }
