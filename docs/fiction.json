@@ -5367,16 +5367,16 @@
         "technologically_engineered",
         "progression"
       ],
-      "average_rating": 4.476835,
+      "average_rating": 4.480845,
       "author_id": 408729,
       "author_name": "Buttopia",
-      "followers": 4500,
-      "favorites": 1006,
-      "ratings": 518,
-      "total_views": 1431153,
-      "word_count": 367805,
-      "page_count": 1337,
-      "timestamp": 1753043405
+      "followers": 4522,
+      "favorites": 1017,
+      "ratings": 522,
+      "total_views": 1444841,
+      "word_count": 371563,
+      "page_count": 1351,
+      "timestamp": 1753228806
     },
     "84191": {
       "title": "The Ascender's Legacy [A CHAOTIC STORM LITRPG]",
@@ -6208,16 +6208,16 @@
         "first_contact",
         "soft_sci-fi"
       ],
-      "average_rating": 4.544555,
+      "average_rating": 4.54605,
       "author_id": 335598,
       "author_name": "RainHarlow",
-      "followers": 2695,
+      "followers": 2696,
       "favorites": 516,
-      "ratings": 303,
-      "total_views": 249033,
+      "ratings": 304,
+      "total_views": 250579,
       "word_count": 194152,
       "page_count": 706,
-      "timestamp": 1753162206
+      "timestamp": 1753228806
     },
     "75790": {
       "title": "My Magus Academy is Run by Players?! [Western Cultivation LitRPG] [Stub in 1 Month]",
@@ -8657,6 +8657,44 @@
       "word_count": 174674,
       "page_count": 635,
       "timestamp": 1753212606
+    },
+    "120579": {
+      "title": "Blessed - A Dark Arcanepunk LitRPG",
+      "slug": "blessed-a-dark-arcanepunk-litrpg",
+      "description": "<p><strong>Listen up, shitling, because I'm only gonna tell you once.&nbsp;</strong></p>\n<p><span>You want to go back home? Then grow a spine and pay attention. Danger lurks around every corner, and it doesn\u2019t give a shit that you\u2019re scared. Take it from me. </span><span></span></p>\n<p><span>I escaped a torture chamber, killed my sadistic jailor, and fought the zombified remnants of a forgotten city. Enough to make fate herself cringe, really. </span><span></span></p>\n<p><span>Still, it all pales in comparison to receiving a \u201cblessing\u201d with the slight side effect of my humanity rotting away. But don\u2019t you worry, and hand me that bullet. Working it out is on my to-do-list. Right after burning this place to the ground.</span><span></span></p>\n<p><span></span></p>\n<hr>\n<p><strong>What to expect:</strong></p>\n<p><span>\u2022</span> Dark, mythos and pop culture inspired themes</p>\n<p><span>\u2022</span> Slow start, then fast paced action, and lots of it.</p>\n<p><span>\u2022</span> Skills that grow with the characters.&nbsp;</p>\n<p><span>\u2022</span> Slowburn progression</p>\n<p><span>\u2022</span> Creepy monsters and lore shrouded in mystery&nbsp;</p>\n<hr>\n<p>First book written. Releasing 5 times a week, M-F.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "urban_fantasy",
+        "progression",
+        "action",
+        "adventure",
+        "fantasy",
+        "horror",
+        "supernatural",
+        "male_lead",
+        "magic",
+        "grimdark",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "gamelit",
+        "high_fantasy",
+        "post_apocalyptic",
+        "war_and_military",
+        "dystopia"
+      ],
+      "average_rating": 4.47059,
+      "author_id": 471749,
+      "author_name": "Lorin",
+      "followers": 940,
+      "favorites": 179,
+      "ratings": 85,
+      "total_views": 59027,
+      "word_count": 86575,
+      "page_count": 314,
+      "timestamp": 1753228806
     }
   }
 }
