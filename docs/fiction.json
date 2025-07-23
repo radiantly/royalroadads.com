@@ -1455,16 +1455,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.72436,
+      "average_rating": 4.72713,
       "author_id": 625911,
       "author_name": "NB.Dravenlord",
-      "followers": 2991,
-      "favorites": 612,
-      "ratings": 312,
-      "total_views": 210218,
-      "word_count": 101741,
-      "page_count": 369,
-      "timestamp": 1753167606
+      "followers": 3033,
+      "favorites": 621,
+      "ratings": 317,
+      "total_views": 216729,
+      "word_count": 104262,
+      "page_count": 379,
+      "timestamp": 1753257605
     },
     "100599": {
       "title": "These Reincarnators Are Sus! Sleuthing in Another World",
@@ -5509,16 +5509,16 @@
         "graphic_violence",
         "high_fantasy"
       ],
-      "average_rating": 4.7098,
+      "average_rating": 4.71004,
       "author_id": 103678,
       "author_name": "Kirill Klevanski",
-      "followers": 10915,
-      "favorites": 3443,
-      "ratings": 2388,
-      "total_views": 2127716,
-      "word_count": 668310,
-      "page_count": 2430,
-      "timestamp": 1753047005
+      "followers": 10918,
+      "favorites": 3449,
+      "ratings": 2390,
+      "total_views": 2140690,
+      "word_count": 675501,
+      "page_count": 2456,
+      "timestamp": 1753257605
     },
     "89788": {
       "title": "The Stormrunners - A Science Fantasy Novel",
@@ -8833,6 +8833,38 @@
       "word_count": 180923,
       "page_count": 657,
       "timestamp": 1753243206
+    },
+    "108553": {
+      "title": "The Isekai Warrior Mage [LitRPG Harem Fantasy]",
+      "slug": "the-isekai-warrior-mage-litrpg-harem-fantasy",
+      "description": "<p><span>Night City gives me no easy passes in life. </span><span>Broke, hungry, and two bills away from sleeping in the back of Grandpa Reggie\u2019s junkyard Impala, I have to find ways to make ends meet. </span><span>Luckily, tonight I find myself a quick tutoring gig, a hot girl requesting my help for an impending chemistry exam. </span><span>Not so lucky though, that same girl goes werewolf mode on me and tries to eat my heart out!</span></p>\n<p><span>After a heated chase, I manage to escape by the skin of my teeth, an escape that left me spiraling into a fantasy world with dragons, Saber tooth tigers, and... <em>beastly women?</em> </span><span>Thankfully, a high priestess of a female exclusive sect takes interest in me before I become dog food. To make matters more interesting, she calls me a prophecy, and my job is to not only defeat the Goblin King\u2019s army,</span><span>&nbsp;but to put an end to an evil island threatening to drag their beastkin village, and their entire world, into darkness.</span></p>\n<p><span>With the help of my baby dragon, a zany leopardkin girl, and my now awakened demi-god powers, I will build my strength, one dungeon at a time.</span></p>\n<p><span>--</span></p>\n<p>What you\u2019ll find: slow-burn harem with dungeon raiding and a weak to strong MC. Plus, a baby dragon!</p>\n<p><strong>Release Schedule:</strong> Several chapters upon launch, then 2 Chapters a week, M &amp; F</p>\n<p>\u2764Steamy scenes are exclusive to my Patreon to abide by RR rules\u2764</p>\n<p>Read advanced chapters <a href=\"https://www.patreon.com/troymaverick\" rel=\"noopener ugc nofollow\">here</a>!</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "dungeon",
+        "comedy",
+        "adventure",
+        "fantasy",
+        "romance",
+        "harem",
+        "male_lead",
+        "magic",
+        "profanity",
+        "sexuality",
+        "gamelit",
+        "high_fantasy"
+      ],
+      "average_rating": 3.0625,
+      "author_id": 368380,
+      "author_name": "TroyMaverick",
+      "followers": 682,
+      "favorites": 153,
+      "ratings": 48,
+      "total_views": 94083,
+      "word_count": 104645,
+      "page_count": 380,
+      "timestamp": 1753257605
     }
   }
 }
