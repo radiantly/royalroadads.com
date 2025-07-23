@@ -1489,13 +1489,13 @@
       "average_rating": 4.68148,
       "author_id": 580701,
       "author_name": "AceGreen",
-      "followers": 2026,
+      "followers": 2027,
       "favorites": 497,
       "ratings": 270,
-      "total_views": 442192,
+      "total_views": 442541,
       "word_count": 323701,
       "page_count": 1177,
-      "timestamp": 1753243206
+      "timestamp": 1753261207
     },
     "114089": {
       "title": "SANCTUARY [Nobledark | Progression | Apocalypse]",
@@ -6708,16 +6708,16 @@
         "sensitive",
         "high_fantasy"
       ],
-      "average_rating": 4.539795,
+      "average_rating": 4.540585,
       "author_id": 265819,
       "author_name": "The First Observer",
-      "followers": 4140,
-      "favorites": 989,
-      "ratings": 578,
-      "total_views": 1223559,
+      "followers": 4159,
+      "favorites": 994,
+      "ratings": 579,
+      "total_views": 1229619,
       "word_count": 624581,
       "page_count": 2271,
-      "timestamp": 1753054205
+      "timestamp": 1753261207
     },
     "102816": {
       "title": "By Her Grace \u2013 a progressive Isekai Light Novel",
@@ -8865,6 +8865,36 @@
       "word_count": 104645,
       "page_count": 380,
       "timestamp": 1753257605
+    },
+    "118167": {
+      "title": "The Relic Warder's Daughter: The Cursed Canvas",
+      "slug": "the-relic-warders-daughter-the-cursed-canvas",
+      "description": "<p>Brenna's father is a Relic Warder. He travels the world tracking down dangerous supernatural items and locking them away, always dragging Brenna and her mom along for the ride. Born with an ability to perceive the supernatural, Brenna has been training to become a Warder herself since she was just a little girl. When her parents are killed by a powerful relic, Brenna is left an orphan. She's sent to live with her grandparents, who are determined to keep her as far away from the Warder community as possible. But just keeping her away from the Warders isn't enough to keep her safe from relics. When a supernatural painting from an antique shop traps Brenna and her new friends in a world of killer mummies, Brenna finds that she is their only protection. But she's only a half-trained thirteen-year-old girl. How can she possibly keep her untrained friends safe in a world made to drain their very lives away?</p>\n<p>Warning: This book contains mummies and other assorted corpses, death, somewhat graphic injuries, somewhat more than somewhat graphic injuries, decidedly minor injuries, and various disturbing historic facts. Mainly Victorian. Victorians were weird.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "urban_fantasy",
+        "female_lead",
+        "contemporary",
+        "strong_lead",
+        "adventure",
+        "fantasy",
+        "horror",
+        "school_life",
+        "supernatural",
+        "sensitive",
+        "low_fantasy",
+        "mythos"
+      ],
+      "average_rating": 5,
+      "author_id": 740717,
+      "author_name": "HF_Bloode",
+      "followers": 21,
+      "favorites": 6,
+      "ratings": 1,
+      "total_views": 995,
+      "word_count": 20836,
+      "page_count": 75,
+      "timestamp": 1753261207
     }
   }
 }
