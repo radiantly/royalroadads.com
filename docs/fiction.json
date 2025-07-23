@@ -287,16 +287,16 @@
         "sensitive",
         "ai_assisted"
       ],
-      "average_rating": 4.46154,
+      "average_rating": 4.5,
       "author_id": 763274,
       "author_name": "cody.bray",
-      "followers": 325,
-      "favorites": 53,
-      "ratings": 13,
-      "total_views": 8381,
-      "word_count": 46455,
+      "followers": 336,
+      "favorites": 56,
+      "ratings": 14,
+      "total_views": 8804,
+      "word_count": 46445,
       "page_count": 168,
-      "timestamp": 1753221605
+      "timestamp": 1753250405
     },
     "104561": {
       "title": "For the Glory of Rome: Chronicles of an Isekai'd Legion",
@@ -4482,13 +4482,13 @@
       "average_rating": 4.363205,
       "author_id": 356536,
       "author_name": "Provider",
-      "followers": 1696,
-      "favorites": 308,
+      "followers": 1721,
+      "favorites": 312,
       "ratings": 106,
-      "total_views": 1274838,
+      "total_views": 1299273,
       "word_count": 176532,
       "page_count": 641,
-      "timestamp": 1752908405
+      "timestamp": 1753250405
     },
     "119108": {
       "title": "Eris Team",
@@ -4894,6 +4894,7 @@
         "strong_lead",
         "magic",
         "strategy",
+        "profanity",
         "gamelit",
         "low_fantasy",
         "war_and_military",
@@ -4902,16 +4903,16 @@
         "dystopia",
         "progression"
       ],
-      "average_rating": 4.63846,
+      "average_rating": 4.65493,
       "author_id": 190479,
       "author_name": "J.D. Mullenary Sr.",
-      "followers": 512,
-      "favorites": 96,
-      "ratings": 65,
-      "total_views": 17841,
-      "word_count": 52498,
-      "page_count": 190,
-      "timestamp": 1753155006
+      "followers": 593,
+      "favorites": 111,
+      "ratings": 71,
+      "total_views": 21886,
+      "word_count": 55721,
+      "page_count": 202,
+      "timestamp": 1753250405
     },
     "105363": {
       "title": "Magicapita ",
