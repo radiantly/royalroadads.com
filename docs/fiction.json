@@ -3965,16 +3965,16 @@
         "war_and_military",
         "ruling_class"
       ],
-      "average_rating": 4.375,
+      "average_rating": 4.583335,
       "author_id": 235269,
       "author_name": "drewkelly",
-      "followers": 60,
-      "favorites": 16,
-      "ratings": 4,
-      "total_views": 4338,
+      "followers": 69,
+      "favorites": 18,
+      "ratings": 6,
+      "total_views": 4879,
       "word_count": 43436,
       "page_count": 157,
-      "timestamp": 1752883205
+      "timestamp": 1753297205
     },
     "122555": {
       "title": "ANOMALOUS (Re-Write)",
@@ -5440,16 +5440,16 @@
         "low_fantasy",
         "villainous_lead"
       ],
-      "average_rating": 4.8179,
+      "average_rating": 4.818645,
       "author_id": 165560,
       "author_name": "Temple",
-      "followers": 3845,
-      "favorites": 868,
-      "ratings": 486,
-      "total_views": 242711,
-      "word_count": 89623,
-      "page_count": 325,
-      "timestamp": 1753209006
+      "followers": 3863,
+      "favorites": 874,
+      "ratings": 488,
+      "total_views": 246657,
+      "word_count": 92278,
+      "page_count": 335,
+      "timestamp": 1753297205
     },
     "61014": {
       "title": "Demon's Reign ",
@@ -8999,6 +8999,34 @@
       "word_count": 120370,
       "page_count": 437,
       "timestamp": 1753286405
+    },
+    "101164": {
+      "title": "Experiment CX21: The Night it Was Unleashed",
+      "slug": "experiment-cx21-the-night-it-was-unleashed",
+      "description": "<p><span>Episodes release every Wednesday and Thursday.<br>Collin is offered $10,000 a week to be experimented on by a mysterious scientist. Desperate to support his wife and his daughter, he takes the offer. The consequences of the experiment are more life changing than Colin could have ever known. After witnessing his own death, Colin needs to find his way back to his family and regain his memories before they suffer the same fate.<br>Elements in the story:</span><span></span></p>\n<p><span>Gradual growth via consumption&nbsp;</span></p>\n<p><span>Man vs Nature</span></p>\n<p><span>Man Vs Self</span></p>\n<p><span>Bio based magic system&nbsp;</span></p>\n<p><span>Multiple perspectives including villains&nbsp;</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "reincarnation",
+        "psychological",
+        "multiple_lead",
+        "sci_fi",
+        "horror",
+        "secret_identity",
+        "graphic_violence",
+        "sensitive",
+        "low_fantasy",
+        "technologically_engineered"
+      ],
+      "average_rating": 4.708335,
+      "author_id": 580736,
+      "author_name": "Joseph Shane Lampp",
+      "followers": 99,
+      "favorites": 24,
+      "ratings": 24,
+      "total_views": 33259,
+      "word_count": 65566,
+      "page_count": 238,
+      "timestamp": 1753297205
     }
   }
 }
