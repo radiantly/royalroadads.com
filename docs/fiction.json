@@ -3936,13 +3936,13 @@
       "average_rating": 4.813335,
       "author_id": 310723,
       "author_name": "HP Low",
-      "followers": 953,
+      "followers": 955,
       "favorites": 255,
       "ratings": 150,
-      "total_views": 126484,
+      "total_views": 126677,
       "word_count": 188775,
       "page_count": 686,
-      "timestamp": 1753225206
+      "timestamp": 1753279253
     },
     "121435": {
       "title": "These Shattered Swords",
@@ -8929,6 +8929,43 @@
       "word_count": 27895,
       "page_count": 101,
       "timestamp": 1753275606
+    },
+    "122106": {
+      "title": "Whispers of the End \u2013 A Tower Defense LitRPG",
+      "slug": "whispers-of-the-end-a-tower-defense-litrpg",
+      "description": "<p><b><i>The world ended a hundred years ago. For the Warden, it ended five minutes ago.</i></b></p>\n<p>Waking up in the Last Hope Penitentiary\u2014humanity's final, crumbling bastion\u2014he is tasked with an impossible mission: save what's left of the world by commanding the very 'Weapons' that were locked away for being too dangerous. With a cynical AI as his only guide and monsters at every door, he must learn to lead, survive, and stare back when death stares him in the face.</p>\n<p><b><i>In a world of monsters, the most dangerous one might be the person you're forced to trust.</i></b></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "post_apocalyptic",
+        "war_and_military",
+        "grimdark",
+        "action",
+        "fantasy",
+        "psychological",
+        "sci_fi",
+        "cyberpunk",
+        "slice_of_life",
+        "male_lead",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "gamelit",
+        "genetically_engineered",
+        "hard_sci-fi",
+        "dystopia",
+        "artificial_intelligence"
+      ],
+      "average_rating": 4.5,
+      "author_id": 289039,
+      "author_name": "cerealissoup",
+      "followers": 73,
+      "favorites": 15,
+      "ratings": 6,
+      "total_views": 3055,
+      "word_count": 28839,
+      "page_count": 104,
+      "timestamp": 1753279253
     }
   }
 }
