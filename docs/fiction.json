@@ -3861,16 +3861,16 @@
         "graphic_violence",
         "high_fantasy"
       ],
-      "average_rating": 4.27826,
+      "average_rating": 4.27784,
       "author_id": 326485,
       "author_name": "Magnus Grey",
       "followers": 5821,
-      "favorites": 1609,
-      "ratings": 920,
-      "total_views": 3318143,
-      "word_count": 454821,
-      "page_count": 1653,
-      "timestamp": 1753063205
+      "favorites": 1613,
+      "ratings": 925,
+      "total_views": 3335824,
+      "word_count": 459311,
+      "page_count": 1670,
+      "timestamp": 1753268407
     },
     "101214": {
       "title": "Hail Thy Gods (Books 1 & 2 Complete)",
@@ -8767,10 +8767,10 @@
       "followers": 87,
       "favorites": 26,
       "ratings": 3,
-      "total_views": 3001,
+      "total_views": 3012,
       "word_count": 50042,
       "page_count": 181,
-      "timestamp": 1753241406
+      "timestamp": 1753268407
     },
     "124227": {
       "title": "Mimesis",
