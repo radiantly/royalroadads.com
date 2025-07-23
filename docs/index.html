@@ -26,7 +26,6 @@
           segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto,
           noto, helvetica, arial, sans-serif;
         overflow-x: hidden;
-        overflow-y: scroll;
       }
 
       .text {
@@ -68,6 +67,11 @@
         gap: 40px;
         width: 100%;
       }
+
+      section {
+        display: none;
+      }
+
       nav {
         display: flex;
         padding: 20px 25px;
@@ -142,12 +146,14 @@
         min-height: 500vh;
         position: relative;
         align-self: stretch;
+        align-items: stretch;
       }
 
       .rra-grid div.backdrop-container {
         filter: blur(15px);
         z-index: -1;
-        pointer-events: none;
+        contain: strict;
+        flex-grow: 1;
       }
 
       .rra-grid div.backdrop-container img {
@@ -183,6 +189,7 @@
         gap: 20px;
         z-index: 13;
         border-radius: 10px;
+        contain: strict;
       }
 
       .rra-grid div.positioned:not(.expanded):hover {
@@ -193,6 +200,11 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+      }
+
+      .rra-grid div.positioned > .right > *,
+      .rra-grid div.positioned > .left > * {
+        flex-shrink: 0;
       }
 
       .rra-grid div.positioned > .left .cover-wrap {
@@ -220,6 +232,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        pointer-events: none;
       }
 
       .rra-grid div.positioned > .left .cover-wrap img {
@@ -422,6 +435,86 @@
         height: 125px;
         border-radius: 0;
       }
+
+      @media screen and (max-width: 600px) {
+        html {
+          scroll-snap-type: y mandatory;
+        }
+        body {
+          flex-direction: column;
+          justify-content: start;
+        }
+        .container {
+          display: none;
+        }
+        section {
+          display: flex;
+          flex-direction: column;
+          min-height: 0;
+          contain: strict;
+          align-items: center;
+          gap: 20px;
+
+          --ad-width: min(95vw, 300px);
+
+          padding: 1rem;
+          height: 100vh;
+          scroll-snap-align: start;
+          position: relative;
+          background-color: #2f2f2f;
+          padding: max(20px, 5vh) 0;
+        }
+        section:nth-child(odd) {
+          background-color: #262626;
+        }
+        .m-rect-ad {
+          width: var(--ad-width);
+          height: 250px;
+          border-radius: 10px;
+        }
+        .m-infobox {
+          --padding: 15px;
+          width: var(--ad-width);
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 20px;
+
+          background-color: #4b4b4b;
+          border-radius: 10px;
+          overflow: hidden;
+          padding-bottom: var(--padding);
+        }
+        .m-title {
+          font-family: "Dot Matrix";
+          background-color: #3d3d3d;
+          display: flex;
+          font-size: 20px;
+          padding: 10px var(--padding);
+          color: #f3f3f3;
+        }
+        .m-cover-row {
+          display: flex;
+          padding: 0 var(--padding);
+        }
+        img.m-cover {
+          height: 150px;
+          width: 100px;
+        }
+        .m-desc {
+          color: white;
+          padding: 0 var(--padding);
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          min-height: 0;
+          overflow: hidden;
+        }
+        .m-desc > p {
+          margin: 0;
+        }
+      }
+
       @keyframes fade-in {
         from {
           opacity: 0;
@@ -449,6 +542,9 @@
         <div class="backdrop-container"></div>
       </div>
     </div>
+    <section>
+      <h1>Royal Road Ads</h1>
+    </section>
     <template id="ad-element">
       <div class="positioned">
         <div class="left">
@@ -506,6 +602,65 @@
         </div>
       </div>
       <img class="backdrop" src="#" aria-hidden="true" />
+    </template>
+    <template id="m-ad-element">
+      <section>
+        <img
+          class="m-rect-ad"
+          src="300x250/19d467f0-ec4f-4ad1-99a8-2b1568ec452b.webp"
+        />
+        <div class="m-infobox">
+          <div class="m-title">The Unique Maestro</div>
+          <div class="m-cover-row">
+            <img src="200x300/95818.webp" alt="Cover image" class="m-cover" />
+          </div>
+          <div class="m-desc text">
+            <p>
+              <b>When Michael needed a hero, no one answered his call. </b
+              ><span style="font-weight: 400"
+                >His life lay in ruins. His dreams were shattered. With no
+                options left and nowhere else to turn, he found himself forced
+                into the shadowy embrace of a criminal enterprise. Trapped under
+                a crippling debt and the threat of death, he did what he had to
+                survive, even if it meant helping the monsters he once hoped to
+                fight against.&nbsp;</span
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400"
+                >He had all but given up when it finally happened. His powers
+                manifested.&nbsp;</span
+              >
+            </p>
+            <p>
+              <b
+                ><i
+                  >Granted, the ability to steal the superpower of any corpse he
+                  touches.</i
+                ></b
+              ><span style="font-weight: 400">
+                Michael pushes to carve out a better life for himself. The life
+                he always dreamed of. He would be a superhero, but first, he
+                would need to clean up the underworld that had dug its hooks
+                into him.&nbsp;</span
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400"
+                >Will he forge his dream into reality, or be devoured by the
+                ghosts of his past?</span
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400">What to expect:<br /></span
+              ><span style="font-weight: 400"
+                >Power theft&nbsp;<br />Gruesome fights<br />Lite litrpg
+                elements&nbsp;<br /></span
+              ><span style="font-weight: 400">This is a dark story&nbsp;</span>
+            </p>
+          </div>
+        </div>
+      </section>
     </template>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script>
@@ -567,7 +722,10 @@
             requestLayoutCallback,
 
             // elements
-            elements: null,
+            desktopElems: null,
+            mobileElems: null,
+
+            force_content_update: false,
           };
 
           this.#current = {
@@ -577,6 +735,7 @@
             width: null,
             height: null,
             expanded: false,
+            type: null,
 
             // content
             uid: null,
@@ -617,20 +776,29 @@
         }
 
         get elements() {
-          if (this.#state.elements === null) {
-            this.#state.elements = this.#createHTMLElements();
+          if (this.#state.elements === null) this.#state.elements = {};
 
-            const { positioned, backdrop } = this.#state.elements;
-
-            document.querySelector(".rra-grid").appendChild(positioned);
-            document
-              .querySelector(".rra-grid > .backdrop-container")
-              .appendChild(backdrop);
+          if (
+            this.#required.type === "desktop" &&
+            !this.#state.elements.positioned
+          ) {
+          } else if (
+            this.#required.type === "mobile" &&
+            !this.#state.elements.section
+          ) {
           }
+
           return this.#state.elements;
         }
 
         get needsLayoutUpdate() {
+          // HTML elements need to be created/updated
+          if (this.#current.type !== this.#required.type) return true;
+
+          // no manual layout required for mobile
+          if (this.#current.type === "mobile") return false;
+
+          // desktop
           return (
             this.#current.x !== this.#required.x ||
             this.#current.y !== this.#required.y ||
@@ -654,6 +822,7 @@
         }
 
         get adImgSrc() {
+          console.assert(this.#required.uid !== null);
           return `300x250/${this.#required.uid}.webp`;
         }
 
@@ -700,6 +869,37 @@
           return `Last updated on ${lastUpdated}. Ad retrieved on ${adFetchDate}.`;
         }
 
+        get hasElements() {
+          return this.#getElements() !== null;
+        }
+
+        #getElements(createIfNotExists = false) {
+          if (this.#required.type === null) return null;
+
+          if (this.#required.type === "desktop") {
+            if (createIfNotExists && this.#state.desktopElems === null) {
+              this.#state.desktopElems = this.#createHTMLElementsForDesktop();
+
+              const { positioned, backdrop } = this.#state.desktopElems;
+
+              document.querySelector(".rra-grid").appendChild(positioned);
+              document
+                .querySelector(".rra-grid > .backdrop-container")
+                .appendChild(backdrop);
+            }
+            return this.#state.desktopElems;
+          }
+
+          if (this.#required.type === "mobile") {
+            if (createIfNotExists && this.#state.mobileElems === null) {
+              this.#state.mobileElems = this.#createHTMLElementsForMobile();
+              const { section } = this.#state.mobileElems;
+              document.body.appendChild(section);
+            }
+            return this.#state.mobileElems;
+          }
+        }
+
         #addElementHandlers(element, backdrop) {
           element.addEventListener("click", (event) => {
             if (this.expandable === false) return;
@@ -721,6 +921,7 @@
           this.#current.width = this.#required.width;
           this.#current.height = this.#required.height;
           this.#current.expanded = this.#required.expanded;
+          this.#current.type = this.#required.type;
         }
 
         #markContentUpdateSuccessful() {
@@ -730,7 +931,7 @@
           this.#current.fiction = this.#required.fiction;
         }
 
-        #createHTMLElements() {
+        #createHTMLElementsForDesktop() {
           const template = document.getElementById("ad-element");
           const fragment = template.content.cloneNode(true);
           const positioned = fragment.querySelector("div.positioned");
@@ -742,14 +943,23 @@
           return { positioned, backdrop };
         }
 
+        #createHTMLElementsForMobile() {
+          const template = document.getElementById("m-ad-element");
+          const fragment = template.content.cloneNode(true);
+          const section = fragment.querySelector("section");
+
+          return { section };
+        }
+
         computeHeight({ width }) {
           if (!this.#required.expanded) return RectangleAd.HEIGHT;
           // if (!this.#/) TODO: cache
 
-          const { positioned } = this.elements;
+          const { positioned } = this.#getElements(true);
 
           // set required properties
           positioned.classList.add("expanded");
+          positioned.style.contain = "none";
           positioned.style.setProperty("--width", `${width}px`);
           positioned.style.setProperty("--height", `auto`);
 
@@ -762,24 +972,28 @@
           positioned.style.setProperty("--width", `${this.#current.width}px`);
           positioned.style.setProperty("--height", `${this.#current.height}px`);
           positioned.classList.toggle("expanded", this.#current.expanded);
+          positioned.style.contain = null;
 
           return Math.ceil(height);
         }
 
-        setLayoutProps({ x, y, width, height, expanded }) {
+        setLayoutProps({ x, y, width, height, expanded, type }) {
           this.#required.x = x ?? this.#required.x;
           this.#required.y = y ?? this.#required.y;
           this.#required.width = width ?? this.#required.width;
           this.#required.height = height ?? this.#required.height;
           this.#required.expanded = expanded ?? this.#required.expanded;
+
+          if (type && this.#required.type !== type) {
+            this.#required.type = type;
+            this.#state.force_content_update = true;
+          }
         }
 
-        updatePosition() {
-          if (!this.needsLayoutUpdate) return;
+        #updatePositionForDesktop() {
           const { x, y, width, height, expanded } = this.#required;
+          const { positioned, backdrop } = this.#getElements(true);
 
-          const { positioned, backdrop } = this.elements;
-          // gsap.set([positioned, backdrop], { x, y, width, height });
           positioned.style.setProperty("--x", `${x}px`);
           positioned.style.setProperty("--y", `${y}px`);
           positioned.style.setProperty("--width", `${width}px`);
@@ -797,12 +1011,23 @@
           this.#markPositionUpdateSuccessful();
         }
 
-        updateContent() {
-          if (!this.needsContentUpdate) return;
+        #updatePositionForMobile() {
+          // create elements if they don't exist
+          this.#getElements(true);
 
-          if (this.#state.elements === null) return;
-          const { positioned, backdrop } = this.#state.elements;
+          this.#current.type = this.#required.type;
+        }
 
+        updatePosition() {
+          if (!this.needsLayoutUpdate) return;
+
+          if (this.#required.type === "desktop")
+            this.#updatePositionForDesktop();
+          else if (this.#required.type === "mobile")
+            this.#updatePositionForMobile();
+        }
+
+        #updateContentForDesktop({ positioned, backdrop }) {
           positioned.classList.toggle("external", !this.expandable);
 
           positioned.querySelector("a.read-btn").href = this.#required.link;
@@ -848,7 +1073,48 @@
             const coverImageElem = positioned.querySelector(".cover-wrap img");
             coverImageElem.src = this.coverImgSrc;
           }
+
           this.#markContentUpdateSuccessful();
+        }
+
+        #updateContentForMobile({ section }) {
+          // positioned.querySelector("a.read-btn").href = this.#required.link;
+
+          const img = section.querySelector("img.m-rect-ad");
+          img.src = this.adImgSrc;
+          img.alt = this.#required.alt;
+          img.title = this.#required.alt;
+
+          if (this.#required.fiction !== null) {
+            const { title, description, tags, author_name } =
+              this.#required.fiction;
+            const titleElem = section.querySelector(".m-title");
+            titleElem.textContent = title;
+
+            const summaryElem = section.querySelector(".m-desc");
+            summaryElem.innerHTML = description;
+
+            const coverImageElem = section.querySelector("img.m-cover");
+            coverImageElem.src = this.coverImgSrc;
+          }
+
+          this.#markContentUpdateSuccessful();
+        }
+
+        updateContent() {
+          if (!this.needsContentUpdate && !this.#state.force_content_update)
+            return;
+
+          if (this.#required.uid === null) return;
+
+          const elements = this.#getElements();
+
+          if (elements === null) return;
+
+          if (this.#required.type === "desktop")
+            this.#updateContentForDesktop(elements);
+          else if (this.#required.type === "mobile")
+            this.#updateContentForMobile(elements);
         }
       }
 
@@ -858,6 +1124,7 @@
           this.#state = {
             ads: [],
             layoutComputedTill: { y: 0, index: 0 },
+            m_index: 0,
 
             varianceCache: new Map(),
 
@@ -869,15 +1136,21 @@
             vWidth: null,
             vHeight: null,
             scrollY: null,
+            type: this.#getLayoutType(),
           };
 
           this.requestRender = this.requestRender.bind(this);
+        }
+
+        #getLayoutType() {
+          return window.innerWidth <= 600 ? "mobile" : "desktop";
         }
 
         addPlaceholderEntries(count) {
           this.#state.placeholderEntriesCount += count;
           for (let i = 0; i < count; i += 1) {
             const ad = new RectangleAd(this.requestRender);
+            ad.setLayoutProps({ type: this.#state.type });
             this.#state.ads.push(ad);
           }
         }
@@ -891,6 +1164,7 @@
               this.#state.ads[index].setContent({ uid, ...entry });
             } else {
               const ad = new RectangleAd(this.requestRender);
+              ad.setLayoutProps({ type: this.#state.type });
               ad.setContent({ uid, ...entry });
               this.#state.ads.push(ad);
             }
@@ -922,6 +1196,27 @@
 
         computeLayout() {
           const { vWidth, vHeight, scrollY, activeAd } = this.#state;
+
+          if (this.#state.type === "mobile") {
+            const { scrollHeight } = document.body;
+            const loadCount = Math.max(
+              0,
+              5 - (scrollHeight - scrollY) / vHeight
+            );
+            this.#state.m_index = Math.min(
+              this.#state.m_index + loadCount,
+              this.#state.ads.length
+            );
+            console.log(
+              scrollHeight,
+              scrollY,
+              vHeight,
+              loadCount,
+              this.#state.m_index
+            );
+            return;
+          }
+
           const gap = 10;
           const variance = 40; // TODO: make this dynamic based on vWidth or perRow
           const adWidth = RectangleAd.WIDTH + variance;
@@ -949,8 +1244,14 @@
             if (side && side.tillY < it.y) side = null;
 
             // don't compute layout for things that are very far from the viewport
-            // TODO: fix for mobile
-            if (side === null && it.y > scrollY + vHeight * 5) break;
+            // TODO: this is a costly operation when the user has scrolled down
+            //       and more elements are present
+            if (
+              side === null &&
+              !this.#state.ads[it.index].hasElements &&
+              it.y > scrollY + vHeight * 5
+            )
+              break;
 
             // if the ad is expanded, we want
             if (this.#state.ads[it.index].expanded) {
@@ -984,7 +1285,7 @@
                 lastSideOnRight = side.onRight;
                 const x = side.onRight ? vWidth - side.width + gap + vx : vx;
                 const y = vy + it.y;
-                this.#state.ads[it.index].setLayoutProps({
+                ad.setLayoutProps({
                   x,
                   y,
                   width: eadWidth,
@@ -1067,15 +1368,26 @@
         }
 
         updatePositions() {
-          const till = Math.min(
-            this.#state.layoutComputedTill.index,
-            this.#state.ads.length
-          );
+          const index =
+            this.#state.type === "mobile"
+              ? this.#state.m_index
+              : this.#state.layoutComputedTill.index;
+          const till = Math.min(index, this.#state.ads.length);
           for (let i = 0; i < till; i += 1) {
             const ad = this.#state.ads[i];
             ad.updatePosition();
             ad.updateContent();
           }
+        }
+
+        setLayoutType() {
+          if (this.#getLayoutType() === this.#state.type) return;
+          this.#state.type = this.#getLayoutType();
+
+          console.log("setting layout type to", this.#state.type);
+
+          for (const ad of this.#state.ads)
+            ad.setLayoutProps({ type: this.#state.type });
         }
 
         render() {
@@ -1084,10 +1396,15 @@
           this.#state.scrollY = window.scrollY;
           console.info("COMPUTING LAYOUT");
 
+          this.setLayoutType();
           this.computeLayout();
+          console.log(this.#state.type, this.#state.ads.length);
           this.updatePositions();
 
           console.log(this.#state.layoutComputedTill);
+          document.querySelector(".backdrop-container").style.height = `${
+            this.#state.layoutComputedTill.y
+          }px`;
 
           this.#state.layoutPending = false;
           this.#state.activeAd = null;
@@ -1102,8 +1419,9 @@
 
         requestRenderOnScroll() {
           if (
+            this.#state.type === "desktop" &&
             this.#state.layoutComputedTill.y >
-            window.scrollY + this.#state.vHeight * 3
+              window.scrollY + this.#state.vHeight * 3
           )
             return;
           if (this.#state.layoutComputedTill.index === this.#state.ads.length)
