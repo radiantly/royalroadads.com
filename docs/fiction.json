@@ -2073,16 +2073,16 @@
         "graphic_violence",
         "ruling_class"
       ],
-      "average_rating": 4.145455,
+      "average_rating": 4.145365,
       "author_id": 341692,
       "author_name": "Kuzunalis",
-      "followers": 8299,
-      "favorites": 1910,
-      "ratings": 1595,
-      "total_views": 3601667,
+      "followers": 8303,
+      "favorites": 1912,
+      "ratings": 1596,
+      "total_views": 3602802,
       "word_count": 468095,
       "page_count": 1702,
-      "timestamp": 1753315206
+      "timestamp": 1753329605
     },
     "116872": {
       "title": "We Lease The Kraken! - A LitRPG Pet Shop System Story.",
@@ -9194,6 +9194,38 @@
       "word_count": 272810,
       "page_count": 992,
       "timestamp": 1753326005
+    },
+    "109645": {
+      "title": "Where the Dead Things Bloom [Romantically Apocalyptic Systemfall Litrpg]",
+      "slug": "where-the-dead-things-bloom-romantically-apocalyptic",
+      "description": "<p><em>My Second Life is a Dog-Gone Mess!</em></p>\n<p>Drowning in a bathtub should've been the end of my problems, not the beginning of weirder ones.</p>\n<p>Now I'm stuck in a reality where things refuse to die properly, buildings sprout tentacles, and my new \"best friend\" is a talking, humanoid husky-girl who swears we grew up together. Between dodging electric bee swarms and taking advice from a tinfoil-hat guru, with my Reconstitution at zero and her unwavering loyalty at max, we're heading back home\u2014wherever that is now in this System-shattered world.</p>\n<p><strong>What to Expect in This Series:</strong><br>-Light Litrpg&nbsp;<br>-Numbers that go up when you kill questionable things<br>-Dogged Siberian Husky and other waifus with emotional baggage [Eventual harem]<br>-Original art and music by me and my team<br>-Slow burn romance<br>-Love, death, memory loss &amp; overcoming the end of reality itself to get your best friend back<br>-Dimensional shenanigans, reality-shifting wishes, time loops, infinite shops and dungeon delving days</p>\n<p>Assisting Illustrators: <a href=\"https://www.artstation.com/mabiruna\" rel=\"noopener ugc nofollow\">Mabiruna</a>, <a href=\"https://www.furaffinity.net/user/sheepuser/\" rel=\"noopener ugc nofollow\">Sheep_User</a>, <a href=\"https://www.furaffinity.net/gallery/lenika/\" rel=\"noopener ugc nofollow\">Lenika</a></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "dungeon",
+        "post_apocalyptic",
+        "comedy",
+        "action",
+        "adventure",
+        "fantasy",
+        "harem",
+        "male_lead",
+        "magic",
+        "graphic_violence",
+        "sensitive",
+        "gamelit",
+        "progression"
+      ],
+      "average_rating": 4.566665,
+      "author_id": 177664,
+      "author_name": "Vitaly S Alexius",
+      "followers": 1999,
+      "favorites": 554,
+      "ratings": 255,
+      "total_views": 388291,
+      "word_count": 275022,
+      "page_count": 1000,
+      "timestamp": 1753329605
     }
   }
 }
