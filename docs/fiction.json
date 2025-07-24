@@ -5280,13 +5280,13 @@
       "average_rating": 4.625,
       "author_id": 403183,
       "author_name": "RainyLiquid",
-      "followers": 105,
+      "followers": 104,
       "favorites": 33,
       "ratings": 20,
-      "total_views": 13966,
-      "word_count": 224704,
-      "page_count": 817,
-      "timestamp": 1753347605
+      "total_views": 14092,
+      "word_count": 227789,
+      "page_count": 828,
+      "timestamp": 1753365606
     },
     "84100": {
       "title": "Time Breaker, Soul Breaker, Fate Breaker (Re:Maelstrom) - Fantasy Time Loop",
@@ -9293,6 +9293,34 @@
       "word_count": 41435,
       "page_count": 150,
       "timestamp": 1753358406
+    },
+    "112557": {
+      "title": "I Swear I'm Not A Dark Lord!",
+      "slug": "i-swear-im-not-a-dark-lord",
+      "description": "<p>Another death, another world, another chance to live a peaceful life. All he wants to do is practice his magic and go fishing. A peaceful, pleasant existence nobody should complain about.</p>\n<p>As if! His family abandoned him; His new body is cursed; The gods meddle with his life; The local mayor shoves responsibilities at him; A weird kid keeps popping up and challenging him to duels; People keep asking him if he wants to be a dark lord.</p>\n<p>Who has time for all of that when there are books to read and a lunker of a trout hiding away in the river?</p>\n<p>Join an isekai hero in his not-quiet-enough life.</p>\n<p><strong>Writeathon Winner</strong>, Spring 2025</p>\n<p>This is the next life of the MC from <a href=\"https://www.royalroad.com/author-dashboard/dashboard/90077\" rel=\"noopener ugc nofollow\"><strong>Isekai Veteran</strong></a>, but the story stands well on its own.</p>\n<hr>\n<p>Updates Tuesday and Friday.</p>\n<p></p>",
+      "status": "Ongoing",
+      "tags": [
+        "gamelit",
+        "summoned_hero",
+        "male_lead",
+        "strong_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "reincarnation",
+        "magic",
+        "high_fantasy"
+      ],
+      "average_rating": 4.71937,
+      "author_id": 349732,
+      "author_name": "CJ Holmes",
+      "followers": 1328,
+      "favorites": 283,
+      "ratings": 253,
+      "total_views": 209962,
+      "word_count": 125024,
+      "page_count": 454,
+      "timestamp": 1753365606
     }
   }
 }
