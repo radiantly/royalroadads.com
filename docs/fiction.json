@@ -144,13 +144,13 @@
       "average_rating": 4.5,
       "author_id": 686890,
       "author_name": "Serana the Emperor",
-      "followers": 227,
-      "favorites": 39,
+      "followers": 232,
+      "favorites": 40,
       "ratings": 7,
-      "total_views": 9320,
-      "word_count": 95838,
-      "page_count": 348,
-      "timestamp": 1753232406
+      "total_views": 9546,
+      "word_count": 100006,
+      "page_count": 363,
+      "timestamp": 1753351206
     },
     "108745": {
       "title": "Moonfire & Midnight",
@@ -707,16 +707,16 @@
         "ruling_class",
         "attractive_lead"
       ],
-      "average_rating": 4.11237,
+      "average_rating": 4.11263,
       "author_id": 561701,
       "author_name": "The Curator",
-      "followers": 6844,
-      "favorites": 1834,
-      "ratings": 1059,
-      "total_views": 2907036,
-      "word_count": 515745,
-      "page_count": 1875,
-      "timestamp": 1753182006
+      "followers": 6868,
+      "favorites": 1841,
+      "ratings": 1061,
+      "total_views": 2931283,
+      "word_count": 518213,
+      "page_count": 1884,
+      "timestamp": 1753351206
     },
     "121319": {
       "title": "Andy in the Apocalypse [LitRPG System Apocalypse]",
@@ -9226,6 +9226,46 @@
       "word_count": 275022,
       "page_count": 1000,
       "timestamp": 1753329605
+    },
+    "37159": {
+      "title": "Symphony: A Sci-fi LitRPG Adventure: Book 1 Stubbed. Series complete.",
+      "slug": "symphony-a-sci-fi-litrpg-adventure-book-1-stubbed",
+      "description": "<p><span>Fresh off a break-up and now unemployed, veteran and former high school English teacher Walker Reed is ready to succumb to a grim and hopeless depression. But when an enigmatic stranger stops him in the street, he\u2019s suddenly hurled into another dimension.</span></p>\n<p><span>There, Walker gets to build his own world from scratch following the Alpha Protocol, which invites special individuals from across the universe to become \u201cCreators\u201d\u2015generating everything from their own land masses and celestial bodies to a comprehensive, recorded religion.</span></p>\n<p><span>With the help of his robotic assistant, Virgil\u2015who happens to be a four-foot-tall squirrel\u2015Walker sets about building out his geography, evolutionary systems, and creatures. But it\u2019s not like playing in a sandbox, and he quickly realizes his creations can have world-ending consequences. Not to mention the creators are regularly pitted against one another in the Creator Wars . . .</span></p>\n<p><span>As if all that weren\u2019t bad enough, if Walker can\u2019t complete the Alpha Protocol, he\u2019ll be sent back to his previous reality where new, dark roads await. As he unlocks new systems and paths, can he balance his desire to be a peaceful, benevolent, and ethical god? Or will everything devolve into chaos?</span></p>\n<hr>\n<p>Worldbuilding!</p>\n<p>System designing!</p>\n<p>Making monsters!</p>\n<p>God battles!</p>\n<hr>\n<p><strong></strong></p>\n<p><strong>Symphony</strong> is a novel with a blend of Sci-fi and LitRPG, that shows the reader how a LitRPG world comes to be. This is the first book in a series of novels planned around the Symphony universe.</p>\n<p>Release schedule: M &amp; F at 1:00 p.m. C.S.T. with a standard size of 3k up to 6k words, depending on the content.</p>\n<p>Author's note: This is a work in progress. The final draft form will be published on Kindle, Kindle Unlimited, Paperback, and Audible.</p>\n<p>Discord information: <a href=\"https://discord.gg/dsut8cwCMh\" rel=\"noopener ugc nofollow\">Link</a></p>\n<p><span>[Winner of the Fall 2023 Writathon challenge]</span></p>",
+      "status": "Completed",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "dungeon",
+        "anti-hero_lead",
+        "comedy",
+        "fantasy",
+        "sci_fi",
+        "mystery",
+        "male_lead",
+        "non-human_lead",
+        "secret_identity",
+        "magic",
+        "strategy",
+        "profanity",
+        "gamelit",
+        "high_fantasy",
+        "mythos",
+        "genetically_engineered",
+        "technologically_engineered",
+        "soft_sci-fi",
+        "progression",
+        "artificial_intelligence"
+      ],
+      "average_rating": 3.8832,
+      "author_id": 190479,
+      "author_name": "J.D. Mullenary Sr.",
+      "followers": 2963,
+      "favorites": 851,
+      "ratings": 381,
+      "total_views": 699996,
+      "word_count": 534898,
+      "page_count": 1945,
+      "timestamp": 1753351206
     }
   }
 }
