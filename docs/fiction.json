@@ -8104,13 +8104,13 @@
       "average_rating": 4.480265,
       "author_id": 439822,
       "author_name": "Mechalich",
-      "followers": 606,
-      "favorites": 123,
+      "followers": 614,
+      "favorites": 125,
       "ratings": 76,
-      "total_views": 110896,
-      "word_count": 231247,
-      "page_count": 840,
-      "timestamp": 1753153206
+      "total_views": 113252,
+      "word_count": 234657,
+      "page_count": 853,
+      "timestamp": 1753326005
     },
     "89836": {
       "title": "Learning to Fall",
@@ -8858,13 +8858,13 @@
       "average_rating": 3.0625,
       "author_id": 368380,
       "author_name": "TroyMaverick",
-      "followers": 682,
+      "followers": 686,
       "favorites": 153,
       "ratings": 48,
-      "total_views": 94083,
+      "total_views": 94526,
       "word_count": 104645,
       "page_count": 380,
-      "timestamp": 1753257605
+      "timestamp": 1753326005
     },
     "118167": {
       "title": "The Relic Warder's Daughter: The Cursed Canvas",
@@ -9158,6 +9158,42 @@
       "word_count": 79779,
       "page_count": 290,
       "timestamp": 1753322405
+    },
+    "84349": {
+      "title": "Sworded Affair",
+      "slug": "sworded-affair",
+      "description": "<p>Polishing antiques in the basement was supposed to be a punishment. When monsters arrived, it saved Emma's life. Now sealed inside a suit of armor old when the world was young, Emma Knight will have to master newfound powers she'd long regarded as merely myth; all whilst navigating the breakdown of society and delving through dungeons in search of the truth behind the apocalypse. How's that for a Sworded Affair?</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "dungeon",
+        "post_apocalyptic",
+        "anti-hero_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "mystery",
+        "supernatural",
+        "female_lead",
+        "non-human_lead",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "low_fantasy",
+        "mythos",
+        "progression"
+      ],
+      "average_rating": 3.860105,
+      "author_id": 436458,
+      "author_name": "Nihilea",
+      "followers": 4837,
+      "favorites": 1156,
+      "ratings": 579,
+      "total_views": 2272853,
+      "word_count": 272810,
+      "page_count": 992,
+      "timestamp": 1753326005
     }
   }
 }
