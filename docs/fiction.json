@@ -7820,16 +7820,16 @@
         "technologically_engineered",
         "soft_sci-fi"
       ],
-      "average_rating": 4.596775,
+      "average_rating": 4.603175,
       "author_id": 302854,
       "author_name": "Fiavolun Tastua",
-      "followers": 653,
-      "favorites": 124,
-      "ratings": 62,
-      "total_views": 63376,
+      "followers": 660,
+      "favorites": 127,
+      "ratings": 63,
+      "total_views": 64663,
       "word_count": 97375,
       "page_count": 354,
-      "timestamp": 1753128005
+      "timestamp": 1753322405
     },
     "80208": {
       "title": "SHADE: The Passing",
@@ -9122,6 +9122,42 @@
       "word_count": 347617,
       "page_count": 1264,
       "timestamp": 1753311605
+    },
+    "85590": {
+      "title": "Zealot",
+      "slug": "zealot",
+      "description": "<p>This is a normal story about normal things, told in a normal way. It involves a normal character who has no desire to kill any gods, in fact, this character lives a very normal life and doesn\u2019t die more than people usually do, this character totally doesn\u2019t swear her allegiance to the burgeoning, slightly bratty goddess of darkness, in her war against the goddess of light, due to any sort of vendetta. That wasn\u2019t overly specific and therefore suspicious, and lastly but most importantly, the goddess of death does not like wontons.</p>\n<p>*Note: an undisclosed percentage of this description is comprised entirely of lies.</p>\n<p>New Chapter every 2-4 weeks on Friday.</p>\n<p>Cover by: VyarkX</p>\n<p>*Content warnings explained:</p>\n<p>Profanity: Mainly erring on the side of caution, there's swearing in the book so I gave it the tag, I personally don't believe it's excessive, but better have people going in knowing it's there if they're especially sensitive towards it.</p>\n<p>Graphic violence: This book get's very violent, and I'm not going to shy away from that. There are some bad people and they do bad things, some worse than others. This book is <em>Characters first</em> so, if I believe it's something that character would do in that situation, considering their current mental state, they'll do it. Even so, chapter 2 acts as a sort of more explicit warning, if you can't handle chapter 2, you probably won't like the violence in this book. Although I should say, that as a general rule I try to make extreme violence sort of infrequent, your chapter to chapter violence level should be no worse than an action move, just a bit more descriptive. Like I won't ever go into too much detail, but if a monster gets exploded with a grenade, I'll mention the bits.</p>\n<p>Sensitive Content: This is an expansion on the \"There are some bad people and they do bad things\" statement from earlier. I generally won't go into excessive detail with some of the harsher ones on the tag's description, but if something happens it will be talked about in a serious manner, I'm not one to shy away from such topics. Specifically, there is: deliberate mental abuse, self harm(light), mental illness, torture, and substance abuse. Note these instances are all taken out of context, and in context they don't come off as harsh as the words in this warning, it's mostly on the level of what could be overlooked without you going back and thinking \"Yeah I suppose that counts.\" Note, I am not here to tell a super dark story or anything, I'm just into realism, and some sections of reality are worse than others.&nbsp;</p>\n<p>All that said, this book is supposed to be overall quite light-hearted and witty, but at the same time it has some serious moments. But most of that is to raise the stakes for when someone fights off a dragon with a minigun.</p>",
+      "status": "Hiatus",
+      "tags": [
+        "reincarnation",
+        "urban_fantasy",
+        "progression",
+        "post_apocalyptic",
+        "action",
+        "adventure",
+        "comedy",
+        "psychological",
+        "supernatural",
+        "female_lead",
+        "multiple_lead",
+        "non-human_lead",
+        "magic",
+        "anti-hero_lead",
+        "profanity",
+        "graphic_violence",
+        "sensitive",
+        "low_fantasy"
+      ],
+      "average_rating": 3.4,
+      "author_id": 330647,
+      "author_name": "Xyddum ",
+      "followers": 118,
+      "favorites": 28,
+      "ratings": 5,
+      "total_views": 6884,
+      "word_count": 79779,
+      "page_count": 290,
+      "timestamp": 1753322405
     }
   }
 }
