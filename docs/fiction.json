@@ -2776,13 +2776,13 @@
       "average_rating": 5,
       "author_id": 151508,
       "author_name": "Lucian Cross",
-      "followers": 28,
-      "favorites": 5,
+      "followers": 34,
+      "favorites": 6,
       "ratings": 1,
-      "total_views": 2448,
+      "total_views": 3130,
       "word_count": 28411,
       "page_count": 103,
-      "timestamp": 1752843630
+      "timestamp": 1753336806
     },
     "117480": {
       "title": "The Rings of Jupiter [A Dark Cyberpunk LitRPG]",
@@ -6365,13 +6365,13 @@
       "average_rating": 4.77907,
       "author_id": 462730,
       "author_name": "Luminous Zephyr",
-      "followers": 475,
-      "favorites": 111,
+      "followers": 488,
+      "favorites": 113,
       "ratings": 43,
-      "total_views": 32972,
-      "word_count": 103704,
-      "page_count": 377,
-      "timestamp": 1753182006
+      "total_views": 33904,
+      "word_count": 106187,
+      "page_count": 386,
+      "timestamp": 1753336806
     },
     "111564": {
       "title": "The Horlock Chronicles",
@@ -8228,16 +8228,16 @@
         "sensitive",
         "high_fantasy"
       ],
-      "average_rating": 4.63077,
+      "average_rating": 4.642855,
       "author_id": 233108,
       "author_name": "Matizu",
-      "followers": 1038,
-      "favorites": 165,
-      "ratings": 65,
-      "total_views": 85774,
-      "word_count": 116111,
-      "page_count": 422,
-      "timestamp": 1753158606
+      "followers": 1100,
+      "favorites": 177,
+      "ratings": 70,
+      "total_views": 96204,
+      "word_count": 119897,
+      "page_count": 435,
+      "timestamp": 1753336806
     },
     "94872": {
       "title": "The Augment's Code (A Superhero LitRPG)",
