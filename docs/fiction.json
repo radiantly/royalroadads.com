@@ -405,16 +405,16 @@
         "mythos",
         "progression"
       ],
-      "average_rating": 4.48222,
+      "average_rating": 4.48684,
       "author_id": 208908,
       "author_name": "Astralium",
-      "followers": 2226,
-      "favorites": 420,
-      "ratings": 225,
-      "total_views": 166054,
-      "word_count": 80893,
-      "page_count": 294,
-      "timestamp": 1753376405
+      "followers": 2241,
+      "favorites": 422,
+      "ratings": 228,
+      "total_views": 169981,
+      "word_count": 82569,
+      "page_count": 300,
+      "timestamp": 1753484405
     },
     "111984": {
       "title": "Equilibrium: Bringing God's Light To This Pagan World",
@@ -9558,6 +9558,47 @@
       "word_count": 129584,
       "page_count": 471,
       "timestamp": 1753470006
+    },
+    "91466": {
+      "title": "Hunt In Reverse ",
+      "slug": "hunt-in-reverse",
+      "description": "<p>Corrupt cop Sergeant Kane, in a vampire-infested world, experiences a change of heart and becomes a ruthless vampire hunter. His actions disrupt the corrupt power structure of Pinewood County, attracting the attention of both powerful allies and dangerous enemies. As he delves deeper into the world of martial arts and ancient secrets, Kane must confront his past and choose between power and redemption.&nbsp;</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "urban_fantasy",
+        "progression",
+        "post_apocalyptic",
+        "action",
+        "adventure",
+        "fantasy",
+        "contemporary",
+        "harem",
+        "supernatural",
+        "male_lead",
+        "strong_lead",
+        "secret_identity",
+        "magic",
+        "anti-hero_lead",
+        "wuxia",
+        "sexuality",
+        "graphic_violence",
+        "sensitive",
+        "xianxia",
+        "gamelit",
+        "dystopia",
+        "attractive_lead"
+      ],
+      "average_rating": 3.6875,
+      "author_id": 524940,
+      "author_name": "Justagoodstory",
+      "followers": 246,
+      "favorites": 55,
+      "ratings": 48,
+      "total_views": 65993,
+      "word_count": 118354,
+      "page_count": 430,
+      "timestamp": 1753484405
     }
   }
 }
