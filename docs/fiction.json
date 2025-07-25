@@ -1875,8 +1875,10 @@
         "slice_of_life",
         "male_lead",
         "female_lead",
+        "strong_lead",
         "multiple_lead",
         "secret_identity",
+        "strategy",
         "satire",
         "gamelit",
         "genetically_engineered",
@@ -1885,16 +1887,16 @@
         "artificial_intelligence",
         "attractive_lead"
       ],
-      "average_rating": 4.81818,
+      "average_rating": 4.82143,
       "author_id": 545209,
       "author_name": "tvhead25",
-      "followers": 149,
-      "favorites": 29,
-      "ratings": 11,
-      "total_views": 5205,
-      "word_count": 84800,
-      "page_count": 308,
-      "timestamp": 1752940806
+      "followers": 186,
+      "favorites": 41,
+      "ratings": 14,
+      "total_views": 6969,
+      "word_count": 99818,
+      "page_count": 362,
+      "timestamp": 1753430406
     },
     "124740": {
       "title": "Rickleford [DnD LitRPG]",
@@ -9430,6 +9432,33 @@
       "word_count": 401814,
       "page_count": 1461,
       "timestamp": 1753419605
+    },
+    "121189": {
+      "title": "Heart of the Cosmos",
+      "slug": "heart-of-the-cosmos",
+      "description": "<p><span style=\"font-weight: 400\">Kaito is the only known human left in a universe where humanity is extinct.</span><b> </b><span style=\"font-weight: 400\">Almost everyone wants him dead. But something\u2026 or someone wants him alive. He\u2019s hunted by intergalactic governments and haunted by the mysterious power growing inside him. With the help of the S-ranked elven Star Traveler captain Elara and her crew, the Starlight, Kaito journeys across countless worlds, clashing with empires, cosmic well guardians, and the demons of his and the universe\u2019s past\u2014all in search of one thing\u2026</span></p>\n<p><span style=\"font-weight: 400\">The Cosmic Heart.</span></p>\n<p><span style=\"font-weight: 400\">Heart of the Cosmos is a sci-fi, shonen-meets-seinen space opera with martial arts, interstellar warfare, cosmic powers, and emotional moments.</span><span style=\"font-weight: 400\"><br></span><span style=\"font-weight: 400\">*For fans of Naruto/Boruto, One Piece, Fate, Bleach, and Star Wars.<br>**Release date - Tuesday, Thursday, Saturday</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "space_opera",
+        "martial_arts",
+        "sci_fi",
+        "action",
+        "adventure",
+        "fantasy",
+        "profanity",
+        "graphic_violence",
+        "sensitive"
+      ],
+      "average_rating": 5,
+      "author_id": 604492,
+      "author_name": "PhoenixStarr",
+      "followers": 47,
+      "favorites": 10,
+      "ratings": 1,
+      "total_views": 4135,
+      "word_count": 98708,
+      "page_count": 358,
+      "timestamp": 1753430406
     }
   }
 }
