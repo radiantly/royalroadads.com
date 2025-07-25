@@ -475,6 +475,64 @@
         section:nth-child(odd) {
           background-color: #fefefe;
         }
+        section.m-hero {
+          align-items: stretch;
+          text-align: center;
+        }
+        section.m-hero .m-hero-title {
+          font-family: var(--dot-matrix);
+          font-size: 36px;
+        }
+        section.m-hero .m-hero-title > span {
+          color: white;
+          position: relative;
+        }
+        section.m-hero .m-hero-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-grow: 1;
+          justify-content: space-around;
+        }
+        section.m-hero .m-hero-center {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          min-width: 0;
+        }
+        section.m-hero .m-hero-title > span::before {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: -10px;
+          bottom: -4px;
+          right: -6px;
+          background-color: #111;
+          z-index: -1;
+          border-radius: 5px;
+        }
+        section.m-hero .m-hero-tagline {
+          font-size: 15px;
+          line-height: 1.4;
+          color: #555;
+          width: 100%;
+        }
+        section.m-hero .m-hero-scroll {
+          font-family: var(--dot-matrix);
+          text-transform: uppercase;
+          font-size: 16px;
+          position: relative;
+          pointer-events: none;
+        }
+
+        section.m-hero .m-hero-scroll::after {
+          content: "»";
+          position: absolute;
+          top: 200%;
+          left: 50%;
+          transform: translateX(-50%) rotateZ(90deg);
+        }
         .m-rect-ad {
           width: var(--ad-width);
           height: 250px;
@@ -629,8 +687,17 @@
         <div class="backdrop-container"></div>
       </div>
     </div>
-    <section>
-      <h1>Royal Road Ads</h1>
+    <section class="m-hero">
+      <div class="m-hero-top"></div>
+      <div class="m-hero-content">
+        <div class="m-hero-center">
+          <div class="m-hero-title">Royal Road <span>Ads</span></div>
+          <div class="m-hero-tagline">
+            A collection of all the rectangle ads<br />(300x250) on Royal Road
+          </div>
+        </div>
+        <div class="m-hero-scroll">Scroll Down</div>
+      </div>
     </section>
     <template id="ad-element">
       <div class="positioned">
