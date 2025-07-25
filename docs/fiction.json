@@ -4835,13 +4835,13 @@
       "average_rating": 4.75,
       "author_id": 625367,
       "author_name": "Khetienn",
-      "followers": 213,
-      "favorites": 56,
+      "followers": 225,
+      "favorites": 59,
       "ratings": 18,
-      "total_views": 9653,
+      "total_views": 10056,
       "word_count": 107434,
       "page_count": 390,
-      "timestamp": 1753318805
+      "timestamp": 1753419605
     },
     "115391": {
       "title": "Blood Bond",
@@ -9397,6 +9397,39 @@
       "word_count": 286501,
       "page_count": 1041,
       "timestamp": 1753394405
+    },
+    "59557": {
+      "title": "Hedge Knight [Epic Progression Fantasy]",
+      "slug": "hedge-knight-epic-progression-fantasy",
+      "description": "<p><em>Arc 1: The Knight from Nothing has been stubbed upon the revised book release on <strong>3/25/25</strong> in accordance to Amazon's Kindle Unlimited policies. You can find the book release <a href=\"https://www.amazon.com/Knight-Nothing-Progression-Fantasy-Adventure/dp/B0F1CTD75F/ref=sr_1_1?s=digital-text&amp;sr=1-1-catcorr\" rel=\"noopener ugc nofollow\">HERE</a>. Additionally, free book promos will be announced to all members, including free ones, on my Patreon, which you can find <a href=\"patreon.com/criticalscribe\" rel=\"noopener ugc nofollow\">HERE</a></em></p>\n<p><b>Fortune favors the bold. For Helbram? He\u2019ll have to make due with relentlessness instead.</b></p>\n<p><span style=\"font-weight: 400\">A lifetime of denial, combined with a condition that has left him without the spiritual powers of the Awoken or the magical might of Mages, has cracked and scuffed an unbreaking will that continues to march along a path that seems to deny him at every step. Ambition still burns within, but it\u2019s been reduced to embers, fueling hands that still reach for goals that remain out of reach.</span></p>\n<p><span style=\"font-weight: 400\">Or so he thought.</span></p>\n<p><span style=\"font-weight: 400\">A mission to wipe out a band of bandits goes wrong and Helbram is forced into a fight for survival along with the stragglers of the failed expedition, trapped by technology from an age long past. Within the chaos of this conflict, the faded flames of dead dreams spark anew.</span></p>\n<p><b>And the first steps of a legend make themselves known.</b></p>\n<p><b>Inspired by the likes of </b><b><i>Final Fantasy</i></b><b>, D&amp;D, </b><b><i>Wheel of Time</i></b><b>, </b><b><i>The Name of the Wind</i></b><b>, and </b><b><i>Cradle</i></b><b>; </b><b><i>The Knight from Nothing</i></b><b> opens the doors to a world of epic fantasy with a progression twist along with elements of magical science, action, and adventure in the vein of old school Sword and Sorcery novels.&nbsp;</b></p>\n<p><b>Join one man in the struggle of the powerless against the powerful. This is the story of the Hedge Knight.</b></p>\n<p><span>--</span></p>\n<p><span></span>Cover Art by the amazing <a href=\"https://www.deviantart.com/kartstudiodigi\" rel=\"noopener ugc nofollow\">KartStudioDigi</a></p>\n<p><span>To read further ahead and get access to the Audiobook version of this story consider supporting me on <a href=\"https://patreon.com/criticalscribe?utm_medium=clipboard_copy&amp;utm_source=copyLink&amp;utm_campaign=creatorshare_fan&amp;utm_content=join_link\" rel=\"noopener ugc nofollow\">Patreon</a>. Regardless, I hope you enjoy this story and have yourselves a very pleasant day!</span></p>",
+      "status": "Stub",
+      "tags": [
+        "progression",
+        "strategy",
+        "steampunk",
+        "male_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "slice_of_life",
+        "supernatural",
+        "strong_lead",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "high_fantasy",
+        "soft_sci-fi"
+      ],
+      "average_rating": 4.5439,
+      "author_id": 123218,
+      "author_name": "Critical Scribe",
+      "followers": 1821,
+      "favorites": 439,
+      "ratings": 205,
+      "total_views": 465550,
+      "word_count": 401814,
+      "page_count": 1461,
+      "timestamp": 1753419605
     }
   }
 }
