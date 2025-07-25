@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A collection of all the rectangle ads (300x250) on Royal Road"
+    />
     <title>Royal Road Ads</title>
     <style>
       @font-face {
@@ -267,21 +271,21 @@
         background-color: #2a6ea8;
       }
 
-      .rra-grid div.positioned > .left .ad-wrap {
+      .rra-grid div.positioned > .left .rad-wrap {
         border-radius: 10px;
         display: flex;
         position: relative;
       }
 
-      .rra-grid div.positioned:not(.external) > .left .ad-wrap {
+      .rra-grid div.positioned:not(.external) > .left .rad-wrap {
         cursor: default;
       }
 
-      .rra-grid div.positioned > .left .ad-wrap img {
+      .rra-grid div.positioned > .left .rad-wrap img {
         border-radius: 10px;
       }
 
-      .rra-grid div.positioned > .left .ad-wrap > .open-in-new-icon-wrap {
+      .rra-grid div.positioned > .left .rad-wrap > .open-in-new-icon-wrap {
         width: 24px;
         height: 24px;
         display: flex;
@@ -295,7 +299,7 @@
         transition: opacity 0.2s ease;
       }
 
-      .rra-grid div.positioned > .left .ad-wrap > .open-in-new-icon-wrap {
+      .rra-grid div.positioned > .left .rad-wrap > .open-in-new-icon-wrap {
         fill: #fefefe;
         filter: drop-shadow(0 0 5px black);
       }
@@ -303,7 +307,7 @@
       .rra-grid
         div.positioned.external
         > .left
-        .ad-wrap:hover
+        .rad-wrap:hover
         > .open-in-new-icon-wrap {
         opacity: 1;
       }
@@ -427,7 +431,7 @@
       }
 
       .rra-grid div.positioned:not(.expanded) .left,
-      .rra-grid div.positioned:not(.expanded) .left .ad-wrap {
+      .rra-grid div.positioned:not(.expanded) .left .rad-wrap {
         flex-grow: 1;
       }
 
@@ -439,7 +443,7 @@
         padding: 20px;
       }
 
-      .rra-grid div.positioned.expanded .ad-wrap img {
+      .rra-grid div.positioned.expanded .rad-wrap img {
         width: 150px;
         height: 125px;
         border-radius: 0;
@@ -706,7 +710,7 @@
             <img src="#" />
           </div>
           <a href="#" class="read-btn" target="_blank">Read now</a>
-          <a href="#" class="ad-wrap" target="_blank">
+          <a href="#" class="rad-wrap" target="_blank">
             <img
               src="data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQEwCdASosAfoAPpFIoU0lpCMiICgAsBIJaW7hd2EbQAnsA99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHrAAA/v/SegAAAAAAAAAAAAA="
             />
@@ -1053,7 +1057,7 @@
             if (this.expandable === false) return;
             if (event.target.closest(".close")) this.#required.expanded = false;
 
-            if (event.target.closest(".ad-wrap")) {
+            if (event.target.closest(".rad-wrap")) {
               event.preventDefault();
               this.#required.expanded = true;
             }
@@ -1171,9 +1175,9 @@
           positioned.classList.toggle("external", !this.expandable);
 
           positioned.querySelector("a.read-btn").href = link;
-          positioned.querySelector("a.ad-wrap").href = link;
+          positioned.querySelector("a.rad-wrap").href = link;
 
-          const img = positioned.querySelector("a.ad-wrap img");
+          const img = positioned.querySelector("a.rad-wrap img");
           img.src = this.adImgSrc;
           img.alt = alt;
           img.title = alt;
