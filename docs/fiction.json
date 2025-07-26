@@ -4389,16 +4389,16 @@
         "soft_sci-fi",
         "dystopia"
       ],
-      "average_rating": 4.384615,
+      "average_rating": 4.37619,
       "author_id": 422856,
       "author_name": "Lazie",
-      "followers": 1782,
-      "favorites": 441,
-      "ratings": 104,
-      "total_views": 420939,
-      "word_count": 562443,
-      "page_count": 2045,
-      "timestamp": 1753095606
+      "followers": 1791,
+      "favorites": 443,
+      "ratings": 105,
+      "total_views": 426069,
+      "word_count": 566588,
+      "page_count": 2060,
+      "timestamp": 1753491605
     },
     "123393": {
       "title": "The Thirteenth Trumpet: Valkyrie",
@@ -9629,6 +9629,33 @@
       "word_count": 27045,
       "page_count": 98,
       "timestamp": 1753488006
+    },
+    "122606": {
+      "title": "Blackthorn",
+      "slug": "blackthorn",
+      "description": "<p><strong>They said this school would save him. They lied.</strong></p>\n<p>D never wanted to be at Blackthorn Academy \u2014 a hidden fortress where teens with extraordinary powers are forced into a brutal hierarchy of villains and enforcers. Kidnapped in the dead of night and thrust into this unforgiving world, he must quickly learn how to survive and decide what kind of person he\u2019s willing to become.</p>\n<p>As D struggles to find his footing among new allies and dangerous enemies, the school\u2019s dark undercurrents begin to surface: whispered betrayals, secret clubs, and a powerful drug that threatens to unravel everything. Friendships will be tested, loyalties will shift, and the line between right and wrong will blur as D uncovers unsettling truths about the forces controlling Blackthorn, and about himself.</p>\n<p>With every mission and every trial, the stakes grow higher, and the world D thought he knew disappears beneath a shadow of corruption and violence. Now, caught between a ruthless regime and the desire to escape, D must confront the price of power and what it truly means to be free.</p>\n<p><em>Blackthorn</em> is a gripping tale of friendship, betrayal, and identity where survival demands sacrifice, and every choice could change everything.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "anti-hero_lead",
+        "super_heroes",
+        "school_life",
+        "action",
+        "adventure",
+        "fantasy",
+        "profanity",
+        "graphic_violence",
+        "sensitive"
+      ],
+      "average_rating": 5,
+      "author_id": 764143,
+      "author_name": "Virgil Stone",
+      "followers": 26,
+      "favorites": 11,
+      "ratings": 2,
+      "total_views": 1315,
+      "word_count": 23997,
+      "page_count": 87,
+      "timestamp": 1753491605
     }
   }
 }
