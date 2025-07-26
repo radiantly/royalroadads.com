@@ -6745,16 +6745,16 @@
         "sensitive",
         "villainous_lead"
       ],
-      "average_rating": 4.483145,
+      "average_rating": 4.494505,
       "author_id": 623895,
       "author_name": "North Drake",
-      "followers": 697,
-      "favorites": 161,
-      "ratings": 89,
-      "total_views": 106309,
-      "word_count": 188660,
-      "page_count": 686,
-      "timestamp": 1753282805
+      "followers": 715,
+      "favorites": 169,
+      "ratings": 91,
+      "total_views": 108739,
+      "word_count": 192793,
+      "page_count": 701,
+      "timestamp": 1753488006
     },
     "85592": {
       "title": "Farisa's Crossing",
@@ -9599,6 +9599,36 @@
       "word_count": 118354,
       "page_count": 430,
       "timestamp": 1753484405
+    },
+    "107808": {
+      "title": "The Clan of the Hidden Tree: A Seven Stars Web Series",
+      "slug": "the-clan-of-the-hidden-tree-a-seven-stars-web",
+      "description": "<p>Nest is a dwarven craftsman, happy to live in the shadows\u2014deep within the hidden mountain stronghold of the Clan of the Hidden Tree. Unlike most, his people thrive in harmony with a living dungeon. But when an instinct draws him toward the heart of that dungeon, his quiet life is shattered.</p>\n<p>Buried within the mountain lies the Hidden Tree\u2014home of the dungeon core\u2014and an ardite blade that binds itself to Nest\u2019s soul. Marked as a <em>sinner</em>, Nest is pulled into a brutal world of cultivation, soulbound weapons, and dungeon warfare.</p>\n<p>But Nest isn\u2019t a fighter.</p>\n<p>He\u2019s a maker.</p>\n<p>When his carvings begin to move on their own, he discovers a new path: a cultivator whose power is rooted not in destruction, but creation. Soul wood. Living art. A class never seen before.</p>\n<p>Now hunted, tested, and thrust into a war between guilds and dungeons, Nest must shape more than weapons\u2014he must shape his destiny.</p>\n<hr>\n<p><strong>Set in the Seven Stars universe.</strong><br>This is a side story\u2014raw, creative, and unpolished. If you're looking for a fully edited novel, check out the main series. But if you want weekly updates, wild ideas, and a fresh take on LitRPG cultivation, you\u2019re in the right place.</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "dungeon",
+        "non-human_lead",
+        "strong_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "supernatural",
+        "male_lead",
+        "magic",
+        "high_fantasy",
+        "mythos"
+      ],
+      "average_rating": 4.55,
+      "author_id": 657660,
+      "author_name": "Mike Warren",
+      "followers": 108,
+      "favorites": 22,
+      "ratings": 10,
+      "total_views": 5158,
+      "word_count": 27045,
+      "page_count": 98,
+      "timestamp": 1753488006
     }
   }
 }
