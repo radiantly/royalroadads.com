@@ -1456,16 +1456,16 @@
         "gamelit",
         "high_fantasy"
       ],
-      "average_rating": 4.72154,
+      "average_rating": 4.71407,
       "author_id": 625911,
       "author_name": "NB.Dravenlord",
-      "followers": 3074,
-      "favorites": 638,
-      "ratings": 325,
-      "total_views": 224064,
-      "word_count": 104263,
-      "page_count": 379,
-      "timestamp": 1753358406
+      "followers": 3153,
+      "favorites": 655,
+      "ratings": 334,
+      "total_views": 235089,
+      "word_count": 106329,
+      "page_count": 386,
+      "timestamp": 1753513205
     },
     "100599": {
       "title": "These Reincarnators Are Sus! Sleuthing in Another World",
@@ -1687,16 +1687,16 @@
         "dystopia",
         "artificial_intelligence"
       ],
-      "average_rating": 4.44137,
+      "average_rating": 4.440265,
       "author_id": 413099,
       "author_name": "SlaughterBot",
-      "followers": 3756,
-      "favorites": 969,
+      "followers": 3760,
+      "favorites": 971,
       "ratings": 452,
-      "total_views": 1434472,
+      "total_views": 1436852,
       "word_count": 716116,
       "page_count": 2604,
-      "timestamp": 1753477205
+      "timestamp": 1753513205
     },
     "119783": {
       "title": "FFF-Class 'Unlucky Antagonist' [Villain's Origin Story, LitRPG, Massive Fantasy Worldbuilding]",
@@ -9712,6 +9712,38 @@
       "word_count": 126911,
       "page_count": 461,
       "timestamp": 1753506006
+    },
+    "100744": {
+      "title": "Explorer of Edregon",
+      "slug": "explorer-of-edregon",
+      "description": "<p><b>The universe is dying. Thank God there\u2019s a backup plan.</b></p>\n<p></p>\n<p><span style=\"font-weight: 400\">Randomly selected by some mysterious higher power, Vin went from dirt-poor vagabond to humanity's hope for survival in the blink of an eye. Now a member of the first wave of humans sent to colonize a planet that defies all logic, Vin is expected to leave his wanderlust behind him and focus on the greater good.</span></p>\n<p></p>\n<p><span style=\"font-weight: 400\">But when that same unknown power gives him the option to choose a class, Vin just can\u2019t help himself from becoming an Explorer.&nbsp;</span></p>\n<p></p>\n<p><span style=\"font-weight: 400\">In a patchwork world filled with impossible magic, deadly monsters, and powerful artifacts, it\u2019s now Vin\u2019s job to go out and discover the rules of this new world they need to survive on.</span></p>\n<p></p>\n<p><span style=\"font-weight: 400\">If only the System wasn\u2019t already threatening to kill him.</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "summoned_hero",
+        "progression",
+        "male_lead",
+        "action",
+        "adventure",
+        "fantasy",
+        "slice_of_life",
+        "strong_lead",
+        "magic",
+        "profanity",
+        "graphic_violence",
+        "gamelit",
+        "high_fantasy"
+      ],
+      "average_rating": 4.59699,
+      "author_id": 559659,
+      "author_name": "Wizardly Dude",
+      "followers": 3801,
+      "favorites": 951,
+      "ratings": 598,
+      "total_views": 1204831,
+      "word_count": 461051,
+      "page_count": 1676,
+      "timestamp": 1753513205
     }
   }
 }
