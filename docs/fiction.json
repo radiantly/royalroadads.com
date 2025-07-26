@@ -1283,13 +1283,13 @@
       "average_rating": 3.46789,
       "author_id": 171342,
       "author_name": "MasterOfDisillusionment",
-      "followers": 943,
-      "favorites": 214,
+      "followers": 949,
+      "favorites": 216,
       "ratings": 109,
-      "total_views": 179317,
+      "total_views": 180954,
       "word_count": 77044,
       "page_count": 280,
-      "timestamp": 1752838205
+      "timestamp": 1753524005
     },
     "110761": {
       "title": "Rise of the Gamer Battalion [Battle Royale Against the Greatest Soldiers of History]",
@@ -6212,16 +6212,16 @@
         "first_contact",
         "soft_sci-fi"
       ],
-      "average_rating": 4.54426,
+      "average_rating": 4.539215,
       "author_id": 335598,
       "author_name": "RainHarlow",
-      "followers": 2701,
-      "favorites": 517,
-      "ratings": 305,
-      "total_views": 251720,
-      "word_count": 194152,
-      "page_count": 706,
-      "timestamp": 1753300805
+      "followers": 2728,
+      "favorites": 525,
+      "ratings": 306,
+      "total_views": 255756,
+      "word_count": 197686,
+      "page_count": 718,
+      "timestamp": 1753524005
     },
     "75790": {
       "title": "My Magus Academy is Run by Players?! [Western Cultivation LitRPG] [Stub in 1 Month]",
@@ -9837,6 +9837,29 @@
       "word_count": 22423,
       "page_count": 81,
       "timestamp": 1753520405
+    },
+    "125556": {
+      "title": "Cultivating Redemption",
+      "slug": "cultivating-redemption",
+      "description": "<p><strong>He was a demigod chasing immortality until a curse shattered everything.</strong></p>\n<p><br>Yu Di was born to ascend. Cultivation was his life. Now, every time he uses Qi, he loses levels. Permanently.</p>\n<p><br>Broken and powerless, Yu Di retreats from the world until his ex-lover drops off a surprise: their three-year-old daughter.</p>\n<p><br>With no power left to chase, Yu Di devotes himself to raising Yu Lin. Teaching her. Protecting her. Finding peace in fatherhood.</p>\n<p>Until the local Immortal sect threatens to take her.</p>\n<p><br>They want him to join or they\u2019ll burn the village to the ground.</p>\n<p><br>Yu Di agrees. For her.</p>\n<p><br>Then a voice echoes in his mind:</p>\n<p><br><em>Curse Unlocked: 0.3% Lifted</em></p>\n<p><br><strong>What?</strong></p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "xianxia",
+        "male_lead",
+        "fantasy",
+        "historical"
+      ],
+      "average_rating": 4.8,
+      "author_id": 398088,
+      "author_name": "DC Zhen",
+      "followers": 52,
+      "favorites": 14,
+      "ratings": 10,
+      "total_views": 1453,
+      "word_count": 20153,
+      "page_count": 73,
+      "timestamp": 1753524005
     }
   }
 }
