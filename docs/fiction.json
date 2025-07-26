@@ -566,16 +566,16 @@
         "gamelit",
         "time_travel"
       ],
-      "average_rating": 4.27875,
+      "average_rating": 4.245145,
       "author_id": 528384,
       "author_name": "Adventuresse",
-      "followers": 3534,
-      "favorites": 665,
-      "ratings": 400,
-      "total_views": 527449,
-      "word_count": 133546,
-      "page_count": 485,
-      "timestamp": 1753234206
+      "followers": 3609,
+      "favorites": 683,
+      "ratings": 412,
+      "total_views": 574022,
+      "word_count": 141797,
+      "page_count": 515,
+      "timestamp": 1753498805
     },
     "120732": {
       "title": "Titanomachy [Apocalypse \u2022 Progression Fantasy]",
@@ -8174,13 +8174,13 @@
       "average_rating": 4.38158,
       "author_id": 425469,
       "author_name": "Nemo Omniaque",
-      "followers": 667,
-      "favorites": 155,
+      "followers": 669,
+      "favorites": 156,
       "ratings": 76,
-      "total_views": 167282,
-      "word_count": 574516,
-      "page_count": 2089,
-      "timestamp": 1753153206
+      "total_views": 169580,
+      "word_count": 580665,
+      "page_count": 2111,
+      "timestamp": 1753498805
     },
     "124134": {
       "title": "NPC for Hire-[Gamelit|Simulation|Multi-genre]",
@@ -9656,6 +9656,36 @@
       "word_count": 23997,
       "page_count": 87,
       "timestamp": 1753491605
+    },
+    "74282": {
+      "title": "The Non-Human Society",
+      "slug": "the-non-human-society",
+      "description": "<p><strong>The Non-Human Society is a shell of its former self.</strong></p>\n<p>The Society is crumbling. Its members are scattered. Its ideals faded. Its heart broken.</p>\n<p><strong>Renn</strong> still joins, seeking purpose... finding <strong>Vim</strong>, the Society's weary Protector. However, <strong>Vim </strong>guards more than the Society. He also hides a past she can't yet grasp, one unraveling with every step.</p>\n<p>As betrayal stirs from within, enemies draw near, and old wounds begin to rot, <strong>Renn </strong>and <strong>Vim </strong>must face a question neither are ready to answer...</p>\n<p>Is what they're trying to protect still worth saving?</p>\n<hr>\n<p><strong>The Non-Human Society updates every Monday, Tuesday, Thursday, Friday.</strong></p>\n<p><strong>Side-stories released every second Wednesday of the month.</strong></p>\n<hr>\n<p><strong>Chapters alternate Point of Views. Chapter titles will have the character's PoV in them.</strong></p>\n<hr>\n<p><strong></strong></p>\n<p><strong>What to expect?</strong></p>\n<p>- An immersive world-building and character focused story!</p>\n<p>- A typical, but fleshed out, low-fantasy world. Regrettably, the only numbers that go up here are the chapters and word counts\u2026 and, well, my debt...!<span style=\"text-decoration: line-through\"> but let's not talk about that.</span><span style=\"text-decoration: line-through\"></span><span style=\"text-decoration: line-through\"></span></p>\n<p>- A more down to earth, sometimes somber story. But there is hope!</p>\n<p>- Slow-burn, cozy romance with room to breathe!</p>\n<p>- A huge world to get lost in. Lots of content. Over 1.5M words and growing!</p>\n<p>- Monthly side stories that explore more of the world and cast.</p>\n<p>- A tiny sliver of my heart... forever yours!</p>\n<hr>\n<p><strong>&nbsp;Participant in the Royal Road Writathon challenge</strong></p>\n<hr>\n<p><strong><em>&nbsp;Support The Story and Read 16 Chapters Ahead On <a href=\"https://www.patreon.com/VarianMorn\" rel=\"noopener ugc nofollow\">Patreon</a>!</em></strong></p>",
+      "status": "Ongoing",
+      "tags": [
+        "urban_fantasy",
+        "multiple_lead",
+        "slice_of_life",
+        "strong_lead",
+        "adventure",
+        "drama",
+        "fantasy",
+        "romance",
+        "male_lead",
+        "female_lead",
+        "non-human_lead",
+        "low_fantasy"
+      ],
+      "average_rating": 4.660715,
+      "author_id": 386173,
+      "author_name": "VarianMorn",
+      "followers": 763,
+      "favorites": 191,
+      "ratings": 56,
+      "total_views": 525776,
+      "word_count": 2031139,
+      "page_count": 7385,
+      "timestamp": 1753498805
     }
   }
 }
