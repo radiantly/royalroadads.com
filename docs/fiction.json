@@ -1021,16 +1021,16 @@
         "high_fantasy",
         "mythos"
       ],
-      "average_rating": 4.66768,
+      "average_rating": 4.668825,
       "author_id": 293473,
       "author_name": "OstensibleMammal",
-      "followers": 6411,
-      "favorites": 1470,
-      "ratings": 987,
-      "total_views": 1084062,
-      "word_count": 296067,
-      "page_count": 1076,
-      "timestamp": 1753423206
+      "followers": 6500,
+      "favorites": 1496,
+      "ratings": 1004,
+      "total_views": 1136622,
+      "word_count": 305846,
+      "page_count": 1112,
+      "timestamp": 1753534807
     },
     "121463": {
       "title": "Reiteration: Witch of Futures",
@@ -1847,16 +1847,16 @@
         "ruling_class",
         "attractive_lead"
       ],
-      "average_rating": 4.69149,
+      "average_rating": 4.62037,
       "author_id": 221414,
       "author_name": "Of Rantings and Ramblings",
-      "followers": 512,
-      "favorites": 86,
-      "ratings": 47,
-      "total_views": 21656,
-      "word_count": 66648,
-      "page_count": 242,
-      "timestamp": 1753272005
+      "followers": 584,
+      "favorites": 94,
+      "ratings": 54,
+      "total_views": 25582,
+      "word_count": 69354,
+      "page_count": 252,
+      "timestamp": 1753534807
     },
     "121992": {
       "title": "You Only Kiss Twice - Spy LitRPG",
@@ -9917,6 +9917,39 @@
       "word_count": 199223,
       "page_count": 724,
       "timestamp": 1753531206
+    },
+    "74930": {
+      "title": "Stingray to Godly Magus",
+      "slug": "stingray-to-godly-magus",
+      "description": "<p><em><strong>*Inter-universal time dilation*&nbsp;</strong></em>Shouldn't be in a stingray story, right?</p>\n<p>Follow Tim the stingray, and his journey as he ascends to power, with the aid of his inbuilt, power-promising system! The world he, Tim Lake had reincarnated in, was full of wonder! There were countless universes, the ghost world, several types of mana, multiple realms of magic, and other promises too, such as shapeshifting, summoning, alchemy, creation of magical abilities and endless ways to manipulate mana itself! Will Tim be able to regain his humanity, or will he end up as a dead lizard in some Arch Mage's weird collections? The journey ahead of him was bound to be fascinating, and everything that was to happen in-between, was an exciting mystery!</p>\n<p>...</p>\n<p>Volume 1 &amp; 2 are available on my <a href=\"patreon.com/MisterE05Novels\" rel=\"noopener ugc nofollow\">Patreon Page</a>, and you can read the both of them for as little as 3$/month. Up to 130 advanced chapters available!</p>",
+      "status": "Stub",
+      "tags": [
+        "summoned_hero",
+        "time_travel",
+        "progression",
+        "comedy",
+        "action",
+        "adventure",
+        "fantasy",
+        "reincarnation",
+        "supernatural",
+        "male_lead",
+        "non-human_lead",
+        "magic",
+        "high_fantasy",
+        "genetically_engineered",
+        "soft_sci-fi"
+      ],
+      "average_rating": 3.746325,
+      "author_id": 276200,
+      "author_name": "MisterE005",
+      "followers": 1512,
+      "favorites": 391,
+      "ratings": 136,
+      "total_views": 279593,
+      "word_count": 68036,
+      "page_count": 247,
+      "timestamp": 1753534807
     }
   }
 }
