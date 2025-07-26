@@ -708,16 +708,16 @@
         "ruling_class",
         "attractive_lead"
       ],
-      "average_rating": 4.11263,
+      "average_rating": 4.106375,
       "author_id": 561701,
       "author_name": "The Curator",
-      "followers": 6868,
-      "favorites": 1841,
-      "ratings": 1061,
-      "total_views": 2931283,
-      "word_count": 518213,
-      "page_count": 1884,
-      "timestamp": 1753351206
+      "followers": 6881,
+      "favorites": 1844,
+      "ratings": 1067,
+      "total_views": 2953285,
+      "word_count": 522830,
+      "page_count": 1901,
+      "timestamp": 1753506006
     },
     "121319": {
       "title": "Andy in the Apocalypse [LitRPG System Apocalypse]",
@@ -5371,16 +5371,16 @@
         "technologically_engineered",
         "progression"
       ],
-      "average_rating": 4.480845,
+      "average_rating": 4.474285,
       "author_id": 408729,
       "author_name": "Buttopia",
-      "followers": 4522,
-      "favorites": 1017,
-      "ratings": 522,
-      "total_views": 1444841,
-      "word_count": 371563,
-      "page_count": 1351,
-      "timestamp": 1753228806
+      "followers": 4536,
+      "favorites": 1021,
+      "ratings": 525,
+      "total_views": 1465317,
+      "word_count": 377171,
+      "page_count": 1371,
+      "timestamp": 1753506006
     },
     "84191": {
       "title": "The Ascender's Legacy [A CHAOTIC STORM LITRPG]",
@@ -9686,6 +9686,32 @@
       "word_count": 2031139,
       "page_count": 7385,
       "timestamp": 1753498805
+    },
+    "96987": {
+      "title": "The Elequan Legacy: Fool's Errand",
+      "slug": "the-elequan-legacy-fools-errand",
+      "description": "<p><em>\"We are waging a war, you and I, a war fought through the implementation of small, choice battles.\"</em></p>\n<p>This is what Saraya was told by her mistress the night before it all began, and as a mere traveling circus acrobat, it was a monumental thing to take in. An assassination attempt was hardly a thing she had ever thought to undertake, let alone an assassination that would bring her straight to Cambria's ruling head and heart. But as grand as such a mission was, it paled in comparison to her ringmaster's, for the woman meant to strike at Elequa's gods themselves and prevent the impending Fall. Had it not been Lady Veil herself who told Saraya of her intent, she would have considered such ambitions impossible. Faith is a strong source of power however, and Saraya's faith in her ringmaster is nearly absolute. Dedicated to her mistress' goal, in her first step to prevent the Fall she need only carry out that which Veil desires, though enemies and allies both will hinder and help her along the way. During her quest to assassinate Cambria's Mediator, Saraya's faith and loyalties will be strained and questioned, and it will take every ounce of strength within her to decide if she will succeed or fail.</p>",
+      "status": "Completed",
+      "tags": [
+        "anti-hero_lead",
+        "multiple_lead",
+        "magic",
+        "high_fantasy",
+        "action",
+        "adventure",
+        "fantasy",
+        "female_lead"
+      ],
+      "average_rating": 5,
+      "author_id": 575541,
+      "author_name": "Alia White (Laxia)",
+      "followers": 92,
+      "favorites": 26,
+      "ratings": 6,
+      "total_views": 7381,
+      "word_count": 126911,
+      "page_count": 461,
+      "timestamp": 1753506006
     }
   }
 }
