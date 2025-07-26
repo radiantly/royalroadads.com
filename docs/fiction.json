@@ -7264,13 +7264,13 @@
       "average_rating": 4.136365,
       "author_id": 175708,
       "author_name": "Wyman",
-      "followers": 269,
+      "followers": 276,
       "favorites": 61,
       "ratings": 22,
-      "total_views": 24358,
+      "total_views": 24928,
       "word_count": 72639,
       "page_count": 264,
-      "timestamp": 1753398005
+      "timestamp": 1753527607
     },
     "108155": {
       "title": "The Storm Through The Tide",
@@ -9860,6 +9860,30 @@
       "word_count": 20153,
       "page_count": 73,
       "timestamp": 1753524005
+    },
+    "125599": {
+      "title": "Cards of Transcendence - A Deck Building LitRPG Adventure",
+      "slug": "cards-of-transcendence-a-deck-building-litrpg",
+      "description": "<p>They say the magic system gives you the card that you need. Unfortunately, it's rarely the card you want.</p>\n<p><strong>A fantasy LitRPG series with a card-based magic system full of monsters, loot, leveling up, dungeon diving, and the quest for transcendent power.</strong></p>\n<p>Flynn has spent his entire life dreaming of the day he could wield epic card powers. When he finally earns his first card, it's something less than he'd hoped for. But maybe it's exacly what he needs. Can he build a powerful deck of card skills that will help him transcend his life as an orphan and earn power and skills beyond his wildest dreams?</p>\n<p>Cards of Transcendence is a deck building LitRPG adventure featuring a progression Card-based magic system. If you enjoy stories like All the Skills, A Summoner Arises, and other card based LitRPG adventures, be sure to check out this epic fantasy adventure.</p>\n<p>The current publishing plan is to release new chapters five days a week, Monday through Friday. If I can keep a good back log of chapters, I will release on Saturday and Sunday too :)</p>",
+      "status": "Ongoing",
+      "tags": [
+        "litrpg",
+        "progression",
+        "male_lead",
+        "high_fantasy",
+        "fantasy",
+        "gamelit"
+      ],
+      "average_rating": 5,
+      "author_id": 232285,
+      "author_name": "LitRPG Adventures",
+      "followers": 111,
+      "favorites": 14,
+      "ratings": 9,
+      "total_views": 3365,
+      "word_count": 25965,
+      "page_count": 94,
+      "timestamp": 1753527607
     }
   }
 }
