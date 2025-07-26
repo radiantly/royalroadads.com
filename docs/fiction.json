@@ -1487,16 +1487,16 @@
         "sensitive",
         "high_fantasy"
       ],
-      "average_rating": 4.68148,
+      "average_rating": 4.681985,
       "author_id": 580701,
       "author_name": "AceGreen",
-      "followers": 2033,
-      "favorites": 499,
-      "ratings": 270,
-      "total_views": 445728,
-      "word_count": 326356,
-      "page_count": 1186,
-      "timestamp": 1753408805
+      "followers": 2039,
+      "favorites": 500,
+      "ratings": 272,
+      "total_views": 448463,
+      "word_count": 328487,
+      "page_count": 1194,
+      "timestamp": 1753516805
     },
     "114089": {
       "title": "SANCTUARY [Nobledark | Progression | Apocalypse]",
@@ -6287,13 +6287,13 @@
       "average_rating": 3.615385,
       "author_id": 522794,
       "author_name": "ArcherTeague",
-      "followers": 422,
-      "favorites": 112,
+      "followers": 427,
+      "favorites": 113,
       "ratings": 13,
-      "total_views": 55905,
-      "word_count": 147891,
-      "page_count": 537,
-      "timestamp": 1753020040
+      "total_views": 57295,
+      "word_count": 151517,
+      "page_count": 550,
+      "timestamp": 1753516805
     },
     "124377": {
       "title": "Basic Thaumaturgy for the Emotionally Incompetent (The System Seas For Top 5 RS!)",
@@ -9744,6 +9744,35 @@
       "word_count": 461051,
       "page_count": 1676,
       "timestamp": 1753513205
+    },
+    "124669": {
+      "title": "Beastforged World - [Taming, Progression]",
+      "slug": "beastforged-world-taming-progression",
+      "description": "<p><b><i>Bound by the World. Forged through the Beast. Unleashed by fate.</i></b></p>\n<p><span style=\"font-weight: 400\">Humanity once ruled Razarn\u2014until the old world collapsed and the age of ether began. Driven to the verge of extinction, they discovered a new power: Worlds forged from within. They survived and even thrived, yet Razarn was no longer theirs.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">***</span></p>\n<p><span style=\"font-weight: 400\">They called him crippled\u2014weak, broken, unworthy.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">But Adam\u2019s will was forged in pain, sharpened by a World too small to bind a beast and a body starved of ether. Every breath was a battle. Each breath a war\u2026 until the day his father returned\u2014bleeding, dying, and desperately holding onto a beast egg.&nbsp;</span></p>\n<p><span style=\"font-weight: 400\">Everything changed. Adam\u2019s power awakened, and the cogs of his fate turned once again.</span><span style=\"font-weight: 400\"><br></span><span style=\"font-weight: 400\">Yet as the shadow of the Great Fall loomed, only one question remained; Was Adam strong enough to stand against the end of all?</span></p>",
+      "status": "Ongoing",
+      "tags": [
+        "progression",
+        "male_lead",
+        "slice_of_life",
+        "drama",
+        "adventure",
+        "fantasy",
+        "profanity",
+        "graphic_violence",
+        "high_fantasy",
+        "soft_sci-fi",
+        "dystopia"
+      ],
+      "average_rating": 4.793105,
+      "author_id": 218063,
+      "author_name": "HideousGrain",
+      "followers": 330,
+      "favorites": 60,
+      "ratings": 29,
+      "total_views": 13465,
+      "word_count": 48268,
+      "page_count": 175,
+      "timestamp": 1753516805
     }
   }
 }
