@@ -889,6 +889,8 @@
 
             layoutType,
 
+            expandedHeightCache: new Map(),
+
             current: {
               mobile: {
                 ad_content: null,
@@ -1100,10 +1102,7 @@
           return { section };
         }
 
-        computeHeight({ width }) {
-          if (!this.#required.expanded) return RectangleAd.HEIGHT;
-          // if (!this.#/) TODO: cache
-
+        #computeHeight(width) {
           const { positioned } = this.#getElements(true);
 
           // set required properties
@@ -1124,6 +1123,17 @@
           positioned.style.contain = null;
 
           return Math.ceil(height);
+        }
+
+        computeHeight({ width }) {
+          if (!this.#required.expanded) return RectangleAd.HEIGHT;
+
+          if (!this.#state.expandedHeightCache.has(width))
+            this.#state.expandedHeightCache.set(
+              width,
+              this.#computeHeight(width)
+            );
+          return this.#state.expandedHeightCache.get(width);
         }
 
         setLayoutProps({ x, y, width, height, expanded }) {
@@ -1335,11 +1345,9 @@
             const fiction = this.#state.fictionBuddy.getFictionDetails(
               ad.fictionId
             );
-            if (fiction) {
-              ad.setFictionDetails(fiction);
-              ad.updateContent();
-            }
+            if (fiction) ad.setFictionDetails(fiction);
           }
+          this.requestRender();
         }
 
         #getVariances(count, variance) {
@@ -1521,18 +1529,18 @@
             }
             if (continueFlag) continue;
 
-            // expand random stories
-            // TODO: layout request needed when fiction is loaded. See note above
-            // if (
-            //   side === null &&
-            //   it.index < n &&
-            //   this.#state.ads[it.index].expandable
-            // )
-            //   this.#state.ads[it.index].setLayoutProps({
-            //     expanded: true,
-            //   });
-
             it.y += adHeight + gap;
+
+            // expand random stories
+            if (
+              side === null &&
+              it.index < n &&
+              this.#state.ads[it.index].expandable &&
+              it.y > scrollY + vHeight
+            )
+              this.#state.ads[it.index].setLayoutProps({
+                expanded: true,
+              });
           }
 
           this.#state.layoutComputedTill = it;
