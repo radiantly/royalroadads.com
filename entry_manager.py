@@ -146,7 +146,7 @@ class EntryManager:
 
         content = self._load_json_file(self.fiction_json_file_path)
 
-        for fiction_id_str, entry_dict in content.get("entries", {}).items():
+        for fiction_id_str, entry_dict in reversed(content.get("entries", {}).items()):
             fiction_id = int(fiction_id_str)
             image = Image.open(self.cover_images_dir / f"{fiction_id}.webp")
             entries[fiction_id] = FictionEntry(
@@ -181,14 +181,21 @@ class EntryManager:
         entry.cover_image.save(image_path, "webp")
         entry = replace(entry, cover_image=Image.open(image_path))
 
+        # delete existing entry if it exists.
+        # this is required because self.fiction is ordered by timestamp (asc)
+        if entry.id in self.fiction:
+            del self.fiction[entry.id]
+
         self.fiction[entry.id] = entry
         self._write_fiction_entries_to_file()
 
     def _write_fiction_entries_to_file(self) -> None:
         with open(self.fiction_json_file_path, "w") as fp:
-            content = {
-                "entries": {entry.id: entry.dict() for entry in self.fiction.values()}
-            }
+            entries = {}
+            for entry in reversed(self.fiction.values()):
+                entries[entry.id] = entry.dict()
+
+            content = {"entries": entries}
 
             json.dump(obj=content, fp=fp, indent=2)
 
