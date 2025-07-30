@@ -7,6 +7,9 @@
       name="description"
       content="A collection of all the rectangle ads (300x250) on Royal Road"
     />
+    <meta property="og:title" content="Royal Road Ads" />
+    <meta property="og:site_name" content="Royal Road Ads" />
+    <meta property="og:url" content="https://royalroadads.com/" />
     <title>Royal Road Ads</title>
     <style>
       @font-face {
@@ -449,6 +452,10 @@
         border-radius: 0;
       }
 
+      .rra-grid div.positioned.placeholder .rad-wrap img {
+        visibility: hidden;
+      }
+
       @media screen and (max-width: 600px) {
         html {
           scroll-snap-type: y mandatory;
@@ -704,16 +711,14 @@
       </div>
     </section>
     <template id="ad-element">
-      <div class="positioned">
+      <div class="positioned placeholder">
         <div class="left">
           <div class="cover-wrap">
             <img src="#" />
           </div>
           <a href="#" class="read-btn" target="_blank">Read now</a>
           <a href="#" class="rad-wrap" target="_blank">
-            <img
-              src="data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQEwCdASosAfoAPpFIoU0lpCMiICgAsBIJaW7hd2EbQAnsA99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHrAAA/v/SegAAAAAAAAAAAAA="
-            />
+            <img src="data:," alt="Rectangle Ad" />
             <div class="open-in-new-icon-wrap">
               <svg
                 width="18"
@@ -1068,14 +1073,6 @@
           });
         }
 
-        #markPositionUpdateSuccessful() {
-          this.#current.x = this.#required.x;
-          this.#current.y = this.#required.y;
-          this.#current.width = this.#required.width;
-          this.#current.height = this.#required.height;
-          this.#current.expanded = this.#required.expanded;
-        }
-
         #markContentUpdateSuccessful() {
           this.#current.ad_content = this.#required.ad_content;
           this.#current.fiction = this.#required.fiction;
@@ -1105,8 +1102,9 @@
           const { positioned } = this.#getElements(true);
 
           // set required properties
-          positioned.classList.add("expanded");
+          positioned.style.opacity = "0";
           positioned.style.contain = "none";
+          positioned.classList.add("expanded");
           positioned.style.setProperty("--width", `${width}px`);
           positioned.style.setProperty("--height", `auto`);
 
@@ -1120,6 +1118,7 @@
           positioned.style.setProperty("--height", `${this.#current.height}px`);
           positioned.classList.toggle("expanded", this.#current.expanded);
           positioned.style.contain = null;
+          positioned.style.opacity = null;
 
           return Math.ceil(height);
         }
@@ -1149,21 +1148,33 @@
           const { x, y, width, height, expanded } = this.#required;
           const { positioned, backdrop } = this.#getElements();
 
-          positioned.style.setProperty("--x", `${x}px`);
-          positioned.style.setProperty("--y", `${y}px`);
-          positioned.style.setProperty("--width", `${width}px`);
-          positioned.style.setProperty("--height", `${height}px`);
+          if (this.#current.x !== x || this.#current.y !== y) {
+            positioned.style.setProperty("--x", `${x}px`);
+            positioned.style.setProperty("--y", `${y}px`);
 
-          backdrop.style.setProperty("--x", `${x}px`);
-          backdrop.style.setProperty("--y", `${y}px`);
+            backdrop.style.setProperty("--x", `${x}px`);
+            backdrop.style.setProperty("--y", `${y}px`);
 
-          if (expanded !== this.#current.expanded) {
-            console.log(width, height);
-            positioned.classList.toggle("expanded", expanded);
-            backdrop.classList.toggle("expanded", expanded);
+            this.#current.x = x;
+            this.#current.y = y;
           }
 
-          this.#markPositionUpdateSuccessful();
+          if (
+            this.#current.width !== width ||
+            this.#current.height !== height
+          ) {
+            positioned.style.setProperty("--width", `${width}px`);
+            positioned.style.setProperty("--height", `${height}px`);
+
+            this.#current.width = this.#required.width;
+            this.#current.height = this.#required.height;
+          }
+
+          if (this.#current.expanded !== expanded) {
+            positioned.classList.toggle("expanded", expanded);
+            backdrop.classList.toggle("expanded", expanded);
+            this.#current.expanded = this.#required.expanded;
+          }
         }
 
         initHTML() {
@@ -1181,6 +1192,7 @@
           if (this.#required.ad_content === null) return;
           const { alt, link } = this.#required.ad_content;
 
+          positioned.classList.remove("placeholder");
           positioned.classList.toggle("external", !this.expandable);
 
           positioned.querySelector("a.read-btn").href = link;
@@ -1409,10 +1421,10 @@
           const it = {
             y: 0,
             index: 0,
+            adsInRow: 0,
           };
 
           console.log(n, variances);
-          let adsInLastRow = 0;
           let side = null;
           let lastSideOnRight = true;
           while (it.index < n) {
@@ -1433,7 +1445,6 @@
 
             // if the ad is expanded, we want
             if (this.#state.ads[it.index].expanded) {
-              console.log(it.index, "is expanded");
               const ad = this.#state.ads[it.index];
               if (side === null) {
                 // calculate the available width
@@ -1470,18 +1481,14 @@
                   height: eadHeight,
                   expanded: true,
                 });
-                console.log("side", side);
+                it.adsInRow = 0;
                 it.index += 1;
               }
             }
 
             const avWidth = vWidth - (side?.width ?? 0); // available width
-            const adsInRow = this.#calcMaxAdsForWidth(adWidth, gap, avWidth);
-            const adsInThisRow = Math.max(
-              side == null,
-              adsInRow - (adsInRow === adsInLastRow)
-            );
-            adsInLastRow = adsInThisRow;
+            const maxAdsInRow = this.#calcMaxAdsForWidth(adWidth, gap, avWidth);
+            const adsInThisRow = maxAdsInRow - (maxAdsInRow === it.adsInRow);
             const startX =
               Math.floor(
                 (avWidth -
@@ -1508,7 +1515,7 @@
                     sideAd.setLayoutProps({
                       expanded: false,
                     });
-                    [it.y, it.index] = [side.it.y, side.it.index];
+                    Object.assign(it, side.it);
                     lastSideOnRight = !lastSideOnRight;
                     side = null;
                     continueFlag = true;
@@ -1526,8 +1533,10 @@
               });
               it.index += 1;
             }
+
             if (continueFlag) continue;
 
+            it.adsInRow = adsInThisRow;
             it.y += adHeight + gap;
 
             // expand random stories
