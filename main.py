@@ -15,9 +15,9 @@ async def main() -> None:
     if ad_entries := await scraper.retrieve_ads():
         here = Path(__file__).parent
         entry_manager = EntryManager(
-            ad_images_dir=here / "docs" / "300x250",
-            cover_images_dir=here / "docs" / "200x300",
-            fiction_json_file_path=here / "docs" / "fiction.json",
+            ad_images_dir=here / "public" / "300x250",
+            cover_images_dir=here / "public" / "200x300",
+            fiction_json_file_path=here / "public" / "fiction.json",
             debug_dir_path=here / "debug",
         )
 

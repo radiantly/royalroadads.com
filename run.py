@@ -5,16 +5,12 @@ import subprocess
 from pathlib import Path
 
 commands = [
-    'git config user.name "Ad Bot"',
-    "git config user.email bot@royalroadads.com",
     "git fetch origin",
-    "git switch gh-pages",
-    "git reset --hard origin/gh-pages",
-    "git rebase origin/main",
+    "git switch main",
+    "git reset --hard origin/main",
     "uv run main.py",
-    "git add docs",
-    'git commit -m "Automated: Add ads"',
-    "git push --force-with-lease origin gh-pages",
+    "uv run archive.py",
+    "wrangler pages deploy",
 ]
 
 
