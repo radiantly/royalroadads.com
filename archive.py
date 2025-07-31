@@ -1,7 +1,11 @@
 import argparse
+import io
 import shutil
 import tempfile
+import zipfile
 from pathlib import Path
+
+import requests
 
 here = Path(__file__).parent
 in_path = here / "public"
@@ -30,17 +34,61 @@ def create():
             )
 
 
+def download_archive() -> bytearray | None:
+    BASE_URL = "https://royalroadads.com"
+
+    archive_bytes = bytearray()
+
+    index = 0
+    while True:
+        response = requests.get(f"{BASE_URL}/archive/archive_{index}")
+
+        if response.status_code != 200:
+            print("Failed to get", response.url)
+            return None
+
+        print(f"Retrieved {len(response.content)} bytes from {response.url}")
+        archive_bytes += response.content
+
+        if len(response.content) != chunk_size:
+            return archive_bytes
+
+
+def populate():
+    if not (archive_bytes := download_archive()):
+        return
+
+    archive_buffer = io.BytesIO(archive_bytes)
+
+    extract_count = 0
+
+    with zipfile.ZipFile(archive_buffer) as zf:
+        for member in zf.infolist():
+            if not member.filename.endswith(".webp") and not member.filename.endswith(
+                ".json"
+            ):
+                continue
+
+            zf.extract(member, path=in_path)
+            extract_count += 1
+
+    print(f"Populated {extract_count} files")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Archive operations")
     subparser = parser.add_subparsers(dest="command", help="subcommand", required=True)
 
     subparser.add_parser("create", help="Create archive")
+    subparser.add_parser("populate", help="Populate from archive")
 
     args = parser.parse_args()
 
     match args.command:
         case "create":
             create()
+        case "populate":
+            populate()
 
 
 if __name__ == "__main__":
