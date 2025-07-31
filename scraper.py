@@ -126,7 +126,7 @@ class Scraper:
         self.entries: list[AdEntry] = []
         try:
             return await self._retrieve_ads()
-        except:
-            print("Exception raised by _retrieve_ads()")
+        except Exception as e:
+            print("Exception raised by _retrieve_ads()", e)
 
         return self.entries

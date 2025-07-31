@@ -9,7 +9,7 @@ commands = [
     "git switch main",
     "git reset --hard origin/main",
     "uv run main.py",
-    "uv run archive.py",
+    "uv run archive.py create",
     "wrangler pages deploy",
 ]
 
