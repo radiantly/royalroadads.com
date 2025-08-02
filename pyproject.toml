@@ -12,8 +12,10 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "mypy>=1.17.1",
     "pyinstrument>=5.0.3",
+    "types-requests>=2.32.4.20250611",
 ]
 
 [tool.uv.sources]
-pydoll-python = { git = "https://github.com/radiantly/pydoll.git", rev = "retry-on-permission-error" }
+pydoll-python = { git = "https://github.com/radiantly/pydoll.git", rev = "ignore-errors" }

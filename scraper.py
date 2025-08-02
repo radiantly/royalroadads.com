@@ -16,7 +16,7 @@ from utils import is_rectangle_ad, to_element_list
 
 
 class Scraper:
-    async def _retrieve_ads(self) -> list[AdEntry] | None:
+    async def retrieve_ads(self) -> list[AdEntry] | None:
         options = ChromiumOptions()
         options.add_argument("--window-size=1920,960")
         # options.add_argument("--headless=new") # ads don't load, possibly because of the page visibility API
@@ -98,7 +98,7 @@ class Scraper:
             print(rectangle_ads)
             image_data = json.loads(response["result"]["result"]["value"])
 
-            self.entries: list[AdEntry] = []
+            entries: list[AdEntry] = []
             for image_url, image in rectangle_ads.items():
                 if image_url not in image_data:
                     print("Could not find image data for", image_url)
@@ -118,15 +118,6 @@ class Scraper:
                     image=image,
                 )
 
-                self.entries.append(entry)
+                entries.append(entry)
 
-            return self.entries
-
-    async def retrieve_ads(self) -> list[AdEntry] | None:
-        self.entries: list[AdEntry] = []
-        try:
-            return await self._retrieve_ads()
-        except Exception as e:
-            print("Exception raised by _retrieve_ads()", e)
-
-        return self.entries
+            return entries

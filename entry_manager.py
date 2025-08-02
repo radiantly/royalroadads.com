@@ -169,6 +169,8 @@ class EntryManager:
             if entry.calculate_rms(new_entry.image) < self.rms_threshold:
                 return entry
 
+        return None
+
     def save_ad_entry(self, temp_entry: AdEntry) -> None:
         assert temp_entry.image.size == (300, 250)
         image_path = self.ad_images_dir / temp_entry.file_name
@@ -222,7 +224,7 @@ class EntryManager:
     def _write_ad_entries_to_file(self) -> None:
         return self._write_entries_to_file(self.ad_json_file_path, self.ad_entries)
 
-    def check_for_missing_ad_entries(self, delete=False):
+    def check_for_missing_ad_entries(self, delete: bool = False) -> None:
         webp_paths = list(self.ad_images_dir.glob("*.webp"))
         for webp_path in webp_paths:
             if webp_path.stem in self.ad_entries:
@@ -237,7 +239,7 @@ class EntryManager:
         print(f"{len(webp_paths)}/{len(self.ad_entries)}")
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Entry Manager operations")
     subparser = parser.add_subparsers(dest="command", help="subcommand", required=True)
 
