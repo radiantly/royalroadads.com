@@ -346,7 +346,7 @@ wheels = [
 [[package]]
 name = "pydoll-python"
 version = "2.4.0"
-source = { git = "https://github.com/radiantly/pydoll.git?rev=ignore-errors#3306f6e65926bee3a42a35aa0475a646161e8afb" }
+source = { git = "https://github.com/radiantly/pydoll.git?rev=ignore-errors#b697e4007d42ae04113b54e1e3bfc94800b02535" }
 dependencies = [
     { name = "aiofiles" },
     { name = "aiohttp" },
