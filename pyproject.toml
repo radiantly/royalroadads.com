@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pillow>=11.3.0",
-    "pydoll-python>=2.3.1",
+    "pydoll-python",
     "requests>=2.32.4",
 ]
 
@@ -14,3 +14,6 @@ dependencies = [
 dev = [
     "pyinstrument>=5.0.3",
 ]
+
+[tool.uv.sources]
+pydoll-python = { git = "https://github.com/radiantly/pydoll.git", rev = "retry-on-permission-error" }
