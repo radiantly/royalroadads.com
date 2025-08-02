@@ -53,6 +53,8 @@ def download_archive() -> bytearray | None:
         if len(response.content) != chunk_size:
             return archive_bytes
 
+        index += 1
+
 
 def populate():
     if not (archive_bytes := download_archive()):
@@ -64,13 +66,9 @@ def populate():
 
     with zipfile.ZipFile(archive_buffer) as zf:
         for member in zf.infolist():
-            if not member.filename.endswith(".webp") and not member.filename.endswith(
-                ".json"
-            ):
-                continue
-
-            zf.extract(member, path=in_path)
-            extract_count += 1
+            if member.filename.endswith(".webp") or member.filename.endswith(".json"):
+                zf.extract(member, path=in_path)
+                extract_count += 1
 
     print(f"Populated {extract_count} files")
 

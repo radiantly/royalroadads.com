@@ -9,8 +9,7 @@ from scraper import Scraper
 from utils import get_fiction_id_from_url
 
 
-async def main() -> None:
-    parser = argparse.ArgumentParser(prog="RoyalRoadAds")
+async def rra() -> None:
     scraper = Scraper()
     if ad_entries := await scraper.retrieve_ads():
         here = Path(__file__).parent
@@ -31,6 +30,25 @@ async def main() -> None:
                 entry_manager.save_fiction_entry(fiction_entry)
                 print("Successfully saved fiction entry", fiction_id)
                 await asyncio.sleep(2)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(prog="RoyalRoadAds")
+    parser.add_argument("--profile", action="store_true")
+
+    args = parser.parse_args()
+    print(args)
+    if args.profile:
+        import pyinstrument
+
+        profiler = pyinstrument.Profiler()
+        profiler.start()
+
+    asyncio.run(rra())
+
+    if args.profile:
+        profiler.stop()
+        profiler.open_in_browser()
 
 
 if __name__ == "__main__":

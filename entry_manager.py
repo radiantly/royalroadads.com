@@ -1,3 +1,4 @@
+import argparse
 import json
 import time
 from dataclasses import asdict, dataclass, replace
@@ -23,6 +24,12 @@ class AdEntry:
 
     def calculate_rms(self, image: Image.Image) -> float:
         return calculate_rms(image, self.image)
+
+    def dict(self) -> dict[str, Any]:
+        d = asdict(self)
+        del d["uid"]
+        del d["image"]
+        return d
 
 
 @dataclass(frozen=True, kw_only=True)
@@ -123,21 +130,18 @@ class EntryManager:
             else {}
         )
 
-    def _load_ad_entries(self) -> list[AdEntry]:
-        entries: list[AdEntry] = []
+    def _load_ad_entries(self) -> dict[str, AdEntry]:
+        entries: dict[str, AdEntry] = {}
 
         content = self._load_json_file(self.ad_json_file_path)
 
-        for uid, entry_dict in content.get("entries", {}).items():
+        for uid, entry_dict in reversed(content.get("entries", {}).items()):
             image = Image.open(self.ad_images_dir / f"{uid}.webp")
-            entry = AdEntry(
+            entries[uid] = AdEntry(
+                **entry_dict,
                 uid=uid,
-                alt=entry_dict["alt"],
-                link=entry_dict["link"],
-                timestamp=entry_dict["timestamp"],
                 image=image,
             )
-            entries.append(entry)
 
         return entries
 
@@ -155,6 +159,16 @@ class EntryManager:
 
         return entries
 
+    def find_duplicate_ad_entry(self, new_entry: AdEntry) -> AdEntry | None:
+        """Returns an ad entry that has the same image as this one"""
+
+        for entry in self.ad_entries.values():
+            if entry.uid == new_entry.uid:
+                continue
+
+            if entry.calculate_rms(new_entry.image) < self.rms_threshold:
+                return entry
+
     def save_ad_entry(self, temp_entry: AdEntry) -> None:
         assert temp_entry.image.size == (300, 250)
         image_path = self.ad_images_dir / temp_entry.file_name
@@ -162,15 +176,14 @@ class EntryManager:
         new_entry = replace(temp_entry, image=Image.open(image_path))
 
         # check if an existing matches this entry
-        for entry in self.ad_entries:
-            if entry.calculate_rms(new_entry.image) < self.rms_threshold:
-                print("Removing older entry", entry)
-                (self.ad_images_dir / entry.file_name).rename(
-                    self.debug_dir_path / entry.file_name
-                )
-                self.ad_entries.remove(entry)
+        if duplicate_entry := self.find_duplicate_ad_entry(new_entry):
+            print("Removing older entry", duplicate_entry)
+            (self.ad_images_dir / duplicate_entry.file_name).rename(
+                self.debug_dir_path / duplicate_entry.file_name
+            )
+            del self.ad_entries[duplicate_entry.uid]
 
-        self.ad_entries.insert(0, new_entry)
+        self.ad_entries[new_entry.uid] = new_entry
         self._write_ad_entries_to_file()
 
     def save_fiction_entry(self, entry: FictionEntry) -> None:
@@ -189,27 +202,62 @@ class EntryManager:
         self.fiction[entry.id] = entry
         self._write_fiction_entries_to_file()
 
-    def _write_fiction_entries_to_file(self) -> None:
-        with open(self.fiction_json_file_path, "w") as fp:
+    @staticmethod
+    def _write_entries_to_file(
+        json_file_path: Path, opaque_entries: dict[Any, Any]
+    ) -> None:
+        with open(json_file_path, "w") as fp:
+
             entries = {}
-            for entry in reversed(self.fiction.values()):
-                entries[entry.id] = entry.dict()
+            for key, entry in reversed(opaque_entries.items()):
+                entries[str(key)] = entry.dict()
 
             content = {"entries": entries}
 
             json.dump(obj=content, fp=fp, indent=2)
 
-    def _write_ad_entries_to_file(self) -> None:
-        with open(self.ad_json_file_path, "w") as fp:
-            content = {
-                "entries": {
-                    entry.uid: {
-                        "alt": entry.alt,
-                        "link": entry.link,
-                        "timestamp": entry.timestamp,
-                    }
-                    for entry in self.ad_entries
-                }
-            }
+    def _write_fiction_entries_to_file(self) -> None:
+        return self._write_entries_to_file(self.fiction_json_file_path, self.fiction)
 
-            json.dump(obj=content, fp=fp, indent=2)
+    def _write_ad_entries_to_file(self) -> None:
+        return self._write_entries_to_file(self.ad_json_file_path, self.ad_entries)
+
+    def check_for_missing_ad_entries(self, delete=False):
+        webp_paths = list(self.ad_images_dir.glob("*.webp"))
+        for webp_path in webp_paths:
+            if webp_path.stem in self.ad_entries:
+                continue
+
+            if delete:
+                print("Removing", webp_path)
+                webp_path.unlink()
+            else:
+                print(webp_path.name, "is missing from", self.ad_json_file_path.name)
+
+        print(f"{len(webp_paths)}/{len(self.ad_entries)}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Entry Manager operations")
+    subparser = parser.add_subparsers(dest="command", help="subcommand", required=True)
+
+    check_parser = subparser.add_parser("check", help="Check for missing entries")
+    check_parser.add_argument("-d", "--delete", action="store_true")
+
+    args = parser.parse_args()
+
+    here = Path(__file__).parent
+    entry_manager = EntryManager(
+        ad_images_dir=here / "public" / "300x250",
+        cover_images_dir=here / "public" / "200x300",
+        fiction_json_file_path=here / "public" / "fiction.json",
+        debug_dir_path=here / "debug",
+    )
+
+    match args.command:
+        case "check":
+            entry_manager.check_for_missing_ad_entries(delete=args.delete)
+
+
+if __name__ == "__main__":
+    main()

@@ -9,3 +9,8 @@ dependencies = [
     "pydoll-python>=2.3.1",
     "requests>=2.32.4",
 ]
+
+[dependency-groups]
+dev = [
+    "pyinstrument>=5.0.3",
+]
