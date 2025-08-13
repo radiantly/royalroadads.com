@@ -123,6 +123,16 @@ class EntryManager:
         self.ad_entries = self._load_ad_entries()
         self.fiction = self._load_fiction_entries()
 
+    @classmethod
+    def from_defaults(cls) -> Self:
+        here = Path(__file__).parent
+        return EntryManager(
+            ad_images_dir=here / "public" / "300x250",
+            cover_images_dir=here / "public" / "200x300",
+            fiction_json_file_path=here / "public" / "fiction.json",
+            debug_dir_path=here / "debug",
+        )
+
     def _load_json_file(self, json_file_path: Path) -> dict[str, Any]:
         return (
             json.loads(json_file_path.read_text(encoding="utf-8"))
@@ -247,13 +257,7 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    here = Path(__file__).parent
-    entry_manager = EntryManager(
-        ad_images_dir=here / "public" / "300x250",
-        cover_images_dir=here / "public" / "200x300",
-        fiction_json_file_path=here / "public" / "fiction.json",
-        debug_dir_path=here / "debug",
-    )
+    entry_manager = EntryManager.from_defaults()
 
     match args.command:
         case "check":

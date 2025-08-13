@@ -12,13 +12,7 @@ from utils import get_fiction_id_from_url
 async def rra() -> None:
     scraper = Scraper()
     if ad_entries := await scraper.retrieve_ads():
-        here = Path(__file__).parent
-        entry_manager = EntryManager(
-            ad_images_dir=here / "public" / "300x250",
-            cover_images_dir=here / "public" / "200x300",
-            fiction_json_file_path=here / "public" / "fiction.json",
-            debug_dir_path=here / "debug",
-        )
+        entry_manager = EntryManager.from_defaults()
 
         api = API.from_refresh_token(config.RR_REFRESH_TOKEN, config.RR_CLIENT_SECRET)
 
@@ -37,7 +31,7 @@ def main() -> None:
     parser.add_argument("--profile", action="store_true")
 
     args = parser.parse_args()
-    print(args)
+
     if args.profile:
         import pyinstrument
 

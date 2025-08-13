@@ -3,6 +3,7 @@ import random
 import shlex
 import shutil
 import subprocess
+from datetime import UTC, datetime
 from pathlib import Path
 
 commands = [
@@ -18,6 +19,7 @@ commands = [
 def main():
     here = Path(__file__).parent
     with open(here / "rra.log", "a") as f:
+        f.write(f"Run started at {datetime.now(UTC)}\n")
         for command in commands:
 
             # Currently the site is deployed to CF Pages, where the free plan
