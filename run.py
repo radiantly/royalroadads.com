@@ -20,6 +20,7 @@ def main():
     here = Path(__file__).parent
     with open(here / "rra.log", "a") as f:
         f.write(f"Run started at {datetime.now(UTC)}\n")
+        f.flush()
         for command in commands:
 
             # Currently the site is deployed to CF Pages, where the free plan
