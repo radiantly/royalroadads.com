@@ -208,14 +208,13 @@ class EntryManager:
     def _write_entries_to_file(
         json_file_path: Path, opaque_entries: dict[Any, Any]
     ) -> None:
+        entries = {}
+        for key, entry in reversed(opaque_entries.items()):
+            entries[str(key)] = entry.dict()
+
+        content = {"entries": entries}
+
         with open(json_file_path, "w") as fp:
-
-            entries = {}
-            for key, entry in reversed(opaque_entries.items()):
-                entries[str(key)] = entry.dict()
-
-            content = {"entries": entries}
-
             json.dump(obj=content, fp=fp, indent=2)
 
     def _write_fiction_entries_to_file(self) -> None:
