@@ -33,15 +33,11 @@
       html,
       body {
         margin: 0;
-        min-height: 100vh;
       }
       body {
-        display: flex;
-        justify-content: center;
         color: #111;
         background-color: #fff;
         font-family: var(--default-font);
-        overflow-x: hidden;
       }
 
       .text {
@@ -76,400 +72,413 @@
         transform: scaleX(0);
       }
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 40px;
-        width: 100%;
-      }
-
-      section {
-        display: none;
-      }
-
-      nav {
-        display: flex;
-        padding: 20px 25px;
-        position: relative;
-        justify-content: center;
-        z-index: 42;
-        font-family: var(--dot-matrix);
-        border: 1px solid #ebebeb;
-        width: 90vw;
-        align-self: center;
-        border-radius: 10px;
-        box-shadow: 0 50px 110px 0 rgba(0, 0, 0, 0.1),
-          0 201px 201px 0 rgba(0, 0, 0, 0.09),
-          0 452px 250px 0 rgba(0, 0, 0, 0.05),
-          0 803px 250px 0 rgba(0, 0, 0, 0.01);
-        align-items: center;
-        font-size: 18px;
-      }
-      nav .logo {
-        font-size: 24px;
-      }
-
-      nav .logo .accent {
-        position: relative;
-        color: white;
-      }
-
-      nav .logo .accent::before {
-        content: "";
-        position: absolute;
-        top: -4px;
-        left: -7px;
-        width: calc(100% + 10px);
-        height: calc(100% + 7px);
-        border-radius: 5px;
-        background-color: #2a2a2a;
-        z-index: -1;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: inherit;
-        position: relative;
-      }
-
-      nav a::before {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #2a2a2a;
-        transform: scaleX(0);
-        transform-origin: left center;
-        transition: transform 0.2s ease;
-      }
-
-      nav a:hover::before {
-        transform: scale(1);
-      }
-
-      .rra-grid {
-        --x: 0;
-        --y: 0;
-        --width: 300px;
-        --height: 250px;
-
-        display: flex;
-        flex-grow: 1;
-        gap: var(--grid-padding);
-        min-height: 500vh;
-        position: relative;
-        align-self: stretch;
-        align-items: stretch;
-      }
-
-      .rra-grid div.backdrop-container {
-        filter: blur(15px);
-        z-index: -1;
-        contain: strict;
-        flex-grow: 1;
-      }
-
-      .rra-grid div.backdrop-container img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 10px;
-        opacity: 0.7;
-
-        width: var(--width);
-        height: var(--height);
-        transform: translate(var(--x), var(--y));
-      }
-
-      .rra-grid div.backdrop-container img.expanded {
-        display: none;
-      }
-
-      .rra-grid div.positioned {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: var(--width);
-        height: var(--height);
-        transform: translate(var(--x), var(--y));
-        transition: transform 0.2s ease, box-shadow 2s ease 0.2s,
-          border 0.2s ease 0.2s;
-
-        border: none;
-        border-color: white;
-
-        display: flex;
-        gap: 20px;
-        z-index: 13;
-        border-radius: 10px;
-        contain: strict;
-      }
-
-      .rra-grid div.positioned:not(.expanded):hover {
-        transform: translate(var(--x), calc(var(--y) - 5px));
-      }
-
-      .rra-grid div.positioned > .left {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .rra-grid div.positioned > .right > *,
-      .rra-grid div.positioned > .left > * {
-        flex-shrink: 0;
-      }
-
-      .rra-grid div.positioned > .left .cover-wrap {
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 20px -10px;
-        border-radius: 3px 2px 2px 3px;
-        background-color: #ddd;
-      }
-
-      .rra-grid div.positioned > .left .cover-wrap::before {
-        content: "";
-        background: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.5) 2px,
-          rgba(255, 255, 255, 0.2) 3px,
-          rgba(255, 255, 255, 0.1) 5px,
-          transparent 6px 7px,
-          rgba(255, 255, 255, 0.1) 8px,
-          transparent 12px
-        );
-        box-shadow: inset -1px 1px 2px rgba(255, 255, 255, 0.3);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-      }
-
-      .rra-grid div.positioned > .left .cover-wrap img {
-        width: 150px;
-        height: 225px;
-      }
-
-      .rra-grid div.positioned > .left .read-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        border: none;
-        background-color: var(--rr-blue);
-        height: 40px;
-        color: white;
-        font-size: 16px;
-        font-weight: 600;
-        transition: background-color 0.2s ease;
-      }
-
-      .rra-grid div.positioned > .left .read-btn:hover {
-        background-color: #2a6ea8;
-      }
-
-      .rra-grid div.positioned > .left .rad-wrap {
-        border-radius: 10px;
-        display: flex;
-        position: relative;
-      }
-
-      .rra-grid div.positioned:not(.external) > .left .rad-wrap {
-        cursor: default;
-      }
-
-      .rra-grid div.positioned > .left .rad-wrap img {
-        border-radius: 10px;
-      }
-
-      .rra-grid div.positioned > .left .rad-wrap > .open-in-new-icon-wrap {
-        width: 24px;
-        height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.2s ease;
-      }
-
-      .rra-grid div.positioned > .left .rad-wrap > .open-in-new-icon-wrap {
-        fill: #fefefe;
-        filter: drop-shadow(0 0 5px black);
-      }
-
-      .rra-grid
-        div.positioned.external
-        > .left
-        .rad-wrap:hover
-        > .open-in-new-icon-wrap {
-        opacity: 1;
-      }
-
-      .rra-grid div.positioned > .right {
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        gap: 10px;
-      }
-
-      .rra-grid div.positioned > .right .title-row {
-        display: flex;
-        opacity: 0;
-        animation: fade-in 0.2s ease 0.3s forwards;
-      }
-
-      .rra-grid div.positioned > .right .title {
-        font-family: var(--dot-matrix);
-        font-size: 22px;
-      }
-
-      .rra-grid div.positioned > .right .close {
-        cursor: pointer;
-        position: relative;
-      }
-
-      .rra-grid div.positioned > .right .close::before {
-        content: "";
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        width: calc(100% + 20px);
-        height: calc(100% + 20px);
-        opacity: 0.2;
-      }
-
-      .rra-grid div.positioned > .right .close svg {
-        fill: #ddd;
-        transition: fill 0.2s ease;
-      }
-
-      .rra-grid div.positioned > .right .close:hover svg {
-        fill: #aaa;
-      }
-
-      .rra-grid div.positioned > .right .info {
-        --tag-height: 20px;
-        height: var(--tag-height);
-        opacity: 0;
-        animation: fade-in 0.2s ease 0.4s forwards;
-      }
-
-      .rra-grid div.positioned > .right .info > .info-children {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        clip-path: polygon(
-          0 0,
-          100% 0,
-          100% var(--tag-height),
-          0 var(--tag-height)
-        );
-        transition: clip-path 0.4s ease;
-      }
-
-      .rra-grid div.positioned > .right .tags {
-        display: flex;
-        gap: 5px;
-        flex-wrap: wrap;
-        font-size: 13px;
-        text-transform: capitalize;
-        color: #666;
-      }
-      .rra-grid div.positioned > .right .info:hover > .info-children {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      }
-
-      .rra-grid div.positioned > .right .tags > div {
-        flex-shrink: 0;
-        border: 1px solid #ddd;
-        border-radius: 2px;
-        padding: 0 3px;
-        height: var(--tag-height);
-        display: flex;
-        align-items: center;
-      }
-
-      .rra-grid div.positioned > .right .byline {
-        font-style: italic;
-      }
-
-      .rra-grid div.positioned > .right .summary {
-        opacity: 0;
-        animation: fade-in 0.3s ease 0.5s forwards;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        clip-path: inset(0 0 0 0);
-        transition: clip-path 0.5s ease;
-      }
-
-      .rra-grid div.positioned > .right .info:hover + .summary {
-        clip-path: inset(100% 0 0 0);
-      }
-
-      .rra-grid div.positioned > .right .summary > p {
-        margin: 0;
-      }
-
-      .rra-grid div.positioned > .right hr {
-        border: none;
-        background-color: #ddd;
-        height: 2px;
-      }
-
-      .rra-grid div.positioned:not(.expanded) .left .cover-wrap,
-      .rra-grid div.positioned:not(.expanded) .left .read-btn,
-      .rra-grid div.positioned:not(.expanded) .right {
-        display: none;
-      }
-
-      .rra-grid div.positioned:not(.expanded) .left,
-      .rra-grid div.positioned:not(.expanded) .left .rad-wrap {
-        flex-grow: 1;
-      }
-
-      .rra-grid div.positioned.expanded {
-        box-shadow: 0 22px 48px 0 rgba(0, 0, 0, 0.1),
-          0 87px 87px 0 rgba(0, 0, 0, 0.09), 0 196px 118px 0 rgba(0, 0, 0, 0.05),
-          0 348px 139px 0 rgba(0, 0, 0, 0.01), 0 545px 152px 0 rgba(0, 0, 0, 0);
-        border: 1px solid #ebebeb;
-        padding: 20px;
-      }
-
-      .rra-grid div.positioned.expanded .rad-wrap img {
-        width: 150px;
-        height: 125px;
-        border-radius: 0;
-      }
-
-      .rra-grid div.positioned.placeholder .rad-wrap img {
-        visibility: hidden;
-      }
-
-      @media screen and (max-width: 600px) {
-        html {
-          scroll-snap-type: y mandatory;
-        }
+      /* Desktop */
+      @media screen and (min-width: 601px) {
         body {
-          flex-direction: column;
-          justify-content: start;
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          overflow-x: hidden;
         }
-        .container {
+        .mobile-wrap {
           display: none;
         }
+        .desktop-wrap {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          gap: 40px;
+          width: 100%;
+        }
+
+        nav {
+          display: flex;
+          padding: 20px 25px;
+          position: relative;
+          justify-content: center;
+          z-index: 42;
+          font-family: var(--dot-matrix);
+          border: 1px solid #ebebeb;
+          width: 90vw;
+          align-self: center;
+          border-radius: 10px;
+          box-shadow: 0 50px 110px 0 rgba(0, 0, 0, 0.1),
+            0 201px 201px 0 rgba(0, 0, 0, 0.09),
+            0 452px 250px 0 rgba(0, 0, 0, 0.05),
+            0 803px 250px 0 rgba(0, 0, 0, 0.01);
+          align-items: center;
+          font-size: 18px;
+        }
+        nav .logo {
+          font-size: 24px;
+        }
+
+        nav .logo .accent {
+          position: relative;
+          color: white;
+        }
+
+        nav .logo .accent::before {
+          content: "";
+          position: absolute;
+          top: -4px;
+          left: -7px;
+          width: calc(100% + 10px);
+          height: calc(100% + 7px);
+          border-radius: 5px;
+          background-color: #2a2a2a;
+          z-index: -1;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: inherit;
+          position: relative;
+        }
+
+        nav a::before {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #2a2a2a;
+          transform: scaleX(0);
+          transform-origin: left center;
+          transition: transform 0.2s ease;
+        }
+
+        nav a:hover::before {
+          transform: scale(1);
+        }
+
+        .rra-grid {
+          --x: 0;
+          --y: 0;
+          --width: 300px;
+          --height: 250px;
+
+          display: flex;
+          flex-grow: 1;
+          gap: var(--grid-padding);
+          min-height: 500vh;
+          position: relative;
+          align-self: stretch;
+          align-items: stretch;
+        }
+
+        .rra-grid div.backdrop-container {
+          filter: blur(15px);
+          z-index: -1;
+          contain: strict;
+          flex-grow: 1;
+        }
+
+        .rra-grid div.backdrop-container img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 10px;
+          opacity: 0.7;
+
+          width: var(--width);
+          height: var(--height);
+          transform: translate(var(--x), var(--y));
+        }
+
+        .rra-grid div.backdrop-container img.expanded {
+          display: none;
+        }
+
+        .rra-grid div.positioned {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          width: var(--width);
+          height: var(--height);
+          transform: translate(var(--x), var(--y));
+          transition: transform 0.2s ease, box-shadow 2s ease 0.2s,
+            border 0.2s ease 0.2s;
+
+          border: none;
+          border-color: white;
+
+          display: flex;
+          gap: 20px;
+          z-index: 13;
+          border-radius: 10px;
+          contain: strict;
+        }
+
+        .rra-grid div.positioned:not(.expanded):hover {
+          transform: translate(var(--x), calc(var(--y) - 5px));
+        }
+
+        .rra-grid div.positioned > .left {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .rra-grid div.positioned > .right > *,
+        .rra-grid div.positioned > .left > * {
+          flex-shrink: 0;
+        }
+
+        .rra-grid div.positioned > .left .cover-wrap {
+          display: flex;
+          position: relative;
+          overflow: hidden;
+          box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 20px -10px;
+          border-radius: 3px 2px 2px 3px;
+          background-color: #ddd;
+        }
+
+        .rra-grid div.positioned > .left .cover-wrap::before {
+          content: "";
+          background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5) 2px,
+            rgba(255, 255, 255, 0.2) 3px,
+            rgba(255, 255, 255, 0.1) 5px,
+            transparent 6px 7px,
+            rgba(255, 255, 255, 0.1) 8px,
+            transparent 12px
+          );
+          box-shadow: inset -1px 1px 2px rgba(255, 255, 255, 0.3);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+        }
+
+        .rra-grid div.positioned > .left .cover-wrap img {
+          width: 150px;
+          height: 225px;
+        }
+
+        .rra-grid div.positioned > .left .read-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          border: none;
+          background-color: var(--rr-blue);
+          height: 40px;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          transition: background-color 0.2s ease;
+        }
+
+        .rra-grid div.positioned > .left .read-btn:hover {
+          background-color: #2a6ea8;
+        }
+
+        .rra-grid div.positioned > .left .rad-wrap {
+          border-radius: 10px;
+          display: flex;
+          position: relative;
+        }
+
+        .rra-grid div.positioned:not(.external) > .left .rad-wrap {
+          cursor: default;
+        }
+
+        .rra-grid div.positioned > .left .rad-wrap img {
+          border-radius: 10px;
+        }
+
+        .rra-grid div.positioned > .left .rad-wrap > .open-in-new-icon-wrap {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.2s ease;
+        }
+
+        .rra-grid div.positioned > .left .rad-wrap > .open-in-new-icon-wrap {
+          fill: #fefefe;
+          filter: drop-shadow(0 0 5px black);
+        }
+
+        .rra-grid
+          div.positioned.external
+          > .left
+          .rad-wrap:hover
+          > .open-in-new-icon-wrap {
+          opacity: 1;
+        }
+
+        .rra-grid div.positioned > .right {
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+          gap: 10px;
+        }
+
+        .rra-grid div.positioned > .right .title-row {
+          display: flex;
+          opacity: 0;
+          animation: fade-in 0.2s ease 0.3s forwards;
+        }
+
+        .rra-grid div.positioned > .right .title {
+          font-family: var(--dot-matrix);
+          font-size: 22px;
+        }
+
+        .rra-grid div.positioned > .right .close {
+          cursor: pointer;
+          position: relative;
+        }
+
+        .rra-grid div.positioned > .right .close::before {
+          content: "";
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          width: calc(100% + 20px);
+          height: calc(100% + 20px);
+          opacity: 0.2;
+        }
+
+        .rra-grid div.positioned > .right .close svg {
+          fill: #ddd;
+          transition: fill 0.2s ease;
+        }
+
+        .rra-grid div.positioned > .right .close:hover svg {
+          fill: #aaa;
+        }
+
+        .rra-grid div.positioned > .right .info {
+          --tag-height: 20px;
+          height: var(--tag-height);
+          opacity: 0;
+          animation: fade-in 0.2s ease 0.4s forwards;
+        }
+
+        .rra-grid div.positioned > .right .info > .info-children {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          clip-path: polygon(
+            0 0,
+            100% 0,
+            100% var(--tag-height),
+            0 var(--tag-height)
+          );
+          transition: clip-path 0.4s ease;
+        }
+
+        .rra-grid div.positioned > .right .tags {
+          display: flex;
+          gap: 5px;
+          flex-wrap: wrap;
+          font-size: 13px;
+          text-transform: capitalize;
+          color: #666;
+        }
+        .rra-grid div.positioned > .right .info:hover > .info-children {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .rra-grid div.positioned > .right .tags > div {
+          flex-shrink: 0;
+          border: 1px solid #ddd;
+          border-radius: 2px;
+          padding: 0 3px;
+          height: var(--tag-height);
+          display: flex;
+          align-items: center;
+        }
+
+        .rra-grid div.positioned > .right .byline {
+          font-style: italic;
+        }
+
+        .rra-grid div.positioned > .right .summary {
+          opacity: 0;
+          animation: fade-in 0.3s ease 0.5s forwards;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          clip-path: inset(0 0 0 0);
+          transition: clip-path 0.5s ease;
+        }
+
+        .rra-grid div.positioned > .right .info:hover + .summary {
+          clip-path: inset(100% 0 0 0);
+        }
+
+        .rra-grid div.positioned > .right .summary > p {
+          margin: 0;
+        }
+
+        .rra-grid div.positioned > .right hr {
+          border: none;
+          background-color: #ddd;
+          height: 2px;
+        }
+
+        .rra-grid div.positioned:not(.expanded) .left .cover-wrap,
+        .rra-grid div.positioned:not(.expanded) .left .read-btn,
+        .rra-grid div.positioned:not(.expanded) .right {
+          display: none;
+        }
+
+        .rra-grid div.positioned:not(.expanded) .left,
+        .rra-grid div.positioned:not(.expanded) .left .rad-wrap {
+          flex-grow: 1;
+        }
+
+        .rra-grid div.positioned.expanded {
+          box-shadow: 0 22px 48px 0 rgba(0, 0, 0, 0.1),
+            0 87px 87px 0 rgba(0, 0, 0, 0.09),
+            0 196px 118px 0 rgba(0, 0, 0, 0.05),
+            0 348px 139px 0 rgba(0, 0, 0, 0.01),
+            0 545px 152px 0 rgba(0, 0, 0, 0);
+          border: 1px solid #ebebeb;
+          padding: 20px;
+        }
+
+        .rra-grid div.positioned.expanded .rad-wrap img {
+          width: 150px;
+          height: 125px;
+          border-radius: 0;
+        }
+
+        .rra-grid div.positioned.placeholder .rad-wrap img {
+          visibility: hidden;
+        }
+      }
+
+      /* Mobile */
+      @media screen and (max-width: 600px) {
+        .desktop-wrap {
+          display: none;
+        }
+        .mobile-wrap {
+          display: flex;
+          overflow-y: auto;
+          scroll-snap-type: x mandatory;
+        }
+
         section {
+          flex-shrink: 0;
+          height: 100svh;
+
           display: flex;
           flex-direction: column;
           min-height: 0;
@@ -477,13 +486,18 @@
           align-items: center;
           gap: 20px;
 
-          --ad-width: min(95vw, 300px);
+          --interior-width: min(95vw, 300px);
+          --section-horizontal-pad: 10px;
+          --total-width: calc(
+            2 * var(--section-horizontal-pad) + var(--interior-width)
+          );
 
-          padding: 1rem;
+          min-width: var(--total-width);
+
           height: 100vh;
-          scroll-snap-align: start;
+          scroll-snap-align: center;
           position: relative;
-          padding: max(20px, 5vh) 0;
+          padding: max(20px, 5vh) var(--section-horizontal-pad);
         }
         section:nth-child(odd) {
           background-color: #fefefe;
@@ -491,6 +505,7 @@
         section.m-hero {
           align-items: stretch;
           text-align: center;
+          min-width: 100svw;
         }
         section.m-hero .m-hero-title {
           font-family: var(--dot-matrix);
@@ -544,16 +559,20 @@
           position: absolute;
           top: 200%;
           left: 50%;
-          transform: translateX(-50%) rotateZ(90deg);
+          transform: translateX(-50%);
         }
         .m-rect-ad {
-          width: var(--ad-width);
+          width: var(--interior-width);
           height: 250px;
           border-radius: 10px;
+          transition: opacity 0.2s ease-out;
+        }
+        section:not(.active) .m-rect-ad {
+          opacity: 0.5;
         }
         .m-infobox {
           --padding: 15px;
-          width: var(--ad-width);
+          width: var(--interior-width);
           display: flex;
           flex-direction: column;
           align-items: stretch;
@@ -565,6 +584,10 @@
           padding-bottom: var(--padding);
           position: relative;
           flex-grow: 1;
+          transition: opacity 0.2s ease-out;
+        }
+        section:not(.active) .m-infobox {
+          opacity: 0;
         }
         .m-infobox::after {
           content: "";
@@ -688,7 +711,7 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="desktop-wrap">
       <nav>
         <div class="logo">Royal Road <span class="accent">Ads</span></div>
         <div style="flex-grow: 1"></div>
@@ -704,18 +727,20 @@
         <div class="backdrop-container"></div>
       </div>
     </div>
-    <section class="m-hero">
-      <div class="m-hero-top"></div>
-      <div class="m-hero-content">
-        <div class="m-hero-center">
-          <div class="m-hero-title">Royal Road <span>Ads</span></div>
-          <div class="m-hero-tagline">
-            A collection of all the rectangle ads<br />(300x250) on Royal Road
+    <div class="mobile-wrap">
+      <section class="m-hero">
+        <div class="m-hero-top"></div>
+        <div class="m-hero-content">
+          <div class="m-hero-center">
+            <div class="m-hero-title">Royal Road <span>Ads</span></div>
+            <div class="m-hero-tagline">
+              A collection of all the rectangle ads<br />(300x250) on Royal Road
+            </div>
           </div>
+          <div class="m-hero-scroll">Scroll Right</div>
         </div>
-        <div class="m-hero-scroll">Scroll Down</div>
-      </div>
-    </section>
+      </section>
+    </div>
     <template id="ad-element">
       <div class="positioned placeholder">
         <div class="left">
@@ -850,6 +875,8 @@
       const isiOS = /(iPhone|iPad|Macintosh)/i.test(navigator.userAgent);
       if (isiOS) document.body.classList.add("ios");
 
+      const mobileWrapElem = document.querySelector(".mobile-wrap");
+
       class FictionBuddy {
         static TAGS = Object.freeze({
           fanfic: "Fan Fiction",
@@ -937,6 +964,26 @@
 
           this.#required = Object.assign({}, this.#state.current.desktop);
         }
+
+        // Intersection observer for mobile
+        // Figure out the active section for mobile
+        static #activeMobileSection = null;
+        static #observer = new IntersectionObserver(
+          (entries, observer) => {
+            for (const entry of entries) {
+              console.log(entry);
+              if (!entry.isIntersecting || entry.intersectionRatio !== 1)
+                return false;
+              RectangleAd.#activeMobileSection?.classList.remove("active");
+              RectangleAd.#activeMobileSection = entry.target;
+              RectangleAd.#activeMobileSection.classList.add("active");
+            }
+          },
+          {
+            root: mobileWrapElem,
+            threshold: 1,
+          }
+        );
 
         get #current() {
           return this.#state.current[this.#state.layoutType];
@@ -1073,7 +1120,8 @@
             if (createIfNotExists && this.#state.mobileElems === null) {
               this.#state.mobileElems = this.#createHTMLElementsForMobile();
               const { section } = this.#state.mobileElems;
-              document.body.appendChild(section);
+              mobileWrapElem.appendChild(section);
+              RectangleAd.#observer.observe(section);
             }
             return this.#state.mobileElems;
           }
@@ -1332,6 +1380,7 @@
 
             vWidth: null,
             vHeight: null,
+            scrollX: null,
             scrollY: null,
             type: this.#getLayoutType(),
           };
@@ -1405,28 +1454,27 @@
           return Math.floor((totWidth + gap) / (adWidth + gap));
         }
 
-        computeLayout() {
-          const { vWidth, vHeight, scrollY, activeAd } = this.#state;
+        computeLayoutForMobile() {
+          const { scrollX, vWidth } = this.#state;
 
-          if (this.#state.type === "mobile") {
-            const { scrollHeight } = document.body;
-            const loadCount = Math.max(
-              0,
-              5 - (scrollHeight - scrollY) / vHeight
-            );
-            this.#state.m_index = Math.min(
-              this.#state.m_index + loadCount,
-              this.#state.ads.length
-            );
-            console.log(
-              scrollHeight,
-              scrollY,
-              vHeight,
-              loadCount,
-              this.#state.m_index
-            );
-            return;
-          }
+          // TODO: move this out of here
+          const { scrollWidth } = mobileWrapElem;
+          const loadCount = Math.max(0, 5 - (scrollWidth - scrollX) / vWidth);
+          this.#state.m_index = Math.min(
+            this.#state.m_index + loadCount,
+            this.#state.ads.length
+          );
+          console.log(
+            scrollWidth,
+            scrollX,
+            vWidth,
+            loadCount,
+            this.#state.m_index
+          );
+        }
+
+        computeLayoutForDesktop() {
+          const { vWidth, vHeight, scrollY, activeAd } = this.#state;
 
           const gap = 10;
           const variance = 40; // TODO: make this dynamic based on vWidth or perRow
@@ -1575,6 +1623,11 @@
           this.#state.layoutComputedTill = it;
         }
 
+        computeLayout() {
+          return this.#state.type === "desktop"
+            ? this.computeLayoutForDesktop()
+            : this.computeLayoutForMobile();
+        }
         updatePositions() {
           const index =
             this.#state.type === "mobile"
@@ -1599,12 +1652,18 @@
         }
 
         render() {
-          this.#state.vWidth = document.querySelector(".rra-grid").clientWidth;
+          this.setLayoutType();
+
+          this.#state.vWidth =
+            this.#state.type === "desktop"
+              ? document.querySelector(".rra-grid").clientWidth
+              : window.innerWidth;
+
           this.#state.vHeight = window.innerHeight;
-          this.#state.scrollY = window.scrollY;
+          this.#state.scrollX = mobileWrapElem.scrollLeft; // mobile
+          this.#state.scrollY = window.scrollY; // desktop
           console.info("COMPUTING LAYOUT");
 
-          this.setLayoutType();
           this.computeLayout();
           console.log(this.#state.type, this.#state.ads.length);
           this.updatePositions();
@@ -1650,6 +1709,11 @@
           passive: true,
         });
         window.addEventListener(
+          "scroll",
+          () => renderMonkey.requestRenderOnScroll(),
+          { passive: true }
+        );
+        mobileWrapElem.addEventListener(
           "scroll",
           () => renderMonkey.requestRenderOnScroll(),
           { passive: true }
