@@ -92,6 +92,34 @@
         z-index: -1;
       }
 
+      div.book-cover {
+        display: flex;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 20px -10px;
+        border-radius: 3px 2px 2px 3px;
+        background-color: #ddd;
+      }
+
+      div.book-cover::before {
+        content: "";
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5) 2px,
+          rgba(255, 255, 255, 0.2) 3px,
+          rgba(255, 255, 255, 0.1) 5px,
+          transparent 6px 7px,
+          rgba(255, 255, 255, 0.1) 8px,
+          transparent 12px
+        );
+        box-shadow: inset -1px 1px 2px rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
       /* Desktop */
       @media screen and (min-width: 601px) {
         body {
@@ -237,36 +265,7 @@
           flex-shrink: 0;
         }
 
-        .rra-grid div.positioned > .left .cover-wrap {
-          display: flex;
-          position: relative;
-          overflow: hidden;
-          box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 20px -10px;
-          border-radius: 3px 2px 2px 3px;
-          background-color: #ddd;
-        }
-
-        .rra-grid div.positioned > .left .cover-wrap::before {
-          content: "";
-          background: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.5) 2px,
-            rgba(255, 255, 255, 0.2) 3px,
-            rgba(255, 255, 255, 0.1) 5px,
-            transparent 6px 7px,
-            rgba(255, 255, 255, 0.1) 8px,
-            transparent 12px
-          );
-          box-shadow: inset -1px 1px 2px rgba(255, 255, 255, 0.3);
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          pointer-events: none;
-        }
-
-        .rra-grid div.positioned > .left .cover-wrap img {
+        .rra-grid div.positioned > .left .book-cover img {
           width: 150px;
           height: 225px;
         }
@@ -442,7 +441,7 @@
           height: 2px;
         }
 
-        .rra-grid div.positioned:not(.expanded) .left .cover-wrap,
+        .rra-grid div.positioned:not(.expanded) .left .book-cover,
         .rra-grid div.positioned:not(.expanded) .left .read-btn,
         .rra-grid div.positioned:not(.expanded) .right {
           display: none;
@@ -612,6 +611,7 @@
           font-size: 0.9rem;
           transition: opacity 0.2s ease-out;
           user-select: none;
+          z-index: 42;
         }
         .m-tap-to-show-details input {
           display: none;
@@ -641,7 +641,19 @@
           flex-shrink: 0;
           height: 150px;
         }
-        img.m-cover {
+        .m-cover-row > .book-cover {
+          box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 20px -12px;
+        }
+        .m-cover-row > .book-cover::before {
+          background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4) 1px,
+            rgba(255, 255, 255, 0.2) 2px,
+            rgba(255, 255, 255, 0.1) 3px,
+            transparent 4px
+          );
+        }
+        .m-cover-row > .book-cover > img {
           height: 150px;
           width: 100px;
         }
@@ -774,7 +786,7 @@
     <template id="ad-element">
       <div class="positioned placeholder">
         <div class="left">
-          <div class="cover-wrap">
+          <div class="book-cover">
             <img src="#" />
           </div>
           <a href="#" class="read-btn" target="_blank">Read now</a>
@@ -841,7 +853,9 @@
           </label>
           <div class="m-title">Royal Road Ad</div>
           <div class="m-cover-row">
-            <img src="200x300/95818.webp" alt="Cover image" class="m-cover" />
+            <div class="book-cover">
+              <img src="200x300/95818.webp" alt="Cover image" />
+            </div>
             <div class="m-tags-n-stuff">
               <div class="m-tags-wrap">
                 <div class="m-tags"></div>
@@ -1350,7 +1364,7 @@
             const summaryElem = positioned.querySelector(".summary");
             summaryElem.innerHTML = description;
 
-            const coverImageElem = positioned.querySelector(".cover-wrap img");
+            const coverImageElem = positioned.querySelector(".book-cover img");
             coverImageElem.src = this.coverImgSrc;
           }
 
@@ -1393,7 +1407,7 @@
             const summaryElem = section.querySelector(".m-desc");
             summaryElem.innerHTML = description;
 
-            const coverImageElem = section.querySelector("img.m-cover");
+            const coverImageElem = section.querySelector(".book-cover > img");
             coverImageElem.src = this.coverImgSrc;
           }
 
