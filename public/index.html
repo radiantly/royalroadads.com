@@ -71,6 +71,27 @@
         transform: scaleX(0);
       }
 
+      .logo {
+        font-family: var(--dot-matrix);
+      }
+
+      .logo > span {
+        position: relative;
+        color: white;
+      }
+
+      .logo > span::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 5px;
+        background-color: #2a2a2a;
+        z-index: -1;
+      }
+
       /* Desktop */
       @media screen and (min-width: 601px) {
         body {
@@ -112,21 +133,11 @@
           font-size: 24px;
         }
 
-        nav .logo .accent {
-          position: relative;
-          color: white;
-        }
-
-        nav .logo .accent::before {
-          content: "";
-          position: absolute;
+        nav .logo > span::before {
           top: -4px;
           left: -7px;
-          width: calc(100% + 10px);
-          height: calc(100% + 7px);
-          border-radius: 5px;
-          background-color: #2a2a2a;
-          z-index: -1;
+          bottom: -10px;
+          right: -7px;
         }
 
         nav a {
@@ -497,7 +508,7 @@
           height: 100vh;
           scroll-snap-align: center;
           position: relative;
-          padding: max(20px, 5vh) var(--section-horizontal-pad);
+          padding: 20px var(--section-horizontal-pad);
         }
         section:nth-child(odd) {
           background-color: #fefefe;
@@ -506,14 +517,6 @@
           align-items: stretch;
           text-align: center;
           min-width: 100svw;
-        }
-        section.m-hero .m-hero-title {
-          font-family: var(--dot-matrix);
-          font-size: 36px;
-        }
-        section.m-hero .m-hero-title > span {
-          color: white;
-          position: relative;
         }
         section.m-hero .m-hero-content {
           display: flex;
@@ -529,16 +532,14 @@
           gap: 30px;
           min-width: 0;
         }
-        section.m-hero .m-hero-title > span::before {
-          content: "";
-          position: absolute;
+        section.m-hero .logo {
+          font-size: 36px;
+        }
+        section.m-hero .logo > span::before {
           top: -5px;
           left: -10px;
           bottom: -4px;
           right: -6px;
-          background-color: #111;
-          z-index: -1;
-          border-radius: 5px;
         }
         section.m-hero .m-hero-tagline {
           font-size: 15px;
@@ -560,6 +561,10 @@
           top: 200%;
           left: 50%;
           transform: translateX(-50%);
+        }
+        .m-spacer {
+          height: calc(50svh - 250px);
+          flex-shrink: 0;
         }
         .m-rect-ad {
           width: var(--interior-width);
@@ -587,6 +592,36 @@
         }
         section:not(.active) .m-infobox {
           opacity: 0.1;
+        }
+        .m-tap-to-show-details {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+
+          background-color: #f6f6f6;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-family: var(--dot-matrix);
+          text-transform: uppercase;
+          padding: 20px;
+          color: #666;
+          border-radius: 10px;
+          font-size: 0.9rem;
+          transition: opacity 0.2s ease-out;
+          user-select: none;
+        }
+        .m-tap-to-show-details input {
+          display: none;
+        }
+        .m-tap-to-show-details:has(input:checked) {
+          opacity: 0;
+          pointer-events: none;
+        }
+        .m-infobox:not(:has(input:checked)) {
+          overflow: hidden;
         }
         .m-title {
           font-family: var(--dot-matrix);
@@ -708,7 +743,7 @@
   <body>
     <div class="desktop-wrap">
       <nav>
-        <div class="logo">Royal Road <span class="accent">Ads</span></div>
+        <div class="logo">Royal Road <span>Ads</span></div>
         <div style="flex-grow: 1"></div>
         <div class="github">
           <a
@@ -727,7 +762,7 @@
         <div class="m-hero-top"></div>
         <div class="m-hero-content">
           <div class="m-hero-center">
-            <div class="m-hero-title">Royal Road <span>Ads</span></div>
+            <div class="logo">Royal Road <span>Ads</span></div>
             <div class="m-hero-tagline">
               A collection of all the rectangle ads<br />(300x250) on Royal Road
             </div>
@@ -794,11 +829,16 @@
     </template>
     <template id="m-ad-element">
       <section>
+        <div class="m-spacer"></div>
         <img
           class="m-rect-ad"
           src="300x250/19d467f0-ec4f-4ad1-99a8-2b1568ec452b.webp"
         />
         <div class="m-infobox">
+          <label class="m-tap-to-show-details">
+            <div>Tap to show details</div>
+            <input type="checkbox" />
+          </label>
           <div class="m-title">Royal Road Ad</div>
           <div class="m-cover-row">
             <img src="200x300/95818.webp" alt="Cover image" class="m-cover" />
